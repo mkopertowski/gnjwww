@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+  <title>GNJ-Aktualności</title>
+  <link>http://www.gnj.org.pl/</link>
+  <description>Nowe</description>
+  <lastBuildDate>Thu, 03 May 2012 15:00:00</lastBuildDate> 
+  <language>pl</language>
+
+  <!-- tutaj wstawiasz wpisy -->
+
+  <item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Śląskie Manewry Ratownictwa Jaskiniowego</description>
+</item> 
+  
+  
+
+  <item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Relacja z Warsztatów Nurkowania Jaskiniowego 2012</description>
+</item> 
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Ćwiczenia z podwodnego ratownictwa jaskiniowego</description>
+</item> 
+  
+  
+  
+  
+  
+  
+  
+  <item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Informacje w sprawie Śląskich Manewrów Ratownictwa Jaskiniowego 2012</description>
+</item>  
+    
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Informacje w sprawie Warsztatów Nurkowania Jakskiniowego 2012</description>
+</item>  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/index.php</link>
+  <description>Śląskie Manewry Ratownictwa Jaskiniowego edycja 2012 r.</description>
+</item>  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/ogloszenia/index_var.php</link>
+  <pubDate>, 15. stycznia 2012 22:00:00 EST</pubDate>
+  <description>Archelogia podwodna, Uniwersystet Warszawski - prezentacje</description>
+</item>
+  
+  
+  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2011puertorico&sec=swiat</link>
+  <pubDate>, 03. grudnia 2011 22:00:00 EST</pubDate>
+  <description>Wyprawa do Perto Rico</description>
+</item>
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2011_2warsztaty&sec=warsztaty</link>
+  <pubDate>, 01. grudnia 2011 22:00:00 EST</pubDate>
+  <description>XIV Warszaty Nurkowania Jaskiniowego - edycja jesienna</description>
+</item>
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/aktualnosci/zmiany.php</link>
+  <pubDate>, 03. września 2011 22:00:00 EST</pubDate>
+  <description>Płetwonurkowanie w Dudnicy i Wodnej pod Pisaną</description>
+</item>
+  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2011kosowoczarnogora&sec=swiat</link>
+  <pubDate>, 03. września 2011 22:00:00 EST</pubDate>
+  <description>Wyprawa do Kosowa i Czarnogóry</description>
+</item>
+  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2011warsztaty&sec=warsztaty</link>
+  <pubDate>, 14. maja 2011 22:00:00 EST</pubDate>
+  <description>XIV Warszaty Nurkowania Jaskiniowego</description>
+</item>
+  
+  
+  
+  
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2010kosowo&sec=swiat</link>
+  <pubDate>, 14. Lutego 2011 22:00:00 EST</pubDate>
+  <description>Wyprawa Kosowo 2010</description>
+</item>
+
+<item>
+  <title>Uaktualnienie strony</title>
+  <link>http://www.gnj.org.pl/article.php?id=2008wpp&sec=polska</link>
+  <pubDate>, 26. Grudnia 2010 22:00:00 EST</pubDate>
+  <description>Uaktualnione plany jaskiń zalanych wodą </description>
+</item>
+
+<item>
+  <title>WNJ 2010</title>
+  <link>http://www.gnj.org.pl/aktualnosci/zmiany.php</link>
+  <pubDate>, 24. Czerwca 2010 19:00:00 EST</pubDate>
+  <description>XIII Warszaty Nurkowania Jaskiniowego</description>
+</item>
+
+<item>
+  <title>Albania i Grecja</title>
+  <link>http://www.gnj.org.pl/aktualnosci/zmiany.php</link>
+  <pubDate>Piątek, 25 Czerwca 2010 19:00:00 EST</pubDate>
+  <description>Wyprawa GNJ do Albanii i Grecji</description>
+</item>
+
+
+
+
+</channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<gallery id="" >
+
+<metakeywords></metakeywords>
+<metadescription></metadescription>
+<header>Warsztaty Nurkowania Jaskiniowego</header>
+<date></date>
+<description>edycja druga</description>
+<author>Emil Sieńko
+</author>
+
+  <image file="1.jpg">zdj.1</image>
+  <image file="2.jpg">zdj.2</image>
+  <image file="3.jpg">zdj.3</image>
+  <image file="4.jpg">zdj.4</image>
+  <image file="5.jpg">zdj.5</image>
+  <image file="6.jpg">zdj.6</image>
+
+  
+</gallery>
+

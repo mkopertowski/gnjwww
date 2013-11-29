@@ -1,0 +1,32 @@
+<?php
+
+$bSubdir = true;
+$sInclude = './_php/page.php';
+if($bSubdir == true)
+	$sInclude = '.'.$sInclude;
+@include($sInclude);
+
+	renderHead($bSubdir);
+	renderMenu($bSubdir,6,true);
+	renderGallery(true,false);
+	renderCentral(true);
+?>
+<!--============================= CONTENTS START ==========================================-->
+<h1>
+	Podwodne jaskinie w Cassis (1)
+</h1>
+
+<p>Nurkowanie jaskiniowe to dziwna dziedzina sportu. Wymaga opanowanych do perfekcji zarówno umiejêtnoœci pokonywania jaskiñ jak i technik nurkowania. Uprawianie tej dyscypliny w Polsce kojarzy siê z wyczerpuj¹cym transportem ciê¿kiego i drogocennego sprzêtu przez wype³nione b³otem i ciasne korytarze. Same syfony nie s¹ te¿ zbyt obszerne, z lodowat¹ wod¹ o temperaturze 40 C, która m¹ci siê prawie przy ka¿dym poruszeniu p³etw¹. Powrót nastêpuje z regu³y po omacku, przy widocznoœci uniemo¿liwiaj¹cej odczyt z przyrz¹dów. Czy tego rodzaju hobby mo¿e byæ przyjemne ? Nie jest to wcale pytanie retoryczne. Po prostu u nas nie ma tak naprawdê warunków do uprawiania tego sportu. 
+<p>Jednak na œwiecie jest sporo miejsc pod ziemi¹, do tego zalanych wod¹, które warto odwiedziæ. Penetracja przestronnych, o krystalicznie czystej i ciep³ej wodzie korytarzy mo¿e dostarczyæ wielu wra¿eñ estetycznych. Przemieszczanie siê w podwodnym labiryncie w stanie niemal¿e niewa¿koœci ograniczaj¹ jedynie posiadane zasoby powietrza i œwiat³a. Mo¿na siê poczuæ jak w jakiejœ fantastycznej grze komputerowej z t¹ tylko ró¿nic¹, ¿e uczestniczy siê w nie naprawdê. 
+<p>Podobno najpiêkniejsze zalane jaskinie s¹ na kontynencie pó³nocnoamerykañskim na Jukatanie, Florydzie czy na Wyspach Bahama. Ze zrozumia³ych wzglêdów trudno siê tam dostaæ z Polski w dodatku z ca³ym sprzêtem. W Europie Mekk¹ nurków jaskiniowych jest Francja. Znajduje siê tu olbrzymia liczba zalanych jaskiñ szacowana na 20 000 (dla porównania w Polsce tylko kilkanaœcie). Najpiêkniejsze dorównuj¹ standardom amerykañskim i warto dla nich podj¹æ trud zorganizowania wyprawy. 
+<p>Po przeanalizowaniu ró¿nych mo¿liwoœci wybraliœmy wybrze¿e Morza Œródziemnego w miejscowoœci Cassis ko³o Marsylii. S¹ tutaj w niedalekiej odleg³oœci od siebie dwa potê¿ne wywierzyska : Port Miou i le Bestouan o d³ugoœci kilku kilometrów. Odprowadzaj¹ one s³odk¹ wodê z wnêtrza l¹du do morza. O wyborze tego miejsca przes¹dzi³a ³atwa dostêpnoœæ tych jaskiñ. Mo¿na do nich dop³yn¹æ wprost z brzegu bez u¿ycia pontonu. 
+<p>Taka by³a geneza wyprawy, która odby³a siê w terminie 06.08 - 23.08.1997. Wziêli w niej udzia³ : Wiktor Bolek, Micha³ Stajszczyk (Wroc³aw), Krzysztof Strama (G³ogów), Norbert Ziober (£ódŸ) oraz osoby towarzysz¹ce : Beata Bednarska i Aleksandra Strama. Bazê za³o¿yliœmy na kempingu Les Cigales w górnej czêœci Cassis. Jest to jedyny kemping w tym mieœcie - niestety po³o¿ony dosyæ daleko od morza. Id¹c na piechotê trzeba 30 minut, aby pokonaæ stromo opadaj¹ce zbocze.
+<p>Dziêki wczeœniej nawi¹zanym kontaktom uda³o siê zorganizowaæ spotkanie z Marciem Douchetem, który przez ostatnie kilka lat prowadzi³ intensywn¹ dzia³alnoœæ w tych okolicach i wyeksplorowa³ wspomniane wczeœniej jaskinie do takich imponuj¹cych rozmiarów. Umówiliœmy siê z nim przed hotelem o wiele mówi¹cej nazwie La Pleage du Bestouan. Na spotkanie przyjechaliœmy nieco wczeœniej. Niemal¿e w centrum miasteczka by³a tu maleñka, kamienista pla¿a wciœniêta w skalisty brzeg. Na pouk³adanych szczelnie obok siebie materacach i rêcznikach le¿a³o mnóstwo obna¿onych cia³. Fakt, ¿e wiêkszoœæ istot p³ci ¿eñskiej opala³a siê topless, by³ czymœ zupe³nie naturalnym. Na tej publicznej pla¿y by³y równie¿ prysznice ze s³odk¹ wod¹, co stanowi³o wybawienie dla ka¿dego wynurzaj¹cego siê ze s³onej wody. Marc pojawi³ siê punktualnie. Przyjecha³ z ¿on¹ i dwójk¹ dzieci : 3-4 letnim ch³opcem i mo¿e 7 letni¹ dziewczynk¹. Zeszliœmy na skalist¹ czêœæ pla¿y. Marc powiedzia³, ¿e teraz poka¿e nam otwór le Bestouan, po czym zdj¹³ koszulkê i wskoczy³ do morza. Jego dzieci, nie namyœlaj¹c siê wiele, posz³y w œlady ojca. Zaskoczeni nieco takim obrotem sprawy wskoczyliœmy do wody. Od razu zap³aciliœmy frycowe. Nadzialiœmy siê na je¿owce. Marc i jego dzieci wskoczyli w klapkach b¹dŸ w plastikowych sanda³kach. No có¿, p³etwonurek jaskiniowy musi byæ ddzielny. Nie ma, ¿e boli. Pop³ynêliœmy pod strom¹ ska³ê, gdzie tu¿ pod powierzchni¹ wody za za³omem by³ niewielki otwór. Jak wyjaœni³ Marc, samo wejœcie jest dosyæ nieprzyjemne, tym bardziej ¿e nastêpuje tutaj mieszanie wody s³odkiej i s³onej. Jaskinia rozszerza siê dopiero po kilkunastu metrach, gdzie w pionowej studni schodzi siê na g³êbokoœæ kilkunastu metrów.
+<p>Poniewa¿ Marc mia³ jeszcze trochê czasu pojechaliœmy do Port Miou. Jest to jedna z najwiêszych kalanek (calanque), czyli w¹skich zatok o stromych skalistych brzegach g³êboko wcinaj¹cych siê w g³¹b l¹du. Jak sama nazwa wskazuje, jachty i najprzeró¿niejsze ³odzie motorowe znajduj¹ tam schronienie. Dojechaliœmy na parking znajduj¹cy siê kilkanaœcie metrów nad wod¹. St¹d brzeg urywa³ siê pionow¹ œcian¹. Miejscowe dzieci skaka³y z tego miejsca do lazurowego morza w euforii radoœci. Przez chwilê myœleliœmy, ¿e Marc te¿ bêdzie chcia³ wejœæ do wody w ten sposób. Jednak my zdecydowanie skierowaliœmy siê w kierunku kamiennych schodów. Otwór znajdowa³ siê po drugiej stronie kalanki i trzeba by³o przep³yn¹æ wp³aw wiêkszy dystans - ponad 300. Musieliœmy przy tym lawirowaæ pomiêdzy zacumowanymi jachtami i motorówkami. Najgorzej by³o po œrodku kalanki, gdzie ruch by³ spory i a¿ dziw, ¿e ¿adna motorówka nie zrobi³a nam przedzia³ka na g³owie. Marc oczywiœcie pop³yn¹³ z dzieæmi. Córka radzi³a sobie dobrze, ale synek by³ trochê za s³aby i nie nad¹¿¹³ za nami, wiêc ³apa³ siê tatusiowi za szyjê i by³ holowany przez wiêksz¹ czêœæ drogi. Wejœcie do jaskini wygl¹da³o imponuj¹co. Widocznoœæ a¿ do samego dna na g³êbokoœci 15m, a tam ciemna odch³añ w pionowym brzegu rodz¹ca wyzwanie. Drogê wejœcia wskazywa³y dodatkowo omurowane rury, króre na pewnym odcinku przechodzi³y przez jaskiniê. W drug¹ stronê wychodzi³y g³êboko w morze. Do samochów wróciliœmy bez wychodzenia na brzeg po drugiej stronie. Po spotkaniu z Marciem odnios³em wra¿enie, ¿e jest to facet bêd¹cy na prawdê w stanie prowadziæ eksploracjê podwodnej jaskini w odleg³oœci trzech kilometrów od wejœcia. 
+<p>Na nastêpny dzieñ zaplanowaliœmy pierwsze nurkowanie, jeszcze na powietrzu przywiezionym z kraju. 
+
+<h3 align=right>Wiktor Bolek</h3>
+<!--============================= CONTENTS END   ==========================================-->
+<?php
+	renderBottom($bSubdir);
+?>
