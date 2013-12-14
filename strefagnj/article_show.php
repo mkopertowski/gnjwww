@@ -43,7 +43,7 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     /* get image ids */
     $tbl_name="files"; // Table name
         
-    $sql="SELECT * FROM $tbl_name WHERE articleId='$id'";
+    $sql="SELECT `description`, `id` FROM `files` WHERE articleId='$id'";
     $result_ids=$mysqli->query($sql);
     
 	/* prepare and publish article */
