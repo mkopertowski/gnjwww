@@ -22,7 +22,6 @@ if(isset($_FILES['uploaded_file'])) {
 		// Get all required data
 		$name = $mysqli->real_escape_string($_FILES['uploaded_file']['name']);
 		$mime = $mysqli->real_escape_string($_FILES['uploaded_file']['type']);
-		$size = intval($_FILES['uploaded_file']['size']);
 		$description = $mysqli->real_escape_string($_POST['description']);
 	    $id = $_SESSION['articleId'];
 		
@@ -55,9 +54,9 @@ if(isset($_FILES['uploaded_file'])) {
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
 	    	
-	    	$image = getResizedImage($data, $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
+	    	$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
 	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, 100);
+	    	imagejpeg($image, NULL, 60);
 	    	$dataSmall = ob_get_contents(); //store stdout in $img2
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
@@ -66,8 +65,8 @@ if(isset($_FILES['uploaded_file'])) {
 	    	$dataSmall = $mysqli->real_escape_string($dataSmall);
 	    	
 	    	// Create the SQL query
-	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `size`, `data`, `dataSmall`, `description`, `articleId`) VALUES (
-	    	'{$name}', '{$mime}', {$size}, '{$data}', '{$dataSmall}', '{$description}', '{$id}')";
+	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `dataSmall`, `description`, `articleId`) VALUES (
+	    	'{$name}', '{$mime}', '{$data}', '{$dataSmall}', '{$description}', '{$id}')";
 	    	
 	    	// Execute the query
 	    	$result = $mysqli->query($sql);
