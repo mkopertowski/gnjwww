@@ -55,11 +55,19 @@ if(isset($_FILES['uploaded_file'])) {
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
 	    	
+	    	$image = getResizedImage($data, $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
+	    	ob_clean(); //Stdout --> buffer
+	    	imagejpeg($image, NULL, 100);
+	    	$dataSmall = ob_get_contents(); //store stdout in $img2
+	    	ob_clean(); //clear buffer
+	    	imagedestroy($image); //destroy img
+	    		    	
 	    	$data = $mysqli->real_escape_string($data);
+	    	$dataSmall = $mysqli->real_escape_string($dataSmall);
 	    	
 	    	// Create the SQL query
-	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `size`, `data`, `description`, `articleId`) VALUES (
-	    	'{$name}', '{$mime}', {$size}, '{$data}', '{$description}', '{$id}')";
+	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `size`, `data`, `dataSmall`, `description`, `articleId`) VALUES (
+	    	'{$name}', '{$mime}', {$size}, '{$data}', '{$dataSmall}', '{$description}', '{$id}')";
 	    	
 	    	// Execute the query
 	    	$result = $mysqli->query($sql);
