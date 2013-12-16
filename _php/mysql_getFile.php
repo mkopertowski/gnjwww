@@ -29,12 +29,9 @@ if(isset($_GET['id'])) {
                 header("Content-Disposition: attachment; filename=". $row['name']);
      
                 // resize and print
-                //$image = getResizedImage($row['data'], $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
-                //imagejpeg($image, NULL, 100);
-                //imagedestroy($image); //destroy img
-                
-                echo $row['data'];
-                
+                $image = getResizedImage($row['data'], $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
+                imagejpeg($image, NULL, 70);
+                imagedestroy($image); //destroy img
             }
             else {
                 echo 'Error! No image exists with that ID.';
