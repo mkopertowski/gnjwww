@@ -2,31 +2,7 @@
 
 include("../_php/mysql.php");
 include_once("../_php/settings.php");
-
-
-function resize($blob_binary, $desired_width, $desired_height) 
-{ 
-	$im = imagecreatefromstring($blob_binary);
-	$x = imagesx($im);
-	$y = imagesy($im);
-	$aspectratio = $x/$y;
-	
-	if($x>$y)
-	{
-		$desired_height = $desired_width / $aspectratio;
-	}
-	else
-	{
-		$desired_width = $desired_height * $aspectratio;
-	}
-	
-	$new = imagecreatetruecolor($desired_width, $desired_height) or exit("bad url");
-	
-	imagecopyresampled($new, $im, 0, 0, 0, 0, $desired_width, $desired_height, $x, $y) or exit("bad url");
-	imagedestroy($im);
-	imagejpeg($new, null, 100) or exit("bad url");
-    return $new;
-}
+include_once("../_php/misc.php");
 
 // Make sure an ID was passed
 if(isset($_GET['id'])) {
@@ -50,11 +26,12 @@ if(isset($_GET['id'])) {
      
                 // Print headers
                 header("Content-Type: ". $row['mime']);
-                header("Content-Length: ". $row['size']);
                 header("Content-Disposition: attachment; filename=". $row['name']);
      
                 // resize and print
-                $image = resize($row['data'], $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
+                $image = getResizedImage($row['data'], $ARTICLE_IMAGE_WIDTH, $ARTICLE_IMAGE_HEIGHT);
+                imagejpeg($image, NULL, 100);
+                imagedestroy($image); //destroy img
                 
             }
             else {

@@ -24,5 +24,27 @@ function formatDate($date)
 	return $formatedDate;
 }
 
+function getResizedImage($blob_binary, $desired_width, $desired_height)
+{
+	$im = imagecreatefromstring($blob_binary);
+	$x = imagesx($im);
+	$y = imagesy($im);
+	$aspectratio = $x/$y;
+
+	if($x>$y)
+	{
+		$desired_height = $desired_width / $aspectratio;
+	}
+	else
+	{
+		$desired_width = $desired_height * $aspectratio;
+	}
+
+	$new = imagecreatetruecolor($desired_width, $desired_height) or exit("bad url");
+	imagecopyresampled($new, $im, 0, 0, 0, 0, $desired_width, $desired_height, $x, $y) or exit("bad url");
+	imagedestroy($im);
+	return $new;
+}
+
 
 ?>

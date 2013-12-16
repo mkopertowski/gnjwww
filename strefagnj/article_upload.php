@@ -9,6 +9,7 @@ ob_start();
 
 include("../_php/mysql.php");
 include("./_php/misc.php");
+include("../_php/misc.php");
 include("../_php/Renderer.php");
 include("../_php/settings.php");
 
@@ -48,13 +49,12 @@ if(isset($_FILES['uploaded_file'])) {
 	    	$data = file_get_contents($_FILES['uploaded_file']['tmp_name']);
 	    	
 	    	$image = imagecreatefromstring($data);
-	    	
-	    	ob_start(); //Stdout --> buffer
+	    	ob_clean(); //Stdout --> buffer
 	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
 	    	$data = ob_get_contents(); //store stdout in $img2
-	    	ob_end_clean(); //clear buffer
+	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
-
+	    	
 	    	$data = $mysqli->real_escape_string($data);
 	    	
 	    	// Create the SQL query
