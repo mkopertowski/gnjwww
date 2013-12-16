@@ -15,7 +15,7 @@ if(isset($_GET['id'])) {
     }
     else {   
         // Fetch the file information
-        $query = "SELECT `mime`, `name`, `size`, `dataSmall` FROM `files` WHERE `id` = {$id}";
+        $query = "SELECT `name`, `dataSmall` FROM `files` WHERE `id` = {$id}";
         $result = $mysqli->query($query);
      
         if($result) {
@@ -25,10 +25,10 @@ if(isset($_GET['id'])) {
                 $row = mysqli_fetch_assoc($result);
      
                 // Print headers
-                header("Content-Type: ". $row['mime']);
+                header("Content-Type: image/jpeg");
                 header("Content-Disposition: attachment; filename=". $row['name']);
                      
-                echo $row['dataSmall'];
+                echo $row['dataSmall']; // dataSmall is always jpeg
                 
             }
             else {
