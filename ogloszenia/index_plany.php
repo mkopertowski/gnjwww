@@ -24,13 +24,13 @@ if($bSubdir == true)
 <h1>
 	OGŁOSZENIA
 </h1>
-
+<h3 align=right>Ostatnia aktualizacja: 29. Stycznia 2014</h3>
 <h2>
-<font color="red"> Plany Grupy Nurków Jaskiniowych PZA na rok 2013
+ Plany Grupy Nurków Jaskiniowych PZA na rok 2014
 </h2>
 <!--<h2>Harmonogram imprez GNJ 2009/2010</h2>-->
 
-<h3 align=right>Ostatnia aktualizacja: 06. Stycznia 2013</h3>
+
 
 <!--============================================================================-->
 
@@ -55,43 +55,49 @@ EndList();
 <h3>Kalendarz</h3>
 
 <font color=white>	  
-<h4>25 luty-14 kwiecień 2013</h4>
+<h4>luty 2014</h4>
       <ul>
-      <li><b>San Agustin</b><br>Wyprawa eksploracyjna. <a href="http://www.cdg-exped.org">Szczegóły tutaj</a> <br>
-Głównym celem wyprawy jest nurkowanie w syfonie 9. Wyprawa organizowana przez brytyjskie CDG. <br> Kontakt: Mirek Kopertowski m.kopertowski / at / post.pl
+      <li><b>Kosowo</b><br>Wyprawa eksploracyjna do Kosowa. <br>
+Głównym celem wyprawy jest eksploracja syfonu na końcu jaskini Gryka e Madhe. Inne cele to eksploracja partii ponorowych w pobliżu Wielkiego Syfonu, inspekcja Wielkiego Syfonu w zimie oraz dla początkujących speleonurków nurkowania w syfonach eksplorowanych w 2010 i 2011 roku.
       </li>
       </ul>
 
-<h4>luty-kwiecień-maj 2013</h4>
+<h4>26 kwietnia - 4 maja 2014</h4>
       <ul>
-      <li><b>Meksyk</b><br>Wyprawa do J2 pod kierownictwem Billa Stone'a. Głównym celem jest eksploracja za syfonem 4.
-      </li>
+      <li><b>Bałkany</b><br>Wyjazd turystyczno-eksploracyjny i Warsztaty Nurkowania Jaskiniowego za granicą, jeśli będą chętni.</li>
       </ul>
 
-<h4>majówka 2013</h4>
-      <ul>
-      <li><b>Bałkany</b><br>Wyjazd szkoleniowy</li>
-      </ul>
-
-<h4>30 maja - 2 czerwca </h4>
-      <ul>
-      <li><b>Warsztaty Nurkowania Jaskiniowego w Zimniku</b><br>Podczas tych WNJ zapoznamy uczestników nie tylko z technikami nurkowania jaskiniowego, ale także z technikami linowymi wykorzystywanymi podczas działań w suchych partiach jaskiń.</br></li>
-      </ul>
-	  
-<h4>czerwiec 2013</h4>
+<h4>6-8 czerwca 2014</h4>
       <ul>
       <li><b>Śląskie Manewry Ratownictwa Jaskiniowego</b><br>Uczestnictwo w pozorowanej, podwodnej akcji ratunkowej</li>
       </ul>	  
 	  
-<h4>czerwiec-lipiec 2013</h4>
+<h4>19-22 czerwca 2014</h4>
       <ul>
-      <li><b>Serbia</b><br></li>
+      <li><b>Warsztaty Nurkowania Jaskiniowego</b><br> Wstępnie w Sosnowcu</li>
       </ul>
 	  
-<h4>sierpień-wrzesień 2013</h4>
+<h4>lipiec 2014</h4>
       <ul>
-      <li><b>Macedonia i Kosowo</b><br>wyprawa eksploracyjna GNJ i SSS, pierwsze nurkowania w syfonach Slovackiej Jamy oraz dalsza eksploracja syfonów w głębi jaskiń Kosowa</li>
+      <li><b>Kosowo i Serbia</b><br>Dalsze eksploracje tamtejszych jaskiń</li>
       </ul>
+	  
+<h4>sierpień 2014</h4>
+      <ul>
+      <li><b>Macedonia i Albania</b><br>Pierwsze nurkowania w syfonach Slovackiej Jamy oraz turystyka nurkowo-jaskiniowa w południowej Albanii</li>
+      </ul>
+	  
+<h4>wrzesień 2014</h4>
+      <ul>
+      <li>Eksploracja na Malcie lub turystyka nurkowo-jaskiniowa w południowej Afryce</li>
+      </ul>
+	  
+<h4>październik 2014</h4>
+      <ul>
+      <li>Turystyka nurkowo-jaskiniowa w południowej Afryce lub eksploracja na Malcie</li>
+      </ul>
+	  
+
 
 </font>
 <br>

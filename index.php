@@ -45,24 +45,16 @@ $dots = '.';
 <br><br>
 -->
 
-<!--
-<font size="5">Kolejna edycja Warsztatów Nurkowania Jaskiniowego odbędzie się w dniach 26-29 września 2013 na Zakrzówku.</font> <br>
-<font size="3">Więcej informacji w sekcji <a class="hotinfo" href="./warsztaty/index.php">Warsztaty.</a> Zapraszamy</font></i>
-<br><br><br>
--->
-
-<!--
-<font size="5">Plany Grupy Nurków Jaskiniowych PZA na rok 2013</font> <br>
+<font size="4">Plany Grupy Nurków Jaskiniowych PZA na rok 2014</font> <br>
 <font size="3">Więcej informacji w sekcji <a class="hotinfo" href="./ogloszenia/index_plany.php">Ogłoszenia.</a><br></font></i>
 <br>
-<br>-->
+
+<font size="4"><font color=#d76a01>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.</font></font> <br>
+<font size="3"><font color=#d76a01>Więcej informacji w sekcji <a class="hotinfo" href="./warsztaty/index.php">Warsztaty.</a> Zapraszamy</font></font></i>
+<br><br>
+
 </div>
 
-
-
-
-
-<br>
 
 <!--
 <div align=left><p class="hotinfo">
@@ -113,7 +105,7 @@ $dots = '.';
   <a class="hotinfo" href="http://groups.google.com/group/PNJ-KTJ/subscribe?hl=pl">ZAPRASZAMY DO SUBSKRYPCJI !!!</a>
 </p></div>
 <br>
-<div align=center>
+<!--<div align=center>
 
 
   <table align=center>
@@ -128,7 +120,7 @@ $dots = '.';
 [ <a class="navi" href="./aktualnosci/index2005.php">Rok 2005</a> ]
 [ <a class="navi" href="./aktualnosci/index2006.php">Rok 2006</a> ]
 
-</div>
+</div>-->
 <br>
 
 <?php
@@ -164,15 +156,32 @@ ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Komati Springs – Sodwana 
 
 //------------------------------------------------------
 
+NewSection('Marzec 2014','section');
+
+StartList();
+
+ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Kolosy 2013',
+                   'Znamy już laureatów tegorocznych kolosów. Najbardziej dla nas radosne informacje to Kolos dla Marcina Gali za udział w eksploracji połączonej z nurkowaniem w jaskini J2 w Meksyku oraz wyróżnienie Mirosława Kopertowskiego za udział w eksploracji systemu jaskiniowego Huautla w Meksyku. Laureatom Kolosów oraz wyróżnionym serdecznie gratulujemy. Kolegom nurkom życzymy kolejnych wyzwań.', 
+				   '','',
+				   '11. Marca 2014','mp');
+				   
+ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Speleonurkowe eksploracje GNJ',
+                   'Kosowo Styczeń 2014', 
+				   $dots.'./article.php?id=2014kosowo&sec=swiat','Więcej',
+				   '11. Marca 2014','D.Graczyk');
+				   
+EndList ();
+
+
 NewSection('Listopad 2013','section');
 
 StartList();
-ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Speleonurkowe eksploracje GNJ',
+ExtendedListItem('Speleonurkowe eksploracje GNJ',
                    'Kosowo i Serbia VIII-IX 2013', 
 				   $dots.'./article.php?id=2013kosowoserbia&sec=swiat','Więcej',
 				   '14. Listopada 2013','D.Graczyk');
 
-ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>XVI Warsztaty Nurkowania Jaskiniowego',
+ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego',
                    'Relacja uczestnika jesiennej edycji XVI Warsztatów Nurkowania Jaskiniowego - Maćka Chomicza', 
 				   $dots.'./article.php?id=2013_3wnj&sec=warsztaty','Więcej',
 				   '12. Listopada 2013','M.Chomicz');
