@@ -13,6 +13,7 @@ renderCentral(true);
 ?>
 
 <link rel="stylesheet" href="../_css/flexslider.css" type="text/css" media="screen" />
+
 <script src="../_js/modernizr.js"></script>
 
 <!-- jQuery -->
@@ -29,6 +30,8 @@ $(window).load(function() {
     });
   });
 </script>
+
+
 
  <!-- ============================= CONTENT BEGIN   ========================================== -->
 <h1><?php echo $this->title; ?></h1>
@@ -49,17 +52,26 @@ $(window).load(function() {
 	
 	<?php while ($row = $this->imageIds->fetch_assoc()): ?>
 	    <li>
-	    	<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>"/>
+	        <a href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=small" rel="lightbox[set1]" title="AAAAA">
+	    	  <img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=small" alt="window"/>
+	    	</a>
 	    	<p class="flex-caption"><?php echo $row['description']; ?></p>
 	    </li>
-	<?php endwhile; ?>	
+	<?php endwhile; ?>
+	<li>
+	<object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/XRdFKLa1u7M"></param>	<embed src="http://www.youtube.com/v/XRdFKLa1u7M" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
+	
+	</li>	
   	</ul>
 </div>
 <?php endif; ?>
-        
 
 
- <!-- ============================= CONTENT END   ============================================ -->
+<a href="../1smallx.jpg" rel="lightbox[set2]" title="AAAA">AAAAA</a>
+<a href="../2smallx.jpg" rel="lightbox[set2]" title="AAAA">AAAAA</a>
+<a href="../3small.jpeg" rel="lightbox[set2]" title="AAAA">AAAAA</a>
+
+<!-- ============================= CONTENT END   ============================================ -->
 <?php 
 
 renderBottom($bSubdir);

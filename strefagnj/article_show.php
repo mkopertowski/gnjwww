@@ -43,8 +43,16 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     /* get image ids */
     $tbl_name="files"; // Table name
         
-    $sql="SELECT `description`, `id` FROM `files` WHERE articleId='$id'";
+    $sql="SELECT `description`, `id`, `name` FROM `files` WHERE articleId='$id'";
     $result_ids=$mysqli->query($sql);
+    
+    while ($row = $result_ids->fetch_assoc()) 
+    {
+    	createFileOnDisk($mysqli,$row['id']);
+    }
+
+    $sql="SELECT `description`, `id`, `name` FROM `files` WHERE articleId='$id'";
+    $result_ids=$mysqli->query($sql);    
     
 	/* prepare and publish article */
 	$Article = new Renderer("../_tpl/article.tpl.php");

@@ -46,6 +46,12 @@ function renderHead($bSubdir,$description="", $keywords="")
 		<meta http-equiv=content-type content="text/html; charset=UTF-8">	
 		<LINK rel="stylesheet" type="text/css" href="'.$dots.'/_php/css/css.css">
 		
+		<!-- mediabox advanced -->
+        <link rel="stylesheet" href="'.$dots.'/_css/mediaboxAdvBlack21.css" type="text/css" media="screen" /> 
+        <script src="'.$dots.'/_js/mootools-1.2.5-core-nc.js" type="text/javascript"></script> 
+        <script src="'.$dots.'/_js/quickie.js" type="text/javascript"></script> 
+        <script src="'.$dots.'/_js/mediaboxAdv-1.3.4b.js" type="text/javascript"></script>				
+								
 		<link rel="Shortcut icon" href="_gfx/favicon.ico">
 		<LINK rel="alternate" type="application/rss+xml" title="Grupa Nurków Jaskiniowych PZA RSS" href="http://www.gnj.org.pl/_rss/rss.xml">
 

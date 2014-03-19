@@ -28,5 +28,30 @@ function getAuthorFromAuthorID($mysqli,$authorID)
 	return $author;
 }
 
+function createFileOnDisk($mysqli,$id) 
+{
+		$query = "SELECT `name`, `dataSmall` FROM `files` WHERE `id` = {$id}";
+		$result = $mysqli->query($query);
+		 
+		if($result) {
+			// Make sure the result is valid
+			if($result->num_rows == 1) {
+				// Get the row
+				$row = $result->fetch_assoc();
+		
+				file_put_contents('../_tmp/'.$row['name'],$row['dataSmall']);
+				error_log ('XXXX../_php/'.$row['name']);
+				error_log ('XXXX'.get_current_user());
+				echo '../_tmp/'.$row['name'];
+			}
+			else {
+				echo 'Error! No image exists with that ID.';
+			}
+		}
+		else {
+			echo "Error! Query failed: <pre>{$mysqli->error}</pre>";
+		}
+}
+
 
 ?>
