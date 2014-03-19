@@ -21,21 +21,18 @@ if($bSubdir == true)
 		<td valign=top align=middle>
 			&nbsp;<br>
 			&nbsp;<br>
-<script language="JavaScript1.2" src="../_img/random/script1.js"></script><br>
-						<br>
+<script language="JavaScript1.2" src="../_img/random/script1.js"></script>
+						
 					</td>
 				</tr>
 </table>
-<br>
-
-
-<h2><font color="orange">Zapraszamy na Warsztaty Nurkowania Jaskiniowego</font></h2>
-
 
 <div align=center>
-<font color="red">
+<font color=#d76a01>
 <font size="4">
-<b></b><br><br>Kolejna edycja Warsztatów Nurkowania Jaskiniowego odbędzie się w dniach 26-29 września 2013 na Zakrzówku.<br><br> <b></b><br><br>
+<b>Zapraszamy na Warsztaty Nurkowania Jaskiniowego</b><br><br>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.
+<br><br>
+Kolejna edycja Warsztatów Nurkowania Jaskiniowego odbędzie się w weekend bożociałowy 19-22 czerwca 2014.<br> <b></b><br><br>
 </font>
 </font>
 </div>
