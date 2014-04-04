@@ -24,7 +24,7 @@ if($bSubdir == true)
 <h1>
 	OGŁOSZENIA
 </h1>
-<h3 align=right>Ostatnia aktualizacja: 29. Stycznia 2014</h3>
+<h3 align=right>Ostatnia aktualizacja: 3. Kwietnia 2014</h3>
 <h2>
  Plany Grupy Nurków Jaskiniowych PZA na rok 2014
 </h2>
@@ -86,15 +86,10 @@ Głównym celem wyprawy jest eksploracja syfonu na końcu jaskini Gryka e Madhe.
       <ul>
       <li><b>Macedonia i Albania</b><br>Pierwsze nurkowania w syfonach Slovackiej Jamy oraz turystyka nurkowo-jaskiniowa w południowej Albanii</li>
       </ul>
-	  
-<h4>wrzesień 2014</h4>
-      <ul>
-      <li>Eksploracja na Malcie lub turystyka nurkowo-jaskiniowa w południowej Afryce</li>
-      </ul>
-	  
+	  	  
 <h4>październik 2014</h4>
       <ul>
-      <li>Turystyka nurkowo-jaskiniowa w południowej Afryce lub eksploracja na Malcie</li>
+      <li>Turystyka nurkowo-jaskiniowa i eksploracja jaskiń na Malcie</li>
       </ul>
 	  
 
