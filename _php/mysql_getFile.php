@@ -33,7 +33,7 @@ if(isset($_GET['id'])) {
     				 
     				// Print headers
     				header("Content-Type: image/jpeg");
-    				header("Content-Disposition: inline; filename=". $row['name']);
+    				//header("Content-Disposition: inline; filename=". $row['name']);
     				 
     				echo $row['dataSmall']; // dataSmall is always jpeg
     			}
@@ -58,28 +58,24 @@ if(isset($_GET['id'])) {
     			if($result->num_rows == 1) {
     				// Get the row
     				$row = mysqli_fetch_assoc($result);
-
-    				ob_clean();
+    				 
+    				// Print headers
     				header("Content-Type: image/jpeg");
+    				header("Content-Disposition: inline; filename=". $row['name']);
+    				 
     				echo $row['dataSmall']; // dataSmall is always jpeg
-    				
-    				
-    				file_put_contents($row['name'],$row['dataSmall']);
-    				error_log ('XXXX../_php/'.$row['name']);
-    				/**/
-    				
-    				echo '../_php/'.$row['name'];
     			}
     			else {
     				echo 'Error! No image exists with that ID.';
-    			}
+    			}   
     			// Free the mysqli resources
     			@mysqli_free_result($result);
     		}
     		else {
-    			echo "Error! Query failed: <pre>{$mysqli->error}</pre>";
+    		    echo "Error! Query failed: <pre>{$mysqli->error}</pre>";
     		}
     		@mysqli_close($mysqli);
+    		
     	}        
     }
 }
