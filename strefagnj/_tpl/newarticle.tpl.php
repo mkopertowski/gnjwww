@@ -6,7 +6,7 @@
 <input name="title" type="text" id="title" size=120 value="<?php echo $this->title; ?>">
 
 <h2>Podtytuł <i>(opcjonalnie)</i>:</h2>
-<input name="subtitle" type="text" id="subtitle" size=120 value="<?php echo $this->subtitle; ?>">
+<textarea name="subtitle" id="text" cols="120" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
 
 <h2>Dział:</h2>
 	<select name="section" value="polska">
@@ -20,7 +20,7 @@
     </select>
     
 <h2>Treść:</h2>        
-<textarea name="text" id="text" cols="120" rows="20"><?php echo $this->text; ?></textarea>             
+<textarea name="text" id="text" cols="120" rows="20" maxlength="5000"><?php echo $this->text; ?></textarea>             
 <h2><input type="submit" name="Submit" value="Zapisz"></h2>
             
 <!-- ADMIN FIELDS -->

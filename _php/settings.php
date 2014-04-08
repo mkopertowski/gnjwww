@@ -11,5 +11,7 @@ $ARTICLE_IMAGE_MAX_NUM  = 15;   // maximum number of images in article
 $ARTICLE_IMAGE_SMALL_WIDTH = 600;
 $ARTICLE_IMAGE_SMALL_HEIGHT = 400;
 
+$ARTICLE_TABLE_NAME = "articles";
 
+$AKTUALNOSCI_LIMIT = 2;
 ?>

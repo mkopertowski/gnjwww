@@ -18,10 +18,10 @@ $authorid = $_SESSION['userid'];
 $sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit'";
 $result_edit=$mysqli->query($sql);
 
-$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='review'";
+$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='toreview'";
 $result_review=$mysqli->query($sql);
 
-$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='reviewed'";
+$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='ready'";
 $result_reviewed=$mysqli->query($sql);
 
 /* prepare and publish article */

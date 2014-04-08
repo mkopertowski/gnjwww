@@ -47,18 +47,21 @@ if($_SESSION['usertype'] == "admin")
 		{
 			/* use current user - no overwrite */
 			$authorid = $_SESSION['userid'];
+			$status = "edit";
 		}
 		else 
 		{
 			/* use author  */
 			$authorid = 0;
 			$author = $_POST['authortext'];
+			$status = "toreview";
 		}
 	}
 	else
 	{
 		/* use selected author  */
 		$authorid = $_POST['authorlist'];
+		$status = "toreview";
 	}
 	
 	if(isset($_SESSION['articleid'])){
@@ -69,7 +72,7 @@ if($_SESSION['usertype'] == "admin")
 	else 
 	{ 
 		/* insert */
-		$sql="INSERT INTO $tbl_name (authorid, author, title, subtitle, text, date, section) VALUES ('$authorid', '$author', '$title', '$subtitle', '$text', '$date', '$section')";
+		$sql="INSERT INTO $tbl_name (authorid, author, title, subtitle, text, date, section, status) VALUES ('$authorid', '$author', '$title', '$subtitle', '$text', '$date', '$section', '$status')";
 	}
 	
 	$result=$mysqli->query($sql);	

@@ -1,13 +1,20 @@
-<?php 
+<?php
 
-include('../../mysqlgnj.private');
+if(isset($GL_DIR)) {
+	include($GL_DIR.'/../mysqlgnj.private');
+} else {
+	include('../../mysqlgnj.private');
+} 
+
 
 // Connect to server and select databse.
 $mysqli = new mysqli("$host", "$sqlusername", "$sqlpassword", "$db_name");
 
 if ($mysqli->connect_errno) {
 	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+} else {
+	$mysqli->query("SET NAMES 'utf8'");
+} 
 
 function getAuthorFromAuthorID($mysqli,$authorID)
 {

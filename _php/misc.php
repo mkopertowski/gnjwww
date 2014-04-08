@@ -24,6 +24,15 @@ function formatDate($date)
 	return $formatedDate;
 }
 
+/* check if the date is in the last 3 months */
+function isRecentDate($date)
+{
+	$dtime = new DateTime($date);
+
+	return ($dtime->format("n") +3 > date("n"));
+}
+
+
 function getResizedImage($blob_binary, $desired_width, $desired_height)
 {
 	$im = imagecreatefromstring($blob_binary);

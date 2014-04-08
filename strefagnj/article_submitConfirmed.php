@@ -17,7 +17,7 @@ if(isset($_SESSION['articleId'])) {
    	$id = $_SESSION['articleId'];
    	$tbl_name = "articles";	
    
-   	$sql="UPDATE $tbl_name SET status='review' WHERE id='$id'";
+   	$sql="UPDATE $tbl_name SET status='toreview' WHERE id='$id'";
    	// Execute the query
    	$result = $mysqli->query($sql);
 	

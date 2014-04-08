@@ -19,7 +19,7 @@ if(isset($_SESSION['articleId'])) {
    
    	if($_SESSION['usertype'] == "admin")
    	{
-   		$sql="UPDATE $tbl_name SET status='reviewed' WHERE id='$id'";
+   		$sql="UPDATE $tbl_name SET status='ready' WHERE id='$id'";
    	}
    	// Execute the query
    	$result = $mysqli->query($sql);

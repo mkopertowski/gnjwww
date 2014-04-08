@@ -8,8 +8,12 @@ if($bSubdir == true)
 
 $dots = '.';
 
-@include('./_php/publication_supp.php');
+$GL_DIR = '.';
 
+@include('./_php/publication_supp.php');
+include('./_php/mysql.php');
+include('./_php/settings.php');
+include('./_php/misc.php');
 
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,2,false,'STRONA GŁÓWNA');
@@ -125,6 +129,37 @@ $dots = '.';
 
 <?php
 
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
+$result=$mysqli->query($sql);
+
+if($result) {
+	NewSection('AKTUALNOŚCI','section');
+	StartList();
+	
+	while ($row = $result->fetch_assoc()) {
+		
+		$author = $row['author'];
+		if($author == "")
+		{
+			$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
+		}
+		
+		$date = formatDate($row['date']);
+
+		$title = $row['title'];
+		if(isRecentDate($row['date'])) {
+			$title = '<IMG src="./_gfx/new.gif" border=0>'.$title;
+		}
+		
+		ExtendedListItem($title,$row['subtitle'],
+		                 '','',
+		                 $date,$author);
+	}
+	
+	EndList ();
+}
+	
+
 /*
   ExtendedListItem('',
                    '...',
@@ -159,11 +194,6 @@ ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Komati Springs – Sodwana 
 NewSection('Marzec 2014','section');
 
 StartList();
-
-ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Kolosy 2013',
-                   'Znamy już laureatów tegorocznych kolosów. Najbardziej dla nas radosne informacje to Kolos dla Marcina Gali za udział w eksploracji połączonej z nurkowaniem w jaskini J2 w Meksyku oraz wyróżnienie Mirosława Kopertowskiego za udział w eksploracji systemu jaskiniowego Huautla w Meksyku. Laureatom Kolosów oraz wyróżnionym serdecznie gratulujemy. Kolegom nurkom życzymy kolejnych wyzwań.', 
-				   '','',
-				   '11. Marca 2014','mp');
 				   
 ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Speleonurkowe eksploracje GNJ',
                    'Kosowo Styczeń 2014', 
