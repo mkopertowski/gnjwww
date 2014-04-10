@@ -67,17 +67,26 @@ if(isset($_FILES['uploaded_file'])) {
 	    	// small images are always jpeg
 	    	$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
 	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, 60);
-	    	$dataSmall = ob_get_contents(); //store stdout in $img2
+	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_SMALL_QUALITY);
+	    	$dataSmall = ob_get_contents(); //store stdout
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
-	    		    	
+
+	    	// normal images are always jpeg
+	    	$image = getResizedImage($data, $ARTICLE_IMAGE_NORMAL_WIDTH, $ARTICLE_IMAGE_NORMAL_HEIGHT);
+	    	ob_clean(); //Stdout --> buffer
+	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_NORMAL_QUALITY);
+	    	$dataNormal = ob_get_contents(); //store stdout
+	    	ob_clean(); //clear buffer
+	    	imagedestroy($image); //destroy img
+
 	    	$data = $mysqli->real_escape_string($data);
 	    	$dataSmall = $mysqli->real_escape_string($dataSmall);
+	    	$dataNormal = $mysqli->real_escape_string($dataNormal);
 	    	
 	    	// Create the SQL query
-	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `dataSmall`, `description`, `articleId`) VALUES (
-	    	'{$name}', '{$mime}', '{$data}', '{$dataSmall}', '{$description}', '{$id}')";
+	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `data800x532`, `data400x266`, `description`, `articleId`) VALUES (
+	    	'{$name}', '{$mime}', '{$data}', '{$dataNormal}', '{$dataSmall}', '{$description}', '{$id}')";
 	    	
 	    	// Execute the query
 	    	$result = $mysqli->query($sql);

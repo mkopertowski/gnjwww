@@ -55,5 +55,16 @@ function getResizedImage($blob_binary, $desired_width, $desired_height)
 	return $new;
 }
 
+function strReplaceNth($search, $replace, $input, $nth)
+{
+	$found = preg_match_all('/'.preg_quote($search).'/', $input, $matches, PREG_OFFSET_CAPTURE);
+	if (false !== $found && $found > $nth) {
+		return substr_replace($input, $replace, $matches[0][$nth][1], strlen($search));
+	} else {
+		return $input.$replace;
+	}
+}
+
+
 
 ?>

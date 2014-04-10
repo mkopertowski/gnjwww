@@ -18,28 +18,27 @@ renderCentral(true);
 <B>
 <P align="right"><?php echo $this->date; ?></P></B> 
 
-<?php echo $this->text; ?>
+<?php echo $this->text1; ?>
+
+<?php if( $this->imageIds->num_rows > 0): ?>
+	<div class="flexslider" align="center">
+	<ul class="slides">	
+	<?php while ($row = $this->imageIds->fetch_assoc()): ?>
+		<li>
+			<a class="fancybox" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data800x532" data-fancybox-group="gallery" title="<?php echo $row['description']; ?>">
+				<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data400x266" alt=""/>
+			</a>
+			<p class="flex-caption"><?php echo $row['description']; ?></p>
+		</li>
+	<?php endwhile; ?>
+	</ul>
+	</div>
+<?php endif; ?>
+
+<?php echo $this->text2; ?>
 
 <BR><P align="right"><B><?php echo $this->author; ?><BR></B></P>
 
-<BR><BR><BR>
-
-<?php if( $this->imageIds->num_rows > 0): ?>
-
-<div class="flexslider" align="middle">
-	<ul class="slides">	
-
-	<?php while ($row = $this->imageIds->fetch_assoc()): ?>
-	    <li>
-	    <a class="fancybox" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=small" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-	    	<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=small" alt=""/>
-	    	     </a>
-	    	<p class="flex-caption"><?php echo $row['description']; ?></p>
-	    </li>
-	<?php endwhile; ?>
-  	</ul>
-</div>
-<?php endif; ?>
 
 <!-- ============================= CONTENT END   ============================================ -->
 <?php 

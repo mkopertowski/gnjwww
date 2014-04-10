@@ -20,9 +20,9 @@ if(isset($_GET['id'])) {
     else {   
         // Fetch the file information
         
-    	if($type == "small")
+    	if($type == "data800x532")
     	{
-    		$query = "SELECT `name`, `dataSmall` FROM `files` WHERE `id` = {$id}";
+    		$query = "SELECT `name`, `data800x532` FROM `files` WHERE `id` = {$id}";
     		$result = $mysqli->query($query);
     		 
     		if($result) {
@@ -33,9 +33,8 @@ if(isset($_GET['id'])) {
     				 
     				// Print headers
     				header("Content-Type: image/jpeg");
-    				//header("Content-Disposition: inline; filename=". $row['name']);
     				 
-    				echo $row['dataSmall']; // dataSmall is always jpeg
+    				echo $row['data800x532']; // dataSmall is always jpeg
     			}
     			else {
     				echo 'Error! No image exists with that ID.';
@@ -48,9 +47,9 @@ if(isset($_GET['id'])) {
     		}
     		@mysqli_close($mysqli);
     	}
-    	else 
+    	else if($type == "data400x266")
     	{
-    		$query = "SELECT `name`, `dataSmall` FROM `files` WHERE `id` = {$id}";
+    		$query = "SELECT `name`, `data400x266` FROM `files` WHERE `id` = {$id}";
     		$result = $mysqli->query($query);
     		 
     		if($result) {
@@ -61,9 +60,9 @@ if(isset($_GET['id'])) {
     				 
     				// Print headers
     				header("Content-Type: image/jpeg");
-    				header("Content-Disposition: inline; filename=". $row['name']);
+    				//header("Content-Disposition: inline; filename=". $row['name']);
     				 
-    				echo $row['dataSmall']; // dataSmall is always jpeg
+    				echo $row['data400x266']; // dataSmall is always jpeg
     			}
     			else {
     				echo 'Error! No image exists with that ID.';

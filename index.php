@@ -151,8 +151,15 @@ if($result) {
 			$title = '<IMG src="./_gfx/new.gif" border=0>'.$title;
 		}
 		
+		$link = '';
+		$link_text = '';
+		if($row['text'] != '') {
+			$link = '_php/show.php?id='.$row['id'];
+			$link_text = 'Więcej';
+		}
+		
 		ExtendedListItem($title,$row['subtitle'],
-		                 '','',
+		                 $link,$link_text,
 		                 $date,$author);
 	}
 	

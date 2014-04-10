@@ -19,8 +19,8 @@
 		?>
     </select>
     
-<h2>Treść:</h2>        
-<textarea name="text" id="text" cols="120" rows="20" maxlength="5000"><?php echo $this->text; ?></textarea>             
+<h2>Treść (używaj składni wiki markup):</h2>        
+<textarea name="text" id="text" cols="120" rows="20" maxlength="10000"><?php echo $this->text; ?></textarea>             
 <h2><input type="submit" name="Submit" value="Zapisz"></h2>
             
 <!-- ADMIN FIELDS -->
