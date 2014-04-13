@@ -32,6 +32,14 @@ function isRecentDate($date)
 	return ($dtime->format("n") +3 > date("n"));
 }
 
+/* check if the date is in the last 3 months */
+function GetYearFromDate($date)
+{
+	$dtime = new DateTime($date);
+
+	return $dtime->format("Y");
+}
+
 
 function getResizedImage($blob_binary, $desired_width, $desired_height)
 {

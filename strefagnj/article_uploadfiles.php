@@ -34,6 +34,7 @@ if($result->num_rows == 1)
 
 	$row = $result->fetch_assoc();
 	$Page->set("title",$row['title']);
+	$Page->set("maxPhotos",$ARTICLE_IMAGE_MAX_NUM);
 		
 	if(isset($_SESSION['info'])){
 		$info = "<big>".$_SESSION['info']."</big><br>";

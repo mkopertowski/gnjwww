@@ -61,4 +61,29 @@ function createFileOnDisk($mysqli,$id)
 }
 
 
+function ExtendedListItemMYSQL($row,$dir)
+{
+	$author = $row['author'];
+	if($author == "")
+	{
+		$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
+	}
+
+	$date = formatDate($row['date']);
+
+	$title = $row['title'];
+	if(isRecentDate($row['date'])) {
+		$title = '<IMG src="'.$dir.'/_gfx/new.gif" border=0>'.$title;
+	}
+
+	$link = '';
+	$link_text = '';
+	if($row['text'] != '') {
+		$link = $dir.'/_php/show.php?id='.$row['id'];
+		$link_text = 'Więcej';
+	}
+
+	ExtendedListItem($title,$row['subtitle'],$link,$link_text,$date,$author);
+}
+
 ?>

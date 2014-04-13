@@ -3,10 +3,10 @@
 <form name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
        	
 <h2>Tytuł:</h2>
-<input name="title" type="text" id="title" size=120 value="<?php echo $this->title; ?>">
+<input name="title" type="text" id="title" size=115 value="<?php echo $this->title; ?>">
 
-<h2>Podtytuł <i>(opcjonalnie)</i>:</h2>
-<textarea name="subtitle" id="text" cols="120" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
+<h2>Podtytuł <i>(będzie pokazany na stronie głównej pod tytyłem)</i>:</h2>
+<textarea name="subtitle" id="text" cols="113" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
 
 <h2>Dział:</h2>
 	<select name="section" value="polska">
@@ -19,8 +19,26 @@
 		?>
     </select>
     
-<h2>Treść (używaj składni wiki markup):</h2>        
-<textarea name="text" id="text" cols="120" rows="20" maxlength="10000"><?php echo $this->text; ?></textarea>             
+<h2>Treść (używaj składni wiki markup):</h2>
+
+<ul>
+    <li>== Nagłówek 1 ==</li>
+    <li>=== Nagłówek 2 ===</li>
+    <li>==== Nagłówek 3 ====</li>
+    <li>''''' Bold-italic '''''</li>
+    <li>''' Bold '''</li>
+    <li>'' Italic ''</li>
+    <li>---- Horizontal Line</li>
+    <li>: Indentation</li>
+    <li>:: Subindentation</li>
+    <li>* Nienumerowana lista</li>
+    <li># Numerowana lista</li>
+    <li>[http://example.com Nazwa_Linka] link</li>
+    <li>pusta linia - nowy akapit</li>
+</ul>
+<BR>
+
+<textarea name="text" id="text" cols="113" rows="40" maxlength="10000"><?php echo $this->text; ?></textarea>             
 <h2><input type="submit" name="Submit" value="Zapisz"></h2>
             
 <!-- ADMIN FIELDS -->
@@ -39,7 +57,16 @@ $( "#datepicker" ).datepicker();
  
 <h1>Pola administratora bazy:</h1>
 
-<p><i>(ustaw tylko gdy chcesz nadpisać domyślne wartości)</i></p>
+<h2>Tagi (do filtrowania SQL):</h2>
+<input name="sql_tags" type="text" id="title" size=115 value="<?php echo $this->sql_tags; ?>">
+    
+<h2>HTML "keywords" (słowa powinny byc użyte na stronie)</h2>
+<input name="html_keywords" type="text" id="title" size=115 value="<?php echo $this->html_keywords; ?>">
+
+<h2>HTML "description"</h2>
+<input name="html_description" type="text" id="title" size=115 value="<?php echo $this->html_description; ?>">
+<BR><BR><BR>
+<p><i>(ponizej ustaw tylko gdy chcesz nadpisać domyślne wartości)</i></p>
 
 <h2>Autor artykułu:</h2>
 	<select name="authorlist">
