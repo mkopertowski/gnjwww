@@ -175,18 +175,6 @@ ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Komati Springs – Sodwana 
 
 //------------------------------------------------------
 
-NewSection('Marzec 2014','section');
-
-StartList();
-				   
-ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Speleonurkowe eksploracje GNJ',
-                   'Kosowo Styczeń 2014', 
-				   $dots.'./article.php?id=2014kosowo&sec=swiat','Więcej',
-				   '11. Marca 2014','D.Graczyk');
-				   
-EndList ();
-
-
 NewSection('Listopad 2013','section');
 
 StartList();
