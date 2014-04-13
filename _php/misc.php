@@ -50,11 +50,23 @@ function getResizedImage($blob_binary, $desired_width, $desired_height)
 
 	if($x>$y)
 	{
-		$desired_height = $desired_width / $aspectratio;
+		$height = $desired_width / $aspectratio;
+		
+		if($height>$desired_height) {
+			$desired_width = $desired_height * $aspectratio;
+		} else {
+			$desired_height = $height;
+		} 	
 	}
 	else
 	{
-		$desired_width = $desired_height * $aspectratio;
+		$width = $desired_height * $aspectratio;
+		
+		if($height>$desired_height) {
+			$desired_height = $desired_width * $aspectratio;
+		} else {
+			$desired_width = $width;
+		}
 	}
 
 	$new = imagecreatetruecolor($desired_width, $desired_height) or exit("bad url");

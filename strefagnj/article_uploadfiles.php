@@ -7,6 +7,8 @@ if(!isset($_SESSION['email'])){
 
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
+include("../_php/settings.php");
+
 
 $_SESSION['articleId'] = $_REQUEST['id'];
 
