@@ -1,7 +1,7 @@
 <?php
 
 $bSubdir = true;
-$sInclude = './_php/page.php';
+$sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
