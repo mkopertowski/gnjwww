@@ -1,7 +1,7 @@
 <?php
 
 $bSubdir = true;
-$sInclude = './_php/page.php';
+$sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
@@ -13,26 +13,26 @@ if($bSubdir == true)
 ?>
 <!--============================= CONTENTS START ==========================================-->
 <h1>
-	W³ochy - luty '05<br>Sprawozdanie
+	WÅ‚ochy - luty '05<br>Sprawozdanie
 </h1>
 
 <a class="navi" href="#gf">Informacje o Grotta dei Fontanazzi</a><br>&nbsp;<br>
 
-<b>Cel wyjazdu:</b> jaskinia Elephante Bianco, W³ochy, pasmo górskie Dolomiti.<br>
+<b>Cel wyjazdu:</b> jaskinia Elephante Bianco, WÅ‚ochy, pasmo gÃ³rskie Dolomiti.<br>
 <b>Termin:</b> 3-6.02.2005<br>
-<b>Uczestnicy:</b> Maciej MC Czykierda, Rafa³ Górecki, Pawe³ Porêba, Jacek Po¿eg, Przemys³aw Stasiak, Volkswagen T4<br>&nbsp;<br>
+<b>Uczestnicy:</b> Maciej MC Czykierda, RafaÅ‚ GÃ³recki, PaweÅ‚ PorÄ™ba, Jacek PoÅ¼eg, PrzemysÅ‚aw Stasiak, Volkswagen T4<br>&nbsp;<br>
 
-Dla tych, którzy nie lubi¹ du¿o czytaæ podsumowanie: <b>Cel zosta³ osi¹gniêty.</b><br>&nbsp;<br>
-G³êbokoœci osi¹gniête w <b>Elephante Bianco</b> to:
+Dla tych, ktÃ³rzy nie lubiÄ… duÅ¼o czytaÄ‡ podsumowanie: <b>Cel zostaÅ‚ osiÄ…gniÄ™ty.</b><br>&nbsp;<br>
+GÅ‚Ä™bokoÅ›ci osiÄ…gniÄ™te w <b>Elephante Bianco</b> to:
 <ul class="normal">
 	<li class="normal">
-		85 m - Pawe³ Porêba
+		85 m - PaweÅ‚ PorÄ™ba
 	</li>
 	<li class="normal">
-		70 m - Rafa³ Górecki
+		70 m - RafaÅ‚ GÃ³recki
 	</li>
 	<li class="normal">
-		66 m - Jacek Po¿eg
+		66 m - Jacek PoÅ¼eg
 	</li>
 	<li class="normal">
 		50 m - Przemek Stasiak
@@ -42,60 +42,60 @@ G³êbokoœci osi¹gniête w <b>Elephante Bianco</b> to:
 	</li>
 </ul>
 
-G³êbokoœci/odleg³oœci osi¹gniête w <b>Grotta dei Fontanazzi</b> to:
+GÅ‚Ä™bokoÅ›ci/odlegÅ‚oÅ›ci osiÄ…gniÄ™te w <b>Grotta dei Fontanazzi</b> to:
 <ul class="normal">
 	<li class="normal">
-		g³. 30 m d³. 250 m - g³ówny ci¹g - Pawe³ Porêba
+		gÅ‚. 30 m dÅ‚. 250 m - gÅ‚Ã³wny ciÄ…g - PaweÅ‚ PorÄ™ba
 	</li>
 	<li class="normal">
-		g³. 30 m d³. 250 m - g³ówny ci¹g - Rafa³ Górecki
+		gÅ‚. 30 m dÅ‚. 250 m - gÅ‚Ã³wny ciÄ…g - RafaÅ‚ GÃ³recki
 	</li>
 	<li class="normal">
-		g³. 30 m d³. 250 m - g³ówny ci¹g, powrót obejœciem przez boczny ci¹g - Maciek Czykierda
+		gÅ‚. 30 m dÅ‚. 250 m - gÅ‚Ã³wny ciÄ…g, powrÃ³t obejÅ›ciem przez boczny ciÄ…g - Maciek Czykierda
 	</li>
 </ul>
 
-<b>Podró¿:</b> do W³och trwa³a 15 godzin, a z powrotem 13 godzin.<br>
+<b>PodrÃ³Å¼:</b> do WÅ‚och trwaÅ‚a 15 godzin, a z powrotem 13 godzin.<br>
 
-<p>Na pocz¹tku grupa sk³ada³a siê dodatkowo z Krzysztofa K³osiñskiego, a zamiast Paw³a mia³ jechaæ W³odek Szymanowski. Z powodu choroby rebreather'a (ejakulacjo oring prekoks) i Krzyœka (grypa) ukonstytuowa³ siê sk³ad jak wy¿ej. Zamieszanie, jakie powsta³o podczas zmiany sk³adu grupy spowodowa³o dwugodzinne opóŸnienie wyjazdu. Na miejscu, czyli w miejscowoœci Valstagna byliœmy oko³o godz. 7. w pi¹tek.</p>
+<p>Na poczÄ…tku grupa skÅ‚adaÅ‚a siÄ™ dodatkowo z Krzysztofa KÅ‚osiÅ„skiego, a zamiast PawÅ‚a miaÅ‚ jechaÄ‡ WÅ‚odek Szymanowski. Z powodu choroby rebreather'a (ejakulacjo oring prekoks) i KrzyÅ›ka (grypa) ukonstytuowaÅ‚ siÄ™ skÅ‚ad jak wyÅ¼ej. Zamieszanie, jakie powstaÅ‚o podczas zmiany skÅ‚adu grupy spowodowaÅ‚o dwugodzinne opÃ³Åºnienie wyjazdu. Na miejscu, czyli w miejscowoÅ›ci Valstagna byliÅ›my okoÅ‚o godz. 7. w piÄ…tek.</p>
 
 <table>
 	<tr>
 		<td>
-			<img src="./img/wlocy.02.2005.przemek.stasiak_01.jpg" alt="Rafa³ wp³ywa do Elephante Bianco" height=300 width=400><br>
-			<i>Rafa³ wp³ywa do Elephante Bianco</i>
+			<img src="./img/wlocy.02.2005.przemek.stasiak_01.jpg" alt="RafaÅ‚ wpÅ‚ywa do Elephante Bianco" height=300 width=400><br>
+			<i>RafaÅ‚ wpÅ‚ywa do Elephante Bianco</i>
 		</td>
 		<td>
-			<img src="./img/wlocy.02.2005.przemek.stasiak_02.jpg" alt="Wejœcie do Elephante Bianco" height=300 width=400><br>
-			<i>Wejœcie do Elephante Bianco</i>
+			<img src="./img/wlocy.02.2005.przemek.stasiak_02.jpg" alt="WejÅ›cie do Elephante Bianco" height=300 width=400><br>
+			<i>WejÅ›cie do Elephante Bianco</i>
 		</td>
 	</tr>
 </table>
 
 
-<p>Przygotowania do nurkowania w Elephante Bianco rozpoczê³y siê o godz 9. Nurkowania odbywa³y siê bez zak³óceñ, przejrzystoœæ wody dochodzi³a do 30 m. Jako pierwszy zanurkowa³ mój Twinset - trochê siê obrazi³em na niego, bo zanurkowa³ sam. Korzystaj¹c ze sprzêtu Rafa³a wyci¹gn¹³em twina, przeprosiliœmy siê i dalsze nurkowania wykonywaliœmy razem. Pierwsze nurkowanie by³o dla mnie rekonesansem w tej piêknej jaskini, wiêkszoœæ czasu poœwiêci³em na fotografowanie. W pewnym momencie miêdzy g³azy wpad³ mi konwerter szerokok¹tny i mimo prób wyd³ubania kijem nie odzyska³em zguby, ale dziêki temu wykona³em kilka zdjêæ swoim kolegom. Ka¿dy z nich wyp³ywaj¹c z jaskini, z wielkim zainteresowaniem sprawdza³, co takiego próbujê wygrzebaæ. Muszê przyznaæ, ¿e tylko g³owa Rafa³a nie zmieœci³a siê razem z kijem-pogrzebaczem miêdzy g³azami.</p>
-<p>Moje drugie nurkowanie mia³o tytu³ Konwerter Reskju Dajw i przeprowadzi³em je po konsultacjach z Maækiem i Rafa³em, którzy pomogli mi zbudowaæ Konwerter Fajnder Stik (na zdjêciach Maæka) - odzyska³em szkie³ko.</p>
-<p>Wieczorem Maciek sterroryzowa³ Rafa³a i kaza³ Mu siê obudziæ, a nastêpnie zawieŸæ siebie do jaskini <b>Grotta dei Fontanazzi</b> na rekonesans. Rekonesans przyniós³ rezultaty, bo w sobotê Maciek, Pawe³ i Rafa³ wykonali nurkowania w tej jaskini. Ja i Jacek Po¿eg zanurkowaliœmy jeszcze raz w Elephante Bianco. Tym razem sp³yn¹³em na 50m. Jacek by³ na 40 m. Dla mnie i dla Jacka by³o to jedno z najpiêkniejszych nurkowañ w ¿yciu.</p>
-<p>W ci¹gu dwóch dni spêdzonych przy wejœciu do jaskini spotkaliœmy ok. 10 w³oskich nurków. Jesteœmy pod wra¿eniem sprzêtu (CCR i SCR) i spokoju, z jakim nurkowali. Jedna para zafundowa³a nam nawet ciep³y obiad (po¿yczyli nam zapalniczkê).</p>
-<p>Po przetransportowaniu sprzêtu i za³adunku wyjechaliœmy o 16.30 w sobotê.</p>
+<p>Przygotowania do nurkowania w Elephante Bianco rozpoczÄ™Å‚y siÄ™ o godz 9. Nurkowania odbywaÅ‚y siÄ™ bez zakÅ‚Ã³ceÅ„, przejrzystoÅ›Ä‡ wody dochodziÅ‚a do 30 m. Jako pierwszy zanurkowaÅ‚ mÃ³j Twinset - trochÄ™ siÄ™ obraziÅ‚em na niego, bo zanurkowaÅ‚ sam. KorzystajÄ…c ze sprzÄ™tu RafaÅ‚a wyciÄ…gnÄ…Å‚em twina, przeprosiliÅ›my siÄ™ i dalsze nurkowania wykonywaliÅ›my razem. Pierwsze nurkowanie byÅ‚o dla mnie rekonesansem w tej piÄ™knej jaskini, wiÄ™kszoÅ›Ä‡ czasu poÅ›wiÄ™ciÅ‚em na fotografowanie. W pewnym momencie miÄ™dzy gÅ‚azy wpadÅ‚ mi konwerter szerokokÄ…tny i mimo prÃ³b wydÅ‚ubania kijem nie odzyskaÅ‚em zguby, ale dziÄ™ki temu wykonaÅ‚em kilka zdjÄ™Ä‡ swoim kolegom. KaÅ¼dy z nich wypÅ‚ywajÄ…c z jaskini, z wielkim zainteresowaniem sprawdzaÅ‚, co takiego prÃ³bujÄ™ wygrzebaÄ‡. MuszÄ™ przyznaÄ‡, Å¼e tylko gÅ‚owa RafaÅ‚a nie zmieÅ›ciÅ‚a siÄ™ razem z kijem-pogrzebaczem miÄ™dzy gÅ‚azami.</p>
+<p>Moje drugie nurkowanie miaÅ‚o tytuÅ‚ Konwerter Reskju Dajw i przeprowadziÅ‚em je po konsultacjach z MaÄ‡kiem i RafaÅ‚em, ktÃ³rzy pomogli mi zbudowaÄ‡ Konwerter Fajnder Stik (na zdjÄ™ciach MaÄ‡ka) - odzyskaÅ‚em szkieÅ‚ko.</p>
+<p>Wieczorem Maciek sterroryzowaÅ‚ RafaÅ‚a i kazaÅ‚ Mu siÄ™ obudziÄ‡, a nastÄ™pnie zawieÅºÄ‡ siebie do jaskini <b>Grotta dei Fontanazzi</b> na rekonesans. Rekonesans przyniÃ³sÅ‚ rezultaty, bo w sobotÄ™ Maciek, PaweÅ‚ i RafaÅ‚ wykonali nurkowania w tej jaskini. Ja i Jacek PoÅ¼eg zanurkowaliÅ›my jeszcze raz w Elephante Bianco. Tym razem spÅ‚ynÄ…Å‚em na 50m. Jacek byÅ‚ na 40 m. Dla mnie i dla Jacka byÅ‚o to jedno z najpiÄ™kniejszych nurkowaÅ„ w Å¼yciu.</p>
+<p>W ciÄ…gu dwÃ³ch dni spÄ™dzonych przy wejÅ›ciu do jaskini spotkaliÅ›my ok. 10 wÅ‚oskich nurkÃ³w. JesteÅ›my pod wraÅ¼eniem sprzÄ™tu (CCR i SCR) i spokoju, z jakim nurkowali. Jedna para zafundowaÅ‚a nam nawet ciepÅ‚y obiad (poÅ¼yczyli nam zapalniczkÄ™).</p>
+<p>Po przetransportowaniu sprzÄ™tu i zaÅ‚adunku wyjechaliÅ›my o 16.30 w sobotÄ™.</p>
 
 <h3 align=right>Przemek Stasiak</h3>
-<div align=right>Zdjêcia: Przemek Stasiak (podwodne), Maciek Czykierda</div>
+<div align=right>ZdjÄ™cia: Przemek Stasiak (podwodne), Maciek Czykierda</div>
 
 <a name="gf">
 <h3>Informacje o Grotta dei Fontanazzi</h3>
 
-<p>Rownolegle do nurkowañ w Elephante Bianco zlokalizowano przez Rafa³a Góreckiego i Maæka Czykierdê now¹ dla nas jaskiniê <b>Grotta dei Fontanazzi</b>. Jako ¿e studnia wejœciowa mia³¹ byæ doœæ ciasna, Maciek Czykierda jeszcze w pi¹tek wieczorem zanurkowa³ w konfiguracji bocznej w celu rekonesansu i wykorzystuj¹c napoczête nurkowaniem w Elephante Bianco butle osi¹gn¹³ 170 metr g³ównego ci¹gu. Nazajutrz Pawe³ Porêba, Rafa³ Górecki i Maciek Czykierda powrócili do jaskini. Chwile oczekiwano na w³oskiego nurka, który koñczy³ swoje eksploracyjne nurkowanie i przy okazji dostarczy³ wielu ciekawych informacji n/t jaskini. Obecnie jest ona eksplorowana przez klub GGG Modon, osi¹gne³a d³ugoœæ ponad 1700 metrów i g³êbokoœæ ponad 120 metrów z du¿¹ szans¹ na pog³êbienie (eksploracjê zakoñczono nad studni¹ prowadz¹c¹ znacznie g³êbiej). W³och zdj¹³ nasze oporêczowanie studni wejœciowej, gdy¿ uwa¿a³ je za niebezpieczne - i faktycznie, ju¿ w trakcie wynurzania siê  podczas rekonesansu Maciek Czykierda stwierdzi³, ¿e studniê wejœciow¹ (a w zasadzie system poziomych szczelin) mo¿na w miarê ³atwo pokonaæ nie k³ad¹c porêczówki, która mo¿e wrêcz przeszkadzaæ, lecz pozostawi³ porêczówkê w celu pokazania kolegom w³aœciwej drogi wejœcia w system.</p>
-<p>Nurkowanie jako pierwszy zacz¹³ Rafa³ Górecki z dwoma osiemnastkami na plecach. Dotarcie do ci¹gu g³ównego, fantastycznie zaporêczowanego kablem elektrycznym i link¹ fi 6 mm zajê³o mu ponad 10 minut, co œwiadczy o ciasnotach. Po wynurzeniu stwierdzi³, ¿e choæ jest ciasno, to przy odrobinie spokoju jest mo¿liwe nurkowanie nawet razem z depozytami.</p>
-<p>Nastêpny zanurkowa³ Pawe³ Porêba, równie¿ z twinsetem, tym razem piêtnastek. Obydwoje osiagnêli g³êbokoœæ rzêdu 30 metrów i 250-ty metr g³ównego ci¹gu, wracaj¹c nim do otworu.</p>
-<p>Na koñcu zanurkowa³ Maciek Czykierda, osi¹gn¹³ równie¿ 250 - 260 metr g³ównego ci¹gu, wraca³ jednak przez obejœcie, od którego z kolei prowadzi³y dalsze, ciaœniejsze korytarze, bêd¹ce celem nurkowania W³ocha.</p>
-<p>Podsumowuj¹c, uczestnicy nurkowañ w tej jaskini twierdz¹, ¿e jest to jedna z najpiêkniejszych jaskiñ w których nurkowali. Du¿a rozleg³oœæ horyzontalna, przy g³êbokoœciach nitroksowych, powoduje, ¿e jest idealn¹ jaskini¹ do æwiczenia d³ugich dystansowo nurkowañ. G³ówny ci¹g jaskini nadaje siê do p³ywania za pomoc¹ skuterów.</p>
+<p>Rownolegle do nurkowaÅ„ w Elephante Bianco zlokalizowano przez RafaÅ‚a GÃ³reckiego i MaÄ‡ka CzykierdÄ™ nowÄ… dla nas jaskiniÄ™ <b>Grotta dei Fontanazzi</b>. Jako Å¼e studnia wejÅ›ciowa miaÅ‚Ä… byÄ‡ doÅ›Ä‡ ciasna, Maciek Czykierda jeszcze w piÄ…tek wieczorem zanurkowaÅ‚ w konfiguracji bocznej w celu rekonesansu i wykorzystujÄ…c napoczÄ™te nurkowaniem w Elephante Bianco butle osiÄ…gnÄ…Å‚ 170 metr gÅ‚Ã³wnego ciÄ…gu. Nazajutrz PaweÅ‚ PorÄ™ba, RafaÅ‚ GÃ³recki i Maciek Czykierda powrÃ³cili do jaskini. Chwile oczekiwano na wÅ‚oskiego nurka, ktÃ³ry koÅ„czyÅ‚ swoje eksploracyjne nurkowanie i przy okazji dostarczyÅ‚ wielu ciekawych informacji n/t jaskini. Obecnie jest ona eksplorowana przez klub GGG Modon, osiÄ…gneÅ‚a dÅ‚ugoÅ›Ä‡ ponad 1700 metrÃ³w i gÅ‚Ä™bokoÅ›Ä‡ ponad 120 metrÃ³w z duÅ¼Ä… szansÄ… na pogÅ‚Ä™bienie (eksploracjÄ™ zakoÅ„czono nad studniÄ… prowadzÄ…cÄ… znacznie gÅ‚Ä™biej). WÅ‚och zdjÄ…Å‚ nasze oporÄ™czowanie studni wejÅ›ciowej, gdyÅ¼ uwaÅ¼aÅ‚ je za niebezpieczne - i faktycznie, juÅ¼ w trakcie wynurzania siÄ™  podczas rekonesansu Maciek Czykierda stwierdziÅ‚, Å¼e studniÄ™ wejÅ›ciowÄ… (a w zasadzie system poziomych szczelin) moÅ¼na w miarÄ™ Å‚atwo pokonaÄ‡ nie kÅ‚adÄ…c porÄ™czÃ³wki, ktÃ³ra moÅ¼e wrÄ™cz przeszkadzaÄ‡, lecz pozostawiÅ‚ porÄ™czÃ³wkÄ™ w celu pokazania kolegom wÅ‚aÅ›ciwej drogi wejÅ›cia w system.</p>
+<p>Nurkowanie jako pierwszy zaczÄ…Å‚ RafaÅ‚ GÃ³recki z dwoma osiemnastkami na plecach. Dotarcie do ciÄ…gu gÅ‚Ã³wnego, fantastycznie zaporÄ™czowanego kablem elektrycznym i linkÄ… fi 6 mm zajÄ™Å‚o mu ponad 10 minut, co Å›wiadczy o ciasnotach. Po wynurzeniu stwierdziÅ‚, Å¼e choÄ‡ jest ciasno, to przy odrobinie spokoju jest moÅ¼liwe nurkowanie nawet razem z depozytami.</p>
+<p>NastÄ™pny zanurkowaÅ‚ PaweÅ‚ PorÄ™ba, rÃ³wnieÅ¼ z twinsetem, tym razem piÄ™tnastek. Obydwoje osiagnÄ™li gÅ‚Ä™bokoÅ›Ä‡ rzÄ™du 30 metrÃ³w i 250-ty metr gÅ‚Ã³wnego ciÄ…gu, wracajÄ…c nim do otworu.</p>
+<p>Na koÅ„cu zanurkowaÅ‚ Maciek Czykierda, osiÄ…gnÄ…Å‚ rÃ³wnieÅ¼ 250 - 260 metr gÅ‚Ã³wnego ciÄ…gu, wracaÅ‚ jednak przez obejÅ›cie, od ktÃ³rego z kolei prowadziÅ‚y dalsze, ciaÅ›niejsze korytarze, bÄ™dÄ…ce celem nurkowania WÅ‚ocha.</p>
+<p>PodsumowujÄ…c, uczestnicy nurkowaÅ„ w tej jaskini twierdzÄ…, Å¼e jest to jedna z najpiÄ™kniejszych jaskiÅ„ w ktÃ³rych nurkowali. DuÅ¼a rozlegÅ‚oÅ›Ä‡ horyzontalna, przy gÅ‚Ä™bokoÅ›ciach nitroksowych, powoduje, Å¼e jest idealnÄ… jaskiniÄ… do Ä‡wiczenia dÅ‚ugich dystansowo nurkowaÅ„. GÅ‚Ã³wny ciÄ…g jaskini nadaje siÄ™ do pÅ‚ywania za pomocÄ… skuterÃ³w.</p>
 
 <h3 align=right>Maciek Czykierda</h3>
 
-<h3>Galerie zdjêæ</h3>
-<a class="navi" href="http://www.nurkowanie.nekton.com.pl/ritalia.php" target="_new">Relacja Paw³a Porêby</a><br>
-<a class="navi" href="http://www.aquatechnik.pl/gallery/album25" target="_new">Zdjêcia Przemka Stasiak</a><br>
+<h3>Galerie zdjÄ™Ä‡</h3>
+<a class="navi" href="http://www.nurkowanie.nekton.com.pl/ritalia.php" target="_new">Relacja PawÅ‚a PorÄ™by</a><br>
+<a class="navi" href="http://www.aquatechnik.pl/gallery/album25" target="_new">ZdjÄ™cia Przemka Stasiak</a><br>
 
 <!--============================= CONTENTS END   ==========================================-->
 <?php

@@ -1,7 +1,7 @@
 <?php
 
 $bSubdir = true;
-$sInclude = './_php/page.php';
+$sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
@@ -16,14 +16,14 @@ if($bSubdir == true)
 	Hagengebirge 2004, Podwodna eksploracja w Jaskini Kasztanowej
 </h1>
 
-<p> Na prze³omie lipca i sierpnia goœcinnie wzi¹³em udzia³ w wyprawie eksploracyjnej, która odby³a siê pod kierownictwem Marka Wierzbowskiego w masywie <b>Hagengebirge</b>. Jednym z celów wyprawy by³o zbadanie zalanych partii w <b>Jaskini Kasztanowej</b> i sprawdzenie mo¿liwoœci eksploracyjnych za stref¹ syfonów, na poziomie -270m.</p>
+<p> Na przeÅ‚omie lipca i sierpnia goÅ›cinnie wziÄ…Å‚em udziaÅ‚ w wyprawie eksploracyjnej, ktÃ³ra odbyÅ‚a siÄ™ pod kierownictwem Marka Wierzbowskiego w masywie <b>Hagengebirge</b>. Jednym z celÃ³w wyprawy byÅ‚o zbadanie zalanych partii w <b>Jaskini Kasztanowej</b> i sprawdzenie moÅ¼liwoÅ›ci eksploracyjnych za strefÄ… syfonÃ³w, na poziomie -270m.</p>
 
-<p>W sk³ad zespo³u nurkowego wchodzi³ <b>Micha³ Gignal</b> (Sekcja Groto³azów Wroc³aw) oraz ni¿ej podpisany. Niestety, ju¿ podczas mojego nurkowania rekonesansowego, problem nurkowy zosta³ zamkniêty. Uda³o mi siê pokonaæ pierwszy z syfonów (-6m g³êbokoœci, 20m d³ugoœci) i osi¹gn¹æ jeziorko, do którego w  zesz³ym roku dotarto wspinaj¹c siê w meandrach. W drugim z syfonów osi¹gn¹³em prawdopodobnie przegiêcie. Panuj¹ce ciasnoty i mu³ uniemo¿liwi³y przedostanie siê dalej. W wyniku wniosków z mojego rekonesansu, uznaliœmy, ¿e podjêcie próby przedostania siê przez zamulone przewê¿enie w drugim syfonie jest zbyt niebezpieczne. Ponadto fatalna pogoda utrudniaj¹ca transport sprzêtu na powierzchni oraz braku czasu, spowodowa³y, i¿ uznaliœmy, ¿e kolejne nurkowania by³yby trudne lub niemo¿liwe do przeprowadzenia i niecelowe.</p>
-<p>Syfony wraz z jeziorkiem u³o¿one s¹ na jednej szczelinie. Dno syfonów jest silnie zamulone. Niewielkie przep³ywy powoduj¹, ¿e pok³ady mu³u tworz¹ przewê¿enia uniemo¿liwiaj¹ce przedostanie siê dalej. Nale¿y jednak spodziewaæ siê, ¿e strefa syfonów, le¿¹cych na tak niewielkiej g³êbokoœci, ma charakter lokalny, a za ni¹ wystêpuj¹ suche ci¹gi. Przedostanie siê przez syfony, poza ow¹ strefê, pozwoli³oby mieæ w przysz³oœci niezbit¹ pewnoœæ o ci¹g³oœci systemu w przypadku dostania siê do niej od drugiej strony, z innego otworu.</p>
-<p>Serdeczne podziêkowania dla cz³onków wyprawy za transport i retransport sprzêtu oraz pomoc w jaskini - bez Was, nasze nurkowanie nie by³oby mo¿liwe.<p>
-<p>Wyeksplorowany syfon nazwany zosta³ "<b>Syfonem naszych dzieci</b>" - zarówno Micha³ jak i ja zostaniemy niebawem ojcami.
+<p>W skÅ‚ad zespoÅ‚u nurkowego wchodziÅ‚ <b>MichaÅ‚ Gignal</b> (Sekcja GrotoÅ‚azÃ³w WrocÅ‚aw) oraz niÅ¼ej podpisany. Niestety, juÅ¼ podczas mojego nurkowania rekonesansowego, problem nurkowy zostaÅ‚ zamkniÄ™ty. UdaÅ‚o mi siÄ™ pokonaÄ‡ pierwszy z syfonÃ³w (-6m gÅ‚Ä™bokoÅ›ci, 20m dÅ‚ugoÅ›ci) i osiÄ…gnÄ…Ä‡ jeziorko, do ktÃ³rego w  zeszÅ‚ym roku dotarto wspinajÄ…c siÄ™ w meandrach. W drugim z syfonÃ³w osiÄ…gnÄ…Å‚em prawdopodobnie przegiÄ™cie. PanujÄ…ce ciasnoty i muÅ‚ uniemoÅ¼liwiÅ‚y przedostanie siÄ™ dalej. W wyniku wnioskÃ³w z mojego rekonesansu, uznaliÅ›my, Å¼e podjÄ™cie prÃ³by przedostania siÄ™ przez zamulone przewÄ™Å¼enie w drugim syfonie jest zbyt niebezpieczne. Ponadto fatalna pogoda utrudniajÄ…ca transport sprzÄ™tu na powierzchni oraz braku czasu, spowodowaÅ‚y, iÅ¼ uznaliÅ›my, Å¼e kolejne nurkowania byÅ‚yby trudne lub niemoÅ¼liwe do przeprowadzenia i niecelowe.</p>
+<p>Syfony wraz z jeziorkiem uÅ‚oÅ¼one sÄ… na jednej szczelinie. Dno syfonÃ³w jest silnie zamulone. Niewielkie przepÅ‚ywy powodujÄ…, Å¼e pokÅ‚ady muÅ‚u tworzÄ… przewÄ™Å¼enia uniemoÅ¼liwiajÄ…ce przedostanie siÄ™ dalej. NaleÅ¼y jednak spodziewaÄ‡ siÄ™, Å¼e strefa syfonÃ³w, leÅ¼Ä…cych na tak niewielkiej gÅ‚Ä™bokoÅ›ci, ma charakter lokalny, a za niÄ… wystÄ™pujÄ… suche ciÄ…gi. Przedostanie siÄ™ przez syfony, poza owÄ… strefÄ™, pozwoliÅ‚oby mieÄ‡ w przyszÅ‚oÅ›ci niezbitÄ… pewnoÅ›Ä‡ o ciÄ…gÅ‚oÅ›ci systemu w przypadku dostania siÄ™ do niej od drugiej strony, z innego otworu.</p>
+<p>Serdeczne podziÄ™kowania dla czÅ‚onkÃ³w wyprawy za transport i retransport sprzÄ™tu oraz pomoc w jaskini - bez Was, nasze nurkowanie nie byÅ‚oby moÅ¼liwe.<p>
+<p>Wyeksplorowany syfon nazwany zostaÅ‚ "<b>Syfonem naszych dzieci</b>" - zarÃ³wno MichaÅ‚ jak i ja zostaniemy niebawem ojcami.
 
-<h3 align=right>Piotr Kêpkiewicz (Kempek)</h3>
+<h3 align=right>Piotr KÄ™pkiewicz (Kempek)</h3>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
 	renderBottom($bSubdir);

@@ -1,7 +1,7 @@
 <?php
 
 $bSubdir = true;
-$sInclude = './_php/page.php';
+$sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
@@ -13,28 +13,28 @@ if($bSubdir == true)
 ?>
 <!--============================= CONTENTS START ==========================================-->
 <h1>
-	Nurkowanie w jaskiniach s³oweñskich listopad 2003
+	Nurkowanie w jaskiniach sÅ‚oweÅ„skich listopad 2003
 </h1>
 
-<p>Wyjazd odby³ siê w sk³adzie: Andrzej Czubalski, Iza i Darek Lermer oraz Arek Nowak. 
-Nasze plany to dwa wywierzyska oraz rozpoznanie terenu, jako miejsca przysz³ego dzia³ania.
-Po obowi¹zkowej wizycie w Trieœcie oraz zjedzeniu pizzy jedziemy na miejsce noclegowe. 
-Nazajutrz na pierwszy ogieñ idzie wywierzysko Steberk.
- Wnikamy w czeluœæ, na pocz¹tku - faktycznie - ma³o obszerna, ale w poprzek zestaw 2x10L + ja wchodzi. 
-Dziura nie za wielka, lecz bardzo ³adna i nie m¹c¹ca siê. Zgodnie z namiarami FAR u¿ywamy tylko specjalnych gazów.
+<p>Wyjazd odbyÅ‚ siÄ™ w skÅ‚adzie: Andrzej Czubalski, Iza i Darek Lermer oraz Arek Nowak. 
+Nasze plany to dwa wywierzyska oraz rozpoznanie terenu, jako miejsca przyszÅ‚ego dziaÅ‚ania.
+Po obowiÄ…zkowej wizycie w TrieÅ›cie oraz zjedzeniu pizzy jedziemy na miejsce noclegowe. 
+Nazajutrz na pierwszy ogieÅ„ idzie wywierzysko Steberk.
+ Wnikamy w czeluÅ›Ä‡, na poczÄ…tku - faktycznie - maÅ‚o obszerna, ale w poprzek zestaw 2x10L + ja wchodzi. 
+Dziura nie za wielka, lecz bardzo Å‚adna i nie mÄ…cÄ…ca siÄ™. Zgodnie z namiarami FAR uÅ¼ywamy tylko specjalnych gazÃ³w.
 </p>
 
-<p>Zabrany z Warszawy agregat klubowy, mimo, ¿e nie napracowa³ siê wiele, okaza³ siê niezbêdny i spisuje siê niezawodnie. Na tego typu wyjazdy - idea³.
+<p>Zabrany z Warszawy agregat klubowy, mimo, Å¼e nie napracowaÅ‚ siÄ™ wiele, okazaÅ‚ siÄ™ niezbÄ™dny i spisuje siÄ™ niezawodnie. Na tego typu wyjazdy - ideaÅ‚.
 </p>
 
 <p>Przy okazji namierzamy liczne ponory i wywierzyska Cetnickiego Polja.</p>
-<p>Nastêpnym obiektem naszej eskapady jest Jama Suchodolca odwiedzana ju¿ przez cz³onków naszego klubu. 
+<p>NastÄ™pnym obiektem naszej eskapady jest Jama Suchodolca odwiedzana juÅ¼ przez czÅ‚onkÃ³w naszego klubu. 
 Czubal szuka jej w biegu i znajduje.
-Dziêki ci GPS... Transport przez las i wnikamy w g³¹b. Poniewa¿ dla co poniektórych to pierwsze nurkowanie jaskiniowe, 
-zwiedzane groty koñczymy po przebyciu trzech syfonów (+/- 200m ci¹gu jaskini). 
+DziÄ™ki ci GPS... Transport przez las i wnikamy w gÅ‚Ä…b. PoniewaÅ¼ dla co poniektÃ³rych to pierwsze nurkowanie jaskiniowe, 
+zwiedzane groty koÅ„czymy po przebyciu trzech syfonÃ³w (+/- 200m ciÄ…gu jaskini). 
 </p>
-<p>Nazajutrz, ¿eby nie zostaæ zabitym przez ¿onê (nie nurkuj¹c¹, ale ubieraj¹c¹ nas i b. b. pomagaj¹c¹) odwiedzamy Krinu Jamu oraz w¹wóz ela RAK , jak równie¿ liczne wywierzyska i ponory tego rejonu. Jako za³o¿yciele Federacji FAR robimy sobie pami¹tkowe zdjêcie na tle wielkiego mostu na rzece RAK. Zaraz potem penetrujemy wielki ponor rzeki Rak w jaskini Tkalca Jama , ale szybko koñczymy penetracjê po przeczytaniu tabliczki 'ku pamiêci nurka, który spenetrowa³ j¹ tylko w jedn¹ stronê'..</p>
-<p>Zdjêcia podwodne z Jamy Suchodolca zrobiliœmy zwyk³¹ cyfrówk¹ w prostej, wodoszczelnej obudowie i pewnie by³y by fajniejsze gdyby nie to, ¿e robiliœmy je w drodze powrotnej (zm¹cenie).</p>
+<p>Nazajutrz, Å¼eby nie zostaÄ‡ zabitym przez Å¼onÄ™ (nie nurkujÄ…cÄ…, ale ubierajÄ…cÄ… nas i b. b. pomagajÄ…cÄ…) odwiedzamy KriÅ¾nu Jamu oraz wÄ…wÃ³z Å½ela RAK , jak rÃ³wnieÅ¼ liczne wywierzyska i ponory tego rejonu. Jako zaÅ‚oÅ¼yciele Federacji FAR robimy sobie pamiÄ…tkowe zdjÄ™cie na tle wielkiego mostu na rzece RAK. Zaraz potem penetrujemy wielki ponor rzeki Rak w jaskini Tkalca Jama , ale szybko koÅ„czymy penetracjÄ™ po przeczytaniu tabliczki 'ku pamiÄ™ci nurka, ktÃ³ry spenetrowaÅ‚ jÄ… tylko w jednÄ… stronÄ™'..</p>
+<p>ZdjÄ™cia podwodne z Jamy Suchodolca zrobiliÅ›my zwykÅ‚Ä… cyfrÃ³wkÄ… w prostej, wodoszczelnej obudowie i pewnie byÅ‚y by fajniejsze gdyby nie to, Å¼e robiliÅ›my je w drodze powrotnej (zmÄ…cenie).</p>
 
 <h3 align=right>Darek Lermer</h3>
 
