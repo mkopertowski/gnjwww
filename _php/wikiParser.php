@@ -16,13 +16,13 @@ class wikiParser {
 	public function __construct($analyze=false) {
 		$this->patterns=array(
 			// Headings
-			"/^==== (.+?) ====$/m",						// Subsubheading
-			"/^=== (.+?) ===$/m",						// Subheading
+			"/^==== (.+?) ====$/m",					// Subsubheading
+			"/^=== (.+?) ===$/m",					// Subheading
 			"/^== (.+?) ==$/m",						// Heading
 	
 			// Formatting
-			"/\'\'\'\'\'(.+?)\'\'\'\'\'/s",					// Bold-italic
-			"/\'\'\'(.+?)\'\'\'/s",						// Bold
+			"/\'\'\'\'\'(.+?)\'\'\'\'\'/s",			// Bold-italic
+			"/\'\'\'(.+?)\'\'\'/s",					// Bold
 			"/\'\'(.+?)\'\'/s",						// Italic
 	
 			// Special
@@ -32,29 +32,30 @@ class wikiParser {
 			"/\[((news|(ht|f)tp(s?)|irc):\/\/(.+?))\]/i",			// Other urls without text
 	
 			// Indentations
-			"/[\n\r]: *.+([\n\r]:+.+)*/",					// Indentation first pass
-			"/^:(?!:) *(.+)$/m",						// Indentation second pass
-			"/([\n\r]:: *.+)+/",						// Subindentation first pass
+			"/[\n\r]: *.+([\n\r]:+.+)*/",			// Indentation first pass
+			"/^:(?!:) *(.+)$/m",					// Indentation second pass
+			"/([\n\r]:: *.+)+/",					// Subindentation first pass
 			"/^:: *(.+)$/m",						// Subindentation second pass
 	
 			// Ordered list
 			"/[\n\r]?#.+([\n|\r]#.+)+/",					// First pass, finding all blocks
-			"/[\n\r]#(?!#) *(.+)(([\n\r]#{2,}.+)+)/",			// List item with sub items of 2 or more
-			"/[\n\r]#{2}(?!#) *(.+)(([\n\r]#{3,}.+)+)/",			// List item with sub items of 3 or more
-			"/[\n\r]#{3}(?!#) *(.+)(([\n\r]#{4,}.+)+)/",			// List item with sub items of 4 or more
+			"/[\n\r]#(?!#) *(.+)(([\n\r]#{2,}.+)+)/",		// List item with sub items of 2 or more
+			"/[\n\r]#{2}(?!#) *(.+)(([\n\r]#{3,}.+)+)/",	// List item with sub items of 3 or more
+			"/[\n\r]#{3}(?!#) *(.+)(([\n\r]#{4,}.+)+)/",	// List item with sub items of 4 or more
 	
 			// Unordered list
 			"/[\n\r]?\*.+([\n|\r]\*.+)+/",					// First pass, finding all blocks
-			"/[\n\r]\*(?!\*) *(.+)(([\n\r]\*{2,}.+)+)/",			// List item with sub items of 2 or more
-			"/[\n\r]\*{2}(?!\*) *(.+)(([\n\r]\*{3,}.+)+)/",			// List item with sub items of 3 or more
-			"/[\n\r]\*{3}(?!\*) *(.+)(([\n\r]\*{4,}.+)+)/",			// List item with sub items of 4 or more
+			"/[\n\r]\*(?!\*) *(.+)(([\n\r]\*{2,}.+)+)/",	// List item with sub items of 2 or more
+			"/[\n\r]\*{2}(?!\*) *(.+)(([\n\r]\*{3,}.+)+)/",	// List item with sub items of 3 or more
+			"/[\n\r]\*{3}(?!\*) *(.+)(([\n\r]\*{4,}.+)+)/",	// List item with sub items of 4 or more
 	
 			// List items
-			"/^[#\*]+ *(.+)$/m",						// Wraps all list items to <li/>
+			"/^[#\*]+ *(.+)$/m",					// Wraps all list items to <li/>
 	
 			// Newlines (TODO: make it smarter and so that it groupd paragraphs)
-			"/^(?!<li|dd).+(?=(<a|strong|em|img)).+$/mi",			// Ones with breakable elements (TODO: Fix this crap, the li|dd comparison here is just stupid)
-			"/^[^><\n\r]+$/m",						// Ones with no elements
+			//"/^(?!<li|dd).+(?=(<a|strong|em|img)).+$/mi",			// Ones with breakable elements (TODO: Fix this crap, the li|dd comparison here is just stupid)
+			//"/^[^><\n\r]+$/m",						// Ones with no elements
+				'#(<br>[\r\n]+){2}#'
 		);
 		$this->replacements=array(
 			// Headings
@@ -95,8 +96,9 @@ class wikiParser {
 			"<li>$1</li>",
 	
 			// Newlines
-			'$0</p><p class="article">',
-			"$0<br/>",
+			//'$0</p><p class="article">',
+			//"$0<br/>",
+			'</p><p class="article">'
 		);
 		if($analyze) {
 			foreach($this->patterns as $k=>$v) {
@@ -105,8 +107,11 @@ class wikiParser {
 		}
 	}
 	public function parse($input) {
-		if(!empty($input))
+		if(!empty($input)) {
+			$input = htmlspecialchars($input);
+			$input = nl2br($input, false);
 			$output=preg_replace($this->patterns,$this->replacements,$input);
+		}
 		else
 			$output=false;
 		return '<p class="article">'.$output.'</p>';

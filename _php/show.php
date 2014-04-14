@@ -20,9 +20,7 @@ if($result->num_rows == 1)
     $date = formatDate($row['date']);
         
     $text = $row['text'];
-    
     $wiki_txt = new wikiParser;
-    $text = htmlspecialchars($text);
     $text = $wiki_txt->parse($text);
     
     if($row['author'] == "")

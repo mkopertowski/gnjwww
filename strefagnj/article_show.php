@@ -28,11 +28,7 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     $date = formatDate($row['date']);
         
     $text = $row['text'];
-    //$text = nl2br($text, false);
-    //$text = '<p class="article">' . preg_replace('#(<br>[\r\n]+){2}#', '</p><p class="article">', $text) . '</p>';
-    
     $wiki_txt = new wikiParser;
-    $text = htmlspecialchars($text);
     $text = $wiki_txt->parse($text);
     
     if($row['author'] == "")
