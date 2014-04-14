@@ -55,7 +55,7 @@ class wikiParser {
 			// Newlines (TODO: make it smarter and so that it groupd paragraphs)
 			//"/^(?!<li|dd).+(?=(<a|strong|em|img)).+$/mi",			// Ones with breakable elements (TODO: Fix this crap, the li|dd comparison here is just stupid)
 			//"/^[^><\n\r]+$/m",						// Ones with no elements
-				'#(<br>[\r\n]+){2}#'
+			'#(<br>[\r\n]+){2}#',
 		);
 		$this->replacements=array(
 			// Headings
@@ -98,7 +98,7 @@ class wikiParser {
 			// Newlines
 			//'$0</p><p class="article">',
 			//"$0<br/>",
-			'</p><p class="article">'
+			'</p><p class="article">',
 		);
 		if($analyze) {
 			foreach($this->patterns as $k=>$v) {

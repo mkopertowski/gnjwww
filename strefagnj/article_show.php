@@ -30,7 +30,7 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     $text = $row['text'];
     $wiki_txt = new wikiParser;
     $text = $wiki_txt->parse($text);
-    
+        
     if($row['author'] == "")
     {
     	$authorid = $row['authorid'];    
