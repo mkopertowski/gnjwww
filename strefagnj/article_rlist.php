@@ -13,7 +13,7 @@ $tbl_name="articles"; // Table name
 
 $mysqli->query("SET NAMES 'utf8'");
 
-$sql="SELECT * FROM $tbl_name WHERE status='review'";
+$sql="SELECT * FROM $tbl_name WHERE status='toreview'";
 $result_review=$mysqli->query($sql);
 
 /* prepare and publish article */

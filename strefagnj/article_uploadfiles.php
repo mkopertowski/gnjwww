@@ -7,6 +7,8 @@ if(!isset($_SESSION['email'])){
 
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
+include("../_php/settings.php");
+
 
 $_SESSION['articleId'] = $_REQUEST['id'];
 
@@ -34,6 +36,7 @@ if($result->num_rows == 1)
 
 	$row = $result->fetch_assoc();
 	$Page->set("title",$row['title']);
+	$Page->set("maxPhotos",$ARTICLE_IMAGE_MAX_NUM);
 		
 	if(isset($_SESSION['info'])){
 		$info = "<big>".$_SESSION['info']."</big><br>";

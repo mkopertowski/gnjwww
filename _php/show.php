@@ -1,35 +1,25 @@
 <?php 
 
-session_start();
-if(!isset($_SESSION['email'])){
-	header("Location:login.php");
-}
+include("mysql.php");
+include("misc.php");
+include("Renderer.php");
+include("settings.php");
+require_once("wikiParser.php");
 
-include("../_php/mysql.php");
-include("../_php/misc.php");
-include("../_php/Renderer.php");
-require_once("../_php/wikiParser.php");
-
-$tbl_name="articles"; // Table name
-
-$authorid = $_SESSION['userid'];
 $id = $_REQUEST['id'];
 
-$mysqli->query("SET NAMES 'utf8'");
-
-$sql="SELECT * FROM $tbl_name WHERE id='$id'";
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$id' and status='ready'";
 $result=$mysqli->query($sql);
-$row = $result->fetch_assoc();
 
-if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
+if($result->num_rows == 1)
 {
-    $title = $row['title'];
+	$row = $result->fetch_assoc();
+	
+	$title = $row['title'];
     $subtitle = $row['subtitle'];
     $date = formatDate($row['date']);
         
     $text = $row['text'];
-    //$text = nl2br($text, false);
-    //$text = '<p class="article">' . preg_replace('#(<br>[\r\n]+){2}#', '</p><p class="article">', $text) . '</p>';
     
     $wiki_txt = new wikiParser;
     $text = htmlspecialchars($text);
@@ -45,10 +35,8 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     	$author = $row['author'];
     }
     
-    /* get image ids */
-    $tbl_name="files"; // Table name
-            
-    $sql="SELECT `description`, `id`, `name` FROM `files` WHERE articleId='$id'";
+    /* get image ids */            
+    $sql="SELECT `description`, `id`, `name` FROM $FILES_TABLE_NAME WHERE articleId='$id'";
     $result_ids=$mysqli->query($sql);    
     
 	/* prepare and publish article */

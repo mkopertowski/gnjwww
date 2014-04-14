@@ -24,6 +24,23 @@ function formatDate($date)
 	return $formatedDate;
 }
 
+/* check if the date is in the last 3 months */
+function isRecentDate($date)
+{
+	$dtime = new DateTime($date);
+
+	return ($dtime->format("n") +3 > date("n"));
+}
+
+/* check if the date is in the last 3 months */
+function GetYearFromDate($date)
+{
+	$dtime = new DateTime($date);
+
+	return $dtime->format("Y");
+}
+
+
 function getResizedImage($blob_binary, $desired_width, $desired_height)
 {
 	$im = imagecreatefromstring($blob_binary);
@@ -33,11 +50,23 @@ function getResizedImage($blob_binary, $desired_width, $desired_height)
 
 	if($x>$y)
 	{
-		$desired_height = $desired_width / $aspectratio;
+		$height = $desired_width / $aspectratio;
+		
+		if($height>$desired_height) {
+			$desired_width = $desired_height * $aspectratio;
+		} else {
+			$desired_height = $height;
+		} 	
 	}
 	else
 	{
-		$desired_width = $desired_height * $aspectratio;
+		$width = $desired_height * $aspectratio;
+		
+		if($height>$desired_height) {
+			$desired_height = $desired_width * $aspectratio;
+		} else {
+			$desired_width = $width;
+		}
 	}
 
 	$new = imagecreatetruecolor($desired_width, $desired_height) or exit("bad url");
@@ -45,6 +74,17 @@ function getResizedImage($blob_binary, $desired_width, $desired_height)
 	imagedestroy($im);
 	return $new;
 }
+
+function strReplaceNth($search, $replace, $input, $nth)
+{
+	$found = preg_match_all('/'.preg_quote($search).'/', $input, $matches, PREG_OFFSET_CAPTURE);
+	if (false !== $found && $found > $nth) {
+		return substr_replace($input, $replace, $matches[0][$nth][1], strlen($search));
+	} else {
+		return $input.$replace;
+	}
+}
+
 
 
 ?>

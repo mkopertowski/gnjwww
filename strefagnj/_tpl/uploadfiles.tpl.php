@@ -3,7 +3,9 @@
 <p><big>Tytuł puplikacji: <?php echo $this->title; ?></big></p>
 
 <form name="form1" method="post" action="article_upload.php" enctype="multipart/form-data">
-       	
+
+<p>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> zdjęc.</p>
+
 <p>Plik:</p>
 <p>
    <input type="file" name="uploaded_file"/>

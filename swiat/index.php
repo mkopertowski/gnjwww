@@ -5,16 +5,22 @@ $sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
+
+$GL_DIR = '..';
+
 @include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/settings.php');
+include('../_php/misc.php');
 
 	renderHead($bSubdir,'','');
-	renderMenu($bSubdir,6,false,'ŚWIAT');
+	renderMenu($bSubdir,6,false,'ÅšWIAT');
 	renderGallery(true,false);
 	renderCentral(true);
 ?>
 <!--============================= CONTENTS START ==========================================-->
 <h1>
-	ZAGRANICZNE WYPRAWY
+	WYPRAWY ZAGRANICZNE
 </h1>
 <?php
 
@@ -30,6 +36,37 @@ StartList();
 EndList();
 */
 //-----------------------------------------------------
+
+
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='świat' ORDER BY date DESC";
+$result=$mysqli->query($sql);
+
+if($result) {
+
+	$rok = '';
+	
+	while ($row = $result->fetch_assoc()) { // list start?
+
+		if($rok == '') {
+			$rok = GetYearFromDate($row['date']);
+			
+			NewSection('ROK '.$rok,'section');
+			StartList();
+		} else if($rok != GetYearFromDate($row['date'])) { // new year?
+			$rok = GetYearFromDate($row['date']);
+
+			EndList ();
+			NewSection('ROK '.$rok,'section');
+			StartList();
+		}
+		
+		ExtendedListItemMYSQL($row,'..');
+		
+	}
+
+	EndList ();
+}
+
 NewSection('ROK 2013','section');
 
 StartList();
@@ -121,7 +158,7 @@ StartList();
   
   ExtendedListItem('Marble Arch i Prods Pot-Cascades',
                    'Pierwsza cześć raportu z grudniowego połączenia dwóch jaskiń w Irlandii Północnej',
-                   $dots.'./2010Marble/pdf/Marble.pdf','RAPORT',
+                   './2010Marble/pdf/Marble.pdf','RAPORT',
                    '16. Marzec 2010','Artur Kozłowski');
 EndList();
 
@@ -147,7 +184,7 @@ StartList();
 
   ExtendedListItem('Jaskinie jez. Szkoderskiego',
                    'Zapraszamy do obejrzenia raportu z wypraw w 2007 i 2008 roku w rejon jez. Szkoderskiego, w Czarnogórze, których celem była eksploracja licznych w tym miejscu wywierzysk - podwodnych jaskiń. Raport opisuje ponad 35 zbadanych obiektów.',
-                   $dots.'./skadar_2008_report.pdf','RAPORT',
+                   './skadar_2008_report.pdf','RAPORT',
                    '7. Kwiecień 2009','Andrzej Szerszeń');
 
 EndList();

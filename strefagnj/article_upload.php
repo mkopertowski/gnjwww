@@ -15,8 +15,14 @@ include("../_php/settings.php");
 
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
+	if( ($_FILES['uploaded_file']["type"] != "image/jpeg") &&
+	    ($_FILES['uploaded_file']["type"] != "image/png") &&
+	    ($_FILES['uploaded_file']["type"] != "image/gif"))
+	{
+		$_SESSION['info'] = 'Błąd. Nieobsługiwany typ pliku: '.$_FILES['uploaded_file']["type"];
+	}
 	// Make sure the file was sent without errors
-	if($_FILES['uploaded_file']['error'] == 0) {
+	else if($_FILES['uploaded_file']['error'] == 0) {
 		// Connect to the database
 	
 		// Get all required data
@@ -47,26 +53,40 @@ if(isset($_FILES['uploaded_file'])) {
 	    {
 	    	$data = file_get_contents($_FILES['uploaded_file']['tmp_name']);
 	    	
-	    	$image = imagecreatefromstring($data);
-	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
-	    	$data = ob_get_contents(); //store stdout in $img2
-	    	ob_clean(); //clear buffer
-	    	imagedestroy($image); //destroy img
+	    	// compress only jpeg (gif and png are left untouched)
+	    	if($_FILES['uploaded_file']["type"] != "image/jpeg")
+	    	{
+	    		$image = imagecreatefromstring($data);
+	    		ob_clean(); //Stdout --> buffer
+	    		imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
+	    		$data = ob_get_contents(); //store stdout in $img2
+	    		ob_clean(); //clear buffer
+	    		imagedestroy($image); //destroy img
+	    	}
 	    	
+	    	// small images are always jpeg
 	    	$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
 	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, 60);
-	    	$dataSmall = ob_get_contents(); //store stdout in $img2
+	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_SMALL_QUALITY);
+	    	$dataSmall = ob_get_contents(); //store stdout
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
-	    		    	
+
+	    	// normal images are always jpeg
+	    	$image = getResizedImage($data, $ARTICLE_IMAGE_NORMAL_WIDTH, $ARTICLE_IMAGE_NORMAL_HEIGHT);
+	    	ob_clean(); //Stdout --> buffer
+	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_NORMAL_QUALITY);
+	    	$dataNormal = ob_get_contents(); //store stdout
+	    	ob_clean(); //clear buffer
+	    	imagedestroy($image); //destroy img
+
 	    	$data = $mysqli->real_escape_string($data);
 	    	$dataSmall = $mysqli->real_escape_string($dataSmall);
+	    	$dataNormal = $mysqli->real_escape_string($dataNormal);
 	    	
 	    	// Create the SQL query
-	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `dataSmall`, `description`, `articleId`) VALUES (
-	    	'{$name}', '{$mime}', '{$data}', '{$dataSmall}', '{$description}', '{$id}')";
+	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `data800x532`, `data400x266`, `description`, `articleId`) VALUES (
+	    	'{$name}', '{$mime}', '{$data}', '{$dataNormal}', '{$dataSmall}', '{$description}', '{$id}')";
 	    	
 	    	// Execute the query
 	    	$result = $mysqli->query($sql);
