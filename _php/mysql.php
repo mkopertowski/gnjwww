@@ -61,7 +61,7 @@ function createFileOnDisk($mysqli,$id)
 }
 
 
-function ExtendedListItemMYSQL($row,$dir)
+function ExtendedListItemMYSQL($mysqli,$row,$dir)
 {
 	$author = $row['author'];
 	if($author == "")

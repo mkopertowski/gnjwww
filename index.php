@@ -133,11 +133,12 @@ $sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' ORDER BY date DESC 
 $result=$mysqli->query($sql);
 
 if($result) {
-	NewSection('AKTUALNOŚCI','section');
+
+	NewSection('AKTUALNOŚCI'.$result->num_rows,'section');
 	StartList();
 	
 	while ($row = $result->fetch_assoc()) {
-		ExtendedListItemMYSQL($row,'.');
+		ExtendedListItemMYSQL($mysqli,$row,'.');
 	}
 	
 	EndList ();

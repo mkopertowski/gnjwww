@@ -60,7 +60,7 @@ if($result) {
 			StartList();
 		}
 		
-		ExtendedListItemMYSQL($row,'..');
+		ExtendedListItemMYSQL($mysqli,$row,'..');
 		
 	}
 
