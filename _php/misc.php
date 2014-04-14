@@ -30,7 +30,7 @@ function isRecentDate($date)
 	$dtime = new DateTime($date);
 	$now = new DateTime();
 	
-	$interval = $now->diff($dtime);
+	//$interval = $now->diff($dtime);
 		
 	// is not older than 3 months?
 	//urn ($interval->days < 90);
