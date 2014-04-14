@@ -28,8 +28,12 @@ function formatDate($date)
 function isRecentDate($date)
 {
 	$dtime = new DateTime($date);
-
-	return ($dtime->format("n") +3 > date("n"));
+	$now = new DateTime();
+	
+	$interval = $now->diff($dtime);
+		
+	// is not older than 3 months?
+	return ($interval->format("%R%a") > -90);  
 }
 
 /* check if the date is in the last 3 months */

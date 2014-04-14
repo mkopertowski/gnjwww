@@ -134,7 +134,7 @@ $result=$mysqli->query($sql);
 
 if($result) {
 
-	NewSection('AKTUALNOŚCI'.$result->num_rows,'section');
+	NewSection('AKTUALNOŚCI','section');
 	StartList();
 	
 	while ($row = $result->fetch_assoc()) {

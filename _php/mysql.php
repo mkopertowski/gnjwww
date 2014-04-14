@@ -75,7 +75,7 @@ function ExtendedListItemMYSQL($mysqli,$row,$dir)
 	if(isRecentDate($row['date'])) {
 		$title = '<IMG src="'.$dir.'/_gfx/new.gif" border=0>'.$title;
 	}
-
+	
 	$link = '';
 	$link_text = '';
 	if($row['text'] != '') {
