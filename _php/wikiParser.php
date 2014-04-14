@@ -109,7 +109,7 @@ class wikiParser {
 	public function parse($input) {
 		if(!empty($input)) {
 			$input = htmlspecialchars($input);
-			$input = nl2br($input, false);
+			$input = nl2br($input);
 			$output=preg_replace($this->patterns,$this->replacements,$input);
 		}
 		else
