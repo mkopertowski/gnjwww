@@ -54,20 +54,29 @@ if(isset($_FILES['uploaded_file'])) {
 	    	$data = file_get_contents($_FILES['uploaded_file']['tmp_name']);
 	    	
 	    	// compress only jpeg (gif and png are left untouched)
-	    	if($_FILES['uploaded_file']["type"] != "image/jpeg")
+	    	if($_FILES['uploaded_file']["type"] == "image/jpeg")
 	    	{
 	    		$image = imagecreatefromstring($data);
 	    		ob_clean(); //Stdout --> buffer
 	    		imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
-	    		$data = ob_get_contents(); //store stdout in $img2
+	    		$data = ob_get_contents(); 
 	    		ob_clean(); //clear buffer
 	    		imagedestroy($image); //destroy img
+	    	} 
+	    	 
+	    	$smallQuality = $ARTICLE_IMAGE_SMALL_QUALITY;
+	    	$normalQuality = $ARTICLE_IMAGE_NORMAL_QUALITY;
+	    	
+	    	if($_FILES['uploaded_file']["type"] != "image/jpeg")
+	    	{
+	    		$smallQuality = 100;
+	    		$normalQuality = 100;
 	    	}
 	    	
 	    	// small images are always jpeg
 	    	$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
 	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_SMALL_QUALITY);
+	    	imagejpeg($image, NULL, $smallQuality);
 	    	$dataSmall = ob_get_contents(); //store stdout
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img
@@ -75,7 +84,7 @@ if(isset($_FILES['uploaded_file'])) {
 	    	// normal images are always jpeg
 	    	$image = getResizedImage($data, $ARTICLE_IMAGE_NORMAL_WIDTH, $ARTICLE_IMAGE_NORMAL_HEIGHT);
 	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, $ARTICLE_IMAGE_NORMAL_QUALITY);
+	    	imagejpeg($image, NULL, $normalQuality);
 	    	$dataNormal = ob_get_contents(); //store stdout
 	    	ob_clean(); //clear buffer
 	    	imagedestroy($image); //destroy img

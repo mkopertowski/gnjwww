@@ -16,6 +16,6 @@
 
 <p><input type="submit" name="Submit" value="Dodaj"></p>
     
-<p><?php echo $this->info; ?></p>    
+<p><?php if(isset($this->info)) echo $this->info; ?></p>    
     
 </form>        

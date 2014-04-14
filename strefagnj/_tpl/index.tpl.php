@@ -1,1 +1,1 @@
-<?php echo $this->content; ?>
+<?php if(isset($this->content)) echo $this->content; ?>

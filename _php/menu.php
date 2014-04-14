@@ -12,6 +12,7 @@
 	// Index of the current child, used to number xChild objects
 	var $currentChildID;
 	
+	var $javaScript = '';
 	/* CONSTRUCTOR */
 	
 	function CMenu(){
@@ -45,6 +46,8 @@
 	// generateMenu : Lists the mainMenu and subMenus and generates both html and javascript code
 	// The code is ready to be use in the webpage to display the menu
 	function generateMenu($ActiveParentTitle,$ActiveChildTitle){
+		
+		$str = '';
 		
 		foreach($this->mainMenu as $index=>$parent){
 			

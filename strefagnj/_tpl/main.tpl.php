@@ -70,7 +70,7 @@ $(function() {
 		</div>
 
 	</div>
-    <?php print($this->menu); ?>
+    <?php if(isset($this->menu)) print($this->menu); ?>
 	<div class="main">		
 		<div class="content">
 			<?php echo $this->content; ?>
