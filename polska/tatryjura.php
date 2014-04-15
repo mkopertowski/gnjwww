@@ -6,7 +6,11 @@ if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
 
+$GL_DIR = '..';
+
 @include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/misc.php');
 
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,5,false,'POLSKA','TATRY, JURA');
@@ -190,6 +194,11 @@ if($bSubdir == true)
 <ul class="normal">
 
 <?php
+
+  $sqlfiltr="section='polska' AND tags LIKE '%WielkaSniezna%'";
+
+  ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
   ExtendedListItem('Wielka Śnieżna - Jeziorko X. Najniżej położony problem nurkowy w Tatrach',
                    'Od wielu lat kusi grotołazów swą niedostępnością i zagadką, która kryje się za nim. Pojawiało się wiele hipotez o możliwości pogłębienia systemu jaskiniowego...',
                    '../polska/publication.php?id=2007JeziorkoX','WIĘCEJ',

@@ -6,7 +6,6 @@ if(isset($GL_DIR)) {
 	include('../../mysqlgnj.private');
 } 
 
-
 // Connect to server and select databse.
 $mysqli = new mysqli("$host", "$sqlusername", "$sqlpassword", "$db_name");
 
@@ -85,5 +84,19 @@ function ExtendedListItemMYSQL($mysqli,$row,$dir)
 
 	ExtendedListItem($title,$row['subtitle'],$link,$link_text,$date,$author);
 }
+
+function ArticleListFiltredMYSQL($mysqli,$dir,$sqlfiltr)
+{
+	$sql= "SELECT * FROM `articles` WHERE status='ready' and ".$sqlfiltr." ORDER BY date DESC";
+	
+	$result=$mysqli->query($sql);
+	
+	if($result) {
+		while ($row = $result->fetch_assoc()) {
+			ExtendedListItemMYSQL($mysqli,$row,$dir);
+		}
+	}	
+}
+
 
 ?>
