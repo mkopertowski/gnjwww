@@ -8,11 +8,13 @@ if($bSubdir == true)
 @include($sInclude);
 
 @include('../_php/publication_supp.php');
+include('../_php/misc.php');
+include('../_php/mysql.php');
 
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,12,false,'OGŁOSZENIA');
 	renderGallery(true,false);
-	renderUpdates($bSubdir);
+	renderUpdates($bSubdir,getLastUpdateMYSQL($mysqli));
 	renderCentral(true);
 	
 ?>

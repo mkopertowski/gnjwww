@@ -166,28 +166,7 @@ function renderGallery($bSubdir,$bEnglish)
 //----------------------------------------------------------------------------------------------------
 function renderUpdates($bSubdir)
 {
-	$dots = '.';
-	if($bSubdir == true)
-		$dots = '..';
-
-   //date of the update is read from the following file
-	$filecontent = file($dots."/aktualnosci/update.txt");
-	$date = $filecontent[0];
-			
-   $txt = '
-			<table cellspacing=0 cellpadding=0 width=136>
-				<tr>
-					<td valign=top align=middle>
-						<br>
-						<b>
-						   OSTATNIA AKTUALIZACJA<br>
-						   <a class="navi" href="'.$dots.'/aktualnosci/zmiany.php">'.$date.'</a><br>						   
-						</b>
-					</td>
-				</tr>
-			</table>
-	';
-	echo $txt;   
+	return "";
 }
 //----------------------------------------------------------------------------------------------------function renderCentral($bSubdir)
 {

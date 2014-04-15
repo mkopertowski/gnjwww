@@ -5,7 +5,6 @@ $bSubdir = false;
 renderHead($bSubdir,'','');
 renderMenu($bSubdir,2,false,ConvertSec2SectionName($_REQUEST['sec']));
 renderGallery($bSubdir,false);
-renderUpdates($bSubdir);
 	
 renderCentral(true);
 

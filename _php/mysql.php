@@ -34,6 +34,25 @@ function getAuthorFromAuthorID($mysqli,$authorID)
 	return $author;
 }
 
+
+function getLastUpdateMYSQL($mysqli)
+{
+	$sql="SELECT `date` FROM `articles` WHERE status='ready' ORDER BY date DESC LIMIT 1";
+	
+	$result=$mysqli->query($sql);
+
+	if($result)
+	{
+		$row = $result->fetch_assoc();
+		return formatDate($row['date']);
+	}
+	else
+	{
+		return "";
+	}
+}
+
+
 function createFileOnDisk($mysqli,$id) 
 {
 		$query = "SELECT `name`, `dataSmall` FROM `files` WHERE `id` = {$id}";

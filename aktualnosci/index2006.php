@@ -13,7 +13,6 @@ if($bSubdir == true)
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,2,true);
 	renderGallery($bSubdir,false);
-	renderUpdates($bSubdir);
 	renderCentral(true);
 ?>
 		

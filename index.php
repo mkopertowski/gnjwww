@@ -18,7 +18,7 @@ include('./_php/misc.php');
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,2,false,'STRONA GŁÓWNA');
 	renderGallery($bSubdir,false);
-	renderUpdates($bSubdir);
+	renderUpdates($bSubdir,getLastUpdateMYSQL($mysqli));
 	renderPZA($bSubdir);
 	
 	renderCentral(true);
@@ -1027,8 +1027,5 @@ EndList();
 ?>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
-	renderBottom($bSubdir);
-	renderCounter();
-  
-
+	renderBottom($bSubdir);  
 ?>

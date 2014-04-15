@@ -9,7 +9,6 @@ if($bSubdir == true)
 	renderHead($bSubdir);
 	renderMenu($bSubdir,0,true);
 	renderGallery($bSubdir,false);
-	renderCounter();
 	renderCentral($bSubdir);
 ?>
 <!--============================= CONTENTS START ==========================================-->

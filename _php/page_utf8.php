@@ -223,15 +223,11 @@ function renderPZA($bSubdir)
 }
 
 //----------------------------------------------------------------------------------------------------
-function renderUpdates($bSubdir)
+function renderUpdates($bSubdir,$date)
 {
 	$dots = '.';
 	if($bSubdir == true)
 		$dots = '..';
-
-   //date of the update is read from the following file
-	$filecontent = file($dots."/aktualnosci/update.txt");
-	$date = $filecontent[0];
 			
    $txt = '
 			<table cellspacing=0 cellpadding=0 width=136>
@@ -240,7 +236,7 @@ function renderUpdates($bSubdir)
 						<br>
 						<b>
 						   OSTATNIA AKTUALIZACJA<br>
-						   <a class="navi" href="'.$dots.'/aktualnosci/zmiany.php">'.$date.'</a><br>						   
+						   '.$date.'<br>						   
 						</b>
 					
 					</td>
@@ -322,12 +318,6 @@ function renderBottom($bSubdir)
 echo $txt;
 }
 //----------------------------------------------------------------------------------------------------
-function renderCounter()
-{
-	$txt = '<a target=_top href="http://stat.4u.pl/?pnjktj"><img src="http://adstat.4u.pl/s4u.gif" border="0"></a>
-           <img alt="" src="http://stat.4u.pl/cgi-bin/s.cgi?i=pnjktj&amp;r=ns" width="1" height="1">';
-	echo $txt;
-}
 
 function ConvertSec2SectionName($sec)
 {

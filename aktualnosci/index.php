@@ -12,7 +12,6 @@ if($bSubdir == true)
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,2,false);
 	renderGallery(true,false);
-	renderUpdates($bSubdir);
 	renderCentral(true);
 ?>
 		
