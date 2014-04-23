@@ -117,5 +117,9 @@ function ArticleListFiltredMYSQL($mysqli,$dir,$sqlfiltr)
 	}	
 }
 
+function ConvertStringMYSQL($mysqli,$str)
+{
+	return $mysqli->real_escape_string(stripslashes($str));	
+}
 
 ?>

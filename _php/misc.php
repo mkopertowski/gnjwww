@@ -86,6 +86,4 @@ function strReplaceNth($search, $replace, $input, $nth)
 	}
 }
 
-
-
 ?>

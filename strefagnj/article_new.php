@@ -56,7 +56,22 @@ if(isset($_REQUEST['id'])){
 		$Page->set("subtitle",$row['subtitle']);		
 		$Page->set("section",$row['section']);
 		$Page->set("text",$row['text']);
+		$Page->set("tags",$row['tags']);
+		$Page->set("html_keywords",$row['keywords']);
+		$Page->set("html_description",$row['description']);
+		$Page->set("author",$row['author']);
 	}
+}
+else
+{
+	$Page->set("title","");
+	$Page->set("subtitle","");
+	$Page->set("section","");
+	$Page->set("text","");
+	$Page->set("tags","");
+	$Page->set("html_keywords","");
+	$Page->set("html_description","");
+	$Page->set("author","");
 }
 
 $Page->publish();

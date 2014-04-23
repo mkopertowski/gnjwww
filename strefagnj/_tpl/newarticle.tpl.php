@@ -58,7 +58,7 @@ $( "#datepicker" ).datepicker();
 <h1>Pola administratora bazy:</h1>
 
 <h2>Tagi (do filtrowania SQL):</h2>
-<input name="sql_tags" type="text" id="title" size=115 value="<?php echo $this->sql_tags; ?>">
+<input name="tags" type="text" id="title" size=115 value="<?php echo $this->tags; ?>">
     
 <h2>HTML "keywords" (słowa powinny byc użyte na stronie)</h2>
 <input name="html_keywords" type="text" id="title" size=115 value="<?php echo $this->html_keywords; ?>">
@@ -76,7 +76,7 @@ $( "#datepicker" ).datepicker();
 		      endwhile; 
 		?>	   
     </select> albo 
-    <input name="authortext" type="text" id="authortext" size=30>
+    <input name="authortext" type="text" id="authortext" size=30 value="<?php echo $this->author; ?>">
 
 <h2>Data publikacji:</h2>
 <input name="date" type="text" id="datepicker">
