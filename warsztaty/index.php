@@ -6,6 +6,13 @@ if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
 
+$GL_DIR = '..';
+
+@include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/settings.php');
+include('../_php/misc.php');
+
 	renderHead($bSubdir);
 	renderMenu($bSubdir,4,false,'WARSZTATY');
 	renderGallery(true,false);
@@ -145,6 +152,25 @@ Po pomyślnym ukończeniu Warsztatów dla osób posiadających Kartę Taternika 
 </table>
 <br>
 <ul class="normal">
+
+<?php
+
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='warsztaty' ORDER BY date DESC";
+$result=$mysqli->query($sql);
+
+if($result) {
+	
+	while ($row = $result->fetch_assoc()) {
+		ExtendedListItemMYSQL($mysqli,$row,'..');
+	}
+
+}
+
+?>
+
+
+
+
 
 <li class="normal">
 		<b>XVI Warsztaty Nurkowania Jaskiniowego 2013</b>.<br>

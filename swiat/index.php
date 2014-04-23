@@ -14,7 +14,7 @@ include('../_php/settings.php');
 include('../_php/misc.php');
 
 	renderHead($bSubdir,'','');
-	renderMenu($bSubdir,6,false,'ÅšWIAT');
+	renderMenu($bSubdir,6,false,'SWIAT');
 	renderGallery(true,false);
 	renderCentral(true);
 ?>
