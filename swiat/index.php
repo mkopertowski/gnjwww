@@ -70,11 +70,6 @@ if($result) {
 NewSection('ROK 2013','section');
 
 StartList();
-ExtendedListItem('Speleonurkowe eksploracje GNJ',
-                   'Kosowo i Serbia VIII-IX 2013',
-                   '../article.php?id=2013kosowoserbia&sec=swiat','WIĘCEJ',
-                   '14. Listopada 2013','Dominik Graczyk');
-
 
 ExtendedListItem('Speleonurkowa majówka 2013',
                    'Relacja z wyjazdu do Serbii',

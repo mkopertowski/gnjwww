@@ -179,10 +179,6 @@ ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Komati Springs – Sodwana 
 NewSection('Listopad 2013','section');
 
 StartList();
-ExtendedListItem('Speleonurkowe eksploracje GNJ',
-                   'Kosowo i Serbia VIII-IX 2013', 
-				   $dots.'./article.php?id=2013kosowoserbia&sec=swiat','Więcej',
-				   '14. Listopada 2013','D.Graczyk');
 
 ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego',
                    'Relacja uczestnika jesiennej edycji XVI Warsztatów Nurkowania Jaskiniowego - Maćka Chomicza', 

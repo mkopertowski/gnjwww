@@ -25,12 +25,7 @@ if($bSubdir == true)
 </table>
 <br>
 <?php
-  StartList();
-  ExtendedListItem('Speleonurkowe eksploracje GNJ',
-                   'Kosowo i Serbia VIII-IX 2013',
-                   './gallery.php?id=2013kosowoserbia','Więcej',
-                   '14. Listopada 2013', '');
-  
+  StartList();  
   ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego 2013',
                    '',
                    './gallery.php?id=2013_wnj','Więcej',
