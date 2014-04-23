@@ -144,48 +144,7 @@ if($result) {
 	EndList ();
 }
 	
-
-/*
-  ExtendedListItem('',
-                   '...',
-		   $dots.'/article.php?id=2008&sec=','WIĘCEJ',
-		   '. 2008','');
-//-----------------------------------------------------
-NewSection('','section');
-
-StartList();
-
-  ListItem('<b></b>');
-  ExtendedListItem('','','','','');
-  ExtendedListItem($title,$tekst,$link,$data,$autor);
-EndList();
-*/
-
-/*
-ExtendedListItem('<IMG src="./_gfx/new.gif" border=0>Komati Springs – Sodwana Bay – Monachium. Wyjazd nie tylko nurkowy',
-                   'Relacja z wrześniowego wyjazdu do RPA.', 
-				   $dots.'./article.php?id=2012rpa&sec=swiat','Więcej',
-				   '2. Listopada 2012','D.Graczyk, T.Zapiór');
-
-*/
-
-
-
-
-
-
 //------------------------------------------------------
-
-NewSection('Listopad 2013','section');
-
-StartList();
-
-ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego',
-                   'Relacja uczestnika jesiennej edycji XVI Warsztatów Nurkowania Jaskiniowego - Maćka Chomicza', 
-				   $dots.'./article.php?id=2013_3wnj&sec=warsztaty','Więcej',
-				   '12. Listopada 2013','M.Chomicz');
-				   
-EndList ();
 
 NewSection('Czerwiec 2013','section');
 

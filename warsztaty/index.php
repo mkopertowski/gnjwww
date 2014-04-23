@@ -168,15 +168,6 @@ if($result) {
 
 ?>
 
-
-
-
-
-<li class="normal">
-		<b>XVI Warsztaty Nurkowania Jaskiniowego 2013</b>.<br>
-       Relacja uczestnika jesiennej edycji XVI Warsztatów Nurkowania Jaskiniowego - Maćka Chomicza <br>[<a class="navismall" href="../article.php?id=2013_3wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
 <li class="normal">
 		<b>XVI Warsztaty Nurkowania Jaskiniowego 2013</b>.<br>
        XVI Warsztaty Nurkowania Jaskiniowego okiem Agnieszki Masiewicz<br>[<a class="navismall" href="../article.php?id=2013_wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
