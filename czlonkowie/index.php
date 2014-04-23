@@ -540,7 +540,7 @@ if($bSubdir == true)
 			członek
 		</td>
 		<td align=center>
-			Katowicki Klub Speleologiczny
+			Tarnogórski Klub Taternictwa Jaskiniowego
 		</td>
 		<td align=center>
 		<img src="mp.jpg" alt="" />

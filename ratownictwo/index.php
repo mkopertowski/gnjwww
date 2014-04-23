@@ -43,10 +43,10 @@ StartList();
                    '../index.php','WIĘCEJ',
                    'Czerwiec 2012','mp');
 	*/
-ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego 2013',
+ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego 2014',
                    'Pozorowana akcja ratunkowa mająca na celu transport poszkodowanego nurka-grotołaza przez sztolnię zalaną po strop wodą. ',
-                   '../article.php?id=2013SMRJ&sec=ratownictwo','WIĘCEJ',
-                   'Kwiecień 2013','mp');
+                   '../article.php?id=2014SMRJ&sec=ratownictwo','WIĘCEJ',
+                   'Kwiecień 2014','mp');
 EndList();
 
 ?>

@@ -39,7 +39,7 @@ if($bSubdir == true)
 			<b>Czas<br>**)</b>
 		</td>
 		<td align=center class="aktualnosci">
-			<b>Szkic<br></b>
+			<b>Szkic/Plan<br></b>
 		</td>
 	</tr>
 <!-- jaskinia -->
@@ -62,6 +62,10 @@ if($bSubdir == true)
 		<td align=center>
 			3h
 		</td>
+		<td align=center>
+		<a href="./img/ciasnekominy.jpg" target="_new">
+		<img src="./img/ciasnekominy_small.jpg" alt="Syfony na dnie Wielkich i Ciasnych Kominów w Jaskini Miętusiej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -78,6 +82,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			3h
+		</td>
+		<td align=center>
+		<a href="./img/ciasnekominy.jpg" target="_new">
+		<img src="./img/ciasnekominy_small.jpg" alt="Syfony na dnie Wielkich i Ciasnych Kominów w Jaskini Miętusiej" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -96,6 +104,10 @@ if($bSubdir == true)
 		<td align=center>
 			2h
 		</td>
+		<td align=center>
+		<a href="./img/ciasnekominy.jpg" target="_new">
+		<img src="./img/ciasnekominy_small.jpg" alt="Syfony na dnie Wielkich i Ciasnych Kominów w Jaskini Miętusiej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -112,6 +124,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			&nbsp;
+		</td>
+		<td align=center>
+		<a href="./img/ciasnekominy.jpg" target="_new">
+		<img src="./img/ciasnekominy_small.jpg" alt="Syfony na dnie Wielkich i Ciasnych Kominów w Jaskini Miętusiej" ></a>
 		</td>
 	</tr>
 	<!-- jaskinia -->
@@ -134,6 +150,10 @@ if($bSubdir == true)
 		<td align=center>
 			9h
 		</td>
+		<td align=center>
+		<a href="./img/snieznastudnia.jpg" target="_new">
+		<img src="./img/snieznastudnia_small.jpg" alt="Plan Jaskini Śnieżna Studnia z syfonami" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -150,6 +170,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			9h
+		</td>
+		<td align=center>
+		<a href="./img/snieznastudnia.jpg" target="_new">
+		<img src="./img/snieznastudnia_small.jpg" alt="Plan Jaskini Śnieżna Studnia z syfonami" ></a>
 		</td>
 	</tr>
 	<!-- jaskinia -->
@@ -323,7 +347,7 @@ if($bSubdir == true)
 	</tr>
 	<!-- jaskinia -->
 	<tr>
-		<td rowspan=7>
+		<td rowspan=9>
 			<b>Kasprowa Niżnia</b>
 		</td>
 		<td>
@@ -340,6 +364,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			1.5h
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -358,6 +386,10 @@ if($bSubdir == true)
 		<td align=center>
 			-
 		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -374,6 +406,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			-
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -392,6 +428,10 @@ if($bSubdir == true)
 		<td align=center>
 			-
 		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -408,6 +448,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			-
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -426,6 +470,10 @@ if($bSubdir == true)
 		<td align=center>
 			-
 		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -442,6 +490,52 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			-
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			VIII Syfon Błotny
+		</td>
+		<td align=center>
+			?
+		</td>
+		<td align=center>
+			?
+		</td>
+		<td align=center>
+			&nbsp;
+		</td>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
+		</td>
+	</tr>
+	<tr>
+	    <td>
+			IX Syfon Koci
+		</td>
+		<td align=center>
+			?
+		</td>
+		<td align=center>
+			?
+		</td>
+		<td align=center>
+			&nbsp;
+		</td>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+		<a href="./img/kasprowan.jpg" target="_new">
+		<img src="./img/kasprowan_small.jpg" alt="Plan syfonów w Jaskini Kasprowej Niżniej" ></a>
 		</td>
 	</tr>
 	<!-- jaskinia -->
@@ -464,6 +558,10 @@ if($bSubdir == true)
 		<td align=center>
 			0.5h
 		</td>
+		<td align=center>
+		<a href="./img/bystra.jpg" target="_new">
+		<img src="./img/bystra_small.jpg" alt="Plan syfonów w Jaskini Bystrej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -480,6 +578,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			&nbsp;
+		</td>
+		<td align=center>
+		<a href="./img/bystra.jpg" target="_new">
+		<img src="./img/bystra_small.jpg" alt="Plan syfonów w Jaskini Bystrej" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -498,6 +600,10 @@ if($bSubdir == true)
 		<td align=center>
 			&nbsp;
 		</td>
+		<td align=center>
+		<a href="./img/bystra.jpg" target="_new">
+		<img src="./img/bystra_small.jpg" alt="Plan syfonów w Jaskini Bystrej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -515,6 +621,10 @@ if($bSubdir == true)
 		<td align=center>
 			&nbsp;
 		</td>
+		<td align=center>
+		<a href="./img/bystra.jpg" target="_new">
+		<img src="./img/bystra_small.jpg" alt="Plan syfonów w Jaskini Bystrej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -531,6 +641,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			&nbsp;
+		</td>
+		<td align=center>
+		<a href="./img/bystra.jpg" target="_new">
+		<img src="./img/bystra_small.jpg" alt="Plan syfonów w Jaskini Bystrej" ></a>
 		</td>
 	</tr>
 	<!-- jaskinia -->
@@ -553,6 +667,10 @@ if($bSubdir == true)
 		<td align=center>
 			5 min
 		</td>
+		<td align=center>
+		<a href="./img/dudnica.jpg" target="_new">
+		<img src="./img/dudnica_small.jpg" alt="Plan syfonów w Jaskini Dudnicy" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -569,6 +687,10 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			-
+		</td>
+		<td align=center>
+		<a href="./img/dudnica.jpg" target="_new">
+		<img src="./img/dudnica_small.jpg" alt="Plan syfonów w Jaskini Dudnicy" ></a>
 		</td>
 	</tr>
 	<tr>
@@ -587,6 +709,10 @@ if($bSubdir == true)
 		<td align=center>
 			-
 		</td>
+		<td align=center>
+		<a href="./img/dudnica.jpg" target="_new">
+		<img src="./img/dudnica_small.jpg" alt="Plan syfonów w Jaskini Dudnicy" ></a>
+		</td>
 	</tr>
 	<!-- jaskinia -->
 	<tr>
@@ -594,7 +720,7 @@ if($bSubdir == true)
 			<b>Zimna</b>
 		</td>
 		<td>
-			Syfon Zwolińskiego
+			Syfon Zwolińskich
 		</td>
 		<td align=center>
 			-1
@@ -625,6 +751,10 @@ if($bSubdir == true)
 		<td align=center>
 			3h
 		</td>
+		<td align=center>
+		<a href="./img/zimna.jpg" target="_new">
+		<img src="./img/zimna_small.jpg" alt="Plan Syfonów Ogazy i Warszawiaków w Jaskini Zimnej" ></a>
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -642,6 +772,10 @@ if($bSubdir == true)
 		<td align=center>
 			&nbsp;
 		</td>
+		<td align=center>
+		<a href="./img/zimna.jpg" target="_new">
+		<img src="./img/zimna_small.jpg" alt="Plan Syfonów Ogazy i Warszawiaków w Jaskini Zimnej" ></a>
+		</td>
 	</tr>
 <!-- jaskinia -->
 	<tr>
@@ -649,7 +783,7 @@ if($bSubdir == true)
 			<b>Mała w Mułowej</b>
 		</td>
 		<td>
-			nowodkryty syfon
+			Syfon Sądeczoków
 		</td>
 		<td align=center>
 			?
