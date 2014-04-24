@@ -40,6 +40,11 @@ if($_SESSION['usertype'] == "admin")
 	$html_keywords = ConvertStringMYSQL($mysqli,$_POST['html_keywords']);
 	$html_description = ConvertStringMYSQL($mysqli,$_POST['html_description']);
 	
+	if(isset($articleToUpdate))
+	{
+		$status = $articleToUpdate['status'];
+	}
+	
 	/* overwrite date? */
 	if($_POST['date'] =="")
 	{
