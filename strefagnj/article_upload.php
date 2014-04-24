@@ -15,14 +15,18 @@ include("../_php/settings.php");
 
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
-	if( ($_FILES['uploaded_file']["type"] != "image/jpeg") &&
-	    ($_FILES['uploaded_file']["type"] != "image/png") &&
-	    ($_FILES['uploaded_file']["type"] != "image/gif"))
+	if($_FILES['uploaded_file']['error'] != UPLOAD_ERR_OK)
+	{
+		$_SESSION['info'] = 'Błąd nr: .'.$_FILES['uploaded_file']['error'];
+	}
+	else if(($_FILES['uploaded_file']["type"] != "image/jpeg") &&
+	        ($_FILES['uploaded_file']["type"] != "image/png") &&
+	        ($_FILES['uploaded_file']["type"] != "image/gif"))
 	{
 		$_SESSION['info'] = 'Błąd. Nieobsługiwany typ pliku: '.$_FILES['uploaded_file']["type"];
 	}
-	// Make sure the file was sent without errors
-	else if($_FILES['uploaded_file']['error'] == 0) {
+	else if($_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK)
+	{
 		// Connect to the database
 	
 		// Get all required data
@@ -35,9 +39,7 @@ if(isset($_FILES['uploaded_file'])) {
 	    $size=filesize($_FILES['uploaded_file']['tmp_name']);
 
 	    // get the number of images for this article
-	    /* get image ids */
-	    $tbl_name="files"; // Table name
-	    
+	    /* get image ids */	    
 	    $sql="SELECT `name` FROM `files` WHERE articleId='$id'";
 	    $result=$mysqli->query($sql);
 	    	    

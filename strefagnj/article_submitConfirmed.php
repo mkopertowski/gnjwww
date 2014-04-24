@@ -39,7 +39,10 @@ if(isset($_SESSION['articleId'])) {
    			$mail->set("author",$author);
    			
    			SendMail2Admins($mysqli,$mailSubject,$mail->parse());	
-   			SendMail2User($mysqli,$_SESSION['userid'],$mailSubject,$mail->parse());
+   			if($_SESSION['usertype'] != "admin")
+   			{
+   				SendMail2User($mysqli,$_SESSION['userid'],$mailSubject,$mail->parse());
+   			}
    		}   	
    	
 		$_SESSION['info'] = 'Artykuł wysłany.';

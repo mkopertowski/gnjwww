@@ -17,7 +17,7 @@
 		    <td><?php echo $row['date']; ?></td>
 		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" >Wyświetl</a>&nbsp;
 		        <a href="article_new.php?id=<?php echo $row['id']; ?>" >Edytuj</a>&nbsp;
-		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>" >Dodaj zdjęcia</a>&nbsp;
+		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>" >Zdjęcia</a>&nbsp;
 		        <a href="article_approve.php?id=<?php echo $row['id']; ?>" >Zatwierdź</a>&nbsp;
 		        <a href="article_toAuthor.php?id=<?php echo $row['id']; ?>" >Wyślij do autora</a>&nbsp;
 		        <a href="article_delete.php?id=<?php echo $row['id']; ?>" >Usuń</a>
