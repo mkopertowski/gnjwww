@@ -41,7 +41,6 @@ No i oczywiście nie mogło być tak pięknie - gdzieś po drodze zgubiłem neop
 
 <h3 align=right>Włodzimierz Szymanowski</h3>
 <p align=right> skróty Wiktor Bolek</p>
-[<a class="navismall" href="../_uc/uc.php">Oryginalny tekst</a>]
 <!--============================= CONTENTS END   ==========================================-->
 <?php
 	renderBottom($bSubdir);
