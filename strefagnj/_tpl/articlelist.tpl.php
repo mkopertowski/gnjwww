@@ -15,6 +15,7 @@
 		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>">Wyświetl</a>&nbsp;
 		        <a href="article_new.php?id=<?php echo $row['id']; ?>">Edytuj</a>&nbsp;
 		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>">Zdjęcia</a>&nbsp;
+		        <a href="article_links.php?id=<?php echo $row['id']; ?>" >Linki</a>&nbsp;
 		        <a href="article_submit.php?id=<?php echo $row['id']; ?>">Publikuj</a>&nbsp;
 		        <a href="article_delete.php?id=<?php echo $row['id']; ?>">Usuń</a>
 		    </td>
