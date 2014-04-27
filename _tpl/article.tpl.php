@@ -3,7 +3,23 @@
 $bSubdir = true;
 include('../_php/page_utf8.php');
 
-renderHead($bSubdir,'','');
+$description="";
+if($this->html_description != "")
+{
+	$description = $this->html_description;
+}
+else if(isset($this->subtitle))
+{
+	$description = $this->subtitle;
+}
+
+$keywords="";
+if($this->html_keywords != "")
+{
+	$keywords = $this->html_keywords;
+}
+
+renderHeadNew($bSubdir,$description,$keywords,$this->title);
 renderMenu($bSubdir,2,false,ConvertSec2SectionName("polska"));
 renderGallery($bSubdir,false);
 

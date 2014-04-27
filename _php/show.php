@@ -46,6 +46,9 @@ if($result->num_rows == 1)
 	$Article->set("author",$author);
 	$Article->set("imageIds",$result_ids);
 	
+	$Article->set("html_keywords",$row['keywords']);
+	$Article->set("html_description",$row['description']);
+	
 	list($text1, $text2) = explode('</p><p class="article">', $text,2);
 	$Article->set("text1",$text1.'</p>');
 	$Article->set("text2",'<p class="article">'.$text2);
