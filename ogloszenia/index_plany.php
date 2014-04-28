@@ -57,18 +57,6 @@ EndList();
 <h3>Kalendarz</h3>
 
 <font color=white>	  
-<h4>luty 2014</h4>
-      <ul>
-      <li><b>Kosowo</b><br>Wyprawa eksploracyjna do Kosowa. <br>
-Głównym celem wyprawy jest eksploracja syfonu na końcu jaskini Gryka e Madhe. Inne cele to eksploracja partii ponorowych w pobliżu Wielkiego Syfonu, inspekcja Wielkiego Syfonu w zimie oraz dla początkujących speleonurków nurkowania w syfonach eksplorowanych w 2010 i 2011 roku.
-      </li>
-      </ul>
-
-<h4>26 kwietnia - 4 maja 2014</h4>
-      <ul>
-      <li><b>Bałkany</b><br>Wyjazd turystyczno-eksploracyjny i Warsztaty Nurkowania Jaskiniowego za granicą, jeśli będą chętni.</li>
-      </ul>
-
 <h4>6-8 czerwca 2014</h4>
       <ul>
       <li><b>Śląskie Manewry Ratownictwa Jaskiniowego</b><br>Uczestnictwo w pozorowanej, podwodnej akcji ratunkowej</li>
