@@ -13,34 +13,30 @@ central panel = 614
 
 */
 
-//----------------------------------------------------------------------------------------------------
-function renderHead($bSubdir,$description="", $keywords="")
+function renderHeadNew($bSubdir,$description="", $keywords="",$title="")
 {
-	$title = 'Nurkowanie Jaskiniowe - Grupa Nurków Jaskiniowych PZA; Cave Diving Poland - Cave Diving Group';
-
-   if($description == '')
-   {
-     $description = 'Nurkowanie jaskiniowe i w zalanych podziemiach. 
-                     Podkomisja Nurkowania Jaskiniowego KTJ PZA oraz 
-                     Grupa Nurków Jaskiniowych. Cave diving and overhead env. diving. Cave Diving Group Poland.';
-   }
-
-   if($keywords == '')
-   {
-     $keywords = 'nurkowanie, jaskiniowe, jaskinie, speleologia, warsztaty, 
-                  podkomisja, nurkowania, jaskiniowego, PNJ, grupa, nurków, 
-                  jaskiniowych, GNJ, cave, diving, group, poland';
-   }
-   
+	
+	if($description == '')
+	{
+		$description = 'Nurkowanie jaskiniowe i w zalanych podziemiach.
+                     Podkomisja Nurkowania Jaskiniowego KTJ PZA oraz
+                     Grupa Nurków Jaskiniowych. GNJ. Cave diving and overhead env. diving. Cave Diving Group Poland.';
+	}
+	
+	if($keywords == '')
+	{
+		$keywords = 'jaskinia,warsztaty,podkomisja,PNJ,GNJ,PZA,cave,diving';
+	}
+	 
 	$dots = '.';
 	if($bSubdir == true)
 		$dots = '..';
-
+	
 	$txt = '<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 	        <html>';
 	
 	/* prepare HEAD section */
-	$HeadSection = new Renderer($dots.'/_tpl/page_head.tpl.php');	
+	$HeadSection = new Renderer($dots.'/_tpl/page_head.tpl.php');
 	
 	$HeadSection->set("title",$title);
 	$HeadSection->set("description",$description);
@@ -55,21 +51,32 @@ function renderHead($bSubdir,$description="", $keywords="")
 					<table cellspacing=0 cellpadding=0 width=760>
 						<tr>
 						<th colspan="3" valign=top align=right>
-						<TABLE class="noborder" cellspacing=0 cellpadding=0><TR><TD>       
+						<TABLE class="noborder" cellspacing=0 cellpadding=0><TR><TD>
 						<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=100% HEIGHT=100>
-							<PARAM NAME=movie VALUE="'.$dots.'/_gfx/FLASH.swf"> 
-							<PARAM NAME=quality VALUE=high> 
-							<PARAM NAME=bgcolor VALUE=#000000> 
+							<PARAM NAME=movie VALUE="'.$dots.'/_gfx/FLASH.swf">
+							<PARAM NAME=quality VALUE=high>
+							<PARAM NAME=bgcolor VALUE=#000000>
 							<EMBED src="'.$dots.'/_gfx/FLASH.swf" quality=high bgcolor=#000000 WIDTH=600 HEIGHT=100 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
-						</object>			
-					</TABLE>							
-			<TR height=4>				
+						</object>
+					</TABLE>
+			<TR height=4>
 			<th width=136>
 			<th width=10>
 			<th width=614>
 			<TR valign=middle>
 ';
-	echo $txt;	
+	echo $txt;
+
+}
+
+
+
+//----------------------------------------------------------------------------------------------------
+function renderHead($bSubdir,$description="", $keywords="")
+{
+	$title = 'Nurkowanie Jaskiniowe - Grupa Nurków Jaskiniowych PZA; Cave Diving Poland - Cave Diving Group';
+
+	renderHeadNew($bSubdir,$description,$keywords,$title);
 }
 //----------------------------------------------------------------------------------------------------
 function renderTopMenu($bSubdir,$ActiveMenuTitle)
