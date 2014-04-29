@@ -16,7 +16,7 @@ if($bSubdir == true)
 <h1>
 	Lista członków i sympatyków Grupy Nurków Jaskiniowych
 </h1>
-<b>Stan na dzień 03.05.2012</b>
+<b>Stan na dzień 04.04.2014</b>
 <br>&nbsp;<br>&nbsp;<br>
 
 <table border=1 style="border: 2px,2px,2px,2px;" align=center width="80%">
@@ -546,6 +546,52 @@ if($bSubdir == true)
 		<img src="mp.jpg" alt="" />
 		</td>
 	</tr>
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Sebastian
+		</td>
+		<td align=center>
+			Dobrowolski
+		</td>
+		<td align=center>
+			2006
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="sd.jpg" alt="" />
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Krzysztof
+		</td>
+		<td align=center>
+			Dobrowolski
+		</td>
+		<td align=center>
+			2006
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="kd.jpg" alt="" />
+		</td>
+	</tr>
 		<!-- członek -->
 	<tr>
 		<td align=center>
@@ -590,7 +636,6 @@ if($bSubdir == true)
 		<td align=center>
 			Speleoklub Warszawski
 		</td>
-		
 	</tr>
 </table>
 
