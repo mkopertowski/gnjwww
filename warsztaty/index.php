@@ -37,9 +37,8 @@ include('../_php/misc.php');
 <div align=center>
 <font color=#d76a01>
 <font size="4">
-<b>Zapraszamy na Warsztaty Nurkowania Jaskiniowego</b><br><br>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.
+<b>Zapraszamy na Warsztaty Nurkowania Jaskiniowego</b><br><br>
 <br><br>
-Kolejna edycja Warsztatów Nurkowania Jaskiniowego odbędzie się w weekend bożociałowy 19-22 czerwca 2014.<br> <b></b><br><br>
 </font>
 </font>
 </div>
@@ -104,6 +103,7 @@ Wszystkie nurkowania mogą odbyć się jedynie w zgodzie z uprawnieniami posiada
 Lista niezbędnego sprzętu jest do pobrania <a class="navi" href="./doc/lista_sprzetu_2012.pdf">tutaj</a>.
 Warunkiem uczestnictwa w warsztatach jest posiadanie ubezpieczenia KL i NNW obejmującego nurkowanie.<br><br>
 
+<!--
 <b>Certyfikacja:</b><br><br>
 
 Brak w świecie organizacji certyfikującej w speleonurkowaniu, tj. nurkowaniu w systemie "francuskim".
@@ -115,6 +115,7 @@ Uczestnicy kursu NAUI Cavern Diver proszeni są o zapoznanie się z <a class="na
 <b>Cena:</b><br><br> 
 Ustalana każdego roku, posiadacze Karty Taternika Jaskiniowego mogą liczyć na zniżkę. Dojazd, zakwaterowanie i wyżywienie we własnym zakresie.
 <br><br>
+-->
 
 <!--<b>Zakwaterowanie:</b><br><br>
 Ponieważ zamysłem warsztatów jest m.in. znalezienie i przygotowanie nowych uczestników wypraw eksploracyjnych GNJ (Grupy Nurków Jaskiniowych) w różnych zakątkach świata, śpimy w namiotach. Każdy z uczestników powinien być do tego odpowiednio przygotowany (namiot, śpiwór, karimata a także inny sprzęt biwakowy jak menażki, niezbędniki itp.). Tuż przy obozowisku znajduje się sklep spożywczy, w którym można się zaopatrzyć.<br><br>
@@ -128,18 +129,18 @@ Z Legnicy trasą nr 3 do Jawora (około 12 km). Z Jawora trasą nr 374 w kierunk
 
 <b>Zapisy:</b><br><br>
 
-Zgłoszenia należy wysyłać na adres mailowy: "honzo@o2.pl" na 
+Zgłoszenia należy wysyłać na adres mailowy: "wnj / at / gnj.org.pl" na 
 <a class="navi" href="./doc/zgloszenie_wnj12.doc">formularzu zgłoszeniowym</a>.<br><br>
 
-O uczestnictwie w Warsztatach decyduje kolejność zgłoszeń. Zgłoszenie jest równoznaczne z wpłatą zaliczki na konto podawane indywidualnie osobom zainteresowanym.<br><br>
+O uczestnictwie w Warsztatach decyduje kolejność zgłoszeń.<br><br>
 
-<b>Kontakt:</b>
+<b>Szczegoly i zapytania:</b>
 
 <ul class="normal">
-	<li class="normal">Dominik Graczyk (Honzo) e-mail: honzo / at / o2.pl, tel. tel. +48 502 965 288</li>
+	<li class="normal">e-mail: wnj / at / gnj.org.pl</li>
 </ul>
 
-Po pomyślnym ukończeniu Warsztatów dla osób posiadających Kartę Taternika Jaskiniowego organizowane są nurkowania w Tatrach, a wyróżniający się uczestnicy są zapraszani na wyprawy eksploracyjne GNJ.<br><br><br><br>
+Uczestników warsztatów posiadających Kartę Taternika Jaskiniowego zapraszamy na nurkowania w Tatrach, a wyróżniający się uczestnicy są zapraszani na wyprawy eksploracyjne GNJ.<br><br><br><br>
 
 
 <!--RELACJE----------------------------------------------------------------------------------->

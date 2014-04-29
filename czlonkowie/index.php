@@ -510,7 +510,7 @@ if($bSubdir == true)
 			Graczyk
 		</td>
 		<td align=center>
-			2005
+			2013
 		</td>
 		<td align=center>
 			członek
@@ -534,7 +534,7 @@ if($bSubdir == true)
 			Plata
 		</td>
 		<td align=center>
-			2006
+			2013
 		</td>
 		<td align=center>
 			członek

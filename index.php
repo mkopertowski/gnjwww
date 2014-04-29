@@ -53,10 +53,11 @@ include('./_php/misc.php');
 <font size="3">Więcej informacji w sekcji <a class="hotinfo" href="./ogloszenia/index_plany.php">Ogłoszenia.</a><br></font></i>
 <br>
 
+<!--
 <font size="4"><font color=#d76a01>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.</font></font> <br>
 <font size="3"><font color=#d76a01>Więcej informacji w sekcji <a class="hotinfo" href="./warsztaty/index.php">Warsztaty.</a> Zapraszamy</font></font></i>
 <br><br>
-
+-->
 </div>
 
 
