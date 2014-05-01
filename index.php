@@ -130,7 +130,7 @@ include('./_php/misc.php');
 
 <?php
 
-$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and date >= '2013-01-01' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
 $result=$mysqli->query($sql);
 
 if($result) {

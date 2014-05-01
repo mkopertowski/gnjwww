@@ -19,7 +19,7 @@ if($this->html_keywords != "")
 	$keywords = $this->html_keywords;
 }
 
-renderHeadNew($bSubdir,$description,$keywords,$this->title);
+renderHeadNew($bSubdir,$description,$keywords,"Nurkowanie Jaskiniowe GNJ - ".$this->title);
 renderMenu($bSubdir,2,false,ConvertSec2SectionName("polska"));
 renderGallery($bSubdir,false);
 
