@@ -61,12 +61,7 @@ EndList();
       <ul>
       <li><b>Śląskie Manewry Ratownictwa Jaskiniowego</b><br>Uczestnictwo w pozorowanej, podwodnej akcji ratunkowej</li>
       </ul>	  
-	  
-<h4>19-22 czerwca 2014</h4>
-      <ul>
-      <li><b>Warsztaty Nurkowania Jaskiniowego</b><br> Wstępnie w Sosnowcu</li>
-      </ul>
-	  
+	  	  
 <h4>lipiec 2014</h4>
       <ul>
       <li><b>Kosowo i Serbia</b><br>Dalsze eksploracje tamtejszych jaskiń</li>
