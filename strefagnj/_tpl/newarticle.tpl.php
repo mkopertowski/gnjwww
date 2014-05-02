@@ -22,13 +22,9 @@
 <h2>Treść (używaj składni wiki markup):</h2>
 
 <ul>
-    <li>== Nagłówek 1 ==</li>
-    <li>=== Nagłówek 2 ===</li>
-    <li>==== Nagłówek 3 ====</li>
-    <li>''''' Bold-italic '''''</li>
     <li>''' Bold '''</li>
     <li>'' Italic ''</li>
-    <li>---- Horizontal Line</li>
+    <li>''''' Bold-italic '''''</li>
     <li>: Indentation</li>
     <li>:: Subindentation</li>
     <li>* Nienumerowana lista</li>
