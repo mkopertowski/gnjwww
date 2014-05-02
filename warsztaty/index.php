@@ -100,7 +100,7 @@ Omawiane są wyniki wypraw, a także planuje się nowe wyprawy eksploracyjne lub
 <b>Informacje dodatkowe:</b><br><br>
 
 Wszystkie nurkowania mogą odbyć się jedynie w zgodzie z uprawnieniami posiadanymi przez uczestników. 
-Lista niezbędnego sprzętu jest do pobrania <a class="navi" href="./doc/lista_sprzetu_2012.pdf">tutaj</a>.
+Lista niezbędnego sprzętu jest do pobrania <a class="navi" href="./doc/lista_sprzetu.pdf">tutaj</a>.
 Warunkiem uczestnictwa w warsztatach jest posiadanie ubezpieczenia KL i NNW obejmującego nurkowanie.<br><br>
 
 <!--
@@ -130,7 +130,7 @@ Z Legnicy trasą nr 3 do Jawora (około 12 km). Z Jawora trasą nr 374 w kierunk
 <b>Zapisy:</b><br><br>
 
 Zgłoszenia należy wysyłać na adres mailowy: "wnj / at / gnj.org.pl" na 
-<a class="navi" href="./doc/zgloszenie_wnj12.doc">formularzu zgłoszeniowym</a>.<br><br>
+<a class="navi" href="./doc/zgloszenie_wnj.doc">formularzu zgłoszeniowym</a>.<br><br>
 
 O uczestnictwie w Warsztatach decyduje kolejność zgłoszeń.<br><br>
 
