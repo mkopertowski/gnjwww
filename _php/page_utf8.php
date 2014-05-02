@@ -32,8 +32,9 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="")
 	if($bSubdir == true)
 		$dots = '..';
 	
-	$txt = '<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-	        <html>';
+	$txt = '<!DOCTYPE html><html>';
+	//$txt = '<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+	//        <html>';
 	
 	/* prepare HEAD section */
 	$HeadSection = new Renderer($dots.'/_tpl/page_head.tpl.php');
@@ -318,7 +319,7 @@ function renderBottom($bSubdir)
 						</table>
 				</tr>
 			</table>
-		</div>
+		</div>													
 	</body>
 </html>
 ';
