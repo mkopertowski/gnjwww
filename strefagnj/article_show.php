@@ -8,16 +8,15 @@ if(!isset($_SESSION['email'])){
 include("../_php/mysql.php");
 include("../_php/misc.php");
 include("../_php/Renderer.php");
+include("../_php/settings.php");
 require_once("../_php/wikiParser.php");
-
-$tbl_name="articles"; // Table name
 
 $authorid = $_SESSION['userid'];
 $id = $_REQUEST['id'];
 
 $mysqli->query("SET NAMES 'utf8'");
 
-$sql="SELECT * FROM $tbl_name WHERE id='$id'";
+$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$id'";
 $result=$mysqli->query($sql);
 $row = $result->fetch_assoc();
 
@@ -42,10 +41,12 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
     }
     
     /* get image ids */
-    $tbl_name="files"; // Table name
-            
-    $sql="SELECT `description`, `id`, `name` FROM `files` WHERE articleId='$id'";
+    $sql="SELECT `description`, `id`, `name` FROM $FILES_TABLE_NAME WHERE articleId='$id'";
     $result_ids=$mysqli->query($sql);    
+
+    /* get links */
+    $sql="SELECT `link`, `name` FROM $LINKS_TABLE_NAME WHERE articleId='$id'";
+    $result_links=$mysqli->query($sql);
     
 	/* prepare and publish article */
 	$Article = new Renderer("../_tpl/article.tpl.php");
@@ -55,6 +56,10 @@ if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
 	$Article->set("date",$date);
 	$Article->set("author",$author);
 	$Article->set("imageIds",$result_ids);
+	$Article->set("links",$result_links);
+	
+	$Article->set("html_keywords",$row['keywords']);
+	$Article->set("html_description",$row['description']);
 	
 	list($text1, $text2) = explode('</p><p class="article">', $text,2);
 	$Article->set("text1",$text1.'</p>');
