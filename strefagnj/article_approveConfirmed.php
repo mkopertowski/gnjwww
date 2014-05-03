@@ -36,7 +36,7 @@ if(isset($_SESSION['articleId'])) {
    			$author = $_SESSION['name']." ".$_SESSION['surname'];
    		
    			/* send emial to all admins */
-   			$mailSubject= "=?UTF-8?B?".base64_encode("[GNJWWW] artykuł zamieszczony na stronie")."?=";
+   			$mailSubject= "=?UTF-8?B?".base64_encode("[GNJWWW] artykuł zamieszczony: ".$row['title'])."?=";
    			$mail = new Renderer("./_tpl/mail.newarticle.tpl.php");
    			$mail->set("title",$row['title']);
    			$mail->set("author",$author);
