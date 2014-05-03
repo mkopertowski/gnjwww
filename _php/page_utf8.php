@@ -13,7 +13,7 @@ central panel = 614
 
 */
 
-function renderHeadNew($bSubdir,$description="", $keywords="",$title="")
+function renderHeadNew($bSubdir,$description="", $keywords="",$title="", $articleId="",$imgId="")
 {
 	
 	if($description == '')
@@ -43,7 +43,11 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="")
 	$HeadSection->set("description",$description);
 	$HeadSection->set("keywords",$keywords);
 	$HeadSection->set("dots",$dots);
-	
+
+	/* variables set for facebook plugin */
+	$HeadSection->set("articleId",$articleId);
+	$HeadSection->set("imgId",$imgId);
+		
 	$txt .= $HeadSection->parse();
 	
 	$txt .= '<body>
@@ -77,7 +81,7 @@ function renderHead($bSubdir,$description="", $keywords="")
 {
 	$title = 'Nurkowanie Jaskiniowe - Grupa Nurków Jaskiniowych PZA; Cave Diving Poland - Cave Diving Group';
 
-	renderHeadNew($bSubdir,$description,$keywords,$title);
+	renderHeadNew($bSubdir,$description,$keywords,$title,"","");
 }
 //----------------------------------------------------------------------------------------------------
 function renderTopMenu($bSubdir,$ActiveMenuTitle)

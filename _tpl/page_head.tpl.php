@@ -231,5 +231,18 @@
 			});
 		});
 		</script>
-
-</head>
+		
+		<!-- facebook plugin settings -->
+		<meta property="og:title"           content="<?php echo $this->title; ?>" /> 
+		
+		<?php if( $this->articleId != ""): ?>
+			<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" /> 
+		<?php else: ?>
+			<meta property="og:url"             content="http://gnj.org.pl" /> 
+		<?php endif; ?>
+		<?php if( $this->imgId != ""): ?>
+			<meta property="og:image"           content="http://gnj.org.pl/_php/mysql_getFile.php?id=<?php echo $this->imgId; ?>&type=data400x266" />
+		<?php else: ?>
+			<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png" />
+		<?php endif; ?>
+		</head>

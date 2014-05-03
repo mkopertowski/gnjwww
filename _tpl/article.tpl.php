@@ -19,13 +19,23 @@ if($this->html_keywords != "")
 	$keywords = $this->html_keywords;
 }
 
-renderHeadNew($bSubdir,$description,$keywords,"Nurkowanie Jaskiniowe GNJ - ".$this->title);
+renderHeadNew($bSubdir,$description,$keywords,"Nurkowanie Jaskiniowe GNJ - ".$this->title,$this->articleId,$this->imgId);
 renderMenu($bSubdir,2,false,ConvertSec2SectionName("polska"));
 renderGallery($bSubdir,false);
 
 renderCentral(true);
 
 ?>
+
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- ============================= CONTENT BEGIN   ========================================== -->
 <h1><?php echo $this->title; ?></h1>
@@ -63,6 +73,15 @@ renderCentral(true);
 <?php endif; ?>
 
 <!-- ============================= CONTENT END   ============================================ -->
+
+<!-- facebook plugin start -->
+
+<?php if($this->showPlugin): ?>
+<BR>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<?php endif; ?>
+<!-- facebook plugin end -->
+
 
 <?php 
 

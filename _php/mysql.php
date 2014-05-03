@@ -34,6 +34,21 @@ function getAuthorFromAuthorID($mysqli,$authorID)
 	return $author;
 }
 
+function getFirstImageIDFromArticle($mysqli,$articleID)
+{
+	$sql="SELECT `id` FROM `files` WHERE articleId='$articleID' LIMIT 1";
+	$result=$mysqli->query($sql);
+
+	$imgId = "";
+	
+	if($result)
+	{
+		$row = $result->fetch_assoc();
+		$imgId = $row['id'];
+	}
+
+	return $imgId;
+}
 
 function getLastUpdateMYSQL($mysqli)
 {
@@ -121,5 +136,59 @@ function ConvertStringMYSQL($mysqli,$str)
 {
 	return $mysqli->real_escape_string(stripslashes($str));	
 }
+
+function ShwoArticle($mysqli,$row,$id,$showplugin)
+{
+	$title = $row['title'];
+	$subtitle = $row['subtitle'];
+	$date = formatDate($row['date']);
+	
+	$text = $row['text'];
+	$wiki_txt = new wikiParser;
+	$text = $wiki_txt->parse($text);
+	
+	if($row['author'] == "")
+	{
+		$authorid = $row['authorid'];
+		$author = getAuthorFromAuthorID($mysqli,$authorid);
+	}
+	else
+	{
+		$author = $row['author'];
+	}
+	
+	/* get image ids */
+	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id'";
+	$result_ids=$mysqli->query($sql);
+	
+	/* get links */
+	$sql="SELECT `link`, `name` FROM links WHERE articleId='$id'";
+	$result_links=$mysqli->query($sql);
+	
+	/* prepare and publish article */
+	$Article = new Renderer("../_tpl/article.tpl.php");
+	
+	$Article->set("articleId",$id);
+	$Article->set("title",$title);
+	$Article->set("subtitle",$subtitle);
+	$Article->set("date",$date);
+	$Article->set("author",$author);
+	$Article->set("imageIds",$result_ids);
+	$Article->set("links",$result_links);
+	
+	$Article->set("html_keywords",$row['keywords']);
+	$Article->set("html_description",$row['description']);
+	
+	$Article->set("showPlugin",$showplugin);
+	$Article->set("imgId",getFirstImageIDFromArticle($mysqli,$id));
+	
+	list($text1, $text2) = explode('</p><p class="article">', $text,2);
+	$Article->set("text1",$text1.'</p>');
+	$Article->set("text2",'<p class="article">'.$text2);
+	
+	$Article->publish();
+	
+}
+
 
 ?>
