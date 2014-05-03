@@ -147,21 +147,6 @@ if($result) {
 	
 //------------------------------------------------------
 
-NewSection('Czerwiec 2013','section');
-
-StartList();
-ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego',
-                   'XVI Warsztaty Nurkowania Jaskiniowego okiem Piotra Majchrzaka.', 
-				   $dots.'./article.php?id=2013_2wnj&sec=warsztaty','Więcej',
-				   '13. Czerwca 2013','P.Majchrzak');
-				   
-ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego',
-                   'XVI Warsztaty Nurkowania Jaskiniowego okiem Agnieszki Masiewicz.', 
-				   $dots.'./article.php?id=2013_wnj&sec=warsztaty','Więcej',
-				   '13. Czerwca 2013','A.Masiewicz');
-
-EndList ();
-
 NewSection('Maj 2013','section');
 StartList();
 ExtendedListItem('Speleonurkowa majówka 2013',

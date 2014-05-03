@@ -140,7 +140,7 @@ O uczestnictwie w Warsztatach decyduje kolejność zgłoszeń.<br><br>
 	<li class="normal">e-mail: wnj / at / gnj.org.pl</li>
 </ul>
 
-Uczestników warsztatów posiadających Kartę Taternika Jaskiniowego zapraszamy na nurkowania w Tatrach, a wyróżniający się uczestnicy są zapraszani na wyprawy eksploracyjne GNJ.<br><br><br><br>
+Uczestników warsztatów posiadających Kartę Taternika Jaskiniowego zapraszamy na nurkowania w Tatrach.<br><br><br><br>
 
 
 <!--RELACJE----------------------------------------------------------------------------------->
@@ -168,16 +168,6 @@ if($result) {
 }
 
 ?>
-
-<li class="normal">
-		<b>XVI Warsztaty Nurkowania Jaskiniowego 2013</b>.<br>
-       XVI Warsztaty Nurkowania Jaskiniowego okiem Agnieszki Masiewicz<br>[<a class="navismall" href="../article.php?id=2013_wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
-<li class="normal">
-		<b>XVI Warsztaty Nurkowania Jaskiniowego 2013</b>.<br>
-       XVI Warsztaty Nurkowania Jaskiniowego okiem Piotra Majchrzaka<br>[<a class="navismall" href="../article.php?id=2013_2wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
 
 <li class="normal">
 		<b>XV Warsztaty Nurkowania Jaskiniowego 2012 - edycja jesienna</b>.<br>

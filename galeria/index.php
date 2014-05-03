@@ -26,11 +26,7 @@ if($bSubdir == true)
 <br>
 <?php
   StartList();  
-  ExtendedListItem('XVI Warsztaty Nurkowania Jaskiniowego 2013',
-                   '',
-                   './gallery.php?id=2013_wnj','Więcej',
-                   '13. Czerwca 2013', '');
-				   
+			   
   ExtendedListItem('Jaskinia Wodna Pod Pisaną',
                    'Nurkowanie w Syfonie II...',
                    './gallery.php?id=2012wpp','Więcej',
