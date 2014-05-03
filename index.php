@@ -147,16 +147,6 @@ if($result) {
 	
 //------------------------------------------------------
 
-NewSection('Maj 2013','section');
-StartList();
-ExtendedListItem('Speleonurkowa majówka 2013',
-                   'Relacja z wyjazdu do Serbii', 
-				   $dots.'./article.php?id=2013serbia&sec=swiat','Więcej',
-				   '12. Maja 2013','Dominik Graczyk');
-
-EndList ();
-
-
 NewSection('Kwiecień 2013','section');
 
 StartList();

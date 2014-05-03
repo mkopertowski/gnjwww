@@ -37,7 +37,7 @@ if(isset($_SESSION['articleId'])) {
    			$message=$_POST['text'];
    		
    			/* send emial to all admins */
-   			$mailSubject = "[GNJWWW] artykuł przekazany do ponownej edycji";
+   			$mailSubject = "[GNJWWW] artykul przekazany do ponownej edycji";
    			$mail = new Renderer("./_tpl/mail.newarticle.tpl.php");
    			$mail->set("title",$row['title']);
    			$mail->set("author",$author);

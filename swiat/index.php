@@ -71,12 +71,6 @@ NewSection('ROK 2013','section');
 
 StartList();
 
-ExtendedListItem('Speleonurkowa majówka 2013',
-                   'Relacja z wyjazdu do Serbii',
-                   '../article.php?id=2013serbia&sec=swiat','WIĘCEJ',
-                   '12. Maja 2013','Dominik Graczyk');
-
-
 ExtendedListItem('J2 - Meksyk',
                    'Relacja z wyprawy do J2',
                    '../article.php?id=2013j2&sec=swiat','WIĘCEJ',
