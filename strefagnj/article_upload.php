@@ -21,7 +21,8 @@ if(isset($_FILES['uploaded_file'])) {
 	}
 	else if(($_FILES['uploaded_file']["type"] != "image/jpeg") &&
 	        ($_FILES['uploaded_file']["type"] != "image/png") &&
-	        ($_FILES['uploaded_file']["type"] != "image/gif"))
+	        ($_FILES['uploaded_file']["type"] != "image/gif") &&
+            ($_FILES['uploaded_file']["type"] != "application/pdf"))
 	{
 		$_SESSION['info'] = 'Błąd. Nieobsługiwany typ pliku: '.$_FILES['uploaded_file']["type"];
 	}
@@ -55,41 +56,49 @@ if(isset($_FILES['uploaded_file'])) {
 	    {
 	    	$data = file_get_contents($_FILES['uploaded_file']['tmp_name']);
 	    	
-	    	// compress only jpeg (gif and png are left untouched)
-	    	if($_FILES['uploaded_file']["type"] == "image/jpeg")
+	    	if($_FILES['uploaded_file']["type"] == "application/pdf")
 	    	{
-	    		$image = imagecreatefromstring($data);
+	    		$dataSmall = "";
+	    		$dataNormal = "";
+	    	}
+	    	else /* jpeg, gif, png */
+	    	{
+	    		// compress only jpeg (gif and png are left untouched)
+	    		if($_FILES['uploaded_file']["type"] == "image/jpeg")
+	    		{
+	    			$image = imagecreatefromstring($data);
+	    			ob_clean(); //Stdout --> buffer
+	    			imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
+	    			$data = ob_get_contents();
+	    			ob_clean(); //clear buffer
+	    			imagedestroy($image); //destroy img
+	    		}
+	    		 
+	    		$smallQuality = $ARTICLE_IMAGE_SMALL_QUALITY;
+	    		$normalQuality = $ARTICLE_IMAGE_NORMAL_QUALITY;
+	    		
+	    		if($_FILES['uploaded_file']["type"] != "image/jpeg")
+	    		{
+	    			$smallQuality = 100;
+	    			$normalQuality = 100;
+	    		}
+	    		
+	    		// small images are always jpeg
+	    		$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
 	    		ob_clean(); //Stdout --> buffer
-	    		imagejpeg($image, NULL, $ARTICLE_IMAGE_QUALITY);
-	    		$data = ob_get_contents(); 
+	    		imagejpeg($image, NULL, $smallQuality);
+	    		$dataSmall = ob_get_contents(); //store stdout
 	    		ob_clean(); //clear buffer
 	    		imagedestroy($image); //destroy img
-	    	} 
-	    	 
-	    	$smallQuality = $ARTICLE_IMAGE_SMALL_QUALITY;
-	    	$normalQuality = $ARTICLE_IMAGE_NORMAL_QUALITY;
-	    	
-	    	if($_FILES['uploaded_file']["type"] != "image/jpeg")
-	    	{
-	    		$smallQuality = 100;
-	    		$normalQuality = 100;
+	    		
+	    		// normal images are always jpeg
+	    		$image = getResizedImage($data, $ARTICLE_IMAGE_NORMAL_WIDTH, $ARTICLE_IMAGE_NORMAL_HEIGHT);
+	    		ob_clean(); //Stdout --> buffer
+	    		imagejpeg($image, NULL, $normalQuality);
+	    		$dataNormal = ob_get_contents(); //store stdout
+	    		ob_clean(); //clear buffer
+	    		imagedestroy($image); //destroy img	    		 
 	    	}
-	    	
-	    	// small images are always jpeg
-	    	$image = getResizedImage($data, $ARTICLE_IMAGE_SMALL_WIDTH, $ARTICLE_IMAGE_SMALL_HEIGHT);
-	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, $smallQuality);
-	    	$dataSmall = ob_get_contents(); //store stdout
-	    	ob_clean(); //clear buffer
-	    	imagedestroy($image); //destroy img
-
-	    	// normal images are always jpeg
-	    	$image = getResizedImage($data, $ARTICLE_IMAGE_NORMAL_WIDTH, $ARTICLE_IMAGE_NORMAL_HEIGHT);
-	    	ob_clean(); //Stdout --> buffer
-	    	imagejpeg($image, NULL, $normalQuality);
-	    	$dataNormal = ob_get_contents(); //store stdout
-	    	ob_clean(); //clear buffer
-	    	imagedestroy($image); //destroy img
 
 	    	$data = $mysqli->real_escape_string($data);
 	    	$dataSmall = $mysqli->real_escape_string($dataSmall);
@@ -104,7 +113,7 @@ if(isset($_FILES['uploaded_file'])) {
 	    	
 	    	// Check if it was successfull
 	    	if($result) {
-	    	$_SESSION['info'] = 'Zdjęcie dodane!';
+	    	$_SESSION['info'] = 'Plik dodany!';
 	    	}
 	    	else {
 	    	$_SESSION['info'] = 'Błąd:'."<pre>{$mysqli->error}</pre>";
@@ -112,12 +121,12 @@ if(isset($_FILES['uploaded_file'])) {
 	    }
     }
 	else {
-		$_SESSION['info'] = 'Błąd podczas wysyłania zdjęcia. '
+		$_SESSION['info'] = 'Błąd podczas wysyłania pliku. '
            . 'Kod błędu: '. intval($_FILES['uploaded_file']['error']);
 	}
 }
 else {
-    $_SESSION['info'] = 'Błąd. Zdjęcie niewysłane';
+    $_SESSION['info'] = 'Błąd. Plik nie został wysłany';
 }
 
 header("Location: article_uploadfiles.php?id=".$_SESSION['articleId']);
