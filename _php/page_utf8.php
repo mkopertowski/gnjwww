@@ -32,8 +32,8 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="", $articl
 	if($bSubdir == true)
 		$dots = '..';
 	
-	$txt = '<!DOCTYPE html><html>
-		   ';
+	$txt = '<!DOCTYPE html>
+			<html>';
 	//$txt = '<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 	//        <html>';
 	
