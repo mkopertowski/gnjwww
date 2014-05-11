@@ -1,9 +1,9 @@
 <html class="no-js" lang="en">
 	<head>
-		<meta content="charset=utf-8">
 		<title><?php echo $this->title; ?></title>
 		<meta NAME="DESCRIPTION" CONTENT="<?php echo $this->description; ?>">
 		<meta NAME="KEYWORDS" CONTENT="<?php echo $this->keywords; ?>"> 
+		<meta http-equiv=content-type content="text/html; charset=UTF-8">	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_php/css/css.css">
 
