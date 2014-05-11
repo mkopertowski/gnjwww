@@ -218,6 +218,7 @@
 				max-width: 700px;
 				margin: 0 auto;
 			}
+			.metaslider { width: 720px; }
 		</style>
 		
 		<!-- FlexSlider -->
