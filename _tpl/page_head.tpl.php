@@ -223,14 +223,6 @@
 		<link rel="stylesheet" href="<?php echo $this->dots; ?>/_css/flexslider.css" type="text/css" media="screen" />
 		<script src="<?php echo $this->dots; ?>/_js/modernizr.js"></script>
 		<script defer src="<?php echo $this->dots; ?>/_js/jquery.flexslider.js"></script>
-
-		<script type="text/javascript">
-		$(window).load(function() {
-			$('.flexslider').flexslider({
-				controlsContainer: ".flex-container"
-			});
-		});
-		</script>
 		
 		<!-- facebook plugin settings -->
 		<meta property="og:title"           content="<?php echo $this->title; ?>" /> 

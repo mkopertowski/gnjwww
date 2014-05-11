@@ -82,7 +82,6 @@ renderCentral(true);
 <?php endif; ?>
 <!-- facebook plugin end -->
 
-
 <?php 
 
 renderBottom($bSubdir);

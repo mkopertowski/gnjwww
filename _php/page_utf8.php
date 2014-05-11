@@ -323,7 +323,14 @@ function renderBottom($bSubdir)
 						</table>
 				</tr>
 			</table>
-		</div>													
+		</div>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$(".flexslider").flexslider({
+				controlsContainer: ".flex-container"
+			});
+		});
+		</script>															
 	</body>
 </html>
 ';
