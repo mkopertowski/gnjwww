@@ -1,4 +1,4 @@
-<html class="no-js" lang="en">
+<html class="no-js" lang="pl">
 	<head>
 		<title><?php echo $this->title; ?></title>
 		<meta NAME="DESCRIPTION" CONTENT="<?php echo $this->description; ?>">
@@ -21,11 +21,11 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 		<!-- Add Button helper (this is optional) -->
-		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/jquery.fancybox-buttons.css?v=1.0.5" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/jquery.fancybox-buttons.css?v=1.0.5">
 		<script type="text/javascript" src="<?php echo $this->dots; ?>/_js/jquery.fancybox-buttons.js?v=1.0.5"></script>
 
 		<!-- Add Thumbnail helper (this is optional) -->
-		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/jquery.fancybox-thumbs.css?v=1.0.7" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/jquery.fancybox-thumbs.css?v=1.0.7">
 		<script type="text/javascript" src="<?php echo $this->dots; ?>/_js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 		<!-- Add Media helper (this is optional) -->
@@ -221,7 +221,7 @@
 		</style>
 		
 		<!-- FlexSlider -->
-		<link rel="stylesheet" href="<?php echo $this->dots; ?>/_css/flexslider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo $this->dots; ?>/_css/flexslider.css" type="text/css" media="screen">
 		<script src="<?php echo $this->dots; ?>/_js/modernizr.js"></script>
 		<script defer src="<?php echo $this->dots; ?>/_js/jquery.flexslider.js"></script>
 		
@@ -229,13 +229,13 @@
 		<meta property="og:title"           content="<?php echo $this->title; ?>" /> 
 		
 		<?php if( $this->articleId != ""): ?>
-			<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" /> 
+			<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>"> 
 		<?php else: ?>
-			<meta property="og:url"             content="http://gnj.org.pl" /> 
+			<meta property="og:url"             content="http://gnj.org.pl"> 
 		<?php endif; ?>
 		<?php if( $this->imgId != ""): ?>
-			<meta property="og:image"           content="http://gnj.org.pl/_php/mysql_getFile.php?id=<?php echo $this->imgId; ?>&type=data400x266" />
+			<meta property="og:image"           content="http://gnj.org.pl/_php/mysql_getFile.php?id=<?php echo $this->imgId; ?>&type=data400x266">
 		<?php else: ?>
-			<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png" />
+			<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png">
 		<?php endif; ?>
 		</head>
