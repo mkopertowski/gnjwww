@@ -30,6 +30,12 @@ if(isset($_POST['link']) && isset($_POST['name'])) {
 	}
 	else
 	{
+		if(is_numeric($link))
+		{
+			$link ="http://gnj.org.pl/_php/mysql_getFile.php?id=".$link."&type=data";
+			$link = $mysqli->real_escape_string($link);
+		}
+		
 	   	// Create the SQL query
 	    $sql = "INSERT INTO $LINKS_TABLE_NAME ( `link`, `name`, `articleId`) VALUES (
 	    	'{$link}', '{$name}', '{$id}')";

@@ -158,7 +158,7 @@ function ShwoArticle($mysqli,$row,$id,$showplugin)
 	}
 	
 	/* get image ids */
-	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id'";
+	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'image%'";
 	$result_ids=$mysqli->query($sql);
 	
 	/* get links */

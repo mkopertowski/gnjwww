@@ -1,8 +1,8 @@
-<h1>Dodawanie zdjęć</h1>
+<h1>Dodawanie plików</h1>
 
 <p><big>Tytuł puplikacji: <?php echo $this->title; ?></big></p>
 
-<p>Zdjęcia:</p>
+<p>Pliki:</p>
 
 <?php if( $this->files->num_rows > 0): ?>
 
