@@ -55,22 +55,19 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="", $articl
 				<a name=top></a>
 				<div align=center>
 					<table cellspacing=0 cellpadding=0 width=760>
-						<tr>
-						<th colspan="3" valign=top align=right>
-						<TABLE class="noborder" cellspacing=0 cellpadding=0><TR><TD>
-						<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=100% HEIGHT=100>
-							<PARAM NAME=movie VALUE="'.$dots.'/_gfx/FLASH.swf">
-							<PARAM NAME=quality VALUE=high>
-							<PARAM NAME=bgcolor VALUE=#000000>
-							<EMBED src="'.$dots.'/_gfx/FLASH.swf" quality=high bgcolor=#000000 WIDTH=600 HEIGHT=100 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
-						</object>
-					</TABLE>
-			<TR height=4>
-			<th width=136>
-			<th width=10>
-			<th width=614>
-			<TR valign=middle>
-';
+						<TR height=4>
+					  		<TH width=136></TH>
+			          		<TH width=10></TH>
+			          		<TH width=614>
+								<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=100% HEIGHT=100>
+									<PARAM NAME=movie VALUE="'.$dots.'/_gfx/FLASH.swf">
+									<PARAM NAME=quality VALUE=high>
+									<PARAM NAME=bgcolor VALUE=#000000>
+									<EMBED src="'.$dots.'/_gfx/FLASH.swf" quality=high bgcolor=#000000 WIDTH=600 HEIGHT=100 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+								</object>
+					 		</TH>
+				   		</TR>
+			       		<TR valign=middle>';
 	echo $txt;
 
 }
@@ -100,7 +97,7 @@ function renderTopMenu($bSubdir,$ActiveMenuTitle)
   $txt = '<TD align=middle>
   
 
-  <a href="http://www.gnj.org.pl/_rss/rss.xml" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA">
+  <a href="http://www.gnj.org.pl/_rss/rss.xml" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>
 
   
   <div id="'.$id.'">';
@@ -353,38 +350,5 @@ function ConvertSec2SectionName($sec)
 
 ?>
 
-	<script language=JavaScript1.2>
-
-	function open_click(what,height,width)
-	{
-		sStyle = "channelmode=0,directories=0,fullscreen=0,";
-		sStyle += "left=0,location=0,menubar=0,resizable=1,scrollbars=1,";
-		sStyle += "status=0,titlebar=0,toolbar=0,titlebar=0,top=0,"; 
-                sStyle += "height=";
-                sStyle += height;
-                sStyle += ",width=";
-                sStyle += width;
-		window.open(what,"_blank",sStyle);
-	}
-
-        function OpenGalleryWindow(img,title,h,w)
-        {
-          var ww = w+75;  // Make room for scrollbars
-          var wh = h+60; // and a close button
-          var params = 'width='+ww+',height='+wh+',scrollbars,resizable';
-
-          // Build the output and store it all in msg
-          var msg='<html><head><title>'+title+'</title></head><body onclick="javascript:window.close();"><div align="center">'+
-                  '<form><input type="button" onclick="javascript:window.close();" value="Zamknij okno"><br>\n</form>'+
-                  '<img src="'+img+'" width="'+w+'" height="'+h+'" border="0" alt="'+title+'"><br>\n'+
-                  '</div></body></html>\n';
-
-          // Write it all out
-          var win = open('','_blank',params);
-          win.document.write(msg);
-          win.document.close();        
-        }
-
-	</script>
 
 

@@ -51,7 +51,7 @@ renderCentral(true);
 	<?php while ($row = $this->imageIds->fetch_assoc()): ?>
 		<li>
 			<a class="fancybox" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data" data-fancybox-group="gallery" title="<?php echo $row['description']; ?>">
-				<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data400x266" alt=""/>
+				<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data400x266" alt="" border="0"/>
 			</a>
 			<p class="flex-caption"><?php echo $row['description']; ?></p>
 		</li>

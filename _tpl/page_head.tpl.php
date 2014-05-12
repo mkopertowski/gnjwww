@@ -9,7 +9,42 @@
 
 		<link rel="Shortcut icon" href="_gfx/favicon.ico">
 		<LINK rel="alternate" type="application/rss+xml" title="Grupa Nurków Jaskiniowych PZA RSS" href="http://www.gnj.org.pl/_rss/rss.xml">
+		
+	<script language=JavaScript1.2>
 
+	function open_click(what,height,width)
+	{
+		sStyle = "channelmode=0,directories=0,fullscreen=0,";
+		sStyle += "left=0,location=0,menubar=0,resizable=1,scrollbars=1,";
+		sStyle += "status=0,titlebar=0,toolbar=0,titlebar=0,top=0,"; 
+                sStyle += "height=";
+                sStyle += height;
+                sStyle += ",width=";
+                sStyle += width;
+		window.open(what,"_blank",sStyle);
+	}
+
+        function OpenGalleryWindow(img,title,h,w)
+        {
+          var ww = w+75;  // Make room for scrollbars
+          var wh = h+60; // and a close button
+          var params = 'width='+ww+',height='+wh+',scrollbars,resizable';
+
+          // Build the output and store it all in msg
+          var msg='<html><head><title>'+title+'</title></head><body onclick="javascript:window.close();"><div align="center">'+
+                  '<form><input type="button" onclick="javascript:window.close();" value="Zamknij okno"><br>\n</form>'+
+                  '<img src="'+img+'" width="'+w+'" height="'+h+'" border="0" alt="'+title+'"><br>\n'+
+                  '</div></body></html>\n';
+
+          // Write it all out
+          var win = open('','_blank',params);
+          win.document.write(msg);
+          win.document.close();        
+        }
+
+	</script>		
+		
+		
 		<!-- Add jQuery library -->
 		<script type="text/javascript" src="<?php echo $this->dots; ?>/_js/jquery-1.10.1.min.js"></script>
 
@@ -38,7 +73,8 @@
 			 */
 
 			$('.fancybox').fancybox({
-				'type':'image'
+				'type':'image',
+				 padding : 0
 			});
 
 			/*
@@ -239,4 +275,7 @@
 		<?php else: ?>
 			<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png">
 		<?php endif; ?>
+		
+
+		
 		</head>
