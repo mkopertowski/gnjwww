@@ -143,8 +143,8 @@ A.navismall:Hover {
 	color: #ffca44;;
 }
 IMG {
-   color: black;
-	border : 0px, 0px, 0px, 0px;
+	color: black;
+	border : 0px;
 }
 HR {
 	height: 1px;
