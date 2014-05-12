@@ -49,19 +49,14 @@ ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego 2014',
                    'Kwiecień 2014','mp');
 EndList();
 
-?>
-<!-- SZKOLENIA -->
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>SZKOLENIA</B>
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
 
-<?php
+NewSection('SZKOLENIA','section');
+
+StartList();
+
+$sqlfiltr="section='ratownictwo'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
   
   ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego-pozorowana nurkowa akcja ratunkowa',
                    'Transport poszkodowanego grotołaza przez zalany po strop korytarz oraz dalszy transport do otworu kopalni',
