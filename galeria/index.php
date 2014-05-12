@@ -41,13 +41,7 @@ if($bSubdir == true)
                    'Edycja druga 2012',
                    './gallery.php?id=2012_2wnj','Więcej',
                    '04. Maja 2012','Emil Sieńko');
-  
-  ExtendedListItem('Ćwiczenia w Pogorii',
-                   'Transport poszkodowanego nurka-grotołaza w noszach ratunkowych',
-                   './gallery.php?id=2012pogoria','Więcej',
-                   '06. Maja 2012','mp');
-  
-  
+    
   ExtendedListItem('Sztolnie Tarnogórskie',
                    'Nurkowanie w Tarnogórskich Sztolniach',
                    './gallery.php?id=2012SMRJ1','Więcej',

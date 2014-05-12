@@ -303,13 +303,7 @@ ExtendedListItem('Warsztaty Nurkowania Jaskiniowego 2012',
                    'Wspomnienia po kolejnej edycji WNJ.',
                    $dots.'./article.php?id=2012_1wnj&sec=warsztaty','Więcej',
                    '23. Kwietnia 2012','Honzo');
-				   
-ExtendedListItem('Podwodne ćwiczenia z zakresu nurkowego ratownictwa jaskiniowego',
-                   'W sobotę 21. kwietnia przeprowadziliśmy kilkugodzinne ćwiczenia w zalewie Pogoria w Dąbrowie Górniczej. Polegały na przetransportowaniu poszkodowanego nurka-grotołaza w noszach ratunkowych z punktu A do B, pod wodą.
-				   Udział wzięły ostatecznie trzy osoby Michał Plata (KKS), Dominik Graczyk (SW), Jacek Strejczyk (AVEN). Każdorazowo jeden z płetwonurków układany był w noszach, podczas gdy dwóch kolegów ćwiczyło pływalność doskonałą układu.',
-                    './galeria/gallery.php?id=2012pogoria','Galeria',
-                   '21. Kwietnia 2012','mp');				   
-				   
+
 EndList();
 
 NewSection('Marzec 2012','section');

@@ -61,13 +61,7 @@ StartList();
 $sqlfiltr="section='ratownictwo'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
-  
-  
-  ExtendedListItem('Transport poszkodowanego nurka-grotołaza w noszach ratunkowych.',
-                   'Ćwiczenia mające na celu uzyskanie idealnej pływalności układu poszkodowany-nosze-ratownicy.',
-                   '../galeria/gallery.php?id=2012pogoria','WIĘCEJ',
-                   'Kwiecień 2012','mp');
-  
+    
   ExtendedListItem('Warsztaty Opieki Nad Poszkodowanym 2010',
                    'Relacja',
 		   '../article.php?id=2010WONP&sec=ratownictwo','WIĘCEJ',
