@@ -153,16 +153,15 @@ div#menuV {
 	float: left; 
 }
 div#menuV a { 
-        display: block;
+	display: block;
 	text-align: center;
-	text-valign: middle;
 	text-decoration: none;
 	color: #005273;   
 	width: 136px;
 	letter-spacing: 1px;
 	font-family : Tahoma, sans-serif;
 	font-size: 12px;
-        font-weight: bold;
+	font-weight: bold;
 	background: #000000; 
 }
 div#menuV a:hover { 
@@ -238,7 +237,7 @@ table.publicationleftimage td {
 	padding: 0px 0px 0px 0px;
 }
 table.publicationrightimage {
-   float: right; 
+	float: right; 
 	border-width: 5px 0px 0px 10px;
 	border-spacing: 0px 0px;
 	border-style: solid solid solid solid;
@@ -255,7 +254,7 @@ table.publicationrightimage td {
 	padding: 0px 0px 0px 0px;
 }
 table.publicationcenterimage {
-   float: center; 
+	float: center; 
 	border-width: 0px 0px 0px 0px;
 	border-spacing: 0px 0px;
 	border-style: solid solid solid solid;

@@ -85,6 +85,15 @@ include('../_php/misc.php');
 </table>
 <br>
 <ul class="normal">
+
+<?php 
+
+$sqlfiltr="section='polska' AND tags LIKE '%Kasprowa%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
+
 <li class="normal">
 	<b>Kasprowa Niżnia - Luty 2004</b> W dniu 04.02.2004 Jarosław Niekludow (Garbek) przeprowadził akcję poznawczą w syfonach w jaskini Kasprowej Niżniej. W Syfonie Warszawiaków (V) przepłynął 260m korzystając z zestawu 2x10l. Transoort przez cztery pierwsze syfony zrobił przy użyciu zestawu 2x4l. W czasie powrotu z jaskini odwilż dotarła do jaskini zalewając Złotą Kaczkę. Garbek wraz z ekipą wspomagającą po ciężkiej walce uszli z życiem ... &nbsp;&nbsp;&nbsp;
 [<a class="navismall" href="../polska/kasprowa_garbek.php"> więcej ...</a>]
