@@ -62,10 +62,6 @@ $sqlfiltr="section='ratownictwo'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
   
-  ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego-pozorowana nurkowa akcja ratunkowa',
-                   'Transport poszkodowanego grotołaza przez zalany po strop korytarz oraz dalszy transport do otworu kopalni',
-                   '../article.php?id=2012SMRJ&sec=ratownictwo','WIĘCEJ',
-                   'Czerwiec 2012','mp');
   
   ExtendedListItem('Transport poszkodowanego nurka-grotołaza w noszach ratunkowych.',
                    'Ćwiczenia mające na celu uzyskanie idealnej pływalności układu poszkodowany-nosze-ratownicy.',

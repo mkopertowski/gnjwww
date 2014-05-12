@@ -36,13 +36,7 @@ if($bSubdir == true)
                    'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
                    './gallery.php?id=2012Zimnik','Więcej',
                    '15. Września 2012','Dominik Graczyk');
-  
-  ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego',
-                   'Techniki linowe i nurkowe',
-                   './gallery.php?id=2012SMRJ2','Więcej',
-                   '05. Czerwca 2012','mp');
-  
-  
+
   ExtendedListItem('Warsztaty Nurkowania Jaskiniowego',
                    'Edycja druga 2012',
                    './gallery.php?id=2012_2wnj','Więcej',
