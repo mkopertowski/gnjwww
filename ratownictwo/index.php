@@ -6,7 +6,11 @@ if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
 
+$GL_DIR = '..';
+
 @include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/misc.php');
 
 	renderHead($bSubdir);
 	renderMenu($bSubdir,13,false,'RATOWNICTWO');
