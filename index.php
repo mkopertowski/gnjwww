@@ -20,7 +20,7 @@ include('./_php/misc.php');
 	renderGallery($bSubdir,false);
 	renderUpdates($bSubdir,getLastUpdateMYSQL($mysqli));
 	renderPZA($bSubdir);
-	
+		
 	renderCentral(true);
 ?>
 		

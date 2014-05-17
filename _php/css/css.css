@@ -3,6 +3,7 @@ BODY {
 	color : #ffffff;
 	font-family : Tahoma, sans-serif;
 	font-size: 11px;
+	max-width: 960px;
 }
 TD {
 	color : #ffffff;
@@ -56,11 +57,13 @@ UL {
 }
 UL.normal {
 	list-style : square;
-	margin-left: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 10px;
 }
 LI.normal {
 	color: #ffffff;
-	margin-left: 10px;
+	padding-bottom: 10px;
 }
 LI.submenu {
 	color: #ffca44;
@@ -511,14 +514,4 @@ div#MainMenuH ul li {
 	margin: 0 0 0 0px;
 }
 
-/* RAMKA--------------------------------------------------------------------- */
-.szarb_g {background: url(../../_gfx/ramka/szara_dot.gif) 0 0 repeat-x; width: 20em}
-.szarb_d {background: url(../../_gfx/ramka/szara_dot.gif) 0 100% repeat-x}
-.szarb_l {background: url(../../_gfx/ramka/szara_dot.gif) 0 0 repeat-y}
-.szarb_p {background: url(../../_gfx/ramka/szara_dot.gif) 100% 0 repeat-y}
-.szarb_ld {background: url(../../_gfx/ramka/ramka_szara_ld.gif) 0 100% no-repeat}
-.szarb_pd {background: url(../../_gfx/ramka/ramka_szara_pd.gif) 100% 100% no-repeat}
-.szarb_lg {background: url(../../_gfx/ramka/ramka_szara_lg.gif) 0 0 no-repeat}
-.szarb_pg {background: url(../../_gfx/ramka/ramka_szara_pg.gif) 100% 0 no-repeat; padding: 14px 15px 14px 20px}
-.szarb_pg .linkBox {margin-top: -15px;}
 

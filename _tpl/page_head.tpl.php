@@ -251,7 +251,6 @@
 			}
 
 			body {
-				max-width: 700px;
 				margin: 0 auto;
 			}
 			.metaslider { width: 720px; }
@@ -275,7 +274,5 @@
 		<?php else: ?>
 			<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png">
 		<?php endif; ?>
-		
-
-		
+				
 		</head>
