@@ -97,7 +97,7 @@ function renderTopMenu($bSubdir,$ActiveMenuTitle)
   $txt = '<TD align=middle>
   
 
-  <a href="http://www.gnj.org.pl/_rss/rss.xml" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>
+  <a href="http://localhost/~dzik/gnjwww/_rss/rss.php" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>
 
   
   <div id="'.$id.'">';

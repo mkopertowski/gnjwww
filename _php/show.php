@@ -15,7 +15,7 @@ if($result->num_rows == 1)
 {
 	$row = $result->fetch_assoc();
 	
-	ShwoArticle($mysqli,$row,$id,true);
+	ShowArticle($mysqli,$row,$id,true);
 }	
 
 ?>
