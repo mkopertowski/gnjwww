@@ -29,7 +29,7 @@ class RSS {
 		$xml .= '<title>' . $this->channel_properties["title"] . '</title>' . "\n";
 		$xml .= '<link>' . $this->channel_properties["link"] . '</link>' . "\n";
 		$xml .= '<description>' . $this->channel_properties["description"] . '</description>' . "\n";
-		$xml .= '<atom:link href="http://gnj.org.pl/_rss/rss.php" rel="self" type="application/rss+xml" />' . "\n"
+		$xml .= '<atom:link href="http://gnj.org.pl/_rss/rss.php" rel="self" type="application/rss+xml" />' . "\n";
 
 		// channel optional properties
 		if(array_key_exists("language", $this->channel_properties)) {
