@@ -48,6 +48,7 @@ class RSS {
 			$xml .= '<item>' . "\n";
 			$xml .= '<title>' . $rss_item['title'] . '</title>' . "\n";
 			$xml .= '<link>' . 'http://gnj.org.pl/_php/show.php?id='. $rss_item['id'] . '</link>' . "\n";
+			$xml .= '<guid isPermaLink=false>'. $rss_item['id'] . '</guid>' . "\n";
 			$xml .= '<description>' . $rss_item['subtitle'] . '</description>' . "\n";
 			//$xml .= '<pubDate>' . $rss_item['pubDate'] . '</pubDate>' . "\n";
 			//$xml .= '<category>' . $rss_item['category'] . '</category>' . "\n";
