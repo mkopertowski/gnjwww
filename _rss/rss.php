@@ -10,7 +10,7 @@ include("../_php/Renderer.php");
 include("../_php/settings.php");
 require_once "RSS.class.php"; 
 
-$sql="SELECT * FROM articles WHERE status='ready' and date >= '2013-01-01' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
+$sql="SELECT `id`, `title`, `subtitle` FROM articles WHERE status='ready' and date >= '2013-01-01' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
 $items=$mysqli->query($sql);
 
 if($items)
