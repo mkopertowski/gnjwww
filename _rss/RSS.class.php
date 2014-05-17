@@ -44,7 +44,7 @@ class RSS {
 		}
 
 		// get RSS channel items
-		foreach($this->items as $rss_item) {
+		while ($rss_item = $this->items->fetch_assoc()) {
 			$xml .= '<item>' . "\n";
 			$xml .= '<title>' . $rss_item['title'] . '</title>' . "\n";
 			$xml .= '<link>' . 'http://gnj.org.pl/_php/show.php?id='. $rss_item['id'] . '</link>' . "\n";

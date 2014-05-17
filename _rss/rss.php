@@ -1,6 +1,6 @@
 ﻿<?php 
 
-header("Content-Type: application/xml; charset=UFT-8");
+header("Content-Type: application/xml; charset=UTF-8");
 
 $dots = '..';
 $GL_DIR = '..';
