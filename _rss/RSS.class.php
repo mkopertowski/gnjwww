@@ -22,13 +22,14 @@ class RSS {
  
 		$xml = '<?xml version="1.0" encoding="utf-8"?>' . "\n";
 
-		$xml .= '<rss version="2.0"' . $this->xmlns . '>' . "\n";
+		$xml .= '<rss version="2.0"' . 'xmlns:atom="http://www.w3.org/2005/Atom' . '>' . "\n";
 
 		// channel required properties
 		$xml .= '<channel>' . "\n";
 		$xml .= '<title>' . $this->channel_properties["title"] . '</title>' . "\n";
 		$xml .= '<link>' . $this->channel_properties["link"] . '</link>' . "\n";
 		$xml .= '<description>' . $this->channel_properties["description"] . '</description>' . "\n";
+		$xml .= '<atom:link href="http://gnj.org.pl/_rss/rss.php" rel="self" type="application/rss+xml" /> . "\n"
 
 		// channel optional properties
 		if(array_key_exists("language", $this->channel_properties)) {
@@ -48,7 +49,7 @@ class RSS {
 			$xml .= '<item>' . "\n";
 			$xml .= '<title>' . $rss_item['title'] . '</title>' . "\n";
 			$xml .= '<link>' . 'http://gnj.org.pl/_php/show.php?id='. $rss_item['id'] . '</link>' . "\n";
-			$xml .= '<guid isPermaLink="false">'. $rss_item['id'] . '</guid>' . "\n";
+			$xml .= '<guid>' . 'http://gnj.org.pl/_php/show.php?id='. $rss_item['id'] . '</guid>' . "\n";
 			$xml .= '<description>' . $rss_item['subtitle'] . '</description>' . "\n";
 			//$xml .= '<pubDate>' . $rss_item['pubDate'] . '</pubDate>' . "\n";
 			//$xml .= '<category>' . $rss_item['category'] . '</category>' . "\n";
