@@ -26,7 +26,7 @@ include('../_php/mysql.php');
 <h1>
 	OGŁOSZENIA
 </h1>
-<h3 align=right>Ostatnia aktualizacja: 3. Kwietnia 2014</h3>
+<h3 align=right>Ostatnia aktualizacja: 15. Kwietnia 2014</h3>
 <h2>
  Plany Grupy Nurków Jaskiniowych PZA na rok 2014
 </h2>
