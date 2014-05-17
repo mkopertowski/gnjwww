@@ -47,11 +47,11 @@ class RSS {
 		foreach($this->items as $rss_item) {
 			$xml .= '<item>' . "\n";
 			$xml .= '<title>' . $rss_item['title'] . '</title>' . "\n";
-			$xml .= '<link>' . $rss_item['link'] . '</link>' . "\n";
-			$xml .= '<description>' . $rss_item['description'] . '</description>' . "\n";
-			$xml .= '<pubDate>' . $rss_item['pubDate'] . '</pubDate>' . "\n";
-			$xml .= '<category>' . $rss_item['category'] . '</category>' . "\n";
-			$xml .= '<source>' . $rss_item['source'] . '</source>' . "\n";
+			$xml .= '<link>' . 'http://gnj.org.pl/_php/show.php?id='$rss_item['id'] . '</link>' . "\n";
+			$xml .= '<description>' . $rss_item['subtitle'] . '</description>' . "\n";
+			//$xml .= '<pubDate>' . $rss_item['pubDate'] . '</pubDate>' . "\n";
+			//$xml .= '<category>' . $rss_item['category'] . '</category>' . "\n";
+			//$xml .= '<source>' . $rss_item['source'] . '</source>' . "\n";
 			$xml .= '</item>' . "\n";
 		}
 
