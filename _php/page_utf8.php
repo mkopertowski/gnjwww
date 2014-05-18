@@ -358,7 +358,7 @@ function renderRightPanel($bSubdir)
   $txt .= '<td valign=top align=middle width=190>';
   
   // show RSS icon
-  $txt .= '<a href="http://www.gnj.org.pl/_rss/rss.xml" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>';
+  $txt .= '<a href="http://www.gnj.org.pl/rss/rss.xml" class="feed-icon"><img src="'.$dots.'/rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>';
   
   $txt .= '<BR>';
   
