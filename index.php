@@ -147,27 +147,6 @@ if($result) {
 	
 //------------------------------------------------------
 
-NewSection('Luty 2013','section');
-
-StartList();
-
-  ExtendedListItem('Wyprawa do San Agustin (Meksyk)',
-                   'Już 25 lutego ruszamy na wyprawę do San Agustin. Trzymajcie za nas kciuki!',
-                   '','',
-                   '10. Luty 2013','Mirosław Kopertowski');
-                   
-  ?>
-<BR>
-<div align=center>
-<object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/2xMID7ydX28"></param>	<embed src="http://www.youtube.com/v/2xMID7ydX28" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
-</div>
-<br>
-<?php
-
-EndList ();
-
-
-
 NewSection('Listopad 2012','section');
 
 StartList();
