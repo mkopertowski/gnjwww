@@ -24,14 +24,15 @@ function SendMail2Admins($mysqli,$subject,$message)
 function SendMail2AdminsAndUser($mysqli,$subject,$message,$userid)
 {
 	$tbl_name="members"; // Table name
-	//$headers='Content-type: text/html; charset=utf-8\r\n From: admin@gnj.org.pl\r\n ';
+	$headers ='Content-type: text/html; charset=utf-8' . "\r\n";
+	$headers.='From: admin@gnj.org.pl' . "\r\n";
 
-	$headers = "From: admin@gnj.org.pl>\n";
-	$headers .= "Reply-To: admin@gnj.org.pl\n";
-	$headers .= "Return-Path: admin@gnj.org.pl\n";
-	$headers .= "Envelope-from: admin@gnj.org.pl\n";
-	$headers .= "MIME-Version: 1.0\n";
-	$headers .= "Content-Type: text/html; charset=utf-8\n";
+	//$headers = "From: admin@gnj.org.pl>\n";
+	//$headers .= "Reply-To: admin@gnj.org.pl\n";
+	//$headers .= "Return-Path: admin@gnj.org.pl\n";
+	//$headers .= "Envelope-from: admin@gnj.org.pl\n";
+	//$headers .= "MIME-Version: 1.0\n";
+	//$headers .= "Content-Type: text/html; charset=utf-8\n";
 
 	$sql="SELECT * FROM $tbl_name WHERE usertype='admin' OR id='$userid'";
 	$result=$mysqli->query($sql);
