@@ -3,12 +3,12 @@
 <meta http-equiv=content-type content="text/html; charset=UTF-8">
 </head>
 <body>
-Tytuł:<?php echo $this->title; ?><br>
-Autor:<?php echo $this->author; ?><br><br>
+<B>Tytuł:</B> <?php echo $this->title; ?><br>
+<B>Autor:</B> <?php echo $this->author; ?><br><br>
 
 <?php if(isset($this->text)): ?> 
 
-Wiadomość:<?php echo $this->text; ?><br>
+<B>Wiadomość:</B><BR><BR><?php echo $this->text; ?><br>
 
 <?php endif; ?>
 
