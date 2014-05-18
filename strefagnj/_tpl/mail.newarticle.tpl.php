@@ -4,7 +4,7 @@
 </head>
 <body>
 Tytuł:<?php echo $this->title; ?><br>
-Autor:<?php echo $this->author; ?><br>
+Autor:<?php echo $this->author; ?><br><br>
 
 <?php if(isset($this->text)): ?> 
 
