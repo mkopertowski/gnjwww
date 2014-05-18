@@ -31,7 +31,7 @@ function SendMail2AdminsAndUser($mysqli,$subject,$message,$userid)
 	$header .= "Return-Path: admin@gnj.org.pl\n";
 	$header .= "Envelope-from: admin@gnj.org.pl\n";
 	$header .= "MIME-Version: 1.0\n";
-	$header .= "Content-Type: text/html charset=utf-8\n";
+	$header .= "Content-Type: text/html; charset=utf-8\n";
 
 	$sql="SELECT * FROM $tbl_name WHERE usertype='admin' OR id='$userid'";
 	$result=$mysqli->query($sql);
