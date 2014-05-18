@@ -22,7 +22,7 @@ $row = $result->fetch_assoc();
 
 if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
 {
-	ShwoArticle($mysqli,$row,$id,false);	
+	ShowArticle($mysqli,$row,$id,false);	
 }	
 
 ?>

@@ -33,8 +33,15 @@ if(isset($_SESSION['articleId'])) {
 	   	if($result->num_rows == 1)
    		{
       		$row = $result->fetch_assoc();
-   			$author = $_SESSION['name']." ".$_SESSION['surname'];
-   			$message=$_POST['text'];
+   		    if($row['author'] == "")
+      		{
+      			$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
+      		}
+      		else
+      		{
+      			$author = $row['author'];
+      		}
+   			$message=$_POST['message'];
    		
    			/* send emial to all admins */
    			$mailSubject = "[GNJWWW] artykul przekazany do ponownej edycji";
@@ -43,11 +50,7 @@ if(isset($_SESSION['articleId'])) {
    			$mail->set("author",$author);
    			$mail->set("text",$message);
    			
-   			SendMail2Admins($mysqli,$mailSubject,$mail->parse());	
-   			if($_SESSION['usertype'] != "admin")
-   			{
-   				SendMail2User($mysqli,$row['authorid'],$mailSubject,$mail->parse());
-   			}
+   			SendMail2AdminsAndUser($mysqli,$mailSubject,$mail->parse(),$row['authorid']);
    		}   	
    	
 		$_SESSION['info'] = 'Artykuł wysłany ponownie do autora!';

@@ -137,7 +137,7 @@ function ConvertStringMYSQL($mysqli,$str)
 	return $mysqli->real_escape_string(stripslashes($str));	
 }
 
-function ShwoArticle($mysqli,$row,$id,$showplugin)
+function ShowArticle($mysqli,$row,$id,$showplugin)
 {
 	$title = $row['title'];
 	$subtitle = $row['subtitle'];

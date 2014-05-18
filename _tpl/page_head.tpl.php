@@ -1,4 +1,4 @@
-<html class="no-js" lang="pl">
+<html lang="pl">
 	<head>
 		<title><?php echo $this->title; ?></title>
 		<meta NAME="DESCRIPTION" CONTENT="<?php echo $this->description; ?>">
