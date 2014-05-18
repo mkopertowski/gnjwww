@@ -5,7 +5,7 @@
 		<meta NAME="KEYWORDS" CONTENT="<?php echo $this->keywords; ?>"> 
 		<meta http-equiv=content-type content="text/html; charset=UTF-8">	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_php/css/css.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/css.css">
 
 		<link rel="Shortcut icon" href="_gfx/favicon.ico">
 		<LINK rel="alternate" type="application/rss+xml" title="Grupa Nurków Jaskiniowych PZA RSS" href="http://www.gnj.org.pl/_rss/rss.xml">

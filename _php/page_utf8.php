@@ -8,12 +8,11 @@ include_once('Renderer.php');
 
 left panel = 136
 space between left and center panel width = 10
-central panel = 614
+central panel = 678
 space between left and center panel width = 10
 right panel 190 
 
-total = 960
-
+total = 1024
 
 */
 
@@ -71,7 +70,7 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="", $articl
 						<TR height=4>
 					  		<TH width=136></TH>
 			          		<TH width=10></TH>
-			          		<TH width=614>
+			          		<TH width=678>
 								<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=100% HEIGHT=100>
 									<PARAM NAME=movie VALUE="'.$dots.'/_gfx/FLASH.swf">
 									<PARAM NAME=quality VALUE=high>
@@ -80,7 +79,7 @@ function renderHeadNew($bSubdir,$description="", $keywords="",$title="", $articl
 								</object>
 					 		</TH>
 			          		<TH width=10></TH>
-					  		<TH width=136></TH>
+					  		<TH width=190></TH>
 						</TR>
 			       		<TR valign=middle>';
 	echo $txt;
@@ -110,12 +109,7 @@ function renderTopMenu($bSubdir,$ActiveMenuTitle)
     $id = "MainMenuX";
   }
   $txt = '<TD align=middle>
-  
-
-  <a href="http://gnj.org.pl/_rss/rss.php" class="feed-icon"><img src="'.$dots.'/_rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>
-
-  
-  <div id="'.$id.'">';
+          <div id="'.$id.'">';
   $txt .= '<a href="'.$dots.'/index.php" alt="STRONA GŁÓWNA">STRONA GŁÓWNA</a>';
   $txt .= '</div>';
   echo $txt;
@@ -269,11 +263,11 @@ function renderCentral($bSubdir)
 	$txt = '
 		</td>
 		<td valign=top align=middle width=10>&nbsp;</td>
-		<td valign=top align=middle width=614>
-			<table cellspacing=0 cellpadding=0 width=614>
+		<td valign=top align=middle width=678>
+			<table cellspacing=0 cellpadding=0 width=678>
 				<tr>
-					<td valign=top align=middle colspan=0 width=614>
-						<table cellspacing=0 cellpadding=0 width=614>
+					<td valign=top align=middle colspan=0 width=678>
+						<table cellspacing=0 cellpadding=0 width=678>
 							<tr>							
 								<td valign=top align=middle width=10 bgcolor=#000000>
 								<td valign=top align=left bgcolor=#000000>
@@ -293,7 +287,7 @@ function renderBottom($bSubdir)
 												<div align=center>
 													<hr>
 													<font face="tahoma, verdana, arial, helvetica, geneva, sans-serif" color=#666666 size=-2>
-	         Copyright &copy; 2012 Grupa Nurków Jaskiniowych KTJ PZA, ver. 7.0<br>&nbsp;
+	         Copyright &copy; 2014 Grupa Nurków Jaskiniowych KTJ PZA, ver. 8.0<br>&nbsp;
 
 													</font>
 												</div>
@@ -362,9 +356,9 @@ function renderRightPanel($bSubdir)
   $txt .= '<td valign=top align=middle width=190>';
   
   // show RSS icon
-  $txt .= '<a href="http://www.gnj.org.pl/rss/rss.xml" class="feed-icon"><img src="'.$dots.'/rss/rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>';
+  $txt .= '<a href="http://www.gnj.org.pl/_rss/rss.php" class="feed-icon"><img src="'.$dots.'/_rss/valid-rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>';
   
-  $txt .= '<BR>';
+  $txt .= '<BR><BR>';
   
   // show Facebook plugin
   $txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/Grupa-Nurk%C3%B3w-Jaskinowych-GNJ-PZA/304624799616421" data-width="190" data-height="270" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="fals"></div>';

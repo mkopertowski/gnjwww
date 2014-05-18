@@ -3,7 +3,7 @@ BODY {
 	color : #ffffff;
 	font-family : Tahoma, sans-serif;
 	font-size: 11px;
-	max-width: 960px;
+	max-width: 1024px;
 }
 TD {
 	color : #ffffff;
@@ -278,7 +278,7 @@ table.publicationrightimage td {
 p.article {
 	line-height: 1.5em;
 	text-align: justify;
-	font-size: 11px;
+	font-size: 12px;
 }
 p.article:first-letter {
 	margin-left: 0px;
