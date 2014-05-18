@@ -147,18 +147,6 @@ if($result) {
 	
 //------------------------------------------------------
 
-
-
-NewSection('Marzec 2013','section');
-
-StartList();
-ExtendedListItem('San Agustin - wieści z wyprawy do Meksyku',
-                   '', 
-				   $dots.'./article.php?id=2013sanagustin&sec=swiat','Więcej',
-				   '30. Marca 2013','Mirosław Kopertowski (SGW/GNJ)');
-
-EndList ();
-
 NewSection('Luty 2013','section');
 
 StartList();
