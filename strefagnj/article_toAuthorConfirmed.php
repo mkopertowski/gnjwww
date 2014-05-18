@@ -41,7 +41,7 @@ if(isset($_SESSION['articleId'])) {
       		{
       			$author = $row['author'];
       		}
-   			$message=$_POST['text'];
+   			$message=$_POST['message'];
    		
    			/* send emial to all admins */
    			$mailSubject = "[GNJWWW] artykul przekazany do ponownej edycji";
