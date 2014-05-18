@@ -17,7 +17,7 @@ if($items)
 {
 	ob_clean();
 	
-	header("Content-Type: application/atom+xml; charset=utf-8");
+	header("Content-Type: application/xml; charset=utf-8");
 	
 	$a_channel = array(
 			"title" => "GNJ",
