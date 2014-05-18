@@ -14,8 +14,8 @@ $items=$mysqli->query($sql);
 
 if($items)
 {
-	ob_clean();
-	header('Content-Type: application/rss+xml; charset=utf-8');
+ob_clean();
+header('Content-Type: application/rss+xml; charset=utf-8');
 	
 	$a_channel = array(
 			"title" => "GNJ",
