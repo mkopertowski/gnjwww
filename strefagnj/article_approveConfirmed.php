@@ -33,19 +33,23 @@ if(isset($_SESSION['articleId'])) {
 	   	if($result->num_rows == 1)
    		{
       		$row = $result->fetch_assoc();
-   			$author = $_SESSION['name']." ".$_SESSION['surname'];
-   		
+      		
+      		if($row['author'] == "")
+      		{
+      			$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
+      		}
+      		else
+      		{
+      			$author = $row['author'];
+      		}
+
    			/* send emial to all admins */
-   			$mailSubject= "=?UTF-8?B?".base64_encode("[GNJWWW] artykuł zamieszczony: ".$row['title'])."?=";
+   			$mailSubject= "=?UTF-8?B?".base64_encode("[GNJWWW] artykul zamieszczony: ".$row['title'])."?=";
    			$mail = new Renderer("./_tpl/mail.newarticle.tpl.php");
    			$mail->set("title",$row['title']);
    			$mail->set("author",$author);
    			
-   			SendMail2Admins($mysqli,$mailSubject,$mail->parse());
-   			if($_SESSION['usertype'] != "admin")
-   			{
-   				SendMail2User($mysqli,$row['authorid'],$mailSubject,$mail->parse());
-   			}
+   			SendMail2AdminsAndUser($mysqli,$mailSubject,$mail->parse(),$row['authorid']);
    		}   	
    	
 		$_SESSION['info'] = 'Artykuł zamieszczony na stronie!';
