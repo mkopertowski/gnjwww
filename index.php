@@ -147,28 +147,7 @@ if($result) {
 	
 //------------------------------------------------------
 
-NewSection('Kwiecień 2013','section');
 
-StartList();
-ExtendedListItem('Wyprawa do San Agustin (Meksyk)',
-                   '',
-                   '','',
-                   '22. Kwietnia 2013','Mirosław Kopertowski');
-                   
-  ?>
-<BR>
-<div align=center>
-<object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/XRdFKLa1u7M"></param>	<embed src="http://www.youtube.com/v/XRdFKLa1u7M" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
-</div>
-<br>
-<?php
-
-ExtendedListItem('Relacja z wyprawy do J2',
-                   '', 
-				   $dots.'./article.php?id=2013j2&sec=swiat','Więcej',
-				   '15. Kwietnia 2013','Dominik Graczyk');
-
-EndList ();
 
 NewSection('Marzec 2013','section');
 

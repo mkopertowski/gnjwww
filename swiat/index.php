@@ -71,11 +71,6 @@ NewSection('ROK 2013','section');
 
 StartList();
 
-ExtendedListItem('J2 - Meksyk',
-                   'Relacja z wyprawy do J2',
-                   '../article.php?id=2013j2&sec=swiat','WIĘCEJ',
-                   '15. Kwietnia 2013','Dominik Graczyk');
-
 ExtendedListItem('San Agustin - Mexico',
                    'Wieści z wyprawy',
                    '../article.php?id=2013sanagustin&sec=swiat','WIĘCEJ',
