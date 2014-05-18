@@ -1,6 +1,6 @@
 ﻿<?php 
 
-header("Content-Type: application/atom+xml; charset=utf-8");
+ob_start();
 
 $dots = '..';
 $GL_DIR = '..';
@@ -15,6 +15,10 @@ $items=$mysqli->query($sql);
 
 if($items)
 {
+	ob_clean();
+	
+	header("Content-Type: application/atom+xml; charset=utf-8");
+	
 	$a_channel = array(
 			"title" => "GNJ",
 			"link" => "http://gnj.org.pl",
@@ -27,6 +31,8 @@ if($items)
 		
 	$RSSfeed = new RSS($a_channel, $items);
 	$RSSfeed->create();
+	
+	ob_end_flush();
 }
 
 ?>

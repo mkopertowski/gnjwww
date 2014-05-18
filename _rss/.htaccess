@@ -1,4 +1,4 @@
-AddCharset UTF-8 .php 
+AddDefaultCharset utf-8
 
 # exgocgkctswo
 RewriteEngine On
