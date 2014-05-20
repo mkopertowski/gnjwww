@@ -7,20 +7,18 @@ a {
 }
 a:hover {
 	color: #C60;
-	
 }
 body {
 	background: #000000;
 	color : #ffffff;
 	font-family : Tahoma, sans-serif;
-	font-size: 11px;	
+	font-size: 13px;	
 }
 input,textarea {
 	color: #000000;
 	font: normal 1.1em "Lucida Sans Unicode",sans-serif;
 }
-p,cite,code,ul {
-	font-size: 1em;
+p,cite,code,ul,ol {
 	padding: 5px;
 }
 code {
@@ -42,11 +40,11 @@ blockquote {
 }
 h1 {
 	padding-top: 10px;
-	font-size: 1.6em;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 h2,h3 {
-	font-size: 1.2em;
+	font-size: 13px;
 	padding-top: 20px;
 	margin-bottom: 10px;
 }
@@ -121,13 +119,12 @@ h2,h3 {
 	margin-bottom: 6px;
 }
 .content li {
-	list-style: url(img/li.gif);
 	margin-left: 18px;
 }
 
 /* footer */
 .footer {
-	background: #958463 url(img/bgfooter.gif) repeat-x;
+	background: #958463;
 	color: #FED;
 	font-size: 1.1em;
 	line-height: 40px;
@@ -226,21 +223,15 @@ h2,h3 {
 {
 	color: #fff;
 }	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#regulamin-list
+{
+	font-size: 14px;
+}
+#regulamin-list ol
+{
+	padding: 5px;
+}
+#regulamin-list li
+{
+	padding: 5px;
+}

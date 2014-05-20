@@ -10,6 +10,7 @@
 			</li>
 			<li><a href="#">Publikowanie</a>
 				<ul>
+					<li><a href="regulamin.php">Regulamin</a></li>
 					<li><a href="article_new.php">Nowa publikacja</a></li>
 					<li><a href="article_list.php">Twoje publikacje</a></li>
 					<?php if(isset($_SESSION['usertype']) && ($_SESSION['usertype'] == "admin")): ?>            
