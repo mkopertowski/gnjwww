@@ -43,3 +43,4 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <li>max. liczba linków <?php echo $this->linksMaxNr; ?> (włączając filmy youtube,vimeo itp.).</li>
 </ol>
+

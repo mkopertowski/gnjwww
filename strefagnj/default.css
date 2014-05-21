@@ -63,7 +63,7 @@ h2,h3 {
 /* header */
 .header {
 	height: 132px;
-	width: 960px;
+	width: 980px;
 	margin: 0;
 }
 
@@ -93,8 +93,8 @@ h2,h3 {
 /* navigation */
 .navigation {
 	margin: 0 auto;
-	padding: 0 18px;
-	width: 935px;
+	padding: 0 0px;
+	width: 980px;
     float: left;
     background: #005273;
 }
@@ -105,7 +105,7 @@ h2,h3 {
 /* main */
 .main {
 	clear: both;
-	padding: 0px 10px 12px 28px;
+	padding: 0px 15px 12px 15px;
 }
 
 /* content */

@@ -3,10 +3,10 @@
 <form name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
        	
 <h2>Tytuł:</h2>
-<input name="title" type="text" id="title" size=115 value="<?php echo $this->title; ?>">
+<input name="title" type="text" id="title" size=100 value="<?php echo $this->title; ?>" maxlength="255">
 
 <h2>Podtytuł <i>(będzie pokazany na stronie głównej pod tytyłem)</i>:</h2>
-<textarea name="subtitle" id="text" cols="113" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
+<textarea name="subtitle" id="text" cols="100" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
 
 <h2>Dział:</h2>
 	<select name="section" value="polska">
@@ -33,7 +33,7 @@
 </ul>
 <BR>
 
-<textarea name="text" id="text" cols="113" rows="40" maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>             
+<textarea name="text" id="text" cols="100" rows="40" maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>             
 <h2><input type="submit" name="Submit" value="Zapisz"></h2>
             
 <!-- ADMIN FIELDS -->
@@ -73,11 +73,13 @@ $( "#datepicker" ).datepicker();
 		      endwhile; 
 		?>	   
     </select> albo 
-    <input name="authortext" type="text" id="authortext" size=30 value="<?php echo $this->author; ?>">
+    <input name="authortext" type="text" id="authortext" size=30 value="<?php echo $this->author; ?>" maxlength="100">
 
 <h2>Data publikacji:</h2>
 <input name="date" type="text" id="datepicker">
 
 <?php endif; ?>
+
+<BR><BR><BR><BR>
 
 </form>        
