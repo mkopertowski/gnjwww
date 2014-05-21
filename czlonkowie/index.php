@@ -388,7 +388,7 @@ if($bSubdir == true)
 			członek
 		</td>
 		<td align=center>
-			NZ
+			Speleoklub Warszawski
 		</td>
 	</tr>
 	<!-- członek -->
