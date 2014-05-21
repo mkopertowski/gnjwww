@@ -55,11 +55,13 @@ $( "#datepicker" ).datepicker();
 <h2>Tagi (do filtrowania SQL):</h2>
 <input name="tags" type="text" id="title" size=115 value="<?php echo $this->tags; ?>">
     
-<h2>HTML "keywords" (słowa powinny byc użyte na stronie)</h2>
+<h2>HTML "keywords" (słowa powinny byc użyte na stronie, oddzielone przecinkiem, bez spacji)</h2>
 <input name="html_keywords" type="text" id="title" size=115 value="<?php echo $this->html_keywords; ?>">
 
+<!--
 <h2>HTML "description"</h2>
 <input name="html_description" type="text" id="title" size=115 value="<?php echo $this->html_description; ?>">
+-->
 <BR><BR><BR>
 <p><i>(ponizej ustaw tylko gdy chcesz nadpisać domyślne wartości)</i></p>
 
