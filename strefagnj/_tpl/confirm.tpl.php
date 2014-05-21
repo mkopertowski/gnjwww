@@ -13,6 +13,10 @@
 
 <h2><input type="submit" name="Submit" value="<?php echo $this->submit_title; ?>"></h2>
     
-<p><?php echo $this->info; ?></p>    
+<?php if(isset($this->text)): ?>
+     
+<p><?php echo $this->info; ?></p>
+
+<?php endif; ?>    
     
 </form>        
