@@ -17,10 +17,11 @@ $sql="SELECT * FROM $tbl_name WHERE status='toreview'";
 $result_review=$mysqli->query($sql);
 
 /* prepare and publish article */
-$Page = new RendererGNJ("./_tpl/article_review.tpl.php");
+$Page = new RendererGNJ("./_tpl/article_reviewlist.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
-$Page->set("articles_review",$result_review);
+$Page->set("articles",$result_review);
 $Page->set("mysqli",$mysqli);
+$Page->set("header","Publikacje do zatwierdzenia");
 
 $Page->publish();
 

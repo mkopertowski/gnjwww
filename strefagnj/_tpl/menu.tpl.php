@@ -15,6 +15,7 @@
 					<li><a href="article_list.php">Twoje publikacje</a></li>
 					<?php if(isset($_SESSION['usertype']) && ($_SESSION['usertype'] == "admin")): ?>            
 					<li><a href="article_rlist.php">admin: Zatwierdź publikacje</a></li>
+					<li><a href="article_fulllist.php">admin: Lista artykulów</a></li>
 					<?php endif; ?>					
 				</ul>
 			</li>
