@@ -29,12 +29,11 @@
     <li>:: Subindentation</li>
     <li>* Nienumerowana lista</li>
     <li># Numerowana lista</li>
-    <li>[http://example.com Nazwa_Linka] link</li>
     <li>pusta linia - nowy akapit</li>
 </ul>
 <BR>
 
-<textarea name="text" id="text" cols="113" rows="40" maxlength="10000"><?php echo $this->text; ?></textarea>             
+<textarea name="text" id="text" cols="113" rows="40" maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>             
 <h2><input type="submit" name="Submit" value="Zapisz"></h2>
             
 <!-- ADMIN FIELDS -->

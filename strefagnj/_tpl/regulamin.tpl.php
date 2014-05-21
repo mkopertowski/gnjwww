@@ -10,7 +10,7 @@ kryptoreklam.</li>
 <li>Artykuł musi być oryginalnym dziełem autora, cytowany tekst powinien
 być wyróżniony.</li>
 
-<li>Tekst artykulu maksymalnie 8 tys. znaków łącznie ze spacjami.</li>
+<li>Tekst artykulu maksymalnie <?php echo $this->textMax; ?> znaków łącznie ze spacjami.</li>
 
 </ol>
 
@@ -29,7 +29,7 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <li>Zdjęcia wyłącznie w formacie JPG, aspect ratio 4:3, max. 5MB.</li>
 
-<li>Max. liczba zdjęć: .</li>
+<li>Max. liczba zdjęć: <?php echo $this->imageMaxNr; ?>.</li>
 
 <li>Każde zdjęcie musi posiadać <b>podpis i autora</b> (część podpisu).</li>
 
@@ -41,5 +41,5 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <ol id="regulamin-list">
 
-<li>max. liczba linków 5 (włączając filmy youtube,vimeo itp.)</li>
+<li>max. liczba linków <?php echo $this->linksMaxNr; ?> (włączając filmy youtube,vimeo itp.).</li>
 </ol>
