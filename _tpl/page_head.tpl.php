@@ -70,6 +70,7 @@
 
 		<script type="text/javascript">
 		$(document).ready(function() {
+
 			/*
 			 *  Simple image gallery. Uses default settings
 			 */
@@ -255,7 +256,7 @@
 			body {
 				margin: 0 auto;
 			}
-			.metaslider { width: 720px; }
+			.metaslider { width: 1024px; }
 		</style>
 		
 		<!-- FlexSlider -->

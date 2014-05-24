@@ -48,9 +48,9 @@ if(isset($_FILES['uploaded_file'])) {
 	    {
 	    	$_SESSION['info'] = 'Błąd: za dużo plików. limit: '.$ARTICLE_IMAGE_MAX_NUM;
 	    }
-	    else if($size > $ARTICLE_IMAGE_MAX_SIZE*1024)
+	    else if($size > $ARTICLE_IMAGE_MAX_SIZE*1024*1024)
 	    {
-	    	$_SESSION['info'] = 'Błąd: za duży rozmiar pliku. limit: '.$ARTICLE_IMAGE_MAX_SIZE.'kB';
+	    	$_SESSION['info'] = 'Błąd: za duży rozmiar pliku. limit: '.$ARTICLE_IMAGE_MAX_SIZE.'MB';
 	    }
 	    else
 	    {

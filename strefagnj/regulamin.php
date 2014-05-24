@@ -15,6 +15,8 @@ $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 $Page->set("textMax",$ARTICLE_CHARACTERS_MAX);
 $Page->set("imageMaxNr",$ARTICLE_IMAGE_MAX_NUM);
 $Page->set("linksMaxNr",$ARTICLE_LINKS_MAX_NUM);
+$Page->set("imageSizeMax",$ARTICLE_IMAGE_MAX_SIZE);
+
 
 $Page->publish();
 ?>

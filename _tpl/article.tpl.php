@@ -57,7 +57,7 @@ renderCentral(true);
 <?php if( $this->links->num_rows > 0): ?>
     <ul>
 	<?php while ($row = $this->links->fetch_assoc()): ?>
-	<LI><a class="fancybox-media" href="<?php echo $row['link']; ?>"><?php echo $row['name']; ?></a></LI>
+	<LI><a class="fancybox-media" href="<?php echo $row['link']; ?>" target="_blank"><?php echo $row['name']; ?></a></LI>
 	<?php endwhile; ?>
 	</ul>
 <?php endif; ?>

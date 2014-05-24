@@ -27,7 +27,7 @@ musisz mieć zgodę od osób widocznych na fotografii.
 Pozwolenie nie jest potrzebne, jeżeli wykonywałeś zdjęcia na imprezie
 masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
-<li>Zdjęcia wyłącznie w formacie JPG, aspect ratio 4:3, max. 5MB.</li>
+<li>Zdjęcia wyłącznie w formacie JPG, aspect ratio 4:3, max. <?php echo $this->imageSizeMax; ?>MB.</li>
 
 <li>Max. liczba zdjęć: <?php echo $this->imageMaxNr; ?>.</li>
 
