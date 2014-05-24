@@ -352,7 +352,7 @@ function renderRightPanel($bSubdir)
   $dots = '.';
   if($bSubdir == true) $dots = '..';
 
-  $txt .= '<td valign=top align=middle width=10></td>';
+  $txt = '<td valign=top align=middle width=10></td>';
   $txt .= '<td valign=top align=middle width=190>';
   
   // show RSS icon

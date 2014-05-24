@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/css.css">
 
 		<link rel="Shortcut icon" href="_gfx/favicon.ico">
-		<LINK rel="alternate" type="application/rss+xml" title="Grupa Nurków Jaskiniowych PZA RSS" href="http://www.gnj.org.pl/_rss/rss.xml">
+		<LINK rel="alternate" type="application/rss+xml" title="Grupa Nurków Jaskiniowych PZA RSS" href="http://gnj.org.pl/_rss/rss.xml">
 		
 	<script language=JavaScript1.2>
 
@@ -44,6 +44,8 @@
 
 	</script>		
 		
+		<!-- Zebra_Pagination -->
+		<link rel="stylesheet" href="<?php echo $this->dots; ?>/_css/zebra_pagination.css" type="text/css">
 		
 		<!-- Add jQuery library -->
 		<script type="text/javascript" src="<?php echo $this->dots; ?>/_js/jquery-1.10.1.min.js"></script>

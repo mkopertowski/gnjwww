@@ -15,6 +15,10 @@ include('./_php/mysql.php');
 include('./_php/settings.php');
 include('./_php/misc.php');
 
+// include the pagination class
+require './_php/Zebra_Pagination.php';
+
+
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,2,false,'STRONA GŁÓWNA');
 	renderGallery($bSubdir,false);
@@ -130,8 +134,26 @@ include('./_php/misc.php');
 
 <?php
 
-$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and date >= '2013-01-01' ORDER BY date DESC LIMIT $AKTUALNOSCI_LIMIT";
+// how many records should be displayed on a page?
+$records_per_page = $AKTUALNOSCI_LIMIT;
+
+// instantiate the pagination object
+$pagination = new Zebra_Pagination();
+
+
+$sql="SELECT SQL_CALC_FOUND_ROWS * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and date >= '2013-01-01' ORDER BY date DESC LIMIT " . (($pagination->get_page() - 1) * $records_per_page) . ', ' . $records_per_page;
 $result=$mysqli->query($sql);
+
+$sql= "SELECT FOUND_ROWS() AS `found_rows`";
+$rows=$mysqli->query($sql);
+$rows=$rows->fetch_assoc();
+
+// pass the total number of records to the pagination class
+$pagination->records($rows['found_rows']);
+
+// records per page
+$pagination->records_per_page($records_per_page);
+
 
 if($result) {
 
@@ -141,11 +163,19 @@ if($result) {
 	while ($row = $result->fetch_assoc()) {
 		ExtendedListItemMYSQL($mysqli,$row,'.');
 	}
+
+	// render the pagination links
+	$pagination->render();
 	
 	EndList ();
 }
-	
-//------------------------------------------------------
+?>
+
+<script type="text/javascript" src="./_js/zebra_pagination.js"></script>
+
+<!--
+
+
 
 NewSection('Listopad 2012','section');
 
@@ -358,13 +388,13 @@ StartList();
                    $dots.'./article.php?id=2010kosowo&sec=swiat','Więcej',
                    '14. Lutego 2011','Dominik Honzo Graczyk');
 				   
-				   ?>
+				  
 <BR>
 <div align=center>
 <object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/PI3FTBlWvKE"></param>	<embed src="http://www.youtube.com/v/PI3FTBlWvKE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
 </div>
 <br>
-<?php
+
                    
 EndList();
 
@@ -404,13 +434,13 @@ StartList();
                    $dots.'./article.php?id=2010Sobotka1&sec=polska','Więcej',
                    '30. Kwietnia 2010','Mirosław Kopertowski');
                    
-  ?>
+ 
 <BR>
 <div align=center>
 <object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/s99_ktc5KXQ&hl"></param>	<embed src="http://www.youtube.com/v/s99_ktc5KXQ&hl" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
 </div>
 <br>
-<?php
+
   
   ExtendedListItem('10 lat eksploracji masywu Bihor',
                    'Góry Bihor znajdują się w północno-zachodniej części Rumunii. Ze względu na swój unikatowy krajobraz i mikroklimat przyciągają turystów z całej Europy. Niewielu z nich zdaje sobie jednak sprawę, że góry te są prawdziwym rajem dla speleologów. Występują tu prawie wszystkie formy krasowe, takie jak: jaskinie, aweny, polja, kotły eworsyjne, ponory oraz najbardziej interesujące dla nurków jaskiniowych - wywierzyska.',
@@ -476,13 +506,12 @@ StartList();
                    '','',
                    '3. Listopad 2009','Mirek Kopertowski');
 
-?>
 <BR>
 <div align=center>
 <object width="425" height="350">	<param name="movie" value="http://www.youtube.com/v/DswstyqYrhY"></param>	<embed src="http://www.youtube.com/v/DswstyqYrhY" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br />
 </div>
 <br>
-<?php
+
 
 EndList();
 
@@ -895,7 +924,7 @@ StartList();
                    
 EndList();
 
-?>
+-->
 <!--============================= CONTENTS END   ==========================================-->
 <?php
 	renderBottom($bSubdir);  
