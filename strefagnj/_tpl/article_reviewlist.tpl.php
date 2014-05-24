@@ -1,11 +1,11 @@
-<h1>Publikacje do zatwierdzenia</h1>
+<h1><?php echo $this->header; ?></h1>
 
-<?php if( $this->articles_review->num_rows > 0): ?>
+<?php if( $this->articles->num_rows > 0): ?>
 
 <table id="articlelist-table">
         <tr><th>Autor</th><th>Tytuł</th><th>Dział</th><th>Data</th><th>Operacje</th></tr>
 
-	<?php while ($row = $this->articles_review->fetch_assoc()): ?>
+	<?php while ($row = $this->articles->fetch_assoc()): ?>
 		<tr>
 		    <td><?php if($row['author'] == "")
 		              	echo getAuthorFromAuthorID($this->mysqli,$row['authorid']);

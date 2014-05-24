@@ -11,17 +11,15 @@ include("./_php/RendererGNJ.php");
 
 $tbl_name="articles"; // Table name
 
-$mysqli->query("SET NAMES 'utf8'");
-
-$sql="SELECT * FROM $tbl_name WHERE status='toreview'";
-$result_review=$mysqli->query($sql);
+$sql="SELECT * FROM $tbl_name WHERE status='ready'";
+$result=$mysqli->query($sql);
 
 /* prepare and publish article */
-$Page = new RendererGNJ("./_tpl/article_reviewlist.tpl.php");
+$Page = new RendererGNJ("./_tpl/article_list.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
-$Page->set("articles",$result_review);
+$Page->set("articles",$result);
 $Page->set("mysqli",$mysqli);
-$Page->set("header","Publikacje do zatwierdzenia");
+$Page->set("header","Artykuły opublikowane na stronie");
 
 $Page->publish();
 

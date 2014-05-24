@@ -6,6 +6,7 @@ if(!isset($_SESSION['email'])){
 	header("Location:login.php");
 }
 
+include("../_php/settings.php");
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
 
@@ -28,6 +29,15 @@ $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 
 $Page->set("sectionList",$sectionList);
 $Page->set("membersList",$membersList);
+
+if($_SESSION['usertype'] == "admin")
+{
+	$Page->set("textMax",$ARTICLE_CHARACTERS_MAX_ADMIN);
+}
+else
+{
+	$Page->set("textMax",$ARTICLE_CHARACTERS_MAX);	
+}
 
 /* edytowanie? */
 if(isset($_REQUEST['id'])){

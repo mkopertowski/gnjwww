@@ -27,9 +27,7 @@ if(isset($_SESSION['articleId'])) {
    else
    {
    		$sql="DELETE FROM $tbl_name WHERE authorid='$authorid' and id='$id'";
-   }   
-   
-   $sql="DELETE FROM $tbl_name WHERE id='$id'";
+   }      
    // Execute the query
    $result = $mysqli->query($sql);
 	
@@ -41,7 +39,7 @@ if(isset($_SESSION['articleId'])) {
 		$_SESSION['info'] = 'Błąd:'."<pre>{$mysqli->error}</pre>";
    }
    
-   /* delete the article */
+   /* delete article files */
    $tbl_name = "files";
    
    if($_SESSION['usertype'] == "admin")
@@ -51,8 +49,21 @@ if(isset($_SESSION['articleId'])) {
    else 
    {
    		$sql="DELETE FROM $tbl_name WHERE authorid='$authorid' and articleId='$id'";
-   }
+   }   
+   // Execute the query
+   $result = $mysqli->query($sql); 
+
+   /* delete article links */
+   $tbl_name = "links";
    
+   if($_SESSION['usertype'] == "admin")
+   {
+   		$sql="DELETE FROM $tbl_name WHERE articleId='$id'";
+   }
+   else 
+   {
+   		$sql="DELETE FROM $tbl_name WHERE authorid='$authorid' and articleId='$id'";
+   }
    // Execute the query
    $result = $mysqli->query($sql); 
 }
