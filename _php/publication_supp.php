@@ -48,7 +48,10 @@ function ExtendedListItem($title,$tekst,$link,$linktxt,$data,$autor)
     $txt = $txt.'[<a class="navi" href="'.$link.'">'.$linktxt.'</a>]';
   }           
   
-  $txt = $txt.'<br><br><div align="right"><i>zamieszczono: '.$data.'</i></div>';
+  if($data != '')
+  {
+		$txt = $txt.'<br><br><div align="right"><i>zamieszczono: '.$data.'</i></div>';
+  }
              
   if($autor != '')
   {

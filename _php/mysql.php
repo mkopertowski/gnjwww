@@ -101,9 +101,20 @@ function ExtendedListItemMYSQL($mysqli,$row,$dir)
 	{
 		$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
 	}
+	else if($author == "-")
+	{
+		$author = "";
+	}
 
-	$date = formatDate($row['date']);
-
+	if(isOldArticle($row['date']))
+	{
+		$date = "";
+	}
+	else
+	{
+		$date = formatDate($row['date']);
+	}
+	
 	$title = $row['title'];
 	if(isRecentDate($row['date'])) {
 		$title = '<IMG src="'.$dir.'/_gfx/new.gif" border=0>'.$title;
@@ -141,7 +152,15 @@ function ShowArticle($mysqli,$row,$id,$showplugin)
 {
 	$title = $row['title'];
 	$subtitle = $row['subtitle'];
-	$date = formatDate($row['date']);
+	
+	if(isOldArticle($row['date']))
+	{
+		$date = "";
+	}
+	else
+	{
+		$date = formatDate($row['date']);
+	}
 	
 	$text = $row['text'];
 	$wiki_txt = new wikiParser;
@@ -196,7 +215,15 @@ function ShowArticleEx($mysqli,$row,$id,$showplugin)
 {
 	$title = $row['title'];
 	$subtitle = $row['subtitle'];
-	$date = formatDate($row['date']);
+	
+	if(isOldArticle($row['date']))
+	{
+		$date = "";
+	}
+	else
+	{
+		$date = formatDate($row['date']);
+	}
 
 	$text = $row['text'];
 	$wiki_txt = new wikiParser;

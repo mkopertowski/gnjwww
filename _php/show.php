@@ -15,9 +15,9 @@ if($result->num_rows == 1)
 {
 	$row = $result->fetch_assoc();
 	
-	switch($row['section'])
+	switch($row['layout'])
 	{
-		case "technika":
+		case "ex":
 			ShowArticleEx($mysqli,$row,$id,true);
 			break;
 		default:

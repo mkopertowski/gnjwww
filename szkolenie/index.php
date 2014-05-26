@@ -6,24 +6,31 @@ if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
 
+$GL_DIR = '..';
+
+@include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/misc.php');
+
 	renderHead($bSubdir);
 	renderMenu($bSubdir,3,false,'TECHNIKA');
 	renderGallery(true,false);
 	renderCentral(true);
 ?>
 <!--============================= CONTENTS START ==========================================-->
-<h1>
-	SZKOLENIE I TECHNIKA
-</h1>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ZASADY NURKOWANIA JASKINIOWEGO</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
+<h1>SZKOLENIE I TECHNIKA</h1>
+
+<?php 
+
+NewSection('SZKOLENIA','section');
+
+StartList();
+
+$sqlfiltr="section='technika'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
 
 	<li class="normal">
 		<b>Rebreathery w nurkowaniu jaskiniowym</b><br>

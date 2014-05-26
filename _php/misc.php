@@ -24,6 +24,14 @@ function formatDate($date)
 	return $formatedDate;
 }
 
+function isOldArticle($date)
+{
+	$dtime = new DateTime($date);
+	
+	return ($dtime->format("Y")<2007);
+}
+
+
 /* check if the date is in the last 3 months */
 function isRecentDate($date)
 {
