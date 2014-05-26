@@ -15,7 +15,14 @@ if($result->num_rows == 1)
 {
 	$row = $result->fetch_assoc();
 	
-	ShowArticle($mysqli,$row,$id,true);
+	switch($row['section'])
+	{
+		case "technika":
+			ShowArticleEx($mysqli,$row,$id,true);
+			break;
+		default:
+			ShowArticle($mysqli,$row,$id,true);
+	}
 }	
 
 ?>

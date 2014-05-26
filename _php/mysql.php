@@ -191,4 +191,58 @@ function ShowArticle($mysqli,$row,$id,$showplugin)
 }
 
 
+
+function ShowArticleEx($mysqli,$row,$id,$showplugin)
+{
+	$title = $row['title'];
+	$subtitle = $row['subtitle'];
+	$date = formatDate($row['date']);
+
+	$text = $row['text'];
+	$wiki_txt = new wikiParser;
+	$text = $wiki_txt->parse($text);
+
+	if($row['author'] == "")
+	{
+		$authorid = $row['authorid'];
+		$author = getAuthorFromAuthorID($mysqli,$authorid);
+	}
+	else
+	{
+		$author = $row['author'];
+	}
+
+	/* get image ids */
+	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'image%'";
+	$result_ids=$mysqli->query($sql);
+
+	/* get links */
+	$sql="SELECT `link`, `name` FROM links WHERE articleId='$id'";
+	$result_links=$mysqli->query($sql);
+
+	/* prepare and publish article */
+	$Article = new Renderer("../_tpl/article.ex.tpl.php");
+
+	$Article->set("articleId",$id);
+	$Article->set("title",$title);
+	$Article->set("subtitle",$subtitle);
+	$Article->set("date",$date);
+	$Article->set("author",$author);
+	$Article->set("imageIds",$result_ids);
+	$Article->set("links",$result_links);
+
+	$Article->set("html_keywords",$row['keywords']);
+	$Article->set("html_description",$row['description']);
+
+	$Article->set("showPlugin",$showplugin);
+	$Article->set("imgId",getFirstImageIDFromArticle($mysqli,$id));
+
+	$text = explode('</p><p class="article">', $text);
+	$Article->set("text",$text);
+
+	$Article->publish();
+
+}
+
+
 ?>

@@ -337,6 +337,7 @@ table.articlerightimage td {
 UL.article {
 	list-style : square;
 	margin-left: 0px;
+	text-align: left;
 }
 LI.article {
 	color: #ffffff;
