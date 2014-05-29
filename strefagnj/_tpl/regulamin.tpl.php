@@ -41,6 +41,9 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <ol id="regulamin-list">
 
-<li>max. liczba linków <?php echo $this->linksMaxNr; ?> (włączając filmy youtube,vimeo itp.).</li>
+<li>Link zewnętrzny powinien wskazywać na treść, która się nie zmieni i nie zniknie.</li>
+<li>Link nie może wskazywać postów (np. facebook, twitter, google+).</li>
+<li>Max. liczba linków <?php echo $this->linksMaxNr; ?> (włączając filmy youtube,vimeo itp.).</li>
+
 </ol>
 
