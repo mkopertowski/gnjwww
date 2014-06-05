@@ -131,12 +131,12 @@ else /* member adding/updating article */
 	if(isset($_SESSION['articleid'])){
 		$id = $_SESSION['articleid'];
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section' date=now() WHERE id='$id'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section', date=now() WHERE id='$id'";
 	}
 	else
 	{
 		/* insert */
-		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, title, subtitle, text, date, section) VALUES ('$authorid', '$title', '$text', now(), '$section')";
+		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, title, subtitle, text, date, section) VALUES ('$authorid', '$title', '$subtitle', '$text', now(), '$section')";
 	}
 	
 	$result=$mysqli->query($sql);	
