@@ -23,7 +23,8 @@
 		<?php else: ?>
 		<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png" />
 		<?php endif; ?>
-				
+		<meta property="og:description"     content="<?php echo $this->description; ?>" />
+		
 	<script language=JavaScript1.2>
 
 	function open_click(what,height,width)
