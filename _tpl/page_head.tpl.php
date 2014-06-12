@@ -15,8 +15,10 @@
 		
 		<?php if( $this->articleId != ""): ?>
 		<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" /> 
+		<meta property="og:type" content="article" />
 		<?php else: ?>
-		<meta property="og:url"             content="http://gnj.org.pl" /> 
+		<meta property="og:url"             content="http://gnj.org.pl" />
+		<meta property="og:type" content="website" /> 
 		<?php endif; ?>
 		<?php if( $this->imgId != ""): ?>
 		<meta property="og:image"           content="http://gnj.org.pl/_php/mysql_getFile.php?id=<?php echo $this->imgId; ?>&type=data400x266" />
