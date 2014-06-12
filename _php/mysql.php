@@ -36,7 +36,7 @@ function getAuthorFromAuthorID($mysqli,$authorID)
 
 function getFirstImageIDFromArticle($mysqli,$articleID)
 {
-	$sql="SELECT `id` FROM `files` WHERE articleId='$articleID' and mime='image/jpeg' LIMIT 1";
+	$sql="SELECT `id` FROM `files` WHERE articleId='$articleID' and ( mime='image/jpeg' or mime='image/png' or mime='image/gif' ) LIMIT 1";
 	$result=$mysqli->query($sql);
 
 	$imgId = "";
