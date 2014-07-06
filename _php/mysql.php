@@ -180,6 +180,10 @@ function ShowArticle($mysqli,$row,$id,$showplugin)
 	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'image%'";
 	$result_ids=$mysqli->query($sql);
 	
+	/* get local pdf files for links */
+	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'application/pdf'";
+	$result_localfiles=$mysqli->query($sql);
+	
 	/* get links */
 	$sql="SELECT `link`, `name` FROM links WHERE articleId='$id'";
 	$result_links=$mysqli->query($sql);
@@ -194,6 +198,7 @@ function ShowArticle($mysqli,$row,$id,$showplugin)
 	$Article->set("author",$author);
 	$Article->set("imageIds",$result_ids);
 	$Article->set("links",$result_links);
+	$Article->set("localfiles",$result_localfiles);
 	
 	$Article->set("html_keywords",$row['keywords']);
 	$Article->set("html_description",$row['description']);
