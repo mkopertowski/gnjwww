@@ -114,7 +114,7 @@ if($_SESSION['usertype'] == "admin")
 	if(isset($_SESSION['articleid'])){
 		$id = $_SESSION['articleid'];
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status' WHERE id='$id'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status', date='$date' WHERE id='$id'";
 	}
 	else 
 	{ 

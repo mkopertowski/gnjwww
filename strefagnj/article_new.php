@@ -23,7 +23,6 @@ $tbl_name="members"; // Table name
 $sql="SELECT id,name,surname FROM $tbl_name";
 $membersList = $mysqli->query($sql);
 
-
 $Page = new RendererGNJ("./_tpl/newarticle.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 
