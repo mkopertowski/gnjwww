@@ -372,6 +372,9 @@ function renderRightPanel($bSubdir)
   $txt.= '<BR><BR><a class="navi" href="http://www.gralmarine.com" target="_blank">
 			<IMG src="'.$dots.'/_gfx/gralmarine1.png" border=0>
 			</a>';
+  $txt.= '<BR><BR><a class="navi" href="http://www.sklep-nurkowy.pl" target="_blank">
+			<IMG src="'.$dots.'/_gfx/sklepnurkowy1.png" border=0>
+			</a>';
   $txt.= '<BR><BR><a class="navi" href="http://www.freefrog.pl" target="_blank">
             <IMG src="'.$dots.'/_gfx/ffgnj.png" border=0>
           </a>';
