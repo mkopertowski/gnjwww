@@ -1,27 +1,28 @@
-<h1>Dodawanie linków</h1>
+<div class="page-header">
+	<h2>Dodawanie linków</h2>
+</div>
 
-<p><big>Tytuł puplikacji: <?php echo $this->title; ?></big></p>
+<h3>Tytuł puplikacji: <?php echo $this->title; ?></h3>
 
-<p>Linki:</p>
+<h4>Linki:</h4>
 
 <?php if( $this->links->num_rows > 0): ?>
-
-<table id="articlelist-table">
-        <tr><th width="70%">Link</th><th width="30%">Operacje</th></tr>
-
+<div class="table-responsive">
+<table class="table table-hover">
+    <tr><th>Link</th><th>Operacje</th></tr>
 	<?php while ($row = $this->links->fetch_assoc()): ?>
 		<tr>
     		<td><a href="<?php echo $row['link']; ?>"><?php echo $row['name']; ?></a></td>
 		    <td><a href="article_links.php?id=<?php echo $this->articleid; ?>&linkid=<?php echo $row['id']; ?>&del">Usuń</a></td>
 		</tr>
-	<?php endwhile; ?>
-	
+	<?php endwhile; ?>	
 </table>
+</div>
 <?php else: ?>
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<form name="form1" method="post" action="article_linksadd.php" enctype="multipart/form-data">
+<form  class="form" role="form" name="form1" method="post" action="article_linksadd.php" enctype="multipart/form-data">
 
 <p>Możesz dodac maksymalnie <?php echo $this->maxLinks; ?> linków.</p>
 
@@ -35,4 +36,10 @@
     
 <p><?php if(isset($this->info)) echo $this->info; ?></p>    
     
-</form>        
+</form>
+
+<?php 
+if(isset($this->info))
+	echo '<div class="alert alert-info" role="alert">'.$this->info.'</div>';
+?>
+

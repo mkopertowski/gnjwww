@@ -5,7 +5,7 @@ session_destroy();
 
 include("./_php/RendererGNJ.php");
 
-$LoginPage = new RendererGNJ("./_tpl/empty.tpl.php",false);
+$LoginPage = new RendererGNJ("./_tpl/logout.tpl.php",false);
 
 $LoginPage->setInfo("Wylogowano pomyślnie");
 $LoginPage->publish();

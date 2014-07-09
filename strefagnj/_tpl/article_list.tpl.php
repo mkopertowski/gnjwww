@@ -1,8 +1,11 @@
-<h1><?php echo $this->header; ?></h1>
+<div class="page-header">
+	<h2><?php echo $this->header; ?></h2>
+</div>
 
 <?php if( $this->articles->num_rows > 0): ?>
 
-<table id="articlelist-table">
+<div class="table-responsive">
+<table class="table table-hover">
         <tr><th>Autor</th><th>Tytuł</th><th>Dział</th><th>Data</th><th>Operacje</th></tr>
 
 	<?php while ($row = $this->articles->fetch_assoc()): ?>
@@ -24,6 +27,7 @@
 	<?php endwhile; ?>
 	
 </table>
+</div>
 <?php else: ?>
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>

@@ -24,11 +24,11 @@ session_start();
 
 if($passwordold != $_SESSION['password']) {
 	$_SESSION['passwordProblem'] = "Błędne hasło. Spróbuj jeszcze raz!";
-	header("Location: password.php");
+	header("Location: changepassword.php");
 }
 else if($passwordnew1!=$passwordnew2) {
 	$_SESSION['passwordProblem'] = "Nowe hasła są różne. Spróbuj jeszcze raz!";
-	header("Location: password.php");
+	header("Location: changepassword.php");
 }
 else {	
 	$_SESSION['info'] = "Hasło zmienione pomyślnie";

@@ -32,8 +32,7 @@ if($result->num_rows == 1)
 	$Page->set("form_action","article_submitConfirmed.php");
 	
 	if(isset($_SESSION['info'])){
-		$info = "<big>".$_SESSION['info']."</big><br>";
-		$Page->set("info",$info);
+		$Page->set("info",$_SESSION['info']);
 		unset($_SESSION['info']);
 	}
 }

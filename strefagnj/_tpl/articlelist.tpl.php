@@ -1,10 +1,12 @@
-<h1>Twoje publikacje</h1>
+<div class="page-header">
+        <h2>Twoje publikacje</h2>
+</div>
 
-<h2>Wersje robocze:</h2>
+<h3>Wersje robocze:</h3>
 
 <?php if( $this->articles_edit->num_rows > 0): ?>
-
-<table id="articlelist-table">
+<div class="table-responsive">
+<table class="table table-hover">
         <tr><th>Tytuł</th><th>Dział</th><th>Data</th><th>Operacje</th></tr>
 
 	<?php while ($row = $this->articles_edit->fetch_assoc()): ?>
@@ -23,15 +25,17 @@
 	<?php endwhile; ?>
 	
 </table>
+</div>
 <?php else: ?>
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<h2>Gotowe (oczekujące na publikację):</h2>
+<h3>Gotowe (oczekujące na publikację):</h3>
 
 <?php if( $this->articles_review->num_rows > 0): ?>
 
-<table id="articlelist-table">
+<div class="table-responsive">
+<table class="table table-hover">
         <tr><th>Tytuł</th><th>Dział</th><th>Data</th><th>Operacje</th></tr>
 
 	<?php while ($row = $this->articles_review->fetch_assoc()): ?>
@@ -44,15 +48,17 @@
 	<?php endwhile; ?>
 	
 </table>
+</div>
 <?php else: ?>
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<h2>Opublikowane:</h2>
+<h3>Opublikowane:</h3>
 
 <?php if( $this->articles_reviewed->num_rows > 0): ?>
 
-<table  id="articlelist-table">
+<div class="table-responsive">
+<table class="table table-hover">
         <tr><th>Tytuł</th><th>Dział</th><th>Data</th><th>Operacje</th></tr>
 
 	<?php while ($row = $this->articles_reviewed->fetch_assoc()): ?>
@@ -65,7 +71,7 @@
 	<?php endwhile; ?>
 	
 </table>
-
+</div>
 <?php else: ?>
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>

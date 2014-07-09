@@ -1,15 +1,22 @@
-<h1>Nowy artykuł</h1>
+<div class="page-header">
+	<h2>Nowy artykuł</h2>
+</div>
 
-<form name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
+<form class="form" role="form" name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
        	
-<h2>Tytuł:</h2>
-<input name="title" type="text" id="title" size=100 value="<?php echo $this->title; ?>" maxlength="255">
+<div class="form-group">
+	<label for="Tytul">Tytuł</label>
+	<input name="title" type="text" id="title" class="form-control" id="Tytul" value="<?php echo $this->title; ?>">
+</div>
 
-<h2>Podtytuł <i>(będzie pokazany na stronie głównej pod tytyłem)</i>:</h2>
-<textarea name="subtitle" id="text" cols="100" rows="3" maxlength="400"><?php echo $this->subtitle; ?></textarea>
+<div class="form-group">
+	<label for="subtext">Podtytuł <i>(będzie pokazany na stronie głównej pod tytyłem)</i></label>
+	<textarea name="subtitle" id="subtext" class="form-control" rows="3"  maxlength="400"><?php echo $this->subtitle; ?></textarea>
+</div>
 
-<h2>Dział:</h2>
-	<select name="section" value="polska">
+<div class="form-group">
+	<label for="section">Dział</label>
+	<select name="section" value="polska" class="form-control">
 		<?php foreach($this->sectionList as $value):
 		         if($this->section == $value)
 		         	echo "<option value=\"$value\" selected>$value</option>";		         	
@@ -18,68 +25,93 @@
 			  endforeach;
 		?>
     </select>
+</div>
     
-<h2>Treść (używaj składni wiki markup):</h2>
+<div class="form-group">
+	<label for="text">Treść (używaj składni wiki markup)</label>
+	<ul>
+		<li>''' Bold '''</li>
+		<li>'' Italic ''</li>
+		<li>''''' Bold-italic '''''</li>
+		<li>: Indentation</li>
+		<li>:: Subindentation</li>
+		<li>* Nienumerowana lista</li>
+		<li># Numerowana lista</li>
+		<li>pusta linia - nowy akapit</li>
+	</ul>
+	<textarea name="text" id="text" class="form-control" rows="40"  maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>
+</div>
 
-<ul>
-    <li>''' Bold '''</li>
-    <li>'' Italic ''</li>
-    <li>''''' Bold-italic '''''</li>
-    <li>: Indentation</li>
-    <li>:: Subindentation</li>
-    <li>* Nienumerowana lista</li>
-    <li># Numerowana lista</li>
-    <li>pusta linia - nowy akapit</li>
-</ul>
-<BR>
-
-<textarea name="text" id="text" cols="100" rows="40" maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>             
-<h2><input type="submit" name="Submit" value="Zapisz"></h2>
+<button type="submit" name="Submit" class="btn btn-default">Zapisz</button>
             
 <!-- ADMIN FIELDS -->
             
 <?php if(isset($_SESSION['usertype']) && ($_SESSION['usertype'] == "admin")): ?>            
 
-<br><br><hr><br>
+<hr>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
- <script>
-$(function() {
-$( "#datepicker" ).datepicker();
-});
-</script>
- 
-<h1>Pola administratora bazy:</h1>
 
-<h2>Tagi (do filtrowania SQL):</h2>
-<input name="tags" type="text" id="title" size=115 value="<?php echo $this->tags; ?>">
-    
-<h2>HTML "keywords" (słowa powinny byc użyte na stronie, oddzielone przecinkiem, bez spacji)</h2>
-<input name="html_keywords" type="text" id="title" size=115 value="<?php echo $this->html_keywords; ?>">
+<div class="form-group">
+	<h3><span class="label label-info">Pola administratora bazy</span></h3>
+</div>
 
-<!--
-<h2>HTML "description"</h2>
-<input name="html_description" type="text" id="title" size=115 value="<?php echo $this->html_description; ?>">
--->
-<BR><BR><BR>
-<p><i>(ponizej ustaw tylko gdy chcesz nadpisać domyślne wartości)</i></p>
+<div class="form-group">
+	<label for="tags">Tagi (do filtrowania SQL)</label>
+	<input name="tags" type="text" id="tags" class="form-control" value="<?php echo $this->tags; ?>">
+</div>
 
-<h2>Autor artykułu:</h2>
-	<select name="authorlist">
+<div class="form-group">
+	<label for="keywords">HTML "keywords" (słowa powinny byc użyte na stronie, oddzielone przecinkiem, bez spacji)</label>
+	<input name="html_keywords" type="text" id="keywords" class="form-control" value="<?php echo $this->html_keywords; ?>">
+</div>
+
+<div class="form-group">
+	<h4><span class="label label-info">Ustaw tylko gdy chcesz nadpisać domyślne wartości</span></h4>
+</div>
+
+<div class="form-group">
+	<label>Autor artykułu (wybierz albo wpisz)</label>
+<div class="form-group row"> 
+		<div class="col-xs-4"> 
+	<select name="authorlist" class="form-control">
 	   <option value="notSet"></option>
 		<?php while ($row = $this->membersList->fetch_assoc()):
 		   		echo "<option value=".$row['id'].">".$row['name']." ".$row['surname']."</option>";
 		      endwhile; 
 		?>	   
-    </select> albo 
-    <input name="authortext" type="text" id="authortext" size=30 value="<?php echo $this->author; ?>" maxlength="100">
+	</select>
+	</div>
+	<div class="col-xs-8">
+ 	<input name="authortext" type="text" id="authortext" value="<?php echo $this->author; ?>" maxlength="100" class="form-control">
+</div></div>
 
-<h2>Data publikacji:</h2>
-<input name="date" type="text" id="datepicker">
+<div class="form-group">
+	<div class="form-group row"> 
+		<div class="col-xs-4"> 
+			<label class="control-label">Data publikacji</label> 
+			<div class="input-group date" id="dp3" data-date="" data-date-format="dd-mm-yyyy"> 
+				<input class="form-control" type="text" readonly value="">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <?php endif; ?>
 
-<BR><BR><BR><BR>
-
 </form>        
+<script>
+	$(function(){
+		$(".input-group.date").datepicker({ 
+			autoclose: true, 
+			todayHighlight: true 
+		});
+	});
+
+	
+
+	
+</script>

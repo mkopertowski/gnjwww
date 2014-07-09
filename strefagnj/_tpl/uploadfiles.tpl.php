@@ -7,7 +7,7 @@
 <?php if( $this->files->num_rows > 0): ?>
 
 <table id="articlelist-table">
-        <tr><th width="10%">Nazwa</th><th width="60%">Opis</th><th width="30%">Operacje</th></tr>
+        <tr><th>Nazwa</th><th>Opis</th><th>Operacje</th></tr>
 
 	<?php while ($row = $this->files->fetch_assoc()): ?>
 		<tr>
@@ -22,20 +22,25 @@
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<form name="form1" method="post" action="article_upload.php" enctype="multipart/form-data">
+<form class="form" role="form" name="form1" method="post" action="article_upload.php" enctype="multipart/form-data">
 
-<p>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> zdjęc.</p>
+<div class="form-group">
+	<label>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> zdjęc.</label>
+</div>
 
-<p>Plik:</p>
-<p>
-   <input type="file" name="uploaded_file"/>
-</p>
+<div class="form-group">
+	<label>Plik</label>
+	<input type="file" name="uploaded_file"/>
+</div>
 
-<p>Opis:</p>
-<p><input name="description" type="text" id="description" size=80></p>
+<div class="form-group">
+	<label>Opis</label>
+	<input name="description" type="text" id="description"/>
+</div>
 
-<p><input type="submit" name="Submit" value="Dodaj"></p>
-    
-<p><?php if(isset($this->info)) echo $this->info; ?></p>    
+<button type="submit" class="btn btn-default">Dodaj</button>
     
 </form>        
+
+<p><?php if(isset($this->info)) echo $this->info; ?></p>    
+

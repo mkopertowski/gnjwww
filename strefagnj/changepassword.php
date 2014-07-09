@@ -15,6 +15,7 @@ $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 if(isset($_SESSION['passwordProblem']))
 {
 	$Page->set("passwordProblem",$_SESSION['passwordProblem']);
+	unset($_SESSION['passwordProblem']);
 }
 
 $Page->publish();

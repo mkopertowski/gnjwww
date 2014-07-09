@@ -1,10 +1,9 @@
 <?php 
 
-include("./_php/RendererGNJ.php");
+include("../_php/Renderer.php");
 
-$LoginPage = new RendererGNJ("./_tpl/login.tpl.php",false);
+$LoginPage = new Renderer("./_tpl/login.tpl.php");
 
-$LoginPage->setInfo("Zaloguj się");
 $LoginPage->publish();
 
 ?>

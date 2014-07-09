@@ -1,8 +1,10 @@
-<h1>Regulamin publikacji na stronie GNJ</h1>
+<div class="page-header">
+        <h1>Regulamin publikacji na stronie GNJ</h1>
+</div>
 
-<h2>Tekst</h2>
+<h3>Tekst</h3>
 
-<ol id="regulamin-list">
+<ol>
 
 <li>Tekst nie może zawierać wulgaryzmów, niestosownych treści,
 kryptoreklam.</li>
@@ -14,9 +16,9 @@ być wyróżniony.</li>
 
 </ol>
 
-<h2>Zdjęcia</h2>
+<h3>Zdjęcia</h3>
 
-<ol id="regulamin-list">
+<ol>
 
 <li>Zdjęcia powinny być <B>ciekawe</B> tzn. nie może być kilku podobnych,
 zdjęć nieostrych, zdjęć niedoświetlonych/prześwietlonych, nie mogą
@@ -37,9 +39,9 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 </ol>
 
-<h2>Linki</h2>
+<h3>Linki</h3>
 
-<ol id="regulamin-list">
+<ol>
 
 <li>Link zewnętrzny powinien wskazywać na treść, która się nie zmieni i nie zniknie.</li>
 <li>Link nie może wskazywać postów (np. facebook, twitter, google+).</li>
