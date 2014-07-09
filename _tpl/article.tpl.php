@@ -54,13 +54,19 @@ renderCentral(true);
 
 <BR><P align="right"><B><?php echo $this->author; ?><BR></B></P>
 
-<?php if( $this->links->num_rows > 0): ?>
-    <ul>
+<ul>
+<?php if(($this->localfiles->num_rows > 0)): ?>	
+    <?php while ($row = $this->localfiles->fetch_assoc()): ?>
+	<LI><a class="fancybox-media" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data" target="_blank"><?php echo $row['description']; ?></a></LI>
+	<?php endwhile; ?>
+<?php endif; ?>
+<?php if(($this->links->num_rows > 0)): ?>	
 	<?php while ($row = $this->links->fetch_assoc()): ?>
 	<LI><a class="fancybox-media" href="<?php echo $row['link']; ?>" target="_blank"><?php echo $row['name']; ?></a></LI>
 	<?php endwhile; ?>
-	</ul>
 <?php endif; ?>
+</ul>
+
 
 <!-- ============================= CONTENT END   ============================================ -->
 

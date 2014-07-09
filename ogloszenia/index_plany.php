@@ -26,7 +26,7 @@ include('../_php/mysql.php');
 <h1>
 	OGŁOSZENIA
 </h1>
-<h3 align=right>Ostatnia aktualizacja: 15. Kwietnia 2014</h3>
+<h3 align=right>Ostatnia aktualizacja: 7. Lipiec 2014</h3>
 <h2>
  Plany Grupy Nurków Jaskiniowych PZA na rok 2014
 </h2>
@@ -57,28 +57,33 @@ EndList();
 <h3>Kalendarz</h3>
 
 <font color=white>	  
-<h4>6-8 czerwca 2014</h4>
-      <ul>
-      <li><b>Śląskie Manewry Ratownictwa Jaskiniowego</b><br>Uczestnictwo w pozorowanej, podwodnej akcji ratunkowej</li>
-      </ul>	  
 	  	  
-<h4>lipiec 2014</h4>
+<h4>Lipiec/Sierpień</h4>
       <ul>
-      <li><b>Kosowo i Serbia</b><br>Dalsze eksploracje tamtejszych jaskiń</li>
+      <li>Kosowo - 12.07-3.08 - dalsze eksploracje tamtejszych jaskiń (Dominik Graczyk)</li>
+      <li>Albania - 15.08-30.08 - dalsze eksploracje tamtejszych jaskiń (Darek Lermer)</li>
       </ul>
-	  
-<h4>sierpień 2014</h4>
+      
+<h4>Wrzesień</h4>
       <ul>
-      <li><b>Macedonia i Albania</b><br>Pierwsze nurkowania w syfonach Slovackiej Jamy oraz turystyka nurkowo-jaskiniowa w południowej Albanii</li>
+      <li>Niemcy - Hessenhauhohle - proba pokonnia syfonu 7. (Mirek Kopertowski)</li>
       </ul>
-	  	  
-<h4>październik 2014</h4>
+      
+<h4>Październik</h4>
       <ul>
-      <li>Turystyka nurkowo-jaskiniowa i eksploracja jaskiń na Malcie</li>
+      <li>Turystyka nurkowo-jaskiniowa i eksploracja jaskiń na Malcie (Dominik Graczyk)</li>
       </ul>
-	  
+<h4>Listopad</h4>
+      <ul>
+      <li>23. Listopad - Speleokonfrontacje - spotkanie GNJ</li>
+      </ul>
 
-
+<h4>Zima 2014/2015</h4>
+      <ul>
+      <li>Tatry - j. Wielka Śnieżna - syfony Krakowskie (Maciek Czykierda)</li>
+      </ul>
+      
+      
 </font>
 <br>
 <br>
