@@ -1,5 +1,5 @@
 <div class="page-header">
-    <h2>Tytuł puplikacji: <?php echo $this->title; ?></h2>
+    <h3>Tytuł puplikacji: <?php echo $this->title; ?></h3>
 </div>
 
 <form class="form" role="form" name="form1" method="post" action="<?php echo $this->form_action; ?>" enctype="multipart/form-data">

@@ -22,10 +22,8 @@
     <div class="container">
 
       <form class="form-signin" role="form" method="post" action="checklogin.php">
-        <h2 class="form-signin-heading">
-            <img src="../_gfx/logoGNJ.png" alt="..." class="img-rounded">
-            Strefa GNJ
-        </h2>
+        <p class="text-center"><img src="../_gfx/logoGNJ_150x150.png" alt="..." class="img-rounded"></p>
+        <p class="text-center"><big><strong>STREFA GNJ</strong></big></p>
         <input type="email" class="form-control" placeholder="Adres email" required autofocus name="email" id="email">
         <input type="password" class="form-control" placeholder="Hasło" required name="password" id="password">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>

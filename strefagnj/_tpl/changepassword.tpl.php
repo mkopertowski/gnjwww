@@ -1,5 +1,5 @@
 <div class="page-header">
-        <h1>Zmiana hasła</h1>
+        <h3>Zmiana hasła</h3>
 </div>
 
 <form class="form-horizontal" role="form" name="form1" method="post" action="checkpassword.php">

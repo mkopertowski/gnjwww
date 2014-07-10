@@ -1,8 +1,8 @@
 <div class="page-header">
-        <h2>Twoje publikacje</h2>
+        <h3>Twoje publikacje</h3>
 </div>
 
-<h3>Wersje robocze:</h3>
+<h4>Wersje robocze:</h4>
 
 <?php if( $this->articles_edit->num_rows > 0): ?>
 <div class="table-responsive">
@@ -14,7 +14,7 @@
 		    <td><?php echo $row['title']; ?></td>
 			<td><?php echo $row['section']; ?></td>
 		    <td><?php echo $row['date']; ?></td>
-		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>">Wyświetl</a>&nbsp;
+		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" target="_blank">Wyświetl</a>&nbsp;
 		        <a href="article_new.php?id=<?php echo $row['id']; ?>">Edytuj</a>&nbsp;
 		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>">Pliki</a>&nbsp;
 		        <a href="article_links.php?id=<?php echo $row['id']; ?>" >Linki</a>&nbsp;
@@ -30,7 +30,7 @@
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<h3>Gotowe (oczekujące na publikację):</h3>
+<h4>Gotowe<small>(oczekujące na publikację)</small></h4>
 
 <?php if( $this->articles_review->num_rows > 0): ?>
 
@@ -43,7 +43,7 @@
 		    <td><?php echo $row['title']; ?></td>
 			<td><?php echo $row['section']; ?></td>
 		    <td><?php echo $row['date']; ?></td>
-		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" >Wyświetl</a></td>
+		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" target="_blank">Wyświetl</a></td>
 		</tr>
 	<?php endwhile; ?>
 	
@@ -53,7 +53,7 @@
 <p><i>--------- list pusta --------</i></p>
 <?php endif; ?>
 
-<h3>Opublikowane:</h3>
+<h4>Opublikowane</h4>
 
 <?php if( $this->articles_reviewed->num_rows > 0): ?>
 
@@ -66,7 +66,7 @@
 		    <td><?php echo $row['title']; ?></td>
 			<td><?php echo $row['section']; ?></td>
 			<td><?php echo $row['date']; ?></td>
-	        <td><a href="article_show.php?id=<?php echo $row['id']; ?>" >Wyświetl</a></td>
+	        <td><a href="article_show.php?id=<?php echo $row['id']; ?>" target="_blank">Wyświetl</a></td>
 	    </tr>
 	<?php endwhile; ?>
 	

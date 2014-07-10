@@ -1,5 +1,5 @@
 <div class="page-header">
-	<h1><?php echo $this->header; ?></h1>
+	<h3><?php echo $this->header; ?></h3>
 </div>
 
 <?php if( $this->articles->num_rows > 0): ?>
@@ -18,7 +18,7 @@
 		    <td><?php echo $row['title']; ?></td>
 			<td><?php echo $row['section']; ?></td>
 		    <td><?php echo $row['date']; ?></td>
-		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" >Wyświetl</a>&nbsp;
+		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" target="_blank">Wyświetl</a>&nbsp;
 		        <a href="article_new.php?id=<?php echo $row['id']; ?>" >Edytuj</a>&nbsp;
 		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>" >Pliki</a>&nbsp;
 		        <a href="article_links.php?id=<?php echo $row['id']; ?>" >Linki</a>&nbsp;

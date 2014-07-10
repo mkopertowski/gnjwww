@@ -1,8 +1,8 @@
 <div class="page-header">
-        <h1>Regulamin publikacji na stronie GNJ</h1>
+        <h3>Regulamin publikacji na stronie GNJ</h3>
 </div>
 
-<h3>Tekst</h3>
+<h4>Tekst</h4>
 
 <ol>
 
@@ -16,7 +16,7 @@ być wyróżniony.</li>
 
 </ol>
 
-<h3>Zdjęcia</h3>
+<h4>Zdjęcia</h4>
 
 <ol>
 
@@ -35,11 +35,11 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <li>Każde zdjęcie musi posiadać <b>podpis i autora</b> (część podpisu).</li>
 
-<li>plany i przekroje wyłącznie w formcie: GIF,PNG lub PDF.</li>
+<li>Plany i przekroje wyłącznie w formcie: PDF lub GIF,PNG.</li>
 
 </ol>
 
-<h3>Linki</h3>
+<h4>Linki</h4>
 
 <ol>
 

@@ -1,5 +1,5 @@
 <div class="page-header">
-	<h2>Nowy artykuł</h2>
+	<h3>Nowy artykuł</h3>
 </div>
 
 <form class="form" role="form" name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
@@ -92,7 +92,7 @@
 		<div class="col-xs-4"> 
 			<label class="control-label">Data publikacji</label> 
 			<div class="input-group date" id="dp3" data-date="" data-date-format="dd-mm-yyyy"> 
-				<input class="form-control" type="text" readonly value="">
+				<input name="date" class="form-control" type="text" readonly value="">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 			</div>
 		</div>
