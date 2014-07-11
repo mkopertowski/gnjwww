@@ -29,5 +29,5 @@
 </table>
 </div>
 <?php else: ?>
-<p><i>--------- list pusta --------</i></p>
+<div class="alert alert-info" role="alert">list pusta</div>
 <?php endif; ?>

@@ -35,7 +35,7 @@ masowej, chyba że regulamin danej imprezy stanowczo tego zabrania.</li>
 
 <li>Każde zdjęcie musi posiadać <b>podpis i autora</b> (część podpisu).</li>
 
-<li>Plany i przekroje wyłącznie w formcie: PDF lub GIF,PNG.</li>
+<li>Plany i przekroje wyłącznie w formcie: <B>PDF</B> lub GIF,PNG.</li>
 
 </ol>
 

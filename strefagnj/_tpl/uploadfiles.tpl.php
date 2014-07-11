@@ -2,28 +2,31 @@
 	<h3>Dodawanie plików <small>(<?php echo $this->title; ?>)</small></h3>
 </div>
 
-<h4>Pliki</h4>
+<div class="panel panel-default">
+	<div class="panel-heading"><h4>Pliki</h4></div>
+	<div class="panel-body">
+		<hp>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> plików. Obsługiwane formaty: jpg/png/gif/pdf.</p>
 
-<?php if( $this->files->num_rows > 0): ?>
-<div class="table-responsive">
-<table class="table table-hover">
-	<tr><th>Nazwa</th><th>Opis</th><th>Operacje</th></tr>
+		<?php if( $this->files->num_rows > 0): ?>
+			<div class="table-responsive">
+			<table class="table table-hover">
+				<tr><th>Nazwa</th><th>Opis</th><th>Operacje</th></tr>
 
-	<?php while ($row = $this->files->fetch_assoc()): ?>
-		<tr>
-		    <td><?php echo $row['name']; ?></td>
-			<td><?php echo $row['description']; ?></td>
-		    <td><a href="article_uploadfiles.php?id=<?php echo $this->articleid; ?>&fileid=<?php echo $row['id']; ?>&del">Usuń</a></td>
-		</tr>
-	<?php endwhile; ?>
-
-</table>
+				<?php while ($row = $this->files->fetch_assoc()): ?>
+				<tr>
+					<td><?php echo $row['name']; ?></td>
+					<td><?php echo $row['description']; ?></td>
+					<td><a href="article_uploadfiles.php?id=<?php echo $this->articleid; ?>&fileid=<?php echo $row['id']; ?>&del">Usuń</a></td>
+				</tr>
+				<?php endwhile; ?>
+				
+			</table>
+			</div>
+		<?php else: ?>
+			<div class="alert alert-info" role="alert">list pusta</div>
+		<?php endif; ?>
 </div>
-<?php else: ?>
-<div class="alert alert-info" role="alert">List pusta</div>
-<?php endif; ?>
-
-<h4>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> plików <small>(jpg/png/gif/pdf)</small>.</h4>
+</div>
 
 <form class="form" role="form" name="form1" method="post" action="article_upload.php" enctype="multipart/form-data">
 
