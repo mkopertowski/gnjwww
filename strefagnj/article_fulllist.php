@@ -11,7 +11,7 @@ include("./_php/RendererGNJ.php");
 
 $tbl_name="articles"; // Table name
 
-$sql="SELECT * FROM $tbl_name WHERE status='ready'";
+$sql="SELECT * FROM $tbl_name WHERE status='ready' ORDER BY date DESC";
 $result=$mysqli->query($sql);
 
 /* prepare and publish article */

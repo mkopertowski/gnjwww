@@ -3,7 +3,7 @@
 </div>
 
 <div class="panel panel-default">
-	<div class="panel-heading">Wersje robocze</div>
+	<div class="panel-heading"><h4>Wersje robocze</h4></div>
 	<div class="panel-body">
 		<?php if( $this->articles_edit->num_rows > 0): ?>
 			<div class="table-responsive">
@@ -33,7 +33,7 @@
 </div>
 
 <div class="panel panel-default">
-	<div class="panel-heading">Gotowe<small>(oczekujące na publikację)</small></div>
+	<div class="panel-heading"><h4>Gotowe <small>(oczekujące na publikację)</small></h4></div>
 	<div class="panel-body">
 		<?php if( $this->articles_review->num_rows > 0): ?>
 
@@ -59,7 +59,7 @@
 
 
 <div class="panel panel-default">
-	<div class="panel-heading">Opublikowane</div>
+	<div class="panel-heading"><h4>Opublikowane</h4></div>
 	<div class="panel-body">
 		<?php if( $this->articles_reviewed->num_rows > 0): ?>
 
