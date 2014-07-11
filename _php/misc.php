@@ -38,7 +38,7 @@ function isRecentDate($date)
 	$diff = abs(time() - strtotime($date));
 			
 	// is not older than 3 months?
-	return ($diff < (60*60*24*30));
+	return ($diff < (60*60*24*15));
 }
 
 /* check if the date is in the last 3 months */
