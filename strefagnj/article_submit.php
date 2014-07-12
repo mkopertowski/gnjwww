@@ -12,12 +12,17 @@ $_SESSION['articleId'] = $_REQUEST['id'];
 
 $tbl_name="articles"; // Table name
 
-$mysqli->query("SET NAMES 'utf8'");
-
 $authorid = $_SESSION['userid'];
 $articleId = $_SESSION['articleId']; 
 
-$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+if($_SESSION['usertype'] == "admin")
+{
+	$sql="SELECT * FROM $tbl_name WHERE (status='edit' or status='adminedit' ) and id='$articleId'";
+}
+else
+{
+	$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+}
 $result=$mysqli->query($sql);
 
 if($result->num_rows == 1)

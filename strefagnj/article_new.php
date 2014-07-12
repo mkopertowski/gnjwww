@@ -10,6 +10,8 @@ include("../_php/settings.php");
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
 
+unset($_SESSION['articleid']);
+
 $tbl_name="articles"; // Table name
 
 $mysqli->query("SET NAMES 'utf8'");
@@ -23,7 +25,7 @@ $tbl_name="members"; // Table name
 $sql="SELECT id,name,surname FROM $tbl_name";
 $membersList = $mysqli->query($sql);
 
-$Page = new RendererGNJ("./_tpl/newarticle.tpl.php");
+$Page = new RendererGNJ("./_tpl/articleForm.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 
 $Page->set("sectionList",$sectionList);
@@ -38,50 +40,16 @@ else
 	$Page->set("textMax",$ARTICLE_CHARACTERS_MAX);	
 }
 
-/* edytowanie? */
-if(isset($_REQUEST['id'])){
-	
-	$id = $_REQUEST['id'];
-	$authorid = $_SESSION['userid'];
-	$_SESSION['articleid'] = $id;
-	$tbl_name="articles"; // Table name
-	
-	if($_SESSION['usertype'] == "admin")
-	{
-		$sql="SELECT * FROM $tbl_name WHERE id='$id'";
-	}
-	else
-	{
-		$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$id'";
-	}
-		
-	$result=$mysqli->query($sql);
-	
-	if($result->num_rows == 1)
-	{
-		$row = $result->fetch_assoc();
-		
-		$Page->set("title",$row['title']);
-		$Page->set("subtitle",$row['subtitle']);		
-		$Page->set("section",$row['section']);
-		$Page->set("text",$row['text']);
-		$Page->set("tags",$row['tags']);
-		$Page->set("html_keywords",$row['keywords']);
-		$Page->set("html_description",$row['description']);
-		$Page->set("author",$row['author']);
-	}
-}
-else
-{
-	$Page->set("title","");
-	$Page->set("subtitle","");
-	$Page->set("section","");
-	$Page->set("text","");
-	$Page->set("tags","");
-	$Page->set("html_keywords","");
-	$Page->set("html_description","");
-	$Page->set("author","");
-}
+$Page->set("title","");
+$Page->set("subtitle","");
+$Page->set("section","");
+$Page->set("text","");
+$Page->set("tags","");
+$Page->set("html_keywords","");
+$Page->set("html_description","");
+$Page->set("author","");
+$Page->set("authorid","notSet");
+$Page->set("date","");
 
 $Page->publish();
 ?>

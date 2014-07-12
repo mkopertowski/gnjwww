@@ -20,7 +20,7 @@
 			</table>
 			</div>
 		<?php else: ?>
-			<div class="alert alert-info" role="alert">List pusta</div>
+			<div class="alert alert-info" role="alert">lista pusta</div>
 		<?php endif; ?>
 	</div>
 </div>

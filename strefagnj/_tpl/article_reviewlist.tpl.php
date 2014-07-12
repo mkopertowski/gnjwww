@@ -19,7 +19,7 @@
 			<td><?php echo $row['section']; ?></td>
 		    <td><?php echo $row['date']; ?></td>
 		    <td><a href="article_show.php?id=<?php echo $row['id']; ?>" target="_blank">Wyświetl</a>&nbsp;
-		        <a href="article_new.php?id=<?php echo $row['id']; ?>" >Edytuj</a>&nbsp;
+		        <a href="article_edit.php?id=<?php echo $row['id']; ?>" >Edytuj</a>&nbsp;
 		        <a href="article_uploadfiles.php?id=<?php echo $row['id']; ?>" >Pliki</a>&nbsp;
 		        <a href="article_links.php?id=<?php echo $row['id']; ?>" >Linki</a>&nbsp;
 		        <a href="article_approve.php?id=<?php echo $row['id']; ?>" >Zatwierdź</a>&nbsp;
@@ -32,5 +32,5 @@
 </table>
 </div>
 <?php else: ?>
-<div class="alert alert-info" role="alert">List pusta</div>
+<div class="alert alert-info" role="alert">lista pusta</div>
 <?php endif; ?>

@@ -2,7 +2,7 @@
 	<h3>Nowy artykuł</h3>
 </div>
 
-<form class="form" role="form" name="form1" method="post" action="article_add.php" enctype="multipart/form-data">
+<form class="form" role="form" name="form1" method="post" action="article_save.php" enctype="multipart/form-data">
        	
 <div class="form-group">
 	<label for="Tytul">Tytuł</label>
@@ -78,7 +78,14 @@
 	<select name="authorlist" class="form-control">
 	   <option value="notSet"></option>
 		<?php while ($row = $this->membersList->fetch_assoc()):
-		   		echo "<option value=".$row['id'].">".$row['name']." ".$row['surname']."</option>";
+					if($row['id'] == $this->authorid)
+					{
+						echo "<option value=\"".$row['id']."\" selected>".$row['name']." ".$row['surname']."</option>";
+					}
+					else
+					{
+						echo "<option value=\"".$row['id']."\">".$row['name']." ".$row['surname']."</option>";
+					}
 		      endwhile; 
 		?>	   
 	</select>
@@ -91,8 +98,8 @@
 	<div class="form-group row"> 
 		<div class="col-xs-4"> 
 			<label class="control-label">Data publikacji</label> 
-			<div class="input-group date" id="dp3" data-date="" data-date-format="dd-mm-yyyy"> 
-				<input name="date" class="form-control" type="text" readonly value="">
+			<div class="input-group date" id="dp3" data-date="" data-date-format="yyyy-mm-dd"> 
+				<input name="date" class="form-control" type="text" readonly value=<?php echo $this->date; ?>>
 				<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 			</div>
 		</div>

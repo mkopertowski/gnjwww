@@ -5,7 +5,7 @@
 <div class="panel panel-default">
 	<div class="panel-heading"><h4>Pliki</h4></div>
 	<div class="panel-body">
-		<hp>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> plików. Obsługiwane formaty: jpg/png/gif/pdf.</p>
+		<p>Możesz dodac maksymalnie <?php echo $this->maxPhotos; ?> plików. Obsługiwane formaty: jpg/png/gif/pdf.</p>
 
 		<?php if( $this->files->num_rows > 0): ?>
 			<div class="table-responsive">
@@ -23,7 +23,7 @@
 			</table>
 			</div>
 		<?php else: ?>
-			<div class="alert alert-info" role="alert">list pusta</div>
+			<div class="alert alert-info" role="alert">lista pusta</div>
 		<?php endif; ?>
 </div>
 </div>

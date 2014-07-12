@@ -18,6 +18,12 @@ $authorid = $_SESSION['userid'];
 $sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit'";
 $result_edit=$mysqli->query($sql);
 
+if($_SESSION['usertype'] == "admin")
+{
+	$sql="SELECT * FROM $tbl_name WHERE status='adminedit'";
+	$result_adminedit=$mysqli->query($sql);
+}
+
 $sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='toreview'";
 $result_review=$mysqli->query($sql);
 
@@ -30,7 +36,10 @@ $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 $Page->set("articles_edit",$result_edit);
 $Page->set("articles_reviewed",$result_reviewed);
 $Page->set("articles_review",$result_review);
-
+if($_SESSION['usertype'] == "admin")
+{
+	$Page->set("articles_adminedit",$result_adminedit);
+}
 $Page->publish();
 
 ?>

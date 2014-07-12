@@ -33,18 +33,23 @@ if(isset($_SESSION['articleid'])){
 	}	
 }
 
+if(isset($articleToUpdate))
+{
+	$status = $articleToUpdate['status'];
+}
+else
+{
+	/* a new article */
+	$status = "edit";
+}
+
 /* this is admin so some special handling of form data */
 if($_SESSION['usertype'] == "admin")
 {
 	$tags = ConvertStringMYSQL($mysqli,$_POST['tags']);
 	$html_keywords = ConvertStringMYSQL($mysqli,$_POST['html_keywords']);
-	$html_description = ConvertStringMYSQL($mysqli,$_POST['html_description']);
-	
-	if(isset($articleToUpdate))
-	{
-		$status = $articleToUpdate['status'];
-	}
-	
+	$html_description = "";
+
 	/* overwrite date? */
 	if($_POST['date'] =="")
 	{
@@ -53,7 +58,7 @@ if($_SESSION['usertype'] == "admin")
 			if($articleToUpdate['authorid'] == $_SESSION['userid'])
 			{
 				/* admin's article so */
-				$date = date( 'Y-m-d', strtotime("now") );
+				$date = date('Y-m-d', strtotime("now") );
 			}
 			else
 			{
@@ -68,7 +73,7 @@ if($_SESSION['usertype'] == "admin")
 	} 
 	else 
 	{
-		$date = date( 'Y-m-d', strtotime($_POST['date']));
+		$date = date('Y-m-d', strtotime($_POST['date']));
 	}
 	
 	/* overwrite author? */
@@ -81,7 +86,6 @@ if($_SESSION['usertype'] == "admin")
 			{
 				$authorid = $articleToUpdate['authorid'];
 				$author = $articleToUpdate['author'];
-				$status = "toreview";
 			}
 			else
 			{
@@ -96,7 +100,6 @@ if($_SESSION['usertype'] == "admin")
 		else /* a new article */
 		{
 			$authorid = $_SESSION['userid'];
-			$status = "edit";
 				
 			if($_POST['authortext'] != "")
 			{
@@ -108,7 +111,14 @@ if($_SESSION['usertype'] == "admin")
 	{
 		/* use selected author  */
 		$authorid = $_POST['authorlist'];
-		$status = "toreview";
+		if(isset($articleToUpdate))
+		{
+			
+		}
+		else
+		{
+			$status = "adminedit";
+		}
 	}
 	
 	if(isset($_SESSION['articleid'])){
