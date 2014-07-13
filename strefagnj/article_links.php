@@ -16,15 +16,8 @@ if(isset($_REQUEST['del']))
 {
 	$linkid = $_REQUEST['linkid'];
 	
-	if($_SESSION['usertype'] == "admin")
-	{
-		$sql="DELETE FROM $LINKS_TABLE_NAME WHERE id='$linkid' and articleId='$articleId'";
-	}
-	else
-	{
-		$sql="DELETE FROM $LINKS_TABLE_NAME WHERE authorid='$authorid' and id='$linkid' and articleId='$articleId'";
-	}
-	
+	$sql="DELETE FROM $LINKS_TABLE_NAME WHERE id='$linkid' and articleId='$articleId'";
+		
 	$mysqli->query($sql);
 }
 

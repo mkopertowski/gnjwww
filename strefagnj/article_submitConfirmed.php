@@ -17,7 +17,15 @@ if(isset($_POST['articleid']))
 	// Gather all required data
 	$articleid = $mysqli->real_escape_string($_POST['articleid']);
 
-	$sql="UPDATE $ARTICLE_TABLE_NAME SET status='toreview' WHERE id='$articleid'";
+	if($_SESSION['usertype'] == "admin")
+	{
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET status='toreview' WHERE id='$articleid'";
+	}
+	else
+	{
+		/* for a user submit date is a publish date */
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET status='toreview', date=now() WHERE id='$articleid'";
+	}
 	// Execute the query
 	$result = $mysqli->query($sql);
 

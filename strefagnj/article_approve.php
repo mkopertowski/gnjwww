@@ -9,11 +9,11 @@ include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
 include("../_php/settings.php");
 
-$articleId = $_REQUEST['id']; 
+$articleid = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleid'";
 }
 
 $result=$mysqli->query($sql);
@@ -28,7 +28,7 @@ if($result->num_rows == 1)
 	$Page->set("question","Czy zamieścić na stronie?");
 	$Page->set("submit_title","Zatwierdź");
 	$Page->set("form_action","article_approveConfirmed.php");
-	$Page->set("articleid",$articleId);
+	$Page->set("articleid",$articleid);
 }
 else
 {

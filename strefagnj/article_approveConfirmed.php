@@ -19,7 +19,7 @@ if(isset($_POST['articleid']))
 
 	if($_SESSION['usertype'] == "admin")
 	{
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET status='ready' WHERE id='$id'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET status='ready' WHERE id='$articleid'";
 	}
 	// Execute the query
 	$result = $mysqli->query($sql);
@@ -27,7 +27,7 @@ if(isset($_POST['articleid']))
 	// Check if it was successfull
 	if($result) 
 	{
-		$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$id'";
+		$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleid'";
 		$result=$mysqli->query($sql);
 	
 		if($result->num_rows == 1)

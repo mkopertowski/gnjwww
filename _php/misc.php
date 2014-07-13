@@ -65,14 +65,14 @@ function getResizedImage($blob_binary, $desired_width, $desired_height)
 			$desired_width = $desired_height * $aspectratio;
 		} else {
 			$desired_height = $height;
-		} 	
+		}
 	}
 	else
 	{
 		$width = $desired_height * $aspectratio;
 		
-		if($height>$desired_height) {
-			$desired_height = $desired_width * $aspectratio;
+		if($width>$desired_width) {
+			$desired_height = $desired_width / $aspectratio;
 		} else {
 			$desired_width = $width;
 		}

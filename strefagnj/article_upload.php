@@ -13,6 +13,8 @@ include("../_php/misc.php");
 include("../_php/Renderer.php");
 include("../_php/settings.php");
 
+$articleid = $mysqli->real_escape_string($_POST['articleid']);
+
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
 	if($_FILES['uploaded_file']['error'] != UPLOAD_ERR_OK)
@@ -34,7 +36,6 @@ if(isset($_FILES['uploaded_file'])) {
 		$name = $mysqli->real_escape_string($_FILES['uploaded_file']['name']);
 		$mime = $mysqli->real_escape_string($_FILES['uploaded_file']['type']);
 		$description = $mysqli->real_escape_string($_POST['description']);
-		$articleid = $mysqli->real_escape_string($_POST['articleid']);
 
 	    // store the file size to check
 	    $size=filesize($_FILES['uploaded_file']['tmp_name']);

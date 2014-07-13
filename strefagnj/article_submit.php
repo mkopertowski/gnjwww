@@ -10,15 +10,15 @@ include("./_php/RendererGNJ.php");
 include("../_php/settings.php");
 
 $authorid = $_SESSION['userid'];
-$articleId = $_REQUEST['id']; 
+$articleid = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE (status='edit' or status='adminedit' ) and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE (status='edit' or status='adminedit' ) and id='$articleid'";
 }
 else
 {
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleid'";
 }
 $result=$mysqli->query($sql);
 

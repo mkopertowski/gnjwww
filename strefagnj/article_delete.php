@@ -10,15 +10,15 @@ include("./_php/RendererGNJ.php");
 include("../_php/settings.php");
 
 $authorid = $_SESSION['userid'];
-$articleId = $_REQUEST['id']; 
+$articleid = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleid'";
 }
 else
 {
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleid'";
 }
 
 $result=$mysqli->query($sql);
@@ -33,7 +33,7 @@ if($result->num_rows == 1)
 	$Page->set("question","Czy na pewno chcesz usunąć?");
 	$Page->set("submit_title","Usuń");
 	$Page->set("form_action","article_deleteConfirmed.php");
-	$Page->set("articleId",$articleid);
+	$Page->set("articleid",$articleid);
 }
 else
 {
