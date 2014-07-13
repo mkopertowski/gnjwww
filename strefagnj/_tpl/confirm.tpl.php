@@ -4,6 +4,8 @@
 
 <form class="form" role="form" name="form1" method="post" action="<?php echo $this->form_action; ?>" enctype="multipart/form-data">
 
+<input name="articleid" type="hidden" value=<?php echo $this->articleid; ?>>
+
 <div class="form-group">
 	<label><?php echo $this->question; ?></label>
 </div>

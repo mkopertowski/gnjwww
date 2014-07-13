@@ -3,7 +3,9 @@
 </div>
 
 <form class="form" role="form" name="form1" method="post" action="article_save.php" enctype="multipart/form-data">
-       	
+
+<input name="articleid" type="hidden" value=<?php echo $this->articleid; ?>>
+
 <div class="form-group">
 	<label for="Tytul">Tytuł</label>
 	<input name="title" type="text" id="title" class="form-control" id="Tytul" value="<?php echo $this->title; ?>">

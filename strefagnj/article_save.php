@@ -15,21 +15,20 @@ include("../_php/Renderer.php");
 $title = ConvertStringMYSQL($mysqli,$_POST['title']);
 $subtitle = ConvertStringMYSQL($mysqli,$_POST['subtitle']);
 $text = ConvertStringMYSQL($mysqli,$_POST['text']);
+$articleid = $mysqli->real_escape_string($_POST['articleid']);
 
 $section =$_POST['section']; 
 
-/* article update if 'articleid' is set */
-if(isset($_SESSION['articleid'])){
-	/* get all the fields to update */
-	$id = $_SESSION['articleid'];
-
+/* article update if 'articleid' not set "new" */
+if($articleid != "new")
+{
 	/* select the article from database */
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$id'";
-    $result=$mysqli->query($sql);
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleid'";
+	$result=$mysqli->query($sql);
 	
 	if($result->num_rows == 1)
 	{
-	    $articleToUpdate = $result->fetch_assoc();
+		$articleToUpdate = $result->fetch_assoc();
 	}	
 }
 
@@ -121,10 +120,9 @@ if($_SESSION['usertype'] == "admin")
 		}
 	}
 	
-	if(isset($_SESSION['articleid'])){
-		$id = $_SESSION['articleid'];
+	if(isset($articleToUpdate)){
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status', date='$date' WHERE id='$id'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status', date='$date' WHERE id='$articleid'";
 	}
 	else 
 	{ 
@@ -138,10 +136,9 @@ else /* member adding/updating article */
 {
 	$authorid = $_SESSION['userid'];
 
-	if(isset($_SESSION['articleid'])){
-		$id = $_SESSION['articleid'];
+	if(isset($articleToUpdate)){
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section', date=now() WHERE id='$id'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section', date=now() WHERE id='$articleid'";
 	}
 	else
 	{
@@ -162,8 +159,6 @@ else
 	/* go to index.php */
 	$_SESSION['info'] = "Błąd";
 }
-	
-unset($_SESSION['articleid']);
 
 header("Location: index.php");
 

@@ -9,16 +9,22 @@ include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
 include("../_php/settings.php");
 
-$_SESSION['articleId'] = $_REQUEST['id'];
-
 $authorid = $_SESSION['userid'];
-$articleId = $_SESSION['articleId']; 
+$articleId = $_REQUEST['id']; 
 
 if(isset($_REQUEST['del']))
 {
 	$linkid = $_REQUEST['linkid'];
 	
-	$sql="DELETE FROM $LINKS_TABLE_NAME WHERE id='$linkid' and articleId='$articleId'";
+	if($_SESSION['usertype'] == "admin")
+	{
+		$sql="DELETE FROM $LINKS_TABLE_NAME WHERE id='$linkid' and articleId='$articleId'";
+	}
+	else
+	{
+		$sql="DELETE FROM $LINKS_TABLE_NAME WHERE authorid='$authorid' and id='$linkid' and articleId='$articleId'";
+	}
+	
 	$mysqli->query($sql);
 }
 
@@ -40,7 +46,7 @@ if($result->num_rows == 1)
 	$row = $result->fetch_assoc();
 	$Page->set("title",$row['title']);
 	$Page->set("maxLinks",$ARTICLE_LINKS_MAX_NUM);
-	$Page->set("articleid",$_SESSION['articleId']);
+	$Page->set("articleid",$articleId);
 	
 	if(isset($_SESSION['info'])){
 		$info = "<big>".$_SESSION['info']."</big><br>";

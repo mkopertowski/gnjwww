@@ -39,31 +39,29 @@ else
 
 /* edit? */
 if(isset($_REQUEST['id'])){
-	
-	$id = $_REQUEST['id'];
+
+	$articleid = $_REQUEST['id'];
 	$authorid = $_SESSION['userid'];
-	$_SESSION['articleid'] = $id;
-	$tbl_name="articles"; // Table name
-	
+
 	if($_SESSION['usertype'] == "admin")
 	{
 		/* admin can edit any article */
-		$sql="SELECT * FROM $tbl_name WHERE id='$id'";
+		$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleid'";
 	}
 	else
 	{
 		/* user can edit its own articles only */
-		$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$id'";
+		$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleid'";
 	}
-		
+
 	$result=$mysqli->query($sql);
-	
+
 	if($result->num_rows == 1)
 	{
 		$row = $result->fetch_assoc();
 		
 		$Page->set("title",$row['title']);
-		$Page->set("subtitle",$row['subtitle']);		
+		$Page->set("subtitle",$row['subtitle']);
 		$Page->set("section",$row['section']);
 		$Page->set("text",$row['text']);
 		$Page->set("tags",$row['tags']);
@@ -79,10 +77,11 @@ if(isset($_REQUEST['id'])){
 			$Page->set("author","");
 			$Page->set("authorid",$row['authorid']);
 		}
-			
+
 		$Page->set("date",$row['date']);
+		$Page->set("articleid",$articleid);
 	}
-	
+
 	$Page->publish();
 }
 

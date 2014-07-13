@@ -12,18 +12,18 @@ include("../_php/Renderer.php");
 include("../_php/settings.php");
 
 // Check if link and its name is present
-if(isset($_POST['link']) && isset($_POST['name'])) {
-	
+if(isset($_POST['link']) && isset($_POST['name']) && isset($_POST['articleid'])) {
+
 	// Get all required data
 	$link = $mysqli->real_escape_string($_POST['link']);
 	$name = $mysqli->real_escape_string($_POST['name']);
-	$id = $_SESSION['articleId'];
-		
+	$articleid = $mysqli->real_escape_string($_POST['articleid']);
+
 	// get the number of links for this article
 	/* get link ids */	    
-	$sql="SELECT `id` FROM $LINKS_TABLE_NAME WHERE articleId='$id'";
+	$sql="SELECT `id` FROM $LINKS_TABLE_NAME WHERE articleId='$articleid'";
 	$result=$mysqli->query($sql);
-	    	    
+
 	if($result->num_rows >= $ARTICLE_LINKS_MAX_NUM)
 	{
 		$_SESSION['info'] = 'Błąd: za dużo linków. limit: '.$ARTICLE_LINKS_MAX_NUM;
@@ -36,26 +36,26 @@ if(isset($_POST['link']) && isset($_POST['name'])) {
 			$link = $mysqli->real_escape_string($link);
 		}
 		
-	   	// Create the SQL query
-	    $sql = "INSERT INTO $LINKS_TABLE_NAME ( `link`, `name`, `articleId`) VALUES (
-	    	'{$link}', '{$name}', '{$id}')";
-	    	
-	    // Execute the query
-	    $result = $mysqli->query($sql);
-	    	
-	    // Check if it was successfull
-	    if($result) {
-	    	$_SESSION['info'] = 'Link dodany!';
-	    }
-	    else {
-	    	$_SESSION['info'] = 'Błąd:'."<pre>{$mysqli->error}</pre>";
-	    }
+		// Create the SQL query
+		$sql = "INSERT INTO $LINKS_TABLE_NAME ( `link`, `name`, `articleId`) VALUES (
+			'{$link}', '{$name}', '{$articleid}')";
+
+		// Execute the query
+		$result = $mysqli->query($sql);
+	
+		// Check if it was successfull
+		if($result) {
+			$_SESSION['info'] = 'Link dodany!';
+		}
+		else {
+			$_SESSION['info'] = 'Błąd:'."<pre>{$mysqli->error}</pre>";
+		}
 	}
 }
 else {
-    $_SESSION['info'] = 'Błąd. Link nie dodany';
+	$_SESSION['info'] = 'Błąd. Link nie dodany';
 }
 
-header("Location: article_links.php?id=".$_SESSION['articleId']);
+header("Location: article_links.php?id=".$articleid);
 
 ?>

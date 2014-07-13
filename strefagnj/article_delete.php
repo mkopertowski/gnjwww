@@ -7,23 +7,18 @@ if(!isset($_SESSION['email'])){
 
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
-
-$_SESSION['articleId'] = $_REQUEST['id'];
-
-$tbl_name="articles"; // Table name
-
-$mysqli->query("SET NAMES 'utf8'");
+include("../_php/settings.php");
 
 $authorid = $_SESSION['userid'];
-$articleId = $_SESSION['articleId']; 
+$articleId = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $tbl_name WHERE id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleId'";
 }
 else
 {
-	$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleId'";
 }
 
 $result=$mysqli->query($sql);
@@ -38,6 +33,7 @@ if($result->num_rows == 1)
 	$Page->set("question","Czy na pewno chcesz usunąć?");
 	$Page->set("submit_title","Usuń");
 	$Page->set("form_action","article_deleteConfirmed.php");
+	$Page->set("articleId",$articleid);
 }
 else
 {

@@ -34,14 +34,14 @@ if(isset($_FILES['uploaded_file'])) {
 		$name = $mysqli->real_escape_string($_FILES['uploaded_file']['name']);
 		$mime = $mysqli->real_escape_string($_FILES['uploaded_file']['type']);
 		$description = $mysqli->real_escape_string($_POST['description']);
-	    $id = $_SESSION['articleId'];
-		
+		$articleid = $mysqli->real_escape_string($_POST['articleid']);
+
 	    // store the file size to check
 	    $size=filesize($_FILES['uploaded_file']['tmp_name']);
 
 	    // get the number of images for this article
 	    /* get image ids */	    
-	    $sql="SELECT `name` FROM `files` WHERE articleId='$id'";
+	    $sql="SELECT `name` FROM `files` WHERE articleId='$articleid'";
 	    $result=$mysqli->query($sql);
 	    	    
 	    if($result->num_rows >= $ARTICLE_IMAGE_MAX_NUM)
@@ -106,7 +106,7 @@ if(isset($_FILES['uploaded_file'])) {
 	    	
 	    	// Create the SQL query
 	    	$sql = "INSERT INTO `files` ( `name`, `mime`, `data`, `data800x532`, `data400x266`, `description`, `articleId`) VALUES (
-	    	'{$name}', '{$mime}', '{$data}', '{$dataNormal}', '{$dataSmall}', '{$description}', '{$id}')";
+	    	'{$name}', '{$mime}', '{$data}', '{$dataNormal}', '{$dataSmall}', '{$description}', '{$articleid}')";
 	    	
 	    	// Execute the query
 	    	$result = $mysqli->query($sql);
@@ -129,7 +129,7 @@ else {
     $_SESSION['info'] = 'Błąd. Plik nie został wysłany';
 }
 
-header("Location: article_uploadfiles.php?id=".$_SESSION['articleId']);
+header("Location: article_uploadfiles.php?id=".$articleid);
 
 ob_end_flush();
 ?>

@@ -9,12 +9,9 @@ if(!isset($_SESSION['email'])){
 include("../_php/settings.php");
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
-
-unset($_SESSION['articleid']);
+include("../_php/settings.php");
 
 $tbl_name="articles"; // Table name
-
-$mysqli->query("SET NAMES 'utf8'");
 
 $sql="SELECT COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '$tbl_name' AND COLUMN_NAME = 'section'";
 $result = $mysqli->query($sql);
@@ -50,6 +47,7 @@ $Page->set("html_description","");
 $Page->set("author","");
 $Page->set("authorid","notSet");
 $Page->set("date","");
+$Page->set("articleid","new");
 
 $Page->publish();
 ?>

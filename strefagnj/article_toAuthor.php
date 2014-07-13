@@ -7,19 +7,14 @@ if(!isset($_SESSION['email'])){
 
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
-
-$_SESSION['articleId'] = $_REQUEST['id'];
-
-$tbl_name="articles"; // Table name
-
-$mysqli->query("SET NAMES 'utf8'");
+include("../_php/settings.php");
 
 $authorid = $_SESSION['userid'];
-$articleId = $_SESSION['articleId']; 
+$articleId = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $tbl_name WHERE id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleId'";
 }
 
 $result=$mysqli->query($sql);
@@ -35,6 +30,7 @@ if($result->num_rows == 1)
 	$Page->set("submit_title","Wyślij");
 	$Page->set("showMessage","true");
 	$Page->set("form_action","article_toAuthorConfirmed.php");
+	$Page->set("articleid",$articleid);
 }
 else
 {

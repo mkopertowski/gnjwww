@@ -9,28 +9,32 @@ include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
 include("../_php/settings.php");
 
-$_SESSION['articleId'] = $_REQUEST['id'];
-
-$tbl_name="articles"; // Table name
-
 $authorid = $_SESSION['userid'];
-$articleId = $_SESSION['articleId']; 
+$articleId = $_REQUEST['id']; 
 
 if(isset($_REQUEST['del']))
 {
 	$fileid = $_REQUEST['fileid'];
 	
-	$sql="DELETE FROM $FILES_TABLE_NAME WHERE id='$fileid' and articleId='$articleId'";
+	if($_SESSION['usertype'] == "admin")
+	{
+		$sql="DELETE FROM $FILES_TABLE_NAME WHERE id='$fileid' and articleId='$articleId'";
+	}
+	else
+	{
+		$sql="DELETE FROM $FILES_TABLE_NAME WHERE authorid='$authorid' and id='$fileid' and articleId='$articleId'";
+	}
+
 	$mysqli->query($sql);
 }
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $tbl_name WHERE id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE id='$articleId'";
 }
 else 
 {
-	$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleId'";
 }
 $result=$mysqli->query($sql);
 
@@ -42,7 +46,7 @@ if($result->num_rows == 1)
 	$row = $result->fetch_assoc();
 	$Page->set("title",$row['title']);
 	$Page->set("maxPhotos",$ARTICLE_IMAGE_MAX_NUM);
-	$Page->set("articleid",$_SESSION['articleId']);
+	$Page->set("articleid",$articleId);
 	
 	if(isset($_SESSION['info'])){
 		$info = "<big>".$_SESSION['info']."</big><br>";

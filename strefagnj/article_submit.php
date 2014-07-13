@@ -7,21 +7,18 @@ if(!isset($_SESSION['email'])){
 
 include("../_php/mysql.php");
 include("./_php/RendererGNJ.php");
-
-$_SESSION['articleId'] = $_REQUEST['id'];
-
-$tbl_name="articles"; // Table name
+include("../_php/settings.php");
 
 $authorid = $_SESSION['userid'];
-$articleId = $_SESSION['articleId']; 
+$articleId = $_REQUEST['id']; 
 
 if($_SESSION['usertype'] == "admin")
 {
-	$sql="SELECT * FROM $tbl_name WHERE (status='edit' or status='adminedit' ) and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE (status='edit' or status='adminedit' ) and id='$articleId'";
 }
 else
 {
-	$sql="SELECT * FROM $tbl_name WHERE authorid='$authorid' and status='edit' and id='$articleId'";
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE authorid='$authorid' and status='edit' and id='$articleId'";
 }
 $result=$mysqli->query($sql);
 
@@ -35,6 +32,7 @@ if($result->num_rows == 1)
 	$Page->set("question","Wysłać artykuł do zatwierdzenia?");
 	$Page->set("submit_title","Wyślij");
 	$Page->set("form_action","article_submitConfirmed.php");
+	$Page->set("articleid",$articleid);
 	
 	if(isset($_SESSION['info'])){
 		$Page->set("info",$_SESSION['info']);

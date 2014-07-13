@@ -27,6 +27,8 @@
 
 <form  class="form" role="form" name="form1" method="post" action="article_linksadd.php" enctype="multipart/form-data">
 
+	<input name="articleid" type="hidden" value=<?php echo $this->articleid; ?>>
+
 	<div class="form-group">
 		<label for="link">Link</label>
 		<input name="link" type="text" id="link" class="form-control" maxlength=255>
