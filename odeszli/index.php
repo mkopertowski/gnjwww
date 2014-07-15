@@ -89,12 +89,6 @@ StartList();
 		8 marca 1995 roku podczas nurkowania w jaskini ŻW-52 zginął znakomity rosyjski grotołaz i płetwonurek Wladimir Kiseljow...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kiseljow.php">więcej...</a>]<br>&nbsp;
 	</li>
-	<li class="normal">
-
-		<b>Ian Rolland</b><br>
-		Ian Rolland był jednym z czołowych brytyjskich płetwonurków jaskiniowych. Odegrał ważną rolę w poznawaniu zalanych korytarzy Llangattock Cave Systems w Południowej Walii...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rolland.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
