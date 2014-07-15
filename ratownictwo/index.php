@@ -38,22 +38,6 @@ EndList();
 //-----------------------------------------------------
 //-----------------------------------------------------
 
-NewSection('PLANY','section');
-
-StartList();
-/*
-  ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego 2012',
-                   'Pozorowana akcja ratunkowa mająca na celu transport poszkodowanego nurka-grotołaza przez sztolnię zalaną po strop wodą. ',
-                   '../index.php','WIĘCEJ',
-                   'Czerwiec 2012','mp');
-	*/
-ExtendedListItem('Śląskie Manewry Ratownictwa Jaskiniowego 2014',
-                   'Pozorowana akcja ratunkowa mająca na celu transport poszkodowanego nurka-grotołaza przez sztolnię zalaną po strop wodą. ',
-                   '../article.php?id=2014SMRJ&sec=ratownictwo','WIĘCEJ',
-                   'Kwiecień 2014','mp');
-EndList();
-
-
 NewSection('SZKOLENIA','section');
 
 StartList();
