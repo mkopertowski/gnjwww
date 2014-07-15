@@ -83,18 +83,6 @@ if($bSubdir == true)
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./exley.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-
-		<b>Opis nurkowania Johana Hasenmayera (1973)</b><br>
-		Odkręcone zawory w butlach i Hasenmayer spada na dół, między dwoma blokami w ukośny korytarz. Mimo silnej wiązki światła na kasku, widok dookoła pozostaje mroczny...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./hasenmayer1.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jochen Hasenmayer - mistrz z Niemiec</b><br>
-		Przez ponad dwadzieścia lat scena europejskiego nurkowania jaskiniowego była zdominowana przez Jochena Hasenmayera, który nie tylko osiągał rekordowe wyniki...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./hasenmayer2.php">więcej...</a>]<br>&nbsp;
-
-	</li>
-	<li class="normal">
 		<b>Wladimir Kiseljow - pożegnanie</b><br>
 		8 marca 1995 roku podczas nurkowania w jaskini ŻW-52 zginął znakomity rosyjski grotołaz i płetwonurek Wladimir Kiseljow...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kiseljow.php">więcej...</a>]<br>&nbsp;
