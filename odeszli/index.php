@@ -5,8 +5,13 @@ $sInclude = './_php/page_utf8.php';
 if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
-@include('../_php/publication_supp.php');
 
+$GL_DIR = '..';
+
+@include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/settings.php');
+include('../_php/misc.php');
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,7,false,'ODESZLI OD NAS');
 	renderGallery(true,false);
@@ -24,26 +29,23 @@ if($bSubdir == true)
                    '.  2008','');
 -->
 
+<?php
 
+NewSection('KU PAMIĘCI','section');
 
-<!-- people -->
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>Ku pamięci</B> 
-		</td>
-	</tr>
-</table>
-<br>
+StartList();
 
-<ul class="normal">
+	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='odeszli' ORDER BY date DESC";
+	$result=$mysqli->query($sql);
 
-<li class="normal">
-		<b>Robert Klein</b><br>
-	              		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./klein.php">więcej...</a>][<a class="navismall" href="./klein2.php">jeszcze więcej...</a>]
-         <br>&nbsp;
-	</li>
+	if($result) {
 
+		while ($row = $result->fetch_assoc()) { // list start?
+
+			ExtendedListItemMYSQL($mysqli,$row,'..');
+		}
+	}
+?>
 
 <li class="normal">
 		<b>Artur Kozłowski</b><br>
