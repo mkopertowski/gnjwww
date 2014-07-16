@@ -48,14 +48,6 @@ StartList();
 ?>
 
 <li class="normal">
-		<b>Artur Kozłowski</b><br>
-	      W jaskini Pollonora Co. Galway 5 września 2011 nie wynurzył się <b>Artur Kozłowski</b>.
-         		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kozlowski.php">więcej...</a>]
-         <br>&nbsp;
-	</li>
-
-
-<li class="normal">
 		<b>Włodzimierz Szymanowski</b><br>
 	      6 kwietnia 2005 podczas nurkowania we francuskim wywierzysku Goul du Pont 
 	      zginął tragicznie <b>Włodzimierz Szymanowski</b>.
