@@ -14,12 +14,15 @@ $result=$mysqli->query($sql);
 if($result->num_rows == 1)
 {
 	$row = $result->fetch_assoc();
-	
+		
 	switch($row['layout'])
 	{
 		case "ex":
 			ShowArticleEx($mysqli,$row,$id,true);
 			break;
+		case "nofb":
+			ShowArticle($mysqli,$row,$id,false);
+			break;	
 		default:
 			ShowArticle($mysqli,$row,$id,true);
 	}
