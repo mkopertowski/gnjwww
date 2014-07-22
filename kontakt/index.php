@@ -14,6 +14,9 @@ if($bSubdir == true)
 <!--============================= CONTENTS START ==========================================-->
 <H1>Kontakt z GNJ</H1>
 
+<H3>Email: gnj / at / gnj.org.pl </H3>
+
+<!-- 
 <H3>Grupa Nurków Jaskiniowych KTJ PZA jest reprezentowana przez:</H3>
 <H4><I>(Podkomisja Nurkowania Jaskiniowego)</I></H3>
 <UL>
@@ -23,7 +26,7 @@ if($bSubdir == true)
 
 <LI><H2>Rafał Górecki : rafal.gorecki / at / aquamatic.pl</H2></LI>
 </UL>
-
+ -->
 <BR><BR><BR><BR><BR>
 <P align="left"><I>Aktualizacja serwisu Michał Plata: relic / at / poczta.onet.pl</I></P>
 
