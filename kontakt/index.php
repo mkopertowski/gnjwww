@@ -13,8 +13,8 @@ if($bSubdir == true)
 ?>
 <!--============================= CONTENTS START ==========================================-->
 <H1>Kontakt</H1>
-
-<H3>Z Grupa Nurków Jaskiniowych KTJ PZA kontaktować się można pod adresem: gnj / at / gnj.org.pl </H3>
+<BR>
+<H3>Grupa Nurków Jaskiniowych KTJ PZA: gnj / at / gnj.org.pl </H3>
 
 <!-- 
 <H3>Grupa Nurków Jaskiniowych KTJ PZA jest reprezentowana przez:</H3>
