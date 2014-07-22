@@ -14,7 +14,7 @@ if($bSubdir == true)
 <!--============================= CONTENTS START ==========================================-->
 <H1>Kontakt</H1>
 <BR>
-<H3>Grupa Nurków Jaskiniowych KTJ PZA: gnj / at / gnj.org.pl </H3>
+<H2>Grupa Nurków Jaskiniowych KTJ PZA: gnj / at / gnj.org.pl </H2>
 
 <!-- 
 <H3>Grupa Nurków Jaskiniowych KTJ PZA jest reprezentowana przez:</H3>
