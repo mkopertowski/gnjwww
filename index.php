@@ -53,9 +53,13 @@ require './_php/Zebra_Pagination.php';
 <br><br>
 -->
 
-<font size="4">Plany Grupy Nurków Jaskiniowych PZA na rok 2014</font> <br>
-<font size="3">Więcej informacji w sekcji <a class="hotinfo" href="./ogloszenia/index_plany.php">Ogłoszenia.</a><br></font></i>
+<font size="4">Spotkanie Grupy Nurków Jaskiniowych PZA</font>
 <br>
+
+<div align=center><p class="hotinfo">
+Najbliższe spotkanie GNJ odędzie się 6. września 2014 w Krakowie na terenie kamieniołomu Zakrzówek (godz. 16.00). Zapraszamy członków GNJ oraz osoby zrzeszone w klubach jaskiniowych PZA. Osoby zainteresowane udziałem w spotkaniu prosimy o wczesniejszy kontkat: gnj@gnj.org.pl.
+</p></div>
+
 
 <!--
 <font size="4"><font color=#d76a01>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.</font></font> <br>
@@ -108,11 +112,7 @@ require './_php/Zebra_Pagination.php';
   <a class="hotinfo" href="http://vercors2008.ffspeleo.fr/events/animations/pallets.htm">INFORMACJE</a>
 </p></div>
 -->
-<div align=center><p class="hotinfo">
-  Informacje na temat bieżącej działalności speleonurkowej GNJ (Cave Diving Group) dostępne są na grupie:
-  <i>PNJ-KTJ@googlegroups.com</i>. 
-  <a class="hotinfo" href="http://groups.google.com/group/PNJ-KTJ/subscribe?hl=pl">ZAPRASZAMY DO SUBSKRYPCJI !!!</a>
-</p></div>
+
 <br>
 <!--<div align=center>
 
