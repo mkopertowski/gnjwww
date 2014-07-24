@@ -57,7 +57,7 @@ require './_php/Zebra_Pagination.php';
 <br>
 
 <div align=center><p class="hotinfo">
-Najbliższe spotkanie GNJ odędzie się 6. września 2014 w Krakowie na terenie kamieniołomu Zakrzówek (godz. 16.00). Zapraszamy członków GNJ oraz osoby zrzeszone w klubach jaskiniowych PZA. Osoby zainteresowane udziałem w spotkaniu prosimy o wczesniejszy kontkat: gnj@gnj.org.pl.
+Najbliższe spotkanie GNJ odędzie się 6. września 2014 w Krakowie na terenie kamieniołomu Zakrzówek o godz. 16.00. Zapraszamy członków GNJ oraz osoby zrzeszone w klubach jaskiniowych PZA. Osoby zainteresowane udziałem w spotkaniu prosimy o wcześniejszy kontakt: gnj/at/gnj.org.pl.
 </p></div>
 
 
