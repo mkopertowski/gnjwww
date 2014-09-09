@@ -235,7 +235,7 @@ if($bSubdir == true)
 			24.12.2005
 		</td>
 		<td align=center>
-			członek
+			członek honorowy
 		</td>
 		<td align=center>
 			Sekcja Grotołazów Wrocław
@@ -523,6 +523,52 @@ if($bSubdir == true)
 		<img src="mp.jpg" alt="" />
 		</td>
 	</tr>
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			24
+		</td>
+		<td align=center>
+			Iza
+		</td>
+		<td align=center>
+			Luty
+		</td>
+		<td align=center>
+			06.08.2014
+		</td>
+		<td align=center>
+			członek honorowy
+		</td>
+		<td align=center>
+			Speleoklub Warszawski
+		</td>
+		<td align=center>
+		</td>
+	</tr>	
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			25
+		</td>
+		<td align=center>
+			Katarzyna
+		</td>
+		<td align=center>
+			Turzańska
+		</td>
+		<td align=center>
+			06.08.2014
+		</td>
+		<td align=center>
+			członek (staż)
+		</td>
+		<td align=center>
+			STJ KW Kraków
+		</td>
+		<td align=center>
+		</td>
+	</tr>		
 	<tr>
 		<td align=center>
 			-
