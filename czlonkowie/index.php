@@ -16,7 +16,7 @@ if($bSubdir == true)
 <h1>
 	Lista członków i sympatyków Grupy Nurków Jaskiniowych
 </h1>
-<b>Stan na dzień 04.04.2014</b>
+<b>Stan na dzień 09.08.2014</b>
 <br>&nbsp;<br>&nbsp;<br>
 
 <table border=1 style="border: 2px,2px,2px,2px;" align=center width="80%">
