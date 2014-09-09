@@ -358,10 +358,10 @@ function renderRightPanel($bSubdir)
   // show RSS icon
   $txt .= '<a href="http://www.gnj.org.pl/_rss/rss.php" class="feed-icon"><img src="'.$dots.'/_rss/valid-rss.png" alt="Subskrybuje zawartość" title="Grupa Nurków Jaskiniowych PZA" border="0"></a>';
   
-  //$txt .= '<BR><BR>';
+  $txt .= '<BR><BR>';
   
   // show Facebook plugin
-  //$txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/Grupa-Nurk%C3%B3w-Jaskinowych-GNJ-PZA/304624799616421" data-width="190" data-height="270" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="fals"></div>';
+  $txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/GNJ-PZA-Grupa-Nurk%C3%B3w-Jaskiniowych/1467101870223180" data-width="190" data-height="270" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="fals"></div>';
   
   $txt .= '<BR><BR><BR><BR>';
   
