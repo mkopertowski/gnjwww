@@ -361,7 +361,8 @@ function renderRightPanel($bSubdir)
   $txt .= '<BR><BR>';
   
   // show Facebook plugin
-  $txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/GNJ-PZA-Grupa-Nurk%C3%B3w-Jaskiniowych/1467101870223180" data-width="190" data-height="270" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="fals"></div>';
+//$txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/GNJ-PZA-Grupa-Nurk%C3%B3w-Jaskiniowych/1467101870223180" data-width="190" data-height="270" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="fals"></div>';
+  $txt .= '<div class="fb-like-box" data-href="https://www.facebook.com/pages/GNJ-PZA-Grupa-Nurk%C3%B3w-Jaskiniowych/1467101870223180" data-width="190" data-height="300" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>';
   
   $txt .= '<BR><BR><BR><BR>';
   
