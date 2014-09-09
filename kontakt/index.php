@@ -15,15 +15,15 @@ if($bSubdir == true)
 <H1>Kontakt</H1>
 <BR>
 
-<H3>Grupa Nurków Jaskiniowych PZA reprezentowana jest przez Podkomisja Nurkowania Jaskiniowego w składzie:</H3>
+<H3>Grupa Nurków Jaskiniowych (GNJ) PZA reprezentowana jest przez Podkomisję Nurkowania Jaskiniowego (PNJ) w składzie:</H3>
 <UL>
 <LI><H2>Mirosław Kopertowski (SGW)</H2></LI>
 <LI><H2>Rafał Górecki (SGW)</H2></LI>
 <LI><H2>Arkadiusz Nowak (SW)</H2></LI>
 </UL>
-<H3>Z Podkomisja Nurkowania Jaskiniowego kontkatować się można pisząc na pnj / at / gnj.org.pl</H3>
+<H3>Z PNJ kontaktować się można pisząc na pnj / at / gnj.org.pl</H3>
 
-<BR><BR>
+<BR>
 <H3>Prowadzenie serwisu: Lucyna Cieślik gnj / at / gnj.org.pl</H3>
 
 <!--============================= CONTENTS END   ==========================================-->
