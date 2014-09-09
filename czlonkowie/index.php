@@ -498,30 +498,7 @@ if($bSubdir == true)
 			Speleoklub Warszawski
 		</td>
 	</tr>
-	<!-- członek -->
-	<tr>
-		<td align=center>
-			22
-		</td>
-		<td align=center>
-			Dominik
-		</td>
-		<td align=center>
-			Graczyk
-		</td>
-		<td align=center>
-			2013
-		</td>
-		<td align=center>
-			członek
-		</td>
-		<td align=center>
-			Speleoklub Warszawski
-		</td>
-		<td align=center>
-		<img src="dg.jpg" alt="" />
-		</td>
-	</tr>
+
 		<!-- członek -->
 	<tr>
 		<td align=center>
@@ -593,29 +570,7 @@ if($bSubdir == true)
 		</td>
 	</tr>
 		<!-- członek -->
-	<tr>
-		<td align=center>
-			-
-		</td>
-		<td align=center>
-			Jacek
-		</td>
-		<td align=center>
-			Strejczyk
-		</td>
-		<td align=center>
-			2011
-		</td>
-		<td align=center>
-			sympatyk
-		</td>
-		<td align=center>
-			Speleoklub AVEN
-		</td>
-		<td align=center>
-		<img src="js.jpg" alt="" />
-		</td>
-	</tr>
+
 		<!-- członek -->
 	<tr>
 		<td align=center>
