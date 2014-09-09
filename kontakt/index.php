@@ -13,7 +13,6 @@ if($bSubdir == true)
 ?>
 <!--============================= CONTENTS START ==========================================-->
 <H1>Kontakt</H1>
-<BR>
 
 <H3>Grupa Nurków Jaskiniowych (GNJ) PZA reprezentowana jest przez Podkomisję Nurkowania Jaskiniowego (PNJ) w składzie:</H3>
 <UL>
