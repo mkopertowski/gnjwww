@@ -33,7 +33,7 @@
 		
 		<?php if( $this->articleId != ""): ?>
 		<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" /> 
-		<meta property="og:type" content="article" />
+		<meta property="og:type" content="website" />
 		<?php else: ?>
 		<meta property="og:url"             content="http://gnj.org.pl" />
 		<meta property="og:type" content="website" /> 
