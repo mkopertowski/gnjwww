@@ -5,7 +5,7 @@
 		<meta NAME="KEYWORDS" CONTENT="<?php echo $this->keywords; ?>"> 
 		<meta http-equiv=content-type content="text/html; charset=UTF-8">	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta property="fb:admins" content="1467101870223180" />
+		<meta property="fb:admins" content="100003381500140" />
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/css.css">
 
 		<link rel="shortcut icon" href="_gfx/favicon.ico">
@@ -33,7 +33,7 @@
 		
 		<?php if( $this->articleId != ""): ?>
 		<meta property="og:url"             content="http://gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" /> 
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="article" />
 		<?php else: ?>
 		<meta property="og:url"             content="http://gnj.org.pl" />
 		<meta property="og:type" content="website" /> 
