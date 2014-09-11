@@ -5,6 +5,7 @@
 		<meta NAME="KEYWORDS" CONTENT="<?php echo $this->keywords; ?>"> 
 		<meta http-equiv=content-type content="text/html; charset=UTF-8">	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="fb:admins" content="1467101870223180" />
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->dots; ?>/_css/css.css">
 
 		<link rel="shortcut icon" href="_gfx/favicon.ico">
