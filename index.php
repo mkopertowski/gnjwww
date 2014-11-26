@@ -53,13 +53,14 @@ require './_php/Zebra_Pagination.php';
 <br><br>
 -->
 
+<!--
 <font size="4">Spotkanie Grupy Nurków Jaskiniowych PZA</font>
 <br>
 
 <div align=center><p class="hotinfo">
 Najbliższe spotkanie GNJ odędzie się 22. listopada 2014 w Podlesicach (podczas Speleokonfrontacji). Zapraszamy członków GNJ oraz osoby zrzeszone w klubach jaskiniowych PZA. Osoby zainteresowane udziałem w spotkaniu prosimy o wcześniejszy kontakt: gnj/at/gnj.org.pl.
 </p></div>
-
+-->
 
 <!--
 <font size="4"><font color=#d76a01>Najbliższe Warsztaty Nurkowania Jaskiniowego odbędą się podczas wyjazdu turystyczno-eksploracyjnego na Bałkanach, termin majówkowy to jest 26 kwietnia - 4 maja 2014.</font></font> <br>
