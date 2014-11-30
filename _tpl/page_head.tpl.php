@@ -41,7 +41,7 @@
 		<?php if( $this->imgId != ""): ?>
 		<meta property="og:image"           content="http://gnj.org.pl/_php/mysql_getFile.php?id=<?php echo $this->imgId; ?>&type=data400x266" />
 		<?php else: ?>
-		<meta property="og:image"           content="http://gnj.org.pl/_gfx/logoGNJ.png" />
+		<meta property="og:image"           content="http://gnj.org.pl/_gfx/favicon-196x196.png" />
 		<?php endif; ?>
 		<meta property="og:description"     content="<?php echo $this->description; ?>" />
 		
