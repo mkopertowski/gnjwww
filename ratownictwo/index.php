@@ -45,12 +45,7 @@ StartList();
 $sqlfiltr="section='ratownictwo'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
-    
-  ExtendedListItem('Warsztaty Opieki Nad Poszkodowanym 2010',
-                   'Relacja',
-		   '../article.php?id=2010WONP&sec=ratownictwo','WIĘCEJ',
-		   '08. Marzec 2010','Dominik Graczyk');
-  
+      
   ExtendedListItem('Wielka Orkiestra Nawiedzonych Płetwonurków, czyli Warsztaty Opieki Nad Poszkodowanym',
                    'W życiu każdego szanującego się speleologa, a już szczególnie nurka jaskiniowego, przychodzi taki moment, że zaczyna się on zastanawiać nad kruchością życia...',
 		   '../article.php?id=2008WONP&sec=ratownictwo','WIĘCEJ',
