@@ -61,11 +61,6 @@ if($bSubdir == true)
                    'Scenki z życia warsztatowego 2009. Miłego oglądania:-)...',
                    './gallery.php?id=wnj2009','WIĘCEJ',
                    '22. Czerwiec 2009','Lucyna Cieślik');
-
-  ExtendedListItem('Ratownictwo Jaskiniowe - Warsztaty Opieki Nad Poszkodowanym',
-                   'Wielka Orkiestra Nawiedzonych Płetwonurków, czyli Warsztaty Opieki Nad Poszkodowanym...',
-                   './gallery.php?id=2008wonp','WIĘCEJ',
-                   '11. Maj 2008','');
 	
   ExtendedListItem('Nurkowanie Jaskiniowe - Trening transportu nurkowego w noszach',
                    'Ratownictwo - Trening transportu nurkowego w noszach, Zakrzówek, Kraków...',

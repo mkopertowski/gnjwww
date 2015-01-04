@@ -46,11 +46,6 @@ $sqlfiltr="section='ratownictwo'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
       
-  ExtendedListItem('Wielka Orkiestra Nawiedzonych Płetwonurków, czyli Warsztaty Opieki Nad Poszkodowanym',
-                   'W życiu każdego szanującego się speleologa, a już szczególnie nurka jaskiniowego, przychodzi taki moment, że zaczyna się on zastanawiać nad kruchością życia...',
-		   '../article.php?id=2008WONP&sec=ratownictwo','WIĘCEJ',
-		   '11. Maj 2008','Adam Więch');
-
   ExtendedListItem('Nurkowanie w metrze - ćwiczenia GRW PZA i Straży Pożarnej',
                    'Wspólne ćwiczenia Grupy Ratownictwa Wysokościowego PZA i Państwowej Straży Pożarnej odbyły się  06.03.2008...',
 		   '../article.php?id=2008Metro&sec=ratownictwo','WIĘCEJ',
