@@ -54,7 +54,7 @@ EndList();
 //-----------------------------------------------------
 ?>
 
-<h3>Kalendarz</h3>
+<h3>Kalendarz 2015</h3>
 
 <font color=white>	  
 	  	  
@@ -89,14 +89,10 @@ Zapraszamy na wspólne akcje. Czekamy na Wasze inicjatywy!
 <br>
 <br>
 <b>Podkomisja Nurkowania Jaskiniowego KTJ<b>
-
-<!-- Zapraszamy na wspólne akcje! Czekamy też na Wasze inicjatywy. -->
-<br>
-<br>
-
+<br><br>
 
 <p>&nbsp;</p>
-<p>Aby dodać nowe ogłoszenie prosimy wysłać e-maila <a class="navi" href="mailto:relic/at/poczta.onet.pl">TUTAJ</a>
+<p>Aby dodać nowe ogłoszenie prosimy wysłać e-maila <a class="navi" href="mailto:pnj/at/gnj.org.pl">TUTAJ</a>
 </p> 
 
 <!--============================= CONTENTS END   ==========================================-->
