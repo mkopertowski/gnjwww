@@ -67,27 +67,20 @@ if($bSubdir == true)
 		<b>Wikipedia</b>&nbsp;&nbsp;&nbsp;[<a href="http://pl.wikipedia.org/wiki/Nurkowanie_jaskiniowe" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>	
 <li class="normal">
-		<b>Strona Deep&High</b>&nbsp;&nbsp;&nbsp;[<a href="http://www.deepnhigh.pl/" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
-</li>
-<li class="normal">
-		<b>Hogarthian Divers</b>&nbsp;&nbsp;&nbsp;[<a href="http://www.hogarthian.pl/" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
-</li>
-<li class="normal">
-		<b>Nurkomania</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://www.nurkomania.pl/nurkowanie_jaskiniowe.htm" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
-</li>
-<li class="normal">
 		<b>TOPR - Tarzańskie Ochotnicze Pogotowie Ratunkowe</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://www.topr.pl" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>
 <li class="normal">
 		<b>Strona Jarosława Kura</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://scientificdiving.eu" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>
 <li class="normal">
-		<b>Strona Jacka Trembowelskiego</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://www.trembowel.pl" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
+		<b>OVERHEAD - strona Witka Hoffmanna</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://www.overhead.me" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>
 <li class="normal">
-		<b>Stowarzyszenie Posejdon</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://posejdon.org.pl" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
+		<b>Strona Deep&High</b>&nbsp;&nbsp;&nbsp;[<a href="http://www.deepnhigh.pl/" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>
-
+<li class="normal">
+		<b>Nurkomania</b></b>&nbsp;&nbsp;&nbsp;[<a href="http://www.nurkomania.pl/nurkowanie_jaskiniowe.htm" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
+</li>
 </ul>
 
 
@@ -117,15 +110,6 @@ if($bSubdir == true)
 <li class="normal">
 		<b>Santi - skafandry suche</b>&nbsp;&nbsp;&nbsp;[<a href="http://santidiving.com/pl/" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
 </li>
-
-<li class="normal">
-		<b>NO GRAVITY - skafandry suche</b>&nbsp;&nbsp;&nbsp;[<a href="http://www.nogravityworld.com" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
-</li>
-
-<li class="normal">
-		<b>mlinke - sklep</b>&nbsp;&nbsp;&nbsp;[<a href="http://www.mlinke.com.pl" target="_new" class="navi">wejście ...</a>]<br>&nbsp;<br>
-</li>
-
 
 </ul>
 
