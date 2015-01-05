@@ -28,7 +28,7 @@ include('../_php/mysql.php');
 </h1>
 <h3 align=right>Ostatnia aktualizacja: 7. Lipiec 2014</h3>
 <h2>
- Plany Grupy Nurków Jaskiniowych PZA na rok 2014
+ Plany Grupy Nurków Jaskiniowych PZA na rok 2015
 </h2>
 <!--<h2>Harmonogram imprez GNJ 2009/2010</h2>-->
 
@@ -58,39 +58,37 @@ EndList();
 
 <font color=white>	  
 	  	  
-<h4>Lipiec/Sierpień</h4>
+<h4>Styczeń/Luty</h4>
       <ul>
-      <li>Kosowo - 12.07-3.08 - dalsze eksploracje tamtejszych jaskiń (Dominik Graczyk)</li>
-      <li>Albania - 15.08-30.08 - dalsze eksploracje tamtejszych jaskiń (Darek Lermer)</li>
-      </ul>
-      
-<h4>Wrzesień</h4>
-      <ul>
-      <li>Niemcy - Hessenhauhohle - proba pokonnia syfonu 7. (Mirek Kopertowski)</li>
-      </ul>
-      
-<h4>Październik</h4>
-      <ul>
-      <li>Turystyka nurkowo-jaskiniowa i eksploracja jaskiń na Malcie (Dominik Graczyk)</li>
-      </ul>
-<h4>Listopad</h4>
-      <ul>
-      <li>23. Listopad - Speleokonfrontacje - spotkanie GNJ</li>
+      <li>Kasprowa Niżnia - Kasia Turzańska, Paweł Poręba</li>
+      <li>Hessenhauhohle - Mirek Kopertowski</li>
+      <li>Bułgaria - Sebastian Dobrowolski</li>
+      <li>Unifikacja GNJ - 21-22.02</li>
       </ul>
 
-<h4>Zima 2014/2015</h4>
+<h4>Kwiecień</h4>
       <ul>
-      <li>Tatry - j. Wielka Śnieżna - syfony Krakowskie (Maciek Czykierda)</li>
+      <li>Warsztaty Nurkowania Jaskiniowego - 11-12.04</li>
+      </ul>
+
+<h4>Lipiec</h4>
+      <ul>
+      <li>Albania - centralna wyprawa GNJ</li>
+      </ul>
+            
+<h4>Jesień</h4>
+      <ul>
+      <li>Manewry Ratownictwa KTJ połączone z nurkowaniem</li>
       </ul>
       
-      
+           
 </font>
 <br>
 <br>
 Zapraszamy na wspólne akcje. Czekamy na Wasze inicjatywy!
 <br>
 <br>
-<b>GNJ<b>
+<b>Podkomisja Nurkowania Jaskiniowego KTJ<b>
 
 <!-- Zapraszamy na wspólne akcje! Czekamy też na Wasze inicjatywy. -->
 <br>
