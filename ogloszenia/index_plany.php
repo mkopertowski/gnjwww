@@ -26,7 +26,7 @@ include('../_php/mysql.php');
 <h1>
 	OGŁOSZENIA
 </h1>
-<h3 align=right>Ostatnia aktualizacja: 7. Lipiec 2014</h3>
+<h3 align=right>Ostatnia aktualizacja: 5. Styczeń 2015</h3>
 <h2>
  Plany Grupy Nurków Jaskiniowych PZA na rok 2015
 </h2>
@@ -54,7 +54,7 @@ EndList();
 //-----------------------------------------------------
 ?>
 
-<h3>Kalendarz 2015</h3>
+<h3>Kalendarz</h3>
 
 <font color=white>	  
 	  	  
