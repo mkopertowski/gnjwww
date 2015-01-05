@@ -99,11 +99,6 @@ Najbliższe spotkanie GNJ odędzie się 22. listopada 2014 w Podlesicach (podcza
 </p></div>
 
 <div align=left><p class="hotinfo">
-  Warsztaty Opieki Nad Poszkodowanym, 8-9.03.2008.
-  <a class="hotinfo" href="./ratownictwo/publication.php?id=wonp">INFORMACJE</a>
-</p></div>
-
-<div align=left><p class="hotinfo">
   4th International Cave Diving Congress 2008, 31 May - 1 Jun 2008.
   <a class="hotinfo" href="http://www.congresips.com">INFORMACJE</a>
 </p></div>
@@ -467,20 +462,6 @@ StartList();
 EndList();
 
 
-
-
-NewSection('Luty 2010','section');
-
-StartList();
-
-  ExtendedListItem('Warsztaty opieki nad poszkodowanym',
-                   'Relacja',
-                   $dots.'./article.php?id=2010WONP&sec=ratownictwo','Więcej',
-                   '08. Marca 2010','Dominik "Honzo" Graczyk');
-                   
-EndList();
-
-
 NewSection('Grudzień 2009','section');
 
 StartList();
@@ -705,11 +686,6 @@ EndList();
 NewSection('MARZEC 2008','section');
 
 StartList();
-
-  ExtendedListItem('Wielka Orkiestra Nawiedzonych Płetwonurków, czyli Warsztaty Opieki Nad Poszkodowanym',
-                   'W życiu każdego szanującego się speleologa, a już szczególnie nurka jaskiniowego, przychodzi taki moment, że zaczyna się on zastanawiać nad kruchością życia...',
-		   './article.php?id=2008WONP&sec=ratownictwo','WIĘCEJ',
-		   '11. Maj 2008','Adam Więch');
 
   ExtendedListItem('Serbia 2008 (bałkańskie klimaty...)',
                    'Na początku roku "<i>Expeditions Diving Group</i>" zorganizowała kolejną wyprawę do  

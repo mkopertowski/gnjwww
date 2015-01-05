@@ -46,21 +46,6 @@ $sqlfiltr="section='ratownictwo'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
       
-  ExtendedListItem('Nurkowanie w metrze - ćwiczenia GRW PZA i Straży Pożarnej',
-                   'Wspólne ćwiczenia Grupy Ratownictwa Wysokościowego PZA i Państwowej Straży Pożarnej odbyły się  06.03.2008...',
-		   '../article.php?id=2008Metro&sec=ratownictwo','WIĘCEJ',
-		   '9. Marzec 2008','Andrzej Szerszeń');
-
-  ExtendedListItem('Ratownictwo nurkowe w jaskiniach w TOPR',
-                   'Przez dwa dni (24 i 25.01.2008) ratownicy - płetwonurkowie TOPR, trenowali w Morskim Oku....',
-		   '../article.php?id=2008TOPR&sec=ratownictwo','WIĘCEJ',
-		   '9. Marzec 2008','Andrzej Szerszeń');
-
-  ExtendedListItem('Trening RNJ w kamieniołomie Zakrzówek',
-                   'W sobotę 21.10.2006 przeprowadzono kolejny trening zespołu nurków jaskiniowych w transportowaniu poszkodowanego w noszach. W ćwiczeniach wzięli udział nurkowie jaskiniowi...',
-                   '../ratownictwo/publication.php?id=2006zakrzowek','RELACJA',
-                   '7. Listopad','Lucyna Cieślik');
-
   ExtendedListItem('Trening RNJ w kamieniołomie Zakrzówek',
                    'W celu odpowiedniego przygotowania zespołu nurków jaskiniowych do manewrów ratownictwa zaplanowanych na przełom września i października, przeprowadzono ćwiczenia w kamieniołomie Zakrzówek...',
                    '../ratownictwo/publication.php?id=2006zakrzowek2','RELACJA',
