@@ -28,7 +28,7 @@ function isOldArticle($date)
 {
 	$dtime = new DateTime($date);
 	
-	return ($dtime->format("Y")<2007);
+	return ($dtime->format("Y")<2006);
 }
 
 
