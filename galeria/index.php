@@ -98,11 +98,6 @@ if($bSubdir == true)
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfony_krakowskie_01_2003.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Gębczyce, luty 2003</b><br>
-		Treningowe nurkowanie pod lodem miało na celu doskonalenie umiejetnosci poręczowania...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gebczyce_02_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Dudnica, zima 2002</b><br>
 		Przy okazji spotkania Podkomisji Nurkowania Jaskiniowego 14 grudnia 2002 zanurkowaliśmy w Dudnicy...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica12_2002.php">więcej...</a>]<br>&nbsp;

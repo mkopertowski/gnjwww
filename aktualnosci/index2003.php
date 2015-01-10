@@ -366,10 +366,6 @@ kilku krótkich filmów video. &nbsp;&nbsp;&nbsp;<br>
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../polska/dudnica12_2002.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		Kilka fotek i opis treningowego nurkowania w Gębczycach. Doskonalono techniki poręczowania w warunkach nurkowania pod stropem (lód) w zimnej wodzie.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gebczyce_02_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		Archiwalny artykuł opisujący nurkowanie w jaskini Zimnej w Tatrach podczas Obozu Sylwestrowego 1990-1991.
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../polska/zimna90-91.php">więcej...</a>]<br>&nbsp;
 	</li>

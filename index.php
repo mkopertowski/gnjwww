@@ -94,11 +94,6 @@ Najbliższe spotkanie GNJ odędzie się 22. listopada 2014 w Podlesicach (podcza
 </p></div>
 
 <div align=left><p class="hotinfo">
-  Kurs Fotografii Podwodnej dla nurków jaskiniowych, 23-24.02.2008.
-  <a class="hotinfo" href="./rozne/publication.php?id=kurspf1">INFORMACJE</a>
-</p></div>
-
-<div align=left><p class="hotinfo">
   4th International Cave Diving Congress 2008, 31 May - 1 Jun 2008.
   <a class="hotinfo" href="http://www.congresips.com">INFORMACJE</a>
 </p></div>
