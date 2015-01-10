@@ -95,9 +95,6 @@ kilku krótkich filmów video. &nbsp;&nbsp;&nbsp;<br>
 [<a class="navismall" href="../polska/bystrzycagornatremb.php">Zdjęcia...</a>]
      <br>&nbsp; 
 	</li>
-<li class="normal">	
-<b>Speleokonfrontacje</b> W dniu 16.11.2003 odbyło sie spotkanie Podkomisji Nurkowania Jaskiniowego w Podlesicach. &nbsp;&nbsp;&nbsp;[<a class="navismall" href="../rozne/pnj2003.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
@@ -144,11 +141,7 @@ kilku krótkich filmów video. &nbsp;&nbsp;&nbsp;<br>
 <li class="normal">
 		<b>Rekord w Bushmansgat</b> W dniu 11 września 2003 Leszek Czarnecki ustanowił nowy rekord Polski w nurkowaniu jaskiniowym, zanurzając się na głębokość 194 m w jaskini Boesmansgat (Bushmansgat) w RPA (1560 m n.p.m.). &nbsp;&nbsp;&nbsp;[<a class="navismall" href="../artykuly/bushmansgat2003.php">więcej...</a>]<br>&nbsp;
 	</li>
-	<li class="normal">
-		<b>Gębczyce</b> W dniu 05.09.2003 podczas nurkowań treningowych w kamieniołomie został nakręcony materiał filmowy dla programu Podwodna Polska TVP3. Emisja nastąpi 14.09 o 15:00.
-		&nbsp;&nbsp;&nbsp; [<a class="navismall" href="../rozne/tvp3.php"> więcej ... </a>] &nbsp;&nbsp;&nbsp;<br>&nbsp;
-		<br><br>
-	</li>
+
 </ul>
 
 <table cellspacing=0 cellpadding=3 width=100%>

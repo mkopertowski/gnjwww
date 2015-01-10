@@ -54,7 +54,7 @@ class CArticle {
     }
   } 
 }
-// sec - section name polska,swiat,rozne, etc. / directory name
+// sec - section name polska,swiat, etc. / directory name
 // id - article xml file. should be placed in the following directory ./sec/id/id.xml
 // 
 // article.php?sec=xxxx;id=yyyy

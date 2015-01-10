@@ -169,25 +169,6 @@ StartList();
 EndList();
 
 //-----------------------------------------------------
-NewSection('KWIECIEŃ 2006','section');
-
-StartList();
-
-  ExtendedListItem('Włochy',
-                   'W dniach 1-4.IV odbył się trenigowy wyjazd do północnych 
-                   Włoch. Nurkowaliśmy w Elefante Bianco oraz Fontanazzi. 
-                   W obu wywierzyskach występował wyraźny prąd. W Fontanazzi
-                   ze względu na wąskie przekroje studni wejściowej mocno utrudnial
-                   nurkowanie. Mimo tego udało nam się przepłynąć w tej jaskini
-                   prawie 200m.                       
-                   W wyjeździe uczestniczyli: Dominik Graczyk (Honzo),
-                   Zuza oraz Mirek Kopertowski.',
-                   $dir.'/rozne/ZdjeciaWlochy06.php','Zdjęcia z wyjazdu',
-                   '16. Kwiecień','Mirek Kopertowski');
-EndList();
-
-
-//-----------------------------------------------------
 NewSection('MARZEC 2006','section');
 
 StartList();
