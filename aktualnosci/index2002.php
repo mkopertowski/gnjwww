@@ -41,14 +41,6 @@ if($bSubdir == true)
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../polska/szmaragdowaszeptunow1991.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Maciej Tomaszek</b>, członek Zarządu Podkomisji Nurkowania Jaskiniowego KTJ PZA, zbiera ankiety dotyczące środowiska nurków jaskiniowych. Prosimy o pobranie ankiety i wysłanie jej do Macieja Tomaszka.<br>
-		<ol>
-			<li><a class="navi" href="..rozne/doc/pnj_ankieta12_02.doc" target="_new">POBIERZ ANKIETĘ</a> (dokument Word 2000)<br>
-			<li>Wyślij ankietę na adres <a class="navi" href="mailto:maciej.tomaszek@kw.krakow.pl?SUBJECT=Ankieta Podkomisji Nurkowania Jaskiniowego" target="_new">Maciej.Tomaszek@kw.krakow.pl</a>
-		</ol>
-		<br>
-	</li>
-	<li class="normal">
 		W dniu 14.12.2002 w karczmie "U Zięby" odbylo sie zebranie Podkomisji 
 Nurkowania Jaskiniowego. W spotkaniu wzięło udział kilkanaście osób 
 związanych z nurkowaniem w jaskiniach oraz Andrzej Ciszewski z ramienia 

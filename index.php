@@ -754,11 +754,6 @@ StartList();
 		   $dots.'/article.php?id=2008Birnbachloch&sec=swiat','WIĘCEJ',
 		   '21. Styczeń 2008','Andrzej Szerszeń');
 
-  ExtendedListItem('Jak jest „jaskinia” po Serbsku?',
-                   'W języku Serbskim istnieje bogate nazewnictwo zjawisk krasowych. Wynika to z faktu, że większość terenów zamieszkanych przez narody posługujące się tym językiem...',
-		   $dots.'/rozne/publication.php?id=2008JaskiniaPoSerbsku','WIĘCEJ',
-		   '17. Styczeń 2008','Andrzej Szerszeń');
-
   ExtendedListItem('Wyprawa GNJ do Czarnogóry',
                    'Wyprawa Grupy Nurków Jaskiniowych do Czarnogóry działająca w dniach 25.12.2007 - 07.01.2008 przyniosła rezultaty w postaci wyeksplorowania wywierzysk...',
 		   $dots.'./article.php?id=2008Czarnogora&sec=swiat','WIĘCEJ',

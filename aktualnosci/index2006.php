@@ -58,11 +58,6 @@ StartList();
 EndList();
 NewSection('LISTOPAD 2006','section');
 StartList();
-
-  ExtendedListItem('Na Dno Śnieżnej czyli przygotowania do nurkowania w jeziorku X',
-                   'Długo planowana działalność nurkowa na dnie jaskini Wielka Śnieżna zaczyna nabierać realnych kształtów...',
-                   $dir.'/rozne/publication.php?id=2006Sniezna_1','RELACJA',
-                   '26. Listopad','Mirek Kopertowski');
                    
   ExtendedListItem('Trening RNJ w kamieniołomie Zakrzówek',
                    'W celu odpowiedniego przygotowania zespołu nurków jaskiniowych do manewrów ratownictwa zaplanowanych na przełom września i października, przeprowadzono ćwiczenia w kamieniołomie Zakrzówek...',
