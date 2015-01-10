@@ -231,10 +231,6 @@ StartList();
                    'Gdy ubiegłoroczna wyprawa na Krym dobiegła końca, wiadome było, że powrót tam jest tylko kwestią czasu...',
                    '../swiat/publication.php?id=2006krym','RELACJA Z WYJAZDU',
                    '23. Wrzesień','Paweł "Loti" Mordkowicz');
-  ExtendedListItem('Rumunia. Eksploracja wywierszyska Izbucul Galbenei',
-                   'Kierując się ciekawością, dokąd prowadzi trzeci syfon w       wywierzysku Izbucul Galbenei, udaliśmy się do Rumuni kontynuować jego eksplorację rozpoczętą w ubiegłym roku',
-                   '../eksploracja/rumunia2006.php','RELACJA Z WYJAZDU',
-                   '31. Lipiec','Andrzej Szerszeń');
   ExtendedListItem('X divers team we Włoszech',
                    'W czasie tzw. długiego czerwcowego weekendu znów byliśmy w
                     słonecznej Italii. Cały czas planowaliśmy wyjazd do Rumunii ale warunki
@@ -257,13 +253,6 @@ EndList();
 	</tr>
 </table>
 <ul class="normal">
-<?php
-  ExtendedListItem('Rumunia. Eksploracja wywierszyska Izbucul Galbenei',
-                   'Czy to już ostatni wyjazd w to miejsce? NIE',
-                   '../eksploracja/rumunia2005.php','RELACJA Z WYJAZDU',
-                   '31. Lipiec','Andrzej Szerszeń');
-
-?><br>
 	<li class="normal">
 		<b>Włochy</b> Jacek Pożeg, Maciek Czykierda, Paweł Poręba, Przemek Stasiak i Rafał Górecki w dniach 3 - 6 lutego nurkowali w <b>Elephante Bianco</b> i w <b>Grotta dei Fontanazzi</b>. W tej drugiej jaskini Polacy nurkowali po raz pierwszy...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./wlochy.02.2005.przemek.stasiak.php">więcej...</a>]<br>&nbsp;
