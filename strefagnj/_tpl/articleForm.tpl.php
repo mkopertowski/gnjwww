@@ -28,7 +28,20 @@
 		?>
     </select>
 </div>
-    
+
+<div class="form-group">
+	<label for="language">Język</label>
+	<select name="language" value="pl" class="form-control">
+		<?php foreach($this->languageList as $value):
+		         if($this->language == $value)
+		         	echo "<option value=\"$value\" selected>$value</option>";		         	
+		         else 
+		         	echo "<option value=\"$value\">$value</option>";
+			  endforeach;
+		?>
+    </select>
+</div>
+
 <div class="form-group">
 	<label for="text">Treść (używaj składni wiki markup)</label>
 	<ul>

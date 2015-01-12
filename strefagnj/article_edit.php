@@ -17,6 +17,12 @@ $result = $mysqli->query($sql);
 $row = $result->fetch_assoc();
 $sectionList = explode(",", str_replace("'", "", substr($row['COLUMN_TYPE'], 5, (strlen($row['COLUMN_TYPE'])-6))));
 
+/* get languages for "HTML select" */
+$sql="SELECT COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '$tbl_name' AND COLUMN_NAME = 'language'";
+$result = $mysqli->query($sql);
+$row = $result->fetch_assoc();
+$languageList = explode(",", str_replace("'", "", substr($row['COLUMN_TYPE'], 5, (strlen($row['COLUMN_TYPE'])-6))));
+
 /* get members for "HTML select" */
 $tbl_name="members"; // Table name
 $sql="SELECT id,name,surname FROM $tbl_name";
@@ -26,6 +32,7 @@ $Page = new RendererGNJ("./_tpl/articleForm.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 
 $Page->set("sectionList",$sectionList);
+$Page->set("languageList",$languageList);
 $Page->set("membersList",$membersList);
 
 if($_SESSION['usertype'] == "admin")
@@ -63,6 +70,7 @@ if(isset($_REQUEST['id'])){
 		$Page->set("title",$row['title']);
 		$Page->set("subtitle",$row['subtitle']);
 		$Page->set("section",$row['section']);
+		$Page->set("language",$row['language']);
 		$Page->set("text",$row['text']);
 		$Page->set("tags",$row['tags']);
 		$Page->set("html_keywords",$row['keywords']);

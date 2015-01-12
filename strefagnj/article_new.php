@@ -18,6 +18,11 @@ $result = $mysqli->query($sql);
 $row = $result->fetch_assoc();
 $sectionList = explode(",", str_replace("'", "", substr($row['COLUMN_TYPE'], 5, (strlen($row['COLUMN_TYPE'])-6))));
 
+$sql="SELECT COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '$tbl_name' AND COLUMN_NAME = 'language'";
+$result = $mysqli->query($sql);
+$row = $result->fetch_assoc();
+$languageList = explode(",", str_replace("'", "", substr($row['COLUMN_TYPE'], 5, (strlen($row['COLUMN_TYPE'])-6))));
+
 $tbl_name="members"; // Table name
 $sql="SELECT id,name,surname FROM $tbl_name";
 $membersList = $mysqli->query($sql);
@@ -26,6 +31,7 @@ $Page = new RendererGNJ("./_tpl/articleForm.tpl.php");
 $Page->setInfo("Zalogowany: ".$_SESSION['name']." ".$_SESSION['surname']);
 
 $Page->set("sectionList",$sectionList);
+$Page->set("languageList",$languageList);
 $Page->set("membersList",$membersList);
 
 if($_SESSION['usertype'] == "admin")
@@ -40,6 +46,7 @@ else
 $Page->set("title","");
 $Page->set("subtitle","");
 $Page->set("section","");
+$Page->set("language","");
 $Page->set("text","");
 $Page->set("tags","");
 $Page->set("html_keywords","");

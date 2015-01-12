@@ -18,6 +18,7 @@ $text = ConvertStringMYSQL($mysqli,$_POST['text']);
 $articleid = $mysqli->real_escape_string($_POST['articleid']);
 
 $section =$_POST['section']; 
+$language =$_POST['language'];
 
 /* article update if 'articleid' not set "new" */
 if($articleid != "new")
@@ -91,12 +92,12 @@ if($_SESSION['usertype'] == "admin")
 	
 	if(isset($articleToUpdate)){
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status', date='$date' WHERE id='$articleid'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET authorid='$authorid', author= '$author', title='$title', subtitle='$subtitle', text='$text', section='$section', tags='$tags', keywords='$html_keywords', description='$html_description', status='$status', date='$date', language='$language' WHERE id='$articleid'";
 	}
 	else 
 	{ 
 		/* insert */
-		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, author, title, subtitle, text, date, section, status, tags, keywords, description) VALUES ('$authorid', '$author', '$title', '$subtitle', '$text', '$date', '$section', '$status', '$tags', '$html_keywords', '$html_description')";
+		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, author, title, subtitle, text, date, section, status, tags, keywords, description, language) VALUES ('$authorid', '$author', '$title', '$subtitle', '$text', '$date', '$section', '$status', '$tags', '$html_keywords', '$html_description', '$language')";
 	}
 	
 	$result=$mysqli->query($sql);	
@@ -107,12 +108,12 @@ else /* member adding/updating article */
 
 	if(isset($articleToUpdate)){
 		/* update */
-		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section', date=now() WHERE id='$articleid'";
+		$sql="UPDATE $ARTICLE_TABLE_NAME SET title='$title', subtitle='$subtitle', text='$text', section='$section', language='$language', date=now() WHERE id='$articleid'";
 	}
 	else
 	{
 		/* insert */
-		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, title, subtitle, text, date, section) VALUES ('$authorid', '$title', '$subtitle', '$text', now(), '$section')";
+		$sql="INSERT INTO $ARTICLE_TABLE_NAME (authorid, title, subtitle, text, date, section, language) VALUES ('$authorid', '$title', '$subtitle', '$text', now(), '$section', '$language')";
 	}
 	
 	$result=$mysqli->query($sql);	
@@ -126,7 +127,7 @@ if($result)
 else
 {
 	/* go to index.php */
-	$_SESSION['info'] = "Błąd";
+	$_SESSION['info'] = "Błąd: ".$mysqli->error;
 }
 
 header("Location: index.php");
