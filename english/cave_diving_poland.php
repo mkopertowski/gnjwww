@@ -6,7 +6,12 @@ if($bSubdir == true)
 	$sInclude = '.'.$sInclude;
 @include($sInclude);
 
+$GL_DIR = '..';
+
 @include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/settings.php');
+include('../_php/misc.php');
 
 	renderHead($bSubdir);
 	renderMenu($bSubdir,10,false);
@@ -20,6 +25,12 @@ if($bSubdir == true)
 <ul class="normal">
 
 <?php
+
+$sqlfiltr="language='en'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+
   ExtendedListItemEN('Underwater caves od Skadar Lake',
                    'Please find report of 2007 and 2008 cave diving expeditions to Skadarsko Jezero, Montenegro. The goal was an exploration of numerous springs - underwater caves. The report shovs over 35 objects.',
                     '../swiat/skadar_2008_report.pdf','REPORT',
