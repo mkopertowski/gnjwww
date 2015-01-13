@@ -30,33 +30,8 @@ $sqlfiltr="language='en'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
-
-  ExtendedListItemEN('Underwater caves od Skadar Lake',
-                   'Please find report of 2007 and 2008 cave diving expeditions to Skadarsko Jezero, Montenegro. The goal was an exploration of numerous springs - underwater caves. The report shovs over 35 objects.',
-                    '../swiat/skadar_2008_report.pdf','REPORT',
-                   '7. April 2009','Andrzej Szerszeń');
-
-
-  ExtendedListItemEN('Expedition OKO, Montenegro',
-                   'International cave diving expedition in Montenegro has been working from 25.12.2007 to 07.01.2008...<BR>',
-                   '../article.php?id=2008OkoMontenegro&sec=english&lang=en','See more',
-                   '8. March 2008','Andrzej Szerszeń');
-
-  ExtendedListItemEN('Galbenei expedition',
-                   'Five cave divers supported by seven cavers from Sekcja
-                    Grotolazow Wroclaw (SGW) and Speleoklub Warszawski (SW) 
-                    worked in Izbucul Galbenei on 14-17.07.2006...',
-                   './Galbenei2006.php','See more',
-                   '23. July 2006','Andrzej Szerszeń');
-
 ?>
 
-	<li class="normal">
-		<b>Polish Cave Diving 2001-2005</b><br>
-		Published in 'Polish Caving 2001-2005' - special issue for International UIS
-                Congress in Athens 2005.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./cave_diving2001-2005.php">see more...</a>]<br>&nbsp;
-	</li>
 	<li class="normal">
 		<b>List of sumps in Polish Tatra Mountains</b><br>
 		
