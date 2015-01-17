@@ -243,10 +243,6 @@ kilku krótkich filmów video. &nbsp;&nbsp;&nbsp;<br>
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../warsztaty/gebczyce03_k2a.doc" target="_new">Komunikat nr 2</a>]<br>&nbsp; 
 	</li>
 	<li class="normal">
-		<b>Sidemount w polskiej wersji</b> - Opis systemu montowania butli nurkowych po bokach w celu pokonywania krótkich lub ciasnych syfonów autorstwa Wiktora Bolka.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../szkolenie/sidemount_pl.php">więcej...</a>]&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../english/sidemount_en.php">English version...</a>]<br>&nbsp; 
-	</li>
-	<li class="normal">
 		Dodano galerię zdjęć z akcji nurkowej przeprowadzonej w sztolni w <b>Dzikowcu</b>.
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../galeria/dzikowiec_05_2003.php">więcej...</a>]<br>&nbsp; 
 	</li>
@@ -373,10 +369,6 @@ kilku krótkich filmów video. &nbsp;&nbsp;&nbsp;<br>
 </table>
 <br>
 <ul class="normal">
-	<li class="normal">
-		Artykuł na temat wyprawy ratunkowej działajacej w wywierzysku <b>Izbucul de la Tauz</b> w Rumunii w październiku 2002.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/rumunia10_2002rescue.php">więcej...</a>]<br>&nbsp;
-	</li>
 	<li class="normal">
 		Zdjęcia z feralnej wyprawy do Rumunii, na której w <b>Izbucul de la Tauz</b> zginął Rafał Garski.
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../galeria/rumunia10_2002.php">więcej...</a>]<br>&nbsp;
