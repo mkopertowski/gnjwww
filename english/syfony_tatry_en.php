@@ -272,10 +272,6 @@ if($bSubdir == true)
 		<td align=center>
 			6h
 		</td>
-		<td align=center>
-		<a href="./img/mysi.gif" target="_new">
-		<img src="./img/mysi_small.gif" alt="Plan syfonów krakowskich." ></a>
-		</td>
 	</tr>
 	<tr>
 		<td>
@@ -293,10 +289,6 @@ if($bSubdir == true)
 		<td align=center>
 			&nbsp;
 		</td>
-		<td align=center>
-		<a href="./img/mysi.gif" target="_new">
-		<img src="./img/mysi_small.gif" alt="Plan syfonów krakowskich." ></a>
-		</td>
 	</tr>
 	<tr>
 		<td>
@@ -313,10 +305,6 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			&nbsp;
-		</td>
-		<td align=center>
-		<a href="./img/mysi.gif" target="_new">
-		<img src="./img/mysi_small.gif" alt="Plan syfonów krakowskich." ></a>
 		</td>
 	</tr>
 	<!-- jaskinia -->

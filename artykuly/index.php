@@ -46,16 +46,7 @@ StartList();
 			ExtendedListItemMYSQL($mysqli,$row,'..');
 		}
 	}
-
-  ExtendedListItem('Specyfika pracy na podwodnym stanowisku archeologicznym',
-                   '...',
-                   '../article.php?id=2012ArcheologiaPodwodna&sec=artykuly','WIĘCEJ',
-                   '20. Września 2012','Dominik Graczyk');
   
-  ExtendedListItem('10 lat eksploracji masywu Bihor',
-                   '...',
-                   '../article.php?id=2010RumuniaBihor&sec=artykuly','WIĘCEJ',
-                   '23. Kwietnia 2010','Mirosław Kopertowski');
   
   ExtendedListItem('Kurs fotografii podwodnej',
                    'W dniach 23–24 lutego 2008 roku, na krakowskim Zakrzówku, obył się kurs fotogragii podwodnej (PF1)...',

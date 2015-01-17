@@ -43,10 +43,6 @@ require './_php/Zebra_Pagination.php';
 
 <!--
 
-<font size="5">22 stycznia, Uniwersystet Warszawski, Archeologia Podwodna. Zapraszamy na prezenta cje.</font> <br>
-<font size="3">Więcej informacji w sekcji <a class="hotinfo" href="./ogloszenia/index_var.php">Ogłoszenia.</a><br></font></i>
-<br><br>-->
-
 <!--
 <font size="5">W dniach 30.04-03.05 odbyły się Warsztaty Nurkowania Jaskiniowego edycja 2011</font> <br>
 <font size="3">Więcej informacji niebawem </font></i>
@@ -205,13 +201,6 @@ ExtendedListItem('Jaskinia Wodna Pod Pisaną',
                    'Nurkowanie w Syfonie II...',
                    $dots.'./polska/publication.php?id=2012wpp&sec=polska','Więcej',
                    '29. Września 2012','A.Nowak');	
-
-
-ExtendedListItem('Artykuł Dominika Graczyka',
-                   'Specyfika pracy na podwodnym stanowisku archeologicznym',
-                   $dots.'./article.php?id=2012ArcheologiaPodwodna&sec=artykuly','Więcej',
-                   '20. Września 2012','D.Graczyk');	
-
 
 ExtendedListItem('Zimnik',
                    'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
@@ -432,12 +421,7 @@ StartList();
 </div>
 <br>
 
-  
-  ExtendedListItem('10 lat eksploracji masywu Bihor',
-                   'Góry Bihor znajdują się w północno-zachodniej części Rumunii. Ze względu na swój unikatowy krajobraz i mikroklimat przyciągają turystów z całej Europy. Niewielu z nich zdaje sobie jednak sprawę, że góry te są prawdziwym rajem dla speleologów. Występują tu prawie wszystkie formy krasowe, takie jak: jaskinie, aweny, polja, kotły eworsyjne, ponory oraz najbardziej interesujące dla nurków jaskiniowych - wywierzyska.',
-                   $dots.'./article.php?id=2010RumuniaBihor&sec=artykuly','Więcej',
-                   '23. Kwietnia 2010','Mirosław Kopertowski');
-                   
+                     
 EndList();
 
 
