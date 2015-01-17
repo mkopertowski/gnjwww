@@ -31,20 +31,9 @@ $sqlfiltr="section='technika'";
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
 ?>
-
 	<li class="normal">
 		<b>Lista sprzętu potrzebnego na Warsztatach Nurkowania Jaskiniowego</b><br>
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./listasprzetu.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Przygotowanie sprzętu do nurkowania w jaskini</b><br>
-		Ze względu na fakt, że nurkując w podziemiach nie można natychmiast   wynurzyć   się,    każdy element aparatu umożliwiający oddychanie musi być zdublowany. Podstawowym wyposażeniem każdego płetwonurka jaskiniowego są...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./sprzet.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Latarki używane w Podkomisji Nurkowania Jaskiniowego</b><br>
-		Oświetlenie jest bardzo ważnym elementem sprzętu uzywanego do nurkowania w jaskiniach. Zabieramy zawsze co najmniej dwie latarki o czasie świecenie dłuższym od planowanego nurkowania. Mocujemy je na kasku za pomocą gumek przełożonych przez...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./latarki.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
 		<b>Technika poruszania się pod wodą</b><br>
