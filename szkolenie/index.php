@@ -33,18 +33,8 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 ?>
 
 	<li class="normal">
-		<b>Rebreathery w nurkowaniu jaskiniowym</b><br>
-		Informacje dotyczące zastosowania aparatów SCR i CCR w przestrzeniach zamkniętych.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../_uc/uc.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Lista sprzętu potrzebnego na Warsztatach Nurkowania Jaskiniowego</b><br>
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./listasprzetu.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Trudności w nurkowaniu jaskiniowym</b><br>
-		Zalane podziemia tworzą specyficzne środowisko, które człowiek stara się penetrować, pomimo jego niedostępności. Jeżeli podwodne korytarze powstały w sposób naturalny - to mamy do czynienia z jaskinią. Wtedy celem penetracji jest eksploracja nowych miejsc...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./trudnosci.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
 		<b>Przygotowanie sprzętu do nurkowania w jaskini</b><br>
