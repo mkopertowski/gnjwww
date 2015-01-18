@@ -71,11 +71,6 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kolowrotek.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Autoratownictwo</b><br>
-		Poniżej są omówione dwie najczęstsze sytuacje wymagające zastosowania specjalnych procedur ratowniczych. Związane są one z poruszaniem się w korytarzu jaskini...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./autoratownictwo.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Technika - Temperatura mieszanki oddechowej za pierwszym stopniem automatu</b><br>
 		Celem niniejszego artykułu jest pokazanie praktycznego sposobu na wyznaczanie temperatury mieszanki oddechowej po rozprężeniu na pierwszym stopniu automatu...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./efektjt.php">więcej...</a>]<br>&nbsp;

@@ -81,7 +81,7 @@ class wikiParser {
 			"<dd>$1</dd>",
 	
 			// Ordered list
-			"\n<ol>\n$0\n</ol>",
+			"\n<ol style=\"text-align: left\">\n$0\n</ol>",
 			"\n<li>$1\n<ol>$2\n</ol>\n</li>",
 			"\n<li>$1\n<ol>$2\n</ol>\n</li>",
 			"\n<li>$1\n<ol>$2\n</ol>\n</li>",
