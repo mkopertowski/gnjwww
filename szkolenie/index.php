@@ -80,11 +80,6 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 		Celem niniejszego artykułu jest pokazanie praktycznego sposobu na wyznaczanie temperatury mieszanki oddechowej po rozprężeniu na pierwszym stopniu automatu...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./efektjt.php">więcej...</a>]<br>&nbsp;
 	</li>
-	<li class="normal">
-		<b>Nawigacja w technicznym nurkowaniu jaskiniowym</b><br>
-		Rozbudowane procedury nawigacyjne stanowią ważny element w <i>technicznym nurkowaniu jaskiniowym</i>. W systemie tym zakłada się, że...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../article.php?id=2008Nawigacja&sec=szkolenie">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php

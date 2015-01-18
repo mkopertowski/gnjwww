@@ -707,10 +707,6 @@ StartList();
                    'W dniach 23–24 lutego 2008 roku, na krakowskim Zakrzówku, obył się kurs fotogragii podwodnej (PF1)...',
                    '../article.php?id=2008KursFoto&sec=artykuly','WIĘCEJ',
                    '13. Marca 2008','Maciek "Lama" Olinkiewicz');
-  ExtendedListItem('Nawigacja w technicznym nurkowaniu jaskiniowym',
-                   'Rozbudowane procedury nawigacyjne stanowią ważny element w <i>technicznym nurkowaniu jaskiniowym</i>. W systemie tym zakłada się, że...',
-		   $dots.'/article.php?id=2008Nawigacja&sec=szkolenie','WIĘCEJ',
-		   '9. Marzec 2008','Andrzej Szerszeń');
 
   ExtendedListItem('Nurkowanie w metrze - ćwiczenia GRW PZA i Straży Pożarnej',
                    'Wspólne ćwiczenia Grupy Ratownictwa Wysokościowego PZA i Państwowej Straży Pożarnej odbyły się  06.03.2008...',

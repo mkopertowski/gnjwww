@@ -22,7 +22,17 @@ $row = $result->fetch_assoc();
 
 if(($_SESSION['usertype'] == "admin") || ($row['authorid'] == $authorid))
 {
-	ShowArticle($mysqli,$row,$id,false);	
+	switch($row['layout'])
+	{
+		case "ex":
+			ShowArticleEx($mysqli,$row,$id,false);
+			break;
+		case "nofb":
+			ShowArticle($mysqli,$row,$id,false);
+			break;
+		default:
+			ShowArticle($mysqli,$row,$id,false);
+	}
 }	
 
 ?>
