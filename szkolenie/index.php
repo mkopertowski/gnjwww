@@ -36,24 +36,9 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./listasprzetu.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Technika poruszania się pod wodą</b><br>
-		Ze względu na łatwość stracenia  orientacji  w  syfonie musi być poprowadzona poręczówka, która zapewni nieprzerwane połączenie pomiędzy dowolnym punktem  osiąganym   podczas nurkowania a powierzchnią...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./poruszaniesie.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Technika poręczowania</b><br>
-		Zalane korytarze poręczujemy rozwijając linkę z kołowrotka. Przed nurkowaniem linka musi być odpowiednio przygotowana. Należy umieścić na niej markery określające odległość oraz kierunek do wyjścia...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./technikaporeczowania.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Planowanie ilości mieszanek oddechowych</b><br>
 		Poniższe rozważania dotyczą oddychania powietrzem. Planujemy, że podczas nurkowania przeznaczymy taka sama ilość powietrza na penetrację, powrót i rezerwę. Taki podział określa się mianem reguły jednej trzeciej...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./iloscmieszanek.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Wykorzystanie depozytów</b><br>
-		Jeśli miejsce, do którego chcemy dopłynąć w jaskini, wymaga zużycia&nbsp;wiekszej niż wynika to z reguły 1/3 dla zestawu głównego ilości gazów oddechowych, należy wykorzystać dodatkowe butle z czynnikiem oddechowym, tzw. depozyty...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./depozyty.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
 		<b>System mocowania butli po bokach</b><br>
