@@ -26,7 +26,7 @@ NewSection('SZKOLENIA','section');
 
 StartList();
 
-$sqlfiltr="section='technika'";
+$sqlfiltr="section='technika' and languauge='pl'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
