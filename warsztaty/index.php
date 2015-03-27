@@ -103,20 +103,6 @@ Wszystkie nurkowania mogą odbyć się jedynie w zgodzie z uprawnieniami posiada
 Lista niezbędnego sprzętu jest do pobrania <a class="navi" href="./doc/lista_sprzetu.pdf">tutaj</a>.
 Warunkiem uczestnictwa w warsztatach jest posiadanie ubezpieczenia KL i NNW obejmującego nurkowanie.<br><br>
 
-<!--
-<b>Certyfikacja:</b><br><br>
-
-Brak w świecie organizacji certyfikującej w speleonurkowaniu, tj. nurkowaniu w systemie "francuskim".
-GNJ wydaje zaświadczenia wewnętrzne potwierdzające odbycie WNJ i wykonanie poszczególnych elementów szkolenia w stopniu umożliwiającym udział w akcjach nurkowania w przestrzeniach zamkniętych.<br><br>
-Istnieje możliwość uzyskania międzynarodowego certyfikatu <font color="red">NAUI Cavern Diver</font>, wiąże się to z dodatkowym dniem szkolenia po WNJ oraz udziałem w wyprawie GNJ, podczas której osoby chętne wykonują 4 nurkowania w przestrzeniach zamkniętych w systemie partnerskim.<br><br>
-Szczegółowe informacje na temat kursu NAUI są dostępne <a class="navismall" href="./cavern.php">tutaj</a>.<br><br>
-Uczestnicy kursu NAUI Cavern Diver proszeni są o zapoznanie się z <a class="navi" href="./doc/lista_sprzetu_cavern2012.pdf">listą</a> sprzętu wymaganego do tej certyfikacji.<br><br>
-
-<b>Cena:</b><br><br> 
-Ustalana każdego roku, posiadacze Karty Taternika Jaskiniowego mogą liczyć na zniżkę. Dojazd, zakwaterowanie i wyżywienie we własnym zakresie.
-<br><br>
--->
-
 <!--<b>Zakwaterowanie:</b><br><br>
 Ponieważ zamysłem warsztatów jest m.in. znalezienie i przygotowanie nowych uczestników wypraw eksploracyjnych GNJ (Grupy Nurków Jaskiniowych) w różnych zakątkach świata, śpimy w namiotach. Każdy z uczestników powinien być do tego odpowiednio przygotowany (namiot, śpiwór, karimata a także inny sprzęt biwakowy jak menażki, niezbędniki itp.). Tuż przy obozowisku znajduje się sklep spożywczy, w którym można się zaopatrzyć.<br><br>
 
@@ -247,21 +233,6 @@ if($result) {
 		<b>WARSZTATY '02</b>.<br>
 		...Podczas czterech dni część uczestników doskonaliła swoje umiejętości, część zaś przyswajała od podstaw zagadnienia teoretyczne i praktyczne pozwalające na bezpieczne nurkowanie w zalanych podziemiach. Przeprowadzone zostały zajęcia teoretyczne, które przybliżyły takie zagadnienia jak zagrożenia środowiska podczas nurkowań w zalanych podziemiach, dobór i konfiguracja sprzętu, zasady kartowania, czy podstawy obliczania zużycia mieszanek oddechowych...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis02.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '96 ZAKOPANE</b>.<br>
-		...W dniach 27.12.1996 - 02.01.1996 odbył się w Zakopanem Pierwszy Międzynarodowy Staż Nurkowania Jaskiniowego. Jako instruktorzy zostali zaproszeni Francuzi : Joelle Locatelli, Philippe Bigeard, Jean-Michele Hautvoine, Philippe Moya. Ze strony polskiej staż organizowali uczestnicy wyjazdu do Espinieres - Orniac latem 1995...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis96_1.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '96 CHORWACJA</b>.<br>
-		...Po przećwiczeniu tych technik opuściliśmy kemping Marina wcześniej niż inni i udaliśmy się do Słowenii nad Divje Jezero. Jest to największe wywierzysko krasowe w tym kraju. Z dna jeziora o szerokości 40m i długości 70m odchodzi w głąb masywu obszerny korytarz o średnicy kilku metrów...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis96_2.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '95</b>.<br>
-		...W jednym z zalanych kamieniołomów w Strzeblowie (k/Sobótki) zrobiliśmy podwodny "tor przeszkód", tzn. ułożyliśmy na dnie poręczówkę stabilizując ją z różnego rodzaju punktów, jak : ciężarki, kamienie, gumy, bojka itp. W ten sposób symulowaliśmy zaporęczowanie zalanego korytarza. W oparciu o tę poreczówkę wykonywaliśmy szereg ćwiczeń...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis95.php">więcej...</a>]<br>&nbsp;
 	</li>
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
