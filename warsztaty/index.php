@@ -209,31 +209,6 @@ if($result) {
 		<b>WARSZTATY '05 - sprawozdanie</b>.<br> Dziesiąte Warsztaty Nurkowań Jaskiniowych odbyły się tradycyjnie w długi weekend, który w tym roku wypadł w dniach 26-29 maja. Jak zwykle spotkaliśmy się na Dolnym Śląsku ...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis05.php"> więcej ...</a>]<br>&nbsp;
 	</li>
-	<li class="normal">
-		<b>WARSZTATY '04 - wrażenia Lycyny Cieślik</b>.<br>
-		...Dla wielu taki sposób działania i same techniki były zapewne nowością. Przećwiczono m.in. kartowanie (sporządzanie planów), poręczowanie, korzystanie z butli depozytowych, autoratownictwo (czyli tzw. wycinanie i szukanie zagubionej poręczówki) oraz pływanie bez płetw w konfiguracji bocznej...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis04_luca.php"> więcej ...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '04</b>.<br>
-		W dniach 10-13 czerwca odbyły się <b>Warsztaty Nurkowania Jaskiniowego</b>. Kilkunastu adeptów nurkowania w jaskiniach miało okazję zapoznać się z wieloma aspektami poruszania się w zalanych podziemiach. Dużą grupę stanowili również uczestnicy poprzednich edycji <b>Warsztatów</b>. Niestety, w tym roku nie udało nam się zanurkować w gębczyckim kamieniołomie "Z Klatką" ze wzgledu na... kolekcjonerów złomu, którzy sprzedali konstrukcję schodów doprowadzającą do klatki.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis04.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '03 z punktu widzenia Lasky'ego</b>.<br>
-		...Dowiązujemy się do głównej poręczówki, tworząc boczny ciąg i poręczujemy. Każdy z nas ma zastabilizować poreczowke na wszystkie możliwe sposoby i później ją po sobie zwinąć. Wszystko idzie ładnie. W pewnym momencie zauważam, że mój sekator przepadł, to co mogę nawijam na kołowrotek. To czego nie mogę odcina Pszczółek, dopływam do głównego ciągu. Odpycham się spokojnie od kamieni, podejmuję depozyt i wracam. Jestem przy konstrukcji klatki, a tu nagle jakiś dywersant zakłada mi na maskę cos dzięki czemu nic nie widzę...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis03_laska.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '03</b>.<br>
-		...Pod wodą poręczówka przechodziła przez metalową konstrukcję klatki tworząc łatwy zacisk, przez który uczestnicy przepływali z "czarną maską". Ponadto ćwiczono poruszanie się wzdłuż poręczówki, kartowanie, poręczowanie, zostawianie depozytów, wycinanie się i poszukiwanie zagubionej poręczówki...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis03.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '02</b>.<br>
-		...Podczas czterech dni część uczestników doskonaliła swoje umiejętości, część zaś przyswajała od podstaw zagadnienia teoretyczne i praktyczne pozwalające na bezpieczne nurkowanie w zalanych podziemiach. Przeprowadzone zostały zajęcia teoretyczne, które przybliżyły takie zagadnienia jak zagrożenia środowiska podczas nurkowań w zalanych podziemiach, dobór i konfiguracja sprzętu, zasady kartowania, czy podstawy obliczania zużycia mieszanek oddechowych...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis02.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
