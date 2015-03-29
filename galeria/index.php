@@ -56,12 +56,7 @@ if($bSubdir == true)
                    'Podobno jeden obraz zastępuje tysiące słów. Więc nie będę wiele pisał, tylko pokaże kilka zdjęć z polskiej "jaskini". Mam nadzieję, że zdjęcia rozpalą waszą wyobraźnię. W planie mam/mamy sesje zdjęciowe w innych zalanych obiektach. Ze względów bezpieczeństwa nie podaję ani nazwy ani lokalizacji -- i tak wszyscy zainteresowani wiedzą o czym mowa. Zdjęcia powstały na jednym nurkowaniu w listopadzie 2009. Więcej zdjęć na stronie http://www.nurkomania.pl/nurkowanie_jaskiniowe_obiekt_w.htm ',
                    './gallery.php?id=2009ObiektW','Więcej',
                    '04 Grudnia 2009','Andrzej "Martin" Kasiński');
-    
-  ExtendedListItem('Warsztaty Nurkowania Jaskiniowego 2009',
-                   'Scenki z życia warsztatowego 2009. Miłego oglądania:-)...',
-                   './gallery.php?id=wnj2009','WIĘCEJ',
-                   '22. Czerwiec 2009','Lucyna Cieślik');
-	
+    	
   ExtendedListItem('Nurkowanie Jaskiniowe - Trening transportu nurkowego w noszach',
                    'Ratownictwo - Trening transportu nurkowego w noszach, Zakrzówek, Kraków...',
                    './gallery.php?id=2006Rnj','WIĘCEJ',

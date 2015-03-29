@@ -183,14 +183,7 @@ if($result) {
 		<b>XIV Warsztaty Nurkowania Jaskiniowego 2011</b>.<br>
        W dniach 30 IV – 3 V odbyły się XIV Warsztaty Nurkowania Jaskiniowego<br>[<a class="navismall" href="../article.php?id=2011wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
 	</li>
-  <li class="normal">
-		<b>XIII Warsztaty Nurkowania Jaskiniowego 2010</b>.<br>
-       W dniach 17-20 VI odbyły się XIII Warsztaty Nurkowania Jaskiniowego<br>[<a class="navismall" href="../article.php?id=2010wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>XII Warsztaty Nurkowania Jaskiniowego 2009</b>.<br>
-       W dniach 30 IV-3 V w kamieniołomach Zimnik i Kostrza odbyły się kolejne Warsztaty mające na celu wymianę doświadczeń związanych z nurkowaniem jaskiniowym<br>[<a class="navismall" href="../article.php?id=wnj2009&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
+
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
