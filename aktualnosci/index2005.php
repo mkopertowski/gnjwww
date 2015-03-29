@@ -150,11 +150,6 @@ Samochin... [<a class="navismall" href="../artykuly/Woronia2005.php">więcej</a>
 		<br>&nbsp;
 		<br>&nbsp;
 	</li>
-	<li class="normal">
-		Na początku sierpnia Lucyna Cieślik, Jarosław Kur oraz Andrzej Szerszeń uczestniczyli w <b>Francuskich Warsztatach Nurkowań Jaskiniowych</b>. [<a class="navismall" href="../warsztaty/francuskie05_kur.php">więcej...</a>]
-		<br>&nbsp;
-		<br>&nbsp;
-	</li>
 </ul>
 
 <!-- MIESIĄC -->

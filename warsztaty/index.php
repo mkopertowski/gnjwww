@@ -191,24 +191,6 @@ if($result) {
 		<b>XII Warsztaty Nurkowania Jaskiniowego 2009</b>.<br>
        W dniach 30 IV-3 V w kamieniołomach Zimnik i Kostrza odbyły się kolejne Warsztaty mające na celu wymianę doświadczeń związanych z nurkowaniem jaskiniowym<br>[<a class="navismall" href="../article.php?id=wnj2009&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
 	</li>
-	<li class="normal">
-		<b>KURS '07 - relacja</b>.<br>
-                W 2007 roku w miejsce tradycyjnych Warsztatów został zorganizowany Kurs Nurkowania Jaskiniowego<br>[<a class="navismall" href="./kurs07.php"> więcej ...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '06 - sprawozdanie</b>.<br>
-              XI Warsztaty Nurkowań Jaskiniowych odbyły się według nowej, innej niż dotychczas formuły
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis06.php"> więcej ...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '05 - okiem Lycyny Cieślik</b>.<br>
-                To prawda… to już dziesiąty raz!
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis05_luca.php"> więcej ...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>WARSZTATY '05 - sprawozdanie</b>.<br> Dziesiąte Warsztaty Nurkowań Jaskiniowych odbyły się tradycyjnie w długi weekend, który w tym roku wypadł w dniach 26-29 maja. Jak zwykle spotkaliśmy się na Dolnym Śląsku ...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./opis05.php"> więcej ...</a>]<br>&nbsp;
-	</li>
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php
