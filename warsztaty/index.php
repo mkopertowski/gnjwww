@@ -155,35 +155,6 @@ if($result) {
 
 ?>
 
-<li class="normal">
-		<b>XV Warsztaty Nurkowania Jaskiniowego 2012 - edycja jesienna</b>.<br>
-       XV Warsztaty Nurkowania Jaskiniowego okiem Marcina Malinowskiego.<br>[<a class="navismall" href="../article.php?id=2012_4wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
-<li class="normal">
-		<b>XV Warsztaty Nurkowania Jaskiniowego 2012 - edycja jesienna</b>.<br>
-       Relacja z XV WNJ Norberta Szywały<br>[<a class="navismall" href="../article.php?id=2012_3wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
-<li class="normal">
-		<b>XV Warsztaty Nurkowania Jaskiniowego 2012 - edycja druga</b>.<br>
-       W maju 2012 odbyła się kolejna edycja XV Warsztatów Nurkowania Jaskiniowego<br>[<a class="navismall" href="../article.php?id=2012_2wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
-<li class="normal">
-		<b>XV Warsztaty Nurkowania Jaskiniowego 2012</b>.<br>
-       W kwietniu 2012 odbyły się XV Warsztaty Nurkowania Jaskiniowego<br>[<a class="navismall" href="../article.php?id=2012_1wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
-	<li class="normal">
-		<b>XIV Warsztaty Nurkowania Jaskiniowego 2011-edycja jesienna</b>.<br>
-       W dniach 11 XI – 13 XI odbyły się XIV Warsztaty Nurkowania Jaskiniowego - edycja jesienna<br>[<a class="navismall" href="../article.php?id=2011_2wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-  <li class="normal">
-		<b>XIV Warsztaty Nurkowania Jaskiniowego 2011</b>.<br>
-       W dniach 30 IV – 3 V odbyły się XIV Warsztaty Nurkowania Jaskiniowego<br>[<a class="navismall" href="../article.php?id=2011wnj&sec=warsztaty"> więcej ...</a>]<br>&nbsp;
-	</li>
-
 </ul>
 <!--============================= CONTENTS END   ==========================================-->
 <?php

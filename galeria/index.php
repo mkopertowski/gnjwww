@@ -36,11 +36,6 @@ if($bSubdir == true)
                    'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
                    './gallery.php?id=2012Zimnik','Więcej',
                    '15. Września 2012','Dominik Graczyk');
-
-  ExtendedListItem('Warsztaty Nurkowania Jaskiniowego',
-                   'Edycja druga 2012',
-                   './gallery.php?id=2012_2wnj','Więcej',
-                   '04. Maja 2012','Emil Sieńko');
     
   ExtendedListItem('Sztolnie Tarnogórskie',
                    'Nurkowanie w Tarnogórskich Sztolniach',
