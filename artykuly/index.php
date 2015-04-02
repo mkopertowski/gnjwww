@@ -50,32 +50,6 @@ StartList();
 ?>
 
 	<li class="normal">
-		<b>Ciekawostki z Francji</b><br> Goszcząc na stażu FFS w sierpniu 2005 zaobserwowałem wiele interesujących rzeczy. 
-                [<a class="navismall" href="../artykuly/CiekawostkiZFrancji.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-                <b>Międzyrzecki Rejon Umocniony</b><br> MRU stanowi bardzo ciekawy obiekt architektury militarnej. Na rozległy pas umocnień składały się potężne bunkry z podziemnymi magazynami i koszarami połączone korytarzami z osią systemu, podziemną Główna Drogą Ruchu. 
-                [<a class="navismall" href="../artykuly/mru.php">wiecej...</a>]
-        <br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Gałuboje Jeziero</b><br>
-We wrześniu 2004 moskiewscy nurkowie Roman Prochorow i Igor Galajda
-przeprowadzili nurkowanie w wywierzysku Gałuboje Jeziero.
-[<a class="navismall" href="./galubujeJeziero2004.php">więcej...</a>]<br>&nbsp;
-	</li>
-        <li class="normal">
-		<b>Grand Soucy</b><br>
-Najgłębsze jak do tej pory nurkowanie na oddycharce Mk15.5 w jaskini wykonał Jerome Meynie w listopadzie 2003 w Grand Soucy (Francja, Commune de Saint-Vincent sur l'Isle). Jerome zanurzył się na głebokość -184m, przepływając przy tym odcinek 240 m w poziomie.
-[<a class="navismall" href="./GrandSoucy2003.php">więcej...</a>]<br>&nbsp;
-
-	</li>
-	<li class="normal">
-		<b>Blautopf</b><br>
-27.09.2003 w wywierzysku Blautopf (Blaubeuren/Niemcy) zmarł podczas nurkowania 41 letni Dr. Bernd Aspacher należący do grupy nurków zabezpieczających nurkowanie J. Hasemayera.
-[<a class="navismall" href="./blautopf2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Rekord w Bushmansgat</b><br>
 
 		W dniu 11 września 2003 Leszek Czarnecki
