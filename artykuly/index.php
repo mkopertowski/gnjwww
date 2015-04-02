@@ -46,41 +46,9 @@ StartList();
 			ExtendedListItemMYSQL($mysqli,$row,'..');
 		}
 	}
-  
-  
-  ExtendedListItem('Kurs fotografii podwodnej',
-                   'W dniach 23–24 lutego 2008 roku, na krakowskim Zakrzówku, obył się kurs fotogragii podwodnej (PF1)...',
-                   '../article.php?id=2008KursFoto&sec=artykuly','WIĘCEJ',
-                   '13. Marca 2008','Maciek "Lama" Olinkiewicz');
-
-  ExtendedListItem('III Międzynarodowy Kongres Nurkowania Jaskiniowego',
-                   'W dniach 18-19 maja, we Francji, odbył się III Międzynarodowy Kongres Nurkowania Jaskiniowego. To jedno z ważniejszych wydarzeń w roku w dziedzinie nurkowania jaskiniowego...',
-                   '../artykuly/publication.php?id=IIIKongres','WIĘCEJ',
-                   '27. Maj 2007','Mirek Kopertowski');
-
-  ExtendedListItem('Zimowa działalność PNJ - podsumowanie',
-                   'Podczas zimy 2006/2007 spelonurkowie działający przy Podkomisji Nurkowania 
-                    Jaskiniowego zorganizowali 5 biwaków jaskiniowych spędzając na nich łącznie 
-                    15 dni!...',
-                   '../polska/publication.php?id=2007PNJZima','WIĘCEJ',
-                   '7. Kwiecień 2007','Mirek Kopertowski');
-                   
+                     
 ?>
 
-	<li class="normal">
-		<b>Tatry 4-5.02.2006</b><br> 
-      Podczas weekendu odbył się krótki ale za to bardzo intensywny wyjazd 
-      kondycyjno-towarzyski GNJ...           
-      [<a class="navismall" href="../artykuly/TatryLuty2006.php">więcej...</a>]
-      <br><br><div align="right"><i>zamieszczono: 12. Luty 2006</i></div>
-              <div align="right"><i>autor: Lucyna Cieślik</i></div>      
-      
-	</li>
-	<li class="normal">
-		<b>Akcja ratownicza w jaskini ,,Bystrej” w Tatrach. </b><br> 
-                Tekst pochodzi z prywatnych zbiorów Jarka Kura. 
-                [<a class="navismall" href="../artykuly/AkcjaWBystrej.php">więcej...</a>]<br>&nbsp;
-	</li>
 	<li class="normal">
 		<b>Ciekawostki z Francji</b><br> Goszcząc na stażu FFS w sierpniu 2005 zaobserwowałem wiele interesujących rzeczy. 
                 [<a class="navismall" href="../artykuly/CiekawostkiZFrancji.php">więcej...</a>]<br>&nbsp;
