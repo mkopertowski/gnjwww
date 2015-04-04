@@ -49,7 +49,6 @@ odprawa poszła bardzo sprawnie i bez zadnego dawania w łape bylismy w kraju (j
 W wyjeździe uczestniczyli: Andrzej "Pszczółek" Szerszeń, Lama, Dominik "Honzo" Graczyk, Rafał "Rafi" Koryś, Piotr Fita (ekpia warszawska) oraz Asia "Dżoanka" Szymanowska, Michał Stajszczyk, Paweł "Loti" Mordkowicz (ekipa wrocławska).
 <br><br><h3 align=right>Paweł "Loti" Mordkowicz</h3>
 
-<a class="navi" href="../swiat/panya.php">Jaskinia Panya - plan i przekrój</a><br>
 <a class="navi" href="http://www.lama.waw.pl/gallery3//main.php?g2_itemId=12260">Galeria zdjęć z wyjazdu (Lamy)</a>
 
 <!--============================= CONTENTS END   ==========================================-->

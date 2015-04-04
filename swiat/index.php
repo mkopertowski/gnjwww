@@ -287,10 +287,6 @@ EndList();
 	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.110" target="_new">więcej...</a>]<br>&nbsp;
 </li>
 <li class="normal">
-	<b>Austria, Hagengebirge</b>. Piotrek Kępkiewicz (SW) i Michał Gignal (SGW) brali udział w wyprawie Marka Wierzbowskiego w Hagengebigge. Nurkowali w krótkich i bardzo mocno zamulonych syfonach <b>Jaskini Kasztanowej</b>.
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/hagengebirge2004.php">więcej...</a>]<br>&nbsp;
-</li>
-<li class="normal">
 	<b>Rumunia</b>. Szybki wyjazd pod kierownictwem Włodka Szymanowskiego zaowocował kolejnymi metrami wyeksplorowanego drugiego syfonu w wywierzysku <b>Tauz</b>. Syfon zaczyna się przeginać. Obecnie przodek znajduje się już za przegieciem syfonu na głębokości 69 metrów, 300 m od otworu.
 	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.87" target="_new">więcej...</a>]<br>&nbsp;
 </li>
@@ -313,10 +309,6 @@ EndList();
 <li class="normal">
 	<b>Węgry - Słowacja</b> W dniach 26 - 27 stycznia 2004 odbyły się kolejne nurkowania jaskiniowe, w których wzięła udział Stajnia Kleina (Robert Klein, Jacek Trembowelski). Tym razem nurkowaliśmy w towarzystwie ...
 	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/wegry_stajnia.php"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Austria</b> W dniu 01 stycznia 2004 Krzysztof Recielski nurkował w jaskini Lamprechtsofen ...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/lampo_recielski.php"> więcej ...</a>]<br>&nbsp;
 </li>
 <li class="normal">
 	<b>Włochy</b> Wyjazd do właskich wywierzysk rozpoczął się 26.12.2004 od wypożyczenia przyczepy we Wrocławiu. Wzięli w nim udział Włodzimierz Szymanowski (Spryciula), Andrzej Szerszeń (Pszczółek), Bela Marut, Marcin Bielecki i Joanna Biegacz...
@@ -360,16 +352,9 @@ EndList();
 	&nbsp;&nbsp;&nbsp;[<a class="navismall"  href="http://www.deepnhigh.nu.pl/article.php?82.255" target="_new"> Artykuł Włodka Szymanowskiego ...</a>]<br>&nbsp;
 </li>
 	<li class="normal">
-		<b>Chorwacja, Słowenia, czerwiec 2003 - Sinjac</b><br>
-		W dniach 26 - 29 czerwca 2003 Włodek Szymanowski (Spryciula) zorganizował kolejny wyjazd do wywierzysk Chorwacji i Słowenii. W wyjeździe wzięli udział: Michał Gignal, Piotr Kępkiewicz, Mirosław Kopertowski, Arnold Paliński oraz wspomniany Spryciula jako kierownik. Przeprowadzono nurkowania w następujących wywierzyskach: Izvor Sinjac, Jama Suchodolca, Divje Jeziero.      [<a class="navismall"  href="../swiat/sinjac_kempek_06_2003.php">  Relacja Piotra Kępkiewicza ...</a>]&nbsp; &nbsp; 
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://www.deepnhigh.nu.pl/article.php?81.255" target="_new">więcej...</a>]<br>&nbsp;
-	</ul>
-<ul class="normal">
-	<li class="normal">
 		<b>Słowenia, maj 2003 - Divje Jezero - nocne nurkowanie w Słowenii</b><br>
 		Wykorzystując kilka wolnych dni na przełomie kwietnia i maja potocznie znanych "długim weekendem" postanowiliśmy z Pszczółkiem (Andrzejem Szerszeniem) zanurkować w wywierzyskach Słowenii i Chorwacji. Wyposażeni w sprzęt biwakowy, małą sprężarkę, zestaw dwubutlowy i rebreather...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./balkany_05_2003.php">więcej...</a>]<br>&nbsp;
-	</ul>
 	<li class="normal">
 		<b>Słowenia, kwiecień 2003 - Divje Jezero - nocne nurkowanie w Słowenii</b><br>
 		...Wywierzysko jest imponujące, ma wymiary 60m na 40m i znaczną głębokość co najmniej 160m co stawia je w rzędzie najgłębszych na świecie. Odwadnia obszar ponad 125km kwadratowych, a wydajność dochodzi do 100m3 na sekundę. Jest położone ok. 2km na południe od miasta Idrija...
@@ -481,21 +466,7 @@ EndList();
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./francja97_3.php">więcej...</a>]<br>&nbsp;
 	</li>
 </ul>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 1995</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-	<li class="normal">
-		<b>Do Francji po naukę</b><br>
-		W ramach wymiany polsko-francuskiej trzy osoby z naszego kraju uczestniczyły w stażu nurkowania jaskiniowego w Espinieres - Orniac (Dordogne, Francja). W tym roku byli to Wiktor Bolek, Michał Stajszczyk (obaj SG KW Wrocław) oraz Krzysztof Starnawski (Speleoklub Warszawski)...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./francja95.php">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
+
 <!--============================= CONTENTS END   ==========================================-->
 <?php
 	renderBottom($bSubdir);
