@@ -441,31 +441,6 @@ EndList();
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia2000zima.php">więcej...</a>]<br>&nbsp;
 	</li>
 </ul>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 1997</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-	<li class="normal">
-		<b>Podwodne jaskinie w Cassis (1)</b><br>
-		Nurkowanie jaskiniowe to dziwna dziedzina sportu. Wymaga opanowanych do perfekcji zarówno umiejętności pokonywania jaskiń jak i technik nurkowania. Uprawianie tej dyscypliny w Polsce kojarzy się z wyczerpującym transportem ciężkiego i drogocennego sprzętu przez wypełnione błotem i ciasne korytarze...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./francja97_1.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Podwodne jaskinie Cassis (2) <i>Port Miou</i></b><br>
-		Już na samym początku stanęliśmy przed problemem zorganizowania najprostszego nawet nurkowania. Bus, którym przyjechaliśmy, musiał wrócić do kraju na kilka dni. Ponieważ nasz kemping znajdował się w górnej części Cassis, musielibyśmy wykonywać ciężkie transporty...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./francja97_2.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Podwodne jaskinie Cassis (3) <i>Le Bestouan</i></b><br>
-		Nurkowania w Port Miou wykonywaliśmy jeszcze na powietrzu przywiezionym z kraju. Teraz musieliśmy uruchomić sprężarkę. Ze względu na hałas nie mogliśmy tego zrobić na kempingu. Najpierw przetoczyliśmy sprężarkę na placyk...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./francja97_3.php">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
 
 <!--============================= CONTENTS END   ==========================================-->
 <?php
