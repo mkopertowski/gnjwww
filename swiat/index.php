@@ -391,56 +391,7 @@ EndList();
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./vruljaWB2002.php">więcej...</a>]<br>&nbsp;
 	</li>
 </ul>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2001</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-	<li class="normal">
-		<b>Eksploracja w wywierzysku Tauz - pierwsze polskie nurkowanie rebreatherowe w jaskini</b><br>
-		W zabitych dechami górach Transylwanii (Rumunia) są ukryte potężne wywierzyska, których głębia od wielu lat przyciąga płetwonurków. Pod koniec lat 80-tych czescy nurkowie wyeksplorowali wywierzysko Coteţul Doreştilor do -40m...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia2001lato.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Bihor - zima 2001</b><br>
-		W lutym 2001 udało się w końcu zorganizować kolejną wyprawę do Rumunii w Góry Bihor. Wzięli w niej udział nurkowie Wiktor Bolek, Maciej Czykierda, Rafał Garski (Sopocki KTJ), Rafał Górecki, Norbert Ziober oraz grotołazi poruszający się po jaskiniach wypełnionych powietrzem...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia2001zima.php">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2000</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-	<li class="normal">
-		<b>Eksploracja w Mokrej Dziurze - listopad 2000</b><br>
-		W dniach 11-12 listopada 2000 odbyły się akcje nurkowe w jaskini Mokra Dziura w Tatrach Wysokich na Słowacji. Podczas poprzedniej akcji przepłynąłem w syfonie ok. 210m i stwierdziłem możliwość dalszej eksploracji. Wymagało to jednak rozwiązania kilku problemów...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./slowacja2000jesien.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Nurkowanie w Mokrej Dziurze wrzesień 2000</b><br>
-		W dniach 23-24 września 2000 została zorganizowana akcja nurkowa w jaskini Mokra Dziura w Dolinie Jaworzyńskiej w Tatrach Wysokich. Wzięło w niej udział dwu nurków: Wiktor Bolek i Norbert Ziober (SG Wrocław)...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./slowacja2000lato.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Mokra Dziura</b><br>
-		W marcu 2000 zorganizowaliśmy nurkowanie w Mokrej Dziurze na zaproszenie słowackich grotołazów pod kierownictwem Jano Tencera. Ta jaskinia jest położona w Dolinie Jaworzyńskiej w Tatrach Bielskich...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./slowacja2000zima.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Bihor - luty 2000</b><br>
-		W lutym 2000 odbyła się wyprawa w masyw Bihor w Rumunii. Wzięło w niej udział czterech nurków z SG Wrocław: Wiktor Bolek, Rafał Górecki, Michał Stajszczyk i Norbert Ziober oraz trzech grotołazów z KKTJ: Stanisław Kotarba, Jerzy Kierod i Wojciech Sieprawski...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia2000zima.php">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
+
 
 <!--============================= CONTENTS END   ==========================================-->
 <?php
