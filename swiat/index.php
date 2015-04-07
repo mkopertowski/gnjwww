@@ -355,42 +355,9 @@ EndList();
 		<b>Słowenia, maj 2003 - Divje Jezero - nocne nurkowanie w Słowenii</b><br>
 		Wykorzystując kilka wolnych dni na przełomie kwietnia i maja potocznie znanych "długim weekendem" postanowiliśmy z Pszczółkiem (Andrzejem Szerszeniem) zanurkować w wywierzyskach Słowenii i Chorwacji. Wyposażeni w sprzęt biwakowy, małą sprężarkę, zestaw dwubutlowy i rebreather...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./balkany_05_2003.php">więcej...</a>]<br>&nbsp;
-	<li class="normal">
-		<b>Słowenia, kwiecień 2003 - Divje Jezero - nocne nurkowanie w Słowenii</b><br>
-		...Wywierzysko jest imponujące, ma wymiary 60m na 40m i znaczną głębokość co najmniej 160m co stawia je w rzędzie najgłębszych na świecie. Odwadnia obszar ponad 125km kwadratowych, a wydajność dochodzi do 100m3 na sekundę. Jest położone ok. 2km na południe od miasta Idrija...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./slowenia_04_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
+
 </ul>
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2002</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-	<li class="normal">
-		<b>Rumunia, październik 2002 - wyprawa ratunkowa</b><br>
-		W piątek, w dniu 04.10.2002, <b>Rafał Garski</b> nie wynurzył się po nurkowaniu w wywierzysku Tauz. Spowodowało to konieczność przeprowadzenia akcji poszukiwawczej a następnie ratunkowej, mającej na celu wydobycie zwłok...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia10_2002rescue.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Rumunia, październik 2002</b><br>
-		We wrześniu 2002 odbyła się kolejna wyprawa nurkowa w rumuńskie góry Bihor. Głównym celem była eksploracja wywierzyska Izbucul de la Tauz. Przedsięwzięcie to podobnie jak poprzednie organizowane było przez Wiktora Bolka...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./rumunia10_2002.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Nurkowanie we Vrulji</b><br>
-		Na majowe nurkowania w chorwackich jaskiniach zostałem zaproszony przez znanego "jaskiniowca" Wiktora Bolka, który w rozmowie telefonicznej powiedział mi, że jego znajomi Mirek Jarek oraz Michał Stajszczyk nurkowali w wywierzysku Vrulja...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./vruljaGD2002.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Vrulja - powtórka z mechaniki płynów</b><br>
-		Korzystając z długiego weekendu majowego 2002 postanowiliśmy pojechać do Chorwacji. Z opowieści kolegów (Mirek Jarek, Michał Stajszczyk) wynikało, że na dnie zatoki Vrulja ma znajdować się głęboka jaskinia. Zanurkowali w tym miejscu na -100m w październiku 2001...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./vruljaWB2002.php">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
+
 
 
 <!--============================= CONTENTS END   ==========================================-->
