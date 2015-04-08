@@ -330,32 +330,6 @@ EndList();
 	<b>Słowenia</b> Wyjazd odbył się w składzie: Andrzej Czubalski, Iza i Darek Lermer oraz Arek Nowak. Nasze plany to dwa wywierzyska oraz rozpoznanie terenu ...
 	&nbsp;&nbsp;&nbsp;<br>[<a class="navismall" href="./slowenia_lermer.php"> więcej ...</a>]<br>&nbsp;
 </li>
-<li class="normal">
-	<b>Jukatan</b> W październiku 2003 Krzysiek Recielski i Sławek Makaruk nurkowali w kilku jukatańskich Cenotes. 
-	&nbsp;&nbsp;&nbsp;<br>[<a class="navismall" href="../swiat/jukatan2003.php"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Słowacja </b> Sławek Paćko i Robert Klein nurkowali w kopalni opali na Słowacji. 
-	&nbsp;&nbsp;&nbsp;<br>[<a class="navismall" href="../swiat/slowacja_sztolnia.php">Informacje o kopalni oraz zdjęcia...</a>]<br>&nbsp; 
-</li>
-<li class="normal">
-	<b>Rumunia, sierpień 2003 </b> Bihor 2003 W terminie 01-16.08.2003 odbyła się wyprawa eksploracyjna do syfonów w górach Bihor (Rumunia). Wzięli w niej udział nurkowie: Wiktor Bolek - kierownik, Lucyna Cieślik, Michał Gignal, Mirosław Kopertowski, Jarosław Niekludow (Garbek), Arnold Paliński, Andrzej Szerszeń oraz nienurkowie: Krzysztof Jabłoński, Katarzyna Jabłońska, Magdalena Bugajska, Ewelina Fila. W <b> Jaskini Galbenei </b> odkryto 3 syfony przy łącznej długości nowych korytarzy ponad 300m. W wywierzysku <b>Tauz</b> prowadzono eksplorację na głębokości -85m w II Syfonie. Przepłynięto kilkadziesiąt metrów osiągając prawdopodobnie przegięcie syfonu.
-	&nbsp;&nbsp;[<a class="navismall" href="../swiat/Tauz2003WB.php">Tauz część 1 </a>]
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/Tauz2003MG.php">Tauz część 2 </a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Chorwacja, lipiec 2003 B</b> W dniach 25-27 lipca Włodzimierz Szymanowski wraz z Michałem Stajszczykiem zorganizowali kolejny wyjazd do wywierzysk Chorwacji. W <b>Izvir Cetina</b> Włodek osiągnął głebokość <b>-102m</b> nurkując na rebreatherze a Michał -86m. Kolejnego dnia zanurkowali w <b>Izvir Vukovic</b>. To wywierzysko ma 300m długości i 30m głębokości. Poźniej sprawdzili jeszcze drogę dojścia do wywierzyska <b>Rumin</b>.
-	&nbsp;&nbsp;&nbsp;[<a class="navismall"  href="http://www.deepnhigh.nu.pl/article.php?83.255"> więcej ...</a>]<br>&nbsp; 
-</li>
-<li class="normal">
-	<b>Chorwacja, lipiec 2003 A, </b> W dniach 11-13 lipca Włodzimierz Szymanowski, Michał Gignal oraz Jacek Dziura w wywierzyskach Chorwacji i Słowenii. W Chorwacji w Izvir Cetina osiągnięto głebokość -86m przy okazji znajdując nowe wywierzysko - Izvir Vukovic. W Słowenii zanurkowano w Divjim Jezerze do głębokości 63m. 
-	&nbsp;&nbsp;&nbsp;[<a class="navismall"  href="http://www.deepnhigh.nu.pl/article.php?82.255" target="_new"> Artykuł Włodka Szymanowskiego ...</a>]<br>&nbsp;
-</li>
-	<li class="normal">
-		<b>Słowenia, maj 2003 - Divje Jezero - nocne nurkowanie w Słowenii</b><br>
-		Wykorzystując kilka wolnych dni na przełomie kwietnia i maja potocznie znanych "długim weekendem" postanowiliśmy z Pszczółkiem (Andrzejem Szerszeniem) zanurkować w wywierzyskach Słowenii i Chorwacji. Wyposażeni w sprzęt biwakowy, małą sprężarkę, zestaw dwubutlowy i rebreather...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./balkany_05_2003.php">więcej...</a>]<br>&nbsp;
-
 </ul>
 
 
