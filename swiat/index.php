@@ -227,6 +227,10 @@ StartList();
                    'Kilka miesięcy temu znalazłem w necie film z nurkowania w zalanej kopalni w Miltitz, no i oczywiście zaczęliśmy się z Michałem zastanawiać co zrobić aby tam zanurkować...',
                    '../swiat/publication.php?id=2006miltitz','RELACJA Z WYJAZDU',
                    '4. Styczeń 2006','Michał Winek');
+  ExtendedListItem('Krym po raz 2-gi czyli wyprawa 2006',
+                   'Gdy ubiegłoroczna wyprawa na Krym dobiegła końca, wiadome było, że powrót tam jest tylko kwestią czasu...',
+                   '../swiat/publication.php?id=2006krym','RELACJA Z WYJAZDU',
+                   '23. Wrzesień','Paweł "Loti" Mordkowicz');
   ExtendedListItem('X divers team we Włoszech',
                    'W czasie tzw. długiego czerwcowego weekendu znów byliśmy w
                     słonecznej Italii. Cały czas planowaliśmy wyjazd do Rumunii ale warunki
