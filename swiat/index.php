@@ -227,10 +227,6 @@ StartList();
                    'Kilka miesięcy temu znalazłem w necie film z nurkowania w zalanej kopalni w Miltitz, no i oczywiście zaczęliśmy się z Michałem zastanawiać co zrobić aby tam zanurkować...',
                    '../swiat/publication.php?id=2006miltitz','RELACJA Z WYJAZDU',
                    '4. Styczeń 2006','Michał Winek');
-  ExtendedListItem('Krym po raz 2-gi czyli wyprawa 2006',
-                   'Gdy ubiegłoroczna wyprawa na Krym dobiegła końca, wiadome było, że powrót tam jest tylko kwestią czasu...',
-                   '../swiat/publication.php?id=2006krym','RELACJA Z WYJAZDU',
-                   '23. Wrzesień','Paweł "Loti" Mordkowicz');
   ExtendedListItem('X divers team we Włoszech',
                    'W czasie tzw. długiego czerwcowego weekendu znów byliśmy w
                     słonecznej Italii. Cały czas planowaliśmy wyjazd do Rumunii ale warunki
@@ -244,95 +240,6 @@ StartList();
 EndList();
 
 ?>
-
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2005</B> 
-		</td>
-	</tr>
-</table>
-<ul class="normal">
-	<li class="normal">
-		<b>Włochy</b> Jacek Pożeg, Maciek Czykierda, Paweł Poręba, Przemek Stasiak i Rafał Górecki w dniach 3 - 6 lutego nurkowali w <b>Elephante Bianco</b> i w <b>Grotta dei Fontanazzi</b>. W tej drugiej jaskini Polacy nurkowali po raz pierwszy...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./wlochy.02.2005.przemek.stasiak.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Włochy - Elephante Bianco</b> ...Osiemnastego stycznia wyruszyliśmy do Włoch w trzyosobowym składzie, ponieważ dołączył do nas jeszcze Marek Giergiczny(SW). Podróż przebiegła bez problemu, trafiliśmy na miejsce w stylu "on sight". Na miejscu poznaliśmy w knajpie przesympatyczną kelnerkę z Polski i ruszyliśmy obejrzeć wywierzysko, które się okazało leżec w srodku miasteczka Valstagna.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./elephante_bianco.01.2005.adam.leslie.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Rumunia - Tauz</b>. W dniach 12 - 16 stycznia sześcioosobowa grupa nurków kierowana przez Włodka Szymanowskiego nurkowała w <b>Izbucul de la Tauz</b>. Włodek na oddycharce przesunął przodek na odległość 424 metrów od otworu, nie zdołał jednak przenurkować drugiego syfonu - wynurzył się po drugiej stronie na głębokość 30 metrów. Eksploracja będzie jeszcze kontynuowana.
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.117" target="_new">więcej...</a>]<br>&nbsp;
-	</li>
-</ul>
-
-
-
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2004</B> 
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-<li class="normal">
-	<b>Włochy</b>. W dniach 16 - 19 grudnia w sześcioosobowym zesople odbył się wyjazd do <b>Elefante Bianco</b>. Wykonano dużo głębokich nurkowań...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.111" target="_new">więcej...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Szwajcaria</b>. Włodek Szymanowski zlokalizował kilka wywierzysk w Szwajcarii. W <b>Source de la Chaudanne</b> (najgłębsze szwajcarskie wywierzysko) udało mu się zanurkować. Wywierzyska są albo kilkadziesiąt metrów nad ziemią i dotarcie do nich jest skomplikowane logistycznie, albo nurkowanie jest zakazane. Tylko niewiele pozwala na bezproblemową akcję nurkową...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.110" target="_new">więcej...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Rumunia</b>. Szybki wyjazd pod kierownictwem Włodka Szymanowskiego zaowocował kolejnymi metrami wyeksplorowanego drugiego syfonu w wywierzysku <b>Tauz</b>. Syfon zaczyna się przeginać. Obecnie przodek znajduje się już za przegieciem syfonu na głębokości 69 metrów, 300 m od otworu.
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.87" target="_new">więcej...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Rumunia / Dalmacja</b>. ...Miała to być tradycyjna wyprawa do Rumunii. Jednak po przyjeździe na miejsce okazało się że pada już od dwóch tygodni i brązowy kolor wody w rzekach uświadomił nam że nici z nurkowania w Rumunii przynajmniej przez kilka najbliższych tygodni... Wyprawa przeniosła się do Bośni i Chorwacji, gdzie uczestnicy zwiedzili i nurkowani w kilku nowych wywierzyskach, wcześniej nie odwiedzanych przez polskich nurków jaskiniowych.
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/php/content.php?content.86" target="_new">więcej...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Rafał Górecki</b>, <b>Paweł Mordkowicz</b>, <b>Michał Stajszczyk</b> i <b>Włodek Szymanowski</b> wyjechali w piątek 9 lipca do Włoch. Nurkowali w <b>Elefante Bianco</b> i w <b>Sorgente della Pollaccia</b>. Niestety nie udało się im zanurkować w <b>Sorgente Tuffera</b> (brak danych o dokładnej lokalizacji), ale Michał i Paweł zanurkowali w drodze powrotnej w <b>Silser See</b> w Austrii. 
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/html/elefante/elefante.html" target="_new"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	W wywierzyskach Chorwacji i Czarnogóry przebywał w długi weekend majowy <b>Paweł Woźniak</b>. Nurkował w chorwackich wywierzyskach: <b>Majerovo Vrelo</b> i <b>Cetina</b>. W Czarnogórze nurkował w wywierzysku <b>Orahovacka Ljuta</b>.
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/html/orehovacka/oreh.html" target="_new"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	Kolejna eskapada Andrzeja Szerszenia i Włodka Szymanowskiego do włoskich wywierzysk. Od 10.04 do 17.04 br odwiedzili ze sprzętem nurkowym <b>Elefante Bianco</b>, <b>Pozo del Merro</b> i <b>Sorgente della Pollaccia</b>. Wracając przez Słowenię zahaczyli o kilka innych wywierzysk, lecz ze względu na niepsrzyjające warunki (duże ilości wody lub strażnicy :) ) zrezygnowali z nurkowań...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="http://dnh.e-wro.net/html/merro/merro.html" target="_new"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Węgry - Słowacja</b> W dniach 26 - 27 stycznia 2004 odbyły się kolejne nurkowania jaskiniowe, w których wzięła udział Stajnia Kleina (Robert Klein, Jacek Trembowelski). Tym razem nurkowaliśmy w towarzystwie ...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/wegry_stajnia.php"> więcej ...</a>]<br>&nbsp;
-</li>
-<li class="normal">
-	<b>Włochy</b> Wyjazd do właskich wywierzysk rozpoczął się 26.12.2004 od wypożyczenia przyczepy we Wrocławiu. Wzięli w nim udział Włodzimierz Szymanowski (Spryciula), Andrzej Szerszeń (Pszczółek), Bela Marut, Marcin Bielecki i Joanna Biegacz...
-	&nbsp;&nbsp;&nbsp;[<a class="navismall" href="../swiat/wlochy_spryciula.php"> więcej ...</a>]<br>&nbsp;
-</li>
-</ul>
-
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>ROK 2003</B> 
-		</td>
-	</tr>
-</table>
-<br>
-
-<ul class="normal">
-<li class="normal">
-	<b>Słowenia</b> Wyjazd odbył się w składzie: Andrzej Czubalski, Iza i Darek Lermer oraz Arek Nowak. Nasze plany to dwa wywierzyska oraz rozpoznanie terenu ...
-	&nbsp;&nbsp;&nbsp;<br>[<a class="navismall" href="./slowenia_lermer.php"> więcej ...</a>]<br>&nbsp;
-</li>
-</ul>
-
-
 
 <!--============================= CONTENTS END   ==========================================-->
 <?php
