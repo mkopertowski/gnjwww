@@ -207,40 +207,6 @@ Chcąc połączyć fascynację Bałkanami oraz chorobę zwaną nurkowaniem jaski
 		  '../swiat/publication.php?id=2007Slowenia','RELACJA Z WYJAZDU',
 		  '18. Czerwiec 2007','Jarosław Kur');
 
-  ExtendedListItem('Kurs IANTD Cave Diver - Francja 2007',
-                   'Na przełomie maja i czerwca 2007 Robert Klein zorganizował kurs nurkowania jaskiniowego IANTD Cave Diver...',
-		   '../swiat/publication.php?id=2007KursIantd','RELACJA Z WYJAZDU',
-		   '14. Czerwiec 2007','Maciek Czykierda');
-
-  ExtendedListItem('Wyprawa do Francji (Departament Lot)',
-                   'Rozbudzone we włoskich wywierzyskach apetyty na nury w prawdziwych jaskiniach zaprowadziły nas podczas tegorocznej majówki do Francji...',
-                   '../swiat/publication.php?id=07FrancjaMajX','RELACJA Z WYJAZDU',
-                   '25. Maj 2007','Michał \'Majki\' Winek, Ryszard Deneka');
-                   
-EndList();
-
-//-----------------------------------------------------
-NewSection('ROK 2006','section');
-
-StartList();
-  ExtendedListItem('X divers team w Miltitz',
-                   'Kilka miesięcy temu znalazłem w necie film z nurkowania w zalanej kopalni w Miltitz, no i oczywiście zaczęliśmy się z Michałem zastanawiać co zrobić aby tam zanurkować...',
-                   '../swiat/publication.php?id=2006miltitz','RELACJA Z WYJAZDU',
-                   '4. Styczeń 2006','Michał Winek');
-  ExtendedListItem('Krym po raz 2-gi czyli wyprawa 2006',
-                   'Gdy ubiegłoroczna wyprawa na Krym dobiegła końca, wiadome było, że powrót tam jest tylko kwestią czasu...',
-                   '../swiat/publication.php?id=2006krym','RELACJA Z WYJAZDU',
-                   '23. Wrzesień','Paweł "Loti" Mordkowicz');
-  ExtendedListItem('X divers team we Włoszech',
-                   'W czasie tzw. długiego czerwcowego weekendu znów byliśmy w
-                    słonecznej Italii. Cały czas planowaliśmy wyjazd do Rumunii ale warunki
-                    pogodowe (deszcze) uniemożliwiały nurkowanie w jaskiniach. Tuż przed
-                    wyjazdem padł pomysł aby pojechać na Bałkany ale tam prognozy również nie
-                    były najlepsze. No i wylądowaliśmy przy otworach Elefante, Fontanazzi i
-                    Oliero',
-                   '../swiat/wlochy_czerwiec06.php','RELACJA Z WYJAZDU',
-                   '03. Lipiec','Michał Winek');
-
 EndList();
 
 ?>

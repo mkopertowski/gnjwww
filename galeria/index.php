@@ -178,19 +178,9 @@ StartList();
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=2007Wlochy">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>X divers team - wyprawa do Francji, maj 2007</b><br>
-		Zdjęcia z nurkowań we francuskich wywierzyskach...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=07FrancjaX">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Wyprawa do Abhazji - Istocznik Mcziszta, styczeń/luty 2007</b><br>
 		Zdjęcia z wyprawy eksploracyjnej do wywierzyska Mcziszta w Abhazji (masyw Bzybski)...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=Mcziszta07">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Kopalnia Miltitz, grudzień 2006</b><br>
-		X divers team w Miltitz...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=2006miltitz">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
 		<b>Wyprawa na Krym, wrzesień 2006</b><br>
