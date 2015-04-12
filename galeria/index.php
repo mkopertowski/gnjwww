@@ -173,11 +173,6 @@ StartList();
 
 ?>
 	<li class="normal">
-		<b>X divers team - Włochy, sierpień 2007</b><br>
-		Zdjęcia z nurkowań we włoskich wywierzyskach...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=2007Wlochy">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Wyprawa do Abhazji - Istocznik Mcziszta, styczeń/luty 2007</b><br>
 		Zdjęcia z wyprawy eksploracyjnej do wywierzyska Mcziszta w Abhazji (masyw Bzybski)...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=Mcziszta07">więcej...</a>]<br>&nbsp;

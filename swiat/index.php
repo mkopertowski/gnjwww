@@ -163,52 +163,6 @@ StartList();
 
 EndList();
 
-//------------------------------------------------------------------------------------------------------
-
-NewSection('ROK 2008','section');
-
-StartList();
-  ExtendedListItem('Birnbachloch',
-                   'Za namową Andrzeja Ciszewskiego postanowiłem zanurkować w wywierzysku Birnbachloch, położonym na południowym stoku Leoganger Steinberge w Austrii...',
-		   '../article.php?id=2008Birnbachloch&sec=swiat','WIĘCEJ',
-		   '21. Styczeń 2008','Andrzej Szerszeń');
-
-  ExtendedListItem('Wyprawa GNJ do Czarnogóry',
-                   'Wyprawa Grupy Nurków Jaskiniowych do Czarnogóry działająca w dniach 25.12.2007 - 07.01.2008 przyniosła rezultaty w postaci wyeksplorowania wywierzysk...',
-		   '../article.php?id=2008Czarnogora&sec=swiat','WIĘCEJ',
-		   '17. Styczeń 2008','Andrzej Szerszeń');
-
-  ExtendedListItem('X Divers Team: Elefante Bianco i Grotta dei Fontanazzi',
-                   'Dwa lata działalności zespołu X divers team w Regionie Veneto w północnej Italii zaowocowały nurkowaniami finałowymi, które odbyły się w dniach 27-28 stycznia 2007 roku',
-		   '../swiat/publication.php?id=2008Wlochy','WIĘCEJ',
-		   '17. Styczeń 2008','Michał Winek');
-
-EndList();
-
-//----------------------------------------------------------------------------------------------------------------
-
-NewSection('ROK 2007','section');
-
-StartList();
-
-  ExtendedListItem('Wyjazd na Bałkany',
-                   'Podążając za...
-Chcąc połączyć fascynację Bałkanami oraz chorobę zwaną nurkowaniem jaskiniowym udajemy się tym razem do Bośni i Czarnogóry...',
-		   '../swiat/publication.php?id=2007Balkany','RELACJA',
-		   '14. Listopad 2007','Jarek Kur');
-
- ExtendedListItem('Wywierzyska Włoch',
-                  'W połowie sierpnia 2007 odbyła się kolejna wyprawa zespołu X divers team – tym razem we włoskie dolomity...',
-		  '../article.php?id=2007Wlochy&sec=swiat','RELACJA Z WYJAZDU',
-		  '9. Październik 2007','Michał Winek');
-
- ExtendedListItem('Wywierzyska Slovenji',
-                  'Zafascynowani klimatami Bałkańskimi (po wyjazdach na nurkowania jaskiniowe do Serbii), tym razem swoje trzecie okno zwróciliśmy na Słowenię...',
-		  '../swiat/publication.php?id=2007Slowenia','RELACJA Z WYJAZDU',
-		  '18. Czerwiec 2007','Jarosław Kur');
-
-EndList();
-
 ?>
 
 <!--============================= CONTENTS END   ==========================================-->
