@@ -135,12 +135,7 @@ StartList();
                    'Wyprawa GNJ do Kosowa',
                    './gallery.php?id=2010kosowo','Więcej',
                    '14 Lutego 2011','Dominik Honzo Graczyk');
-    
-  ExtendedListItem('Albania',
-                   'Wyprawa GNJ do Albanii',
-                   './gallery.php?id=2010albania','Więcej',
-                   '25 Czerwca 2010','Dominik Honzo Graczyk');
-                       
+                           
   ExtendedListItem('Green Holes',
                    'Doolin to mała nadmorska wioska położona w północno-zachodniej części hrabstwa Clare, na krańcach Burren -  jednego z największych i najbardziej unikalnych krajobrazów wapiennych w Europie. Widok z nabrzeża zapiera oddech w piersi...',
                    './gallery.php?id=2009GreenHoles','WIĘCEJ',

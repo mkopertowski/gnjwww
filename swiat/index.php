@@ -119,50 +119,6 @@ ExtendedListItem('Wyprawa do Puerto Rico',
   
   EndList();
 
-//-----------------------------------------------------
-
-NewSection('ROK 2010','section');
-
-StartList();
-  
-  ExtendedListItem('Wyprawa GNJ do Albanii i Grecji',
-                   'Relacja',
-                   '../article.php?id=2010albania&sec=swiat','WIĘCEJ',
-                   '25. Czerwiec 2010','Dominik Honzo Graczyk');
-  
-  ExtendedListItem('Marble Arch i Prods Pot-Cascades',
-                   'Pierwsza cześć raportu z grudniowego połączenia dwóch jaskiń w Irlandii Północnej',
-                   './2010Marble/pdf/Marble.pdf','RAPORT',
-                   '16. Marzec 2010','Artur Kozłowski');
-EndList();
-
-//----------------------------------------------------------------------------------------------------------------------
-
-NewSection('ROK 2009','section');
-
-StartList();
-  ExtendedListItem('Rumunia i Serbia 2009',
-                   'Wyprawa speleonurkowa do Rumunii i Serbii',
-                   '../article.php?id=2009Rumunia_Serbia&sec=swiat','WIĘCEJ',
-                   '29. Października 2009','Dominik "Honzo" Graczyk');
-  
-  ExtendedListItem('Po ciemnej stronie Gort',
-                   'Progres osiągnięty tego lata przez zespół Jim Warny - Artur Kozłowski w jaskini Poulnacapple w Kiltartan, hrabstwo Galway, jest z pewnością jednym z najważniejszych wydarzeń w irlandzkim nurkowaniu jaskiniowym w 2009 r. Ponad 1.5-kilometrowa penetracja i głębokość -71m osiągnięta na końcu poręczówki czyni Poulnacapple najdłuższą podwodną jaskinią Irlandii...',
-                   '../article.php?id=2009PoCiemnejStronie&sec=swiat','WIĘCEJ',
-                   '12. Wrzesień 2009','Artur Kozłowski');
-
-  ExtendedListItem('Riders on the storm - Ujeżdżając burzę',
-                   'Pamiętam moje pierwsze nurkowanie na Nizinie Gort: jest koniec lutego 2008 r. i dojeżdżając do wsi Kiltartan w hrabstwie Galway nie mamy żadnych problemów ze zlokalizowaniem naszego punktu docelowego; z daleka widać wezbraną rzekę Coole i podążając w górę...',
-                   '../article.php?id=2009UjezdzajacBurze&sec=swiat','WIĘCEJ',
-                   '24. Sierpień 2009','Artur Kozłowski');
-
-  ExtendedListItem('Jaskinie jez. Szkoderskiego',
-                   'Zapraszamy do obejrzenia raportu z wypraw w 2007 i 2008 roku w rejon jez. Szkoderskiego, w Czarnogórze, których celem była eksploracja licznych w tym miejscu wywierzysk - podwodnych jaskiń. Raport opisuje ponad 35 zbadanych obiektów.',
-                   './skadar_2008_report.pdf','RAPORT',
-                   '7. Kwiecień 2009','Andrzej Szerszeń');
-
-EndList();
-
 ?>
 
 <!--============================= CONTENTS END   ==========================================-->
