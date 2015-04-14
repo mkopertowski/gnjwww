@@ -110,32 +110,7 @@ if($bSubdir == true)
 <?php
 
 StartList();
-  
-  ExtendedListItem('RPA',
-                   '',
-                   './gallery.php?id=2012rpa','Więcej',
-                   '19. Listopada 2012','Dominik Graczyk');
-  
-  ExtendedListItem('Wyprawa do Kosowa',
-                   '',
-                   './gallery.php?id=2012kosowo','Więcej',
-                   '19. Listopada 2012','Dominik Graczyk');
-
-  ExtendedListItem('Słoweńska czerwcówka',
-                   'Relacja z wyjazdu do Słowenii',
-                   './gallery.php?id=2012slowenia2','Więcej',
-                   '10. Czerwca 2012','T.Zapiór, A.Budziarek');
-				   
-  ExtendedListItem('Kosowo Czarnogora',
-                   'Wyprawa GNJ do Kosowa i Czarnogóry',
-                   './gallery.php?id=2011kosowoczarnogora','Więcej',
-                   '03 Września 2011','Dominik Honzo Graczyk');
-  
-  ExtendedListItem('Kosowo',
-                   'Wyprawa GNJ do Kosowa',
-                   './gallery.php?id=2010kosowo','Więcej',
-                   '14 Lutego 2011','Dominik Honzo Graczyk');
-                           
+    				                                
   ExtendedListItem('Green Holes',
                    'Doolin to mała nadmorska wioska położona w północno-zachodniej części hrabstwa Clare, na krańcach Burren -  jednego z największych i najbardziej unikalnych krajobrazów wapiennych w Europie. Widok z nabrzeża zapiera oddech w piersi...',
                    './gallery.php?id=2009GreenHoles','WIĘCEJ',
