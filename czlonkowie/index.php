@@ -108,8 +108,7 @@ if($bSubdir == true)
 		<td align=center>
 			Sekcja Grotołazów Wrocław
 		</td>
-		<td align=center>
-		<img src="mk.jpg" alt="" />
+		<td align=center>		
 		</td>
 	</tr>
 	<!-- członek -->
@@ -197,6 +196,9 @@ if($bSubdir == true)
 		</td>
 		<td align=center>
 			Sopocki Klub Taternictwa Jaskiniowego
+		</td>
+		<td align=center>
+		<img src="Lucyna_Cieslik.jpg" alt="" />
 		</td>
 	</tr>
 	<!-- członek -->
@@ -571,6 +573,29 @@ if($bSubdir == true)
 	</tr>		
 	<tr>
 		<td align=center>
+			26
+		</td>
+		<td align=center>
+			Robert
+		</td>
+		<td align=center>
+			Goszczyński
+		</td>
+		<td align=center>
+			12.04.2015
+		</td>
+		<td align=center>
+			członek (staż)
+		</td>
+		<td align=center>
+			Speleoklub Warszawski
+		</td>
+		<td align=center>
+		<img src="Robert_Goszczynski.jpg" alt="" />
+		</td>
+	</tr>	
+	<tr>
+		<td align=center>
 			-
 		</td>
 		<td align=center>
@@ -638,6 +663,107 @@ if($bSubdir == true)
 			Speleoklub Warszawski
 		</td>
 	</tr>
+	
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Daria
+		</td>
+		<td align=center>
+		    Boruta
+		</td>
+		<td align=center>
+			12.04.2015
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="Daria_Boruta.jpg" alt="" />
+		</td>
+	</tr>
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Ariel
+		</td>
+		<td align=center>
+			Łukaszewski
+		</td>
+		<td align=center>
+			12.04.2015
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="Ariel_Lukaszewski.jpg" alt="" />
+		</td>
+	</tr>
+	
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Błażej
+		</td>
+		<td align=center>
+			Pruski
+		</td>
+		<td align=center>
+			12.04.2015
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="Blazej_Pruski.jpg" alt="" />
+		</td>
+	</tr>
+	
+		<!-- członek -->
+	<tr>
+		<td align=center>
+			-
+		</td>
+		<td align=center>
+			Jarosław
+		</td>
+		<td align=center>
+			Stasieło
+		</td>
+		<td align=center>
+			12.04.2015
+		</td>
+		<td align=center>
+			sympatyk
+		</td>
+		<td align=center>
+			NZ
+		</td>
+		<td align=center>
+		<img src="Jaroslaw_Stasielo.jpg" alt="" />
+		</td>
+	</tr>			
+		
+	
 </table>
 
 
