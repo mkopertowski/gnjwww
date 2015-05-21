@@ -83,11 +83,6 @@ if($bSubdir == true)
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfony_krakowskie_01_2003.php">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Dudnica, zima 2002</b><br>
-		Przy okazji spotkania Podkomisji Nurkowania Jaskiniowego 14 grudnia 2002 zanurkowaliśmy w Dudnicy...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica12_2002.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Jaskinia Kasprowa Niżna, 2001</b><br>
 		Pierwsze zdjęcia podwodne z Jaskini Kasprowej Niżnej. Zdjęcia zrobione przez Włodka Szymanowskiego, podczas akcji Andrzeja Szerszenia...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kasprowa01.php">więcej...</a>]<br>&nbsp;

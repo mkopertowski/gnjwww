@@ -51,15 +51,15 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-<li class="normal">
-		<b>Jaskinia Dudnica</b> - W dniu 14 marca 2004 odbyła się akcja filmowa w jaskini Dudnica. Nakręcono pierwszy w Polsce film w syfonach ...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica2004_03.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Dudnica</b> - Moje pierwsze nurkowanie jaskiniowe - Dudnica'2002<br>
-		...Pogoda była piękna - mało śniegu i lekki mróz. Przebraliśmy się pod otworem (Wiktor nurkował "na sucho", Arnold i ja w piankach), sprawdziłem jeszcze raz automaty i zanurzyłem się w czystej wodzie. Pierwszy syfon, choć krótki...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica12_2002.php">więcej...</a>]<br>&nbsp;
-	</li>
+
+<?php 
+
+$sqlfiltr="section='polska' AND tags LIKE '%Dudnica%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
+
 	<li class="normal">
 		<b>Jaskinia Dudnica</b> - Problem eksploracyjny w Dudnicy nadal otwarty<br>
 		Najłatwiej dostępnym miejscem, gdzie można wykonać nurkowanie w korytarzu zalanym po strop jest jaskinia Dudnica, położona w Tatrach nieopodal Kalatówek. Odkryto ją jeszcze w 1932r., kiedy to Stefan Zwoliński i Józef Dobiecki...
