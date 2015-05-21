@@ -26,12 +26,7 @@ if($bSubdir == true)
 <br>
 <?php
   StartList();  
-			   
-  ExtendedListItem('Jaskinia Wodna Pod Pisaną',
-                   'Nurkowanie w Syfonie II...',
-                   './gallery.php?id=2012wpp','Więcej',
-                   '29. Września 2012','Arkadiusz Nowak');
- 
+			    
   ExtendedListItem('Zimnik',
                    'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
                    './gallery.php?id=2012Zimnik','Więcej',

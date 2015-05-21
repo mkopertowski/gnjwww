@@ -33,11 +33,11 @@ include('../_php/misc.php');
 <ul class="normal">
 
 <?php 
-  ExtendedListItem('Wodna Pod Pisaną – ciąg dalszy eksploracji',
-                   'W dniu 15 września przeprowadzono kolejne nurkowania ',
-                   '../polska/publication.php?id=2012wpp','WIĘCEJ',
-                   '29. Września 2012','Arkadiusz Nowak');
-		
+
+$sqlfiltr="section='polska' AND tags LIKE '%WodnaPodPisana%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
 ?>
 
 </ul>
