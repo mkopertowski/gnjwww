@@ -27,11 +27,6 @@ if($bSubdir == true)
 <?php
   StartList();  
 			    
-  ExtendedListItem('Zimnik',
-                   'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
-                   './gallery.php?id=2012Zimnik','Więcej',
-                   '15. Września 2012','Dominik Graczyk');
-    
   ExtendedListItem('Sztolnie Tarnogórskie',
                    'Nurkowanie w Tarnogórskich Sztolniach',
                    './gallery.php?id=2012SMRJ1','Więcej',

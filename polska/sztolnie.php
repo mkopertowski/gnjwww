@@ -7,6 +7,8 @@ if($bSubdir == true)
 @include($sInclude);
 
 @include('../_php/publication_supp.php');
+include('../_php/mysql.php');
+include('../_php/misc.php');
 
 	renderHead($bSubdir,'','');
 	renderMenu($bSubdir,5,false,'POLSKA','SZTOLNIE, STUDNIE, KOPALNIE');
@@ -22,10 +24,9 @@ if($bSubdir == true)
 
 <?php
 
-  ExtendedListItem('Zimnik',
-                   'Nurkowania w różnych obiektach na Dolnym Śląsku, i nie tylko...',
-                   '../article.php?id=2012Zimnik&sec=polska','WIĘCEJ',
-                   '15. Wrzesień 2012','Dominik Graczyk');
+$sqlfiltr="section='polska' AND tags LIKE '%kopalnie%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
   ExtendedListItem('Nurkowanie w forcie XIII w Błogosławiu',
                    'Lot zajechał do Warszawy. Kilkukrotnie miałem okazję gościć we Wrocławiu i mieć przyjemność odwiedzania urokliwych zakątków Dolnego Śląska i przyległosci. Lotek zawsze miał jakąś ciekawą miejscówkę do zaprezentowania...',
