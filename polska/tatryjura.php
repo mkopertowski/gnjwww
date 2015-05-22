@@ -51,31 +51,12 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-
 <?php 
-
 $sqlfiltr="section='polska' AND tags LIKE '%Dudnica%'";
-
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
-
 ?>
-
-	<li class="normal">
-		<b>Jaskinia Dudnica</b> - Problem eksploracyjny w Dudnicy nadal otwarty<br>
-		Najłatwiej dostępnym miejscem, gdzie można wykonać nurkowanie w korytarzu zalanym po strop jest jaskinia Dudnica, położona w Tatrach nieopodal Kalatówek. Odkryto ją jeszcze w 1932r., kiedy to Stefan Zwoliński i Józef Dobiecki...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Dudnica</b> - Nurkować w jaskiniach latem ? - ależ tak!<br>
-		Już od prawie czterech lat trwa uporczywa eksploracja Syfonu Drzemiącego w Śnieżnej Studni. Zmęczeni wyczerpującymi podejściami w zimie postanowiliśmy wykorzystać lato do kolejnych ataków, zwłaszcza, że poziom wody...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./nurkowaniewlecie.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Dudnica 1972</b> - pierwsze sekcyjne nurkowanie.<br>
-		Opis akcji nurkowej przeprowadzonej w jaskini Dudnica w 1972 roku przez członków Sekcji Grotołazów z Wrocławia. Tekst dostarczony przez Włodka Szymanowskiego...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dudnica1972.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
+
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
 		<td class="aktualnosci" align=left width=100%>
