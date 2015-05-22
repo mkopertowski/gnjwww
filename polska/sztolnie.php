@@ -28,11 +28,6 @@ $sqlfiltr="section='polska' AND tags LIKE '%kopalnie%'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
-  ExtendedListItem('Nurkowanie w forcie XIII w Błogosławiu',
-                   'Lot zajechał do Warszawy. Kilkukrotnie miałem okazję gościć we Wrocławiu i mieć przyjemność odwiedzania urokliwych zakątków Dolnego Śląska i przyległosci. Lotek zawsze miał jakąś ciekawą miejscówkę do zaprezentowania...',
-                   '../article.php?id=2009Fort13&sec=polska','WIĘCEJ',
-                   '22. Czerwiec 2009','Maciek "Lama" Olinkiewicz');
-
   ExtendedListItem('Kopalnia w Nawojowie Śląskim - odsłona pierwsza',
                    'Szyb w Nawojowie został nam wskazany przez grupę „Odkrywców”. Informacje, które przekazał Łukasz Orlicki okazały się bardzo obiecujące...',
                    '../article.php?id=2009Nawojow1&sec=polska','WIĘCEJ',
