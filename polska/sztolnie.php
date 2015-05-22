@@ -28,11 +28,6 @@ $sqlfiltr="section='polska' AND tags LIKE '%kopalnie%'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
-  ExtendedListItem('Kopalnia w Nawojowie Śląskim - odsłona pierwsza',
-                   'Szyb w Nawojowie został nam wskazany przez grupę „Odkrywców”. Informacje, które przekazał Łukasz Orlicki okazały się bardzo obiecujące...',
-                   '../article.php?id=2009Nawojow1&sec=polska','WIĘCEJ',
-                   '10. Maj 2009','Mirek Kopertowski');
-
   ExtendedListItem('Nurkowanie w „Winnicy”',
                    'Wzgórze Winnica położone jest się w Krakowie. Znajduje się na nim fort 53a wybudowany w latach 1898-1899 jako pancerny fort obrony bliskiej...',
                    '../polska/publication.php?id=winnica','RELACJA',
