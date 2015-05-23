@@ -28,36 +28,9 @@ $sqlfiltr="section='polska' AND tags LIKE '%kopalnie%'";
 
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
-  ExtendedListItem('Nurkowanie w „Winnicy”',
-                   'Wzgórze Winnica położone jest się w Krakowie. Znajduje się na nim fort 53a wybudowany w latach 1898-1899 jako pancerny fort obrony bliskiej...',
-                   '../polska/publication.php?id=winnica','RELACJA',
-                   '6. Listopad 2006','Lucyna Cieślik');
 ?>
 	
   <BR>
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej</b> - Dawna kopalnia rud ołowiu i srebra w Bystrzycy Górnej<br>
-		...Kopalnia ta dokumentuje metody udostępniania i eksploatacji złóż żyłowych stosowane w górnictwie od XVI do XVIII w. Z uwagi na stan zachowania, stanowi cenne źródło historii śląskiego górnictwa kruszcowego...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzycagornamadziarz.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej</b> - Sztolnia w Bystrzycy Górnej<br>
-		Dolny Śląsk był już od czasów średniowiecza  terenem intensywnej działalności górniczej. Stąd też obfitość różnego rodzaju obiektów podziemnych. Niektóre z nich są zalane wodą, a zatem niedostępne dla przygodnych...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzycagornawb.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej</b> - nurkowanie poznawcze<br>
-		Pozostało nam tylko przejść kilkadziesiąt metrów poziomego korytarza i już staliśmy nad krystalicznie czysta wodą. Sztolnia ta nie kryje żadnych wąskich miejsc, więc nurkowałem z zestawem 2 x 8L na noszaku. Szybko założyłem butle, kask, włączyłem światło i zanurzyłem się w wodzie. Przejrzystość zapierała dech w piersiach ...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzycagornamg.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej</b> - Stajnia Kleina w Bystrzycy Górnej. Przejrzystość zapierała dech w piersiach ...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzycagornatremb.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej</b> - 27 grudnia 2003 zanurkowaliśmy znów w sztolni w Bystrzycy Górnej. Tym razem w składzie Agata Kuśnierek i Jacek "Trembi" Trembowelski. Naszym celem była  ...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzycagornatremb2.php">więcej...</a>]<br>&nbsp;
-	</li>
 	<li class="normal">
 		<b>Sztolnia Drei Brüder</b> - Sztolnia Drei Brüder po raz kolejny<br>
 		Sztolnię Drei Brüder (podnóże Gór Izerskich) znamy już od kilku lat. Znajduje się tam duża komora wyrobiskowa, której dolne poziomy są zalane. Stwarza to interesujące możliwości dla nurkowania jaskiniowego. Pierwsze nurkowania...

@@ -52,12 +52,6 @@ if($bSubdir == true)
 		Zdjęcia z akcji nurkowej w Jeziorku X (najgłębiej położonego syfonu w Tatrach)...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=07sniezna_x">więcej...</a>]<br>&nbsp;
 	</li>
-
-	<li class="normal">
-		<b>Sztolnia w Bystrzycy Górnej, czerwiec 2003</b><br>
-		Zdjęcia z pierwszoczerwcowego nurkowania w sztolni w <b>Bystrzycy Górnej</b>...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./bystrzyca_6_03.php">więcej...</a>]<br>&nbsp;
-	</li>
 	<li class="normal">
 		<b>Sztolnia w Dzikowcu, czerwiec 2003</b><br>
 		Zdjęcia z kolejnej, czerwcowej akcji nurkowej w sztolni w Dzikowcu...
