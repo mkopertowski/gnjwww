@@ -32,16 +32,6 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 	
   <BR>
 	<li class="normal">
-		<b>Sztolnia Drei Brüder</b> - Sztolnia Drei Brüder po raz kolejny<br>
-		Sztolnię Drei Brüder (podnóże Gór Izerskich) znamy już od kilku lat. Znajduje się tam duża komora wyrobiskowa, której dolne poziomy są zalane. Stwarza to interesujące możliwości dla nurkowania jaskiniowego. Pierwsze nurkowania...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dreibruder01.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Dzikowcu</b> - Sztolnia w Dzikowcu - maj 2003<br>
-		...Przy uważniejszej penetracji można jeszcze dostrzec pod południową ścianą komory niepozorną kałużę, która nie łączy się ze wspomnianymi jeziorkami. Uwagę przykuwa krystaliczna czystość wody. Po dokładnym obejrzeniu okazuje się, że po pokonaniu zacisku na dnie tej kałuży można się przedostać do poziomego, zalanego pod strop, korytarza...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dzikowiec_05_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Sztolnia w Dzikowcu</b> - Sztolnia w Dzikowcu - czerwiec 2003<br>
 		...Po zjechaniu do komory wydobywczej uderzył mnie dziwny wygląd spągu. Kamienie leżały w sposób jakby bardziej zwarty, a ponadto przykrywała je kilkumilimetrowa warstwa szarozielonego osadu. Spąg wyglądał jak dno zbiornika, z którego spuszczono wodę. Poświeciłem w kierunku jeziorek. Z przerażeniem nie dostrzegłem wody, zamiast niej była szarozielona powierzchnia. Czyżby podczas naszej miesięcznej nieobecności nastąpił gwałtowny przybór wody, który zamulił jeziorka i co najgorsze chodnik...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dzikowiec_06_2003.php">więcej...</a>]<br>&nbsp;
