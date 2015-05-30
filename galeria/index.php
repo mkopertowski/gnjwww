@@ -53,11 +53,6 @@ if($bSubdir == true)
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./gallery.php?id=07sniezna_x">więcej...</a>]<br>&nbsp;
 	</li>
 	<li class="normal">
-		<b>Sztolnia w Dzikowcu, czerwiec 2003</b><br>
-		Zdjęcia z kolejnej, czerwcowej akcji nurkowej w sztolni w Dzikowcu...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dzikowiec_6_03.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Jaskinia Wielka Śnieżna, grudzień 2002 - luty 2003</b><br>
 		Zdjęcia z kilku akcji eksploracyjnych za Syfonami Krakowskimi...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfony_krakowskie_01_2003.php">więcej...</a>]<br>&nbsp;

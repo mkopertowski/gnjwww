@@ -32,31 +32,6 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 	
   <BR>
 	<li class="normal">
-		<b>Sztolnia w Dzikowcu</b> - Sztolnia w Dzikowcu - czerwiec 2003<br>
-		...Po zjechaniu do komory wydobywczej uderzył mnie dziwny wygląd spągu. Kamienie leżały w sposób jakby bardziej zwarty, a ponadto przykrywała je kilkumilimetrowa warstwa szarozielonego osadu. Spąg wyglądał jak dno zbiornika, z którego spuszczono wodę. Poświeciłem w kierunku jeziorek. Z przerażeniem nie dostrzegłem wody, zamiast niej była szarozielona powierzchnia. Czyżby podczas naszej miesięcznej nieobecności nastąpił gwałtowny przybór wody, który zamulił jeziorka i co najgorsze chodnik...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./dzikowiec_06_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Kamionkach</b> - Sztolnia w Kamionkach wyeksplorowana do końca<br>
-		Gdy jesienią ubiegłego roku odnaleźliśmy starą sztolnię "Wilhelm" w Kamionkach, poczułem, że nareszcie stanęliśmy przed dużym problemem nurkowym. W chwili obecnej do sztolni wchodzi się przez ciasną, stromo opadającą szczelinę...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kamionki.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnia w Kowarach</b> - Sztolnia w Kowarach<br>
-		Od czasów, gdy w naszej Sekcji zaczęliśmy zajmować się na poważnie nurkowaniem w jaskiniach, szukamy na terenie Dolnego Śląska podziemnych, zalanych obiektów, gdzie w bliskiej odległości od domu można oswajać się z tym niedostępnym środowiskiem...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kowary.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Sztolnie w Miedziance</b> - Nurkowania w sztolni w Miedziance<br>
-		...Góry Świętokrzyskie są rejonem obfitującym z racji swej geologii w sztolnie i wyrobiska górnicze. Wywiad poczyniony wśród członków klubu odwiedzających te okolice sugerował istnienie tam ciekawych dla nas problemów nurkowych /zalane kopalnie/. Najwięcej informacji mieliśmy na temat okolic miejscowości Miedzianka położonej...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./miedzianka_1999.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Studnia w Srebrnej Górze</b> - Naprawdę głębokie nurkowanie<br>
-		Jak zaopatrzyć w wodę fortecę znajdującą się na szczycie skalistej góry? Najlepiej wywiercić studnię - aby uniezależnić załogę od niepewnych deszczy. Jednak taka studnia powinna być naprawdę głęboka i obszerna, a w zasadzie...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./srebrnagora1.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
 		<b>Studnia w Srebrnej Górze</b> - Srebrna Góra - poligon doświadczalny<br>
 		Jesienią 1997 roku powróciliśmy do studni w Srebrnej Górze. Zaletą tego miejsca jest stosunkowo łatwo dostępna duża głębokość. Do przeprowadzenia tutaj treningowych zanurzeń skłoniły nas perspektywy eksploracji zalanych ciągów...
 		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./srebrnagora2.php">więcej...</a>]<br>&nbsp;
