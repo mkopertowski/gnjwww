@@ -84,11 +84,14 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-	<li class="normal">
-		<b>Nurkowanie w Wielkich Kominach</b><br>
-		Jeszcze w styczniu 2004 narodził się plan nurkowania w Wielkich Kominach jaskini Miętusiej. W dniu 24 stycznia odbył się uciążliwy transport sprzętu nurkowego. Akcja transportowa bardzo się przeciągnęła gdyż na powierzchni była tak duża ilość świeżego śniegu, ze torowanie i szukanie otworu zajęło nam kilka godzin...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./mietusia.01.2005.php">więcej...</a>]<br>&nbsp;
-	</li>
+
+<?php 
+
+$sqlfiltr="section='polska' AND tags LIKE '%Mietusia%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
 	<li class="normal">
 		<b>Jaskinia Miętusia</b> - Rekordowe nurkowanie w Ciasnych Kominach<br>
 		Jaskinia Miętusia - jedna  z  największych  w  Polsce  -  już  od najwcześniejszych etapów eksploracji  była  arena  rozwoju  nurkowania podziemnego w naszym kraju. W 1957 grupa płetwonurków związanych z Marynarką Wojenną...
