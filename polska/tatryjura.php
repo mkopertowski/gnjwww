@@ -74,23 +74,6 @@ $sqlfiltr="section='polska' AND tags LIKE '%Kasprowa%'";
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
 ?>
-
-<li class="normal">
-	<b>Kasprowa Niżnia - Luty 2004</b> W dniu 04.02.2004 Jarosław Niekludow (Garbek) przeprowadził akcję poznawczą w syfonach w jaskini Kasprowej Niżniej. W Syfonie Warszawiaków (V) przepłynął 260m korzystając z zestawu 2x10l. Transoort przez cztery pierwsze syfony zrobił przy użyciu zestawu 2x4l. W czasie powrotu z jaskini odwilż dotarła do jaskini zalewając Złotą Kaczkę. Garbek wraz z ekipą wspomagającą po ciężkiej walce uszli z życiem ... &nbsp;&nbsp;&nbsp;
-[<a class="navismall" href="../polska/kasprowa_garbek.php"> więcej ...</a>]
-
-     <br>&nbsp;
-</li>
-	<li class="normal">
-		<b>Jaskinia Kasprowa Niżna</b> - Eksploracja za Ósmym Syfonem<br>
-		Jaskinia Kasprowa Niżnia jest jednym z najatrakcyjniejszych problemów nurkowych w Polsce - w znacznej mierze dzięki łatwemu dostępowi. Otwór znajduje się niemalże w korycie Kasprowego Potoku, około 200 m od szlaku wiodącego...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kasprowa.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Kasprowa Niżna</b> - Nurkowanie w Kasprowej Niżniej<br>
-		Pod koniec sezonu zimowego 96 odbyła się akcja nurkowa w jaskini Kasprowa Niżnia, zorganizowana przez Sekcję Grotołazów Wrocław. Wzięli w niej udział : Wiktor Bolek- kierownik, płetwonurek oraz koledzy, którzy pomogli w...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./kasprowazima1996.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
