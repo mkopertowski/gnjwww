@@ -92,27 +92,6 @@ $sqlfiltr="section='polska' AND tags LIKE '%Mietusia%'";
 ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 
 ?>
-	<li class="normal">
-		<b>Jaskinia Miętusia</b> - Rekordowe nurkowanie w Ciasnych Kominach<br>
-		Jaskinia Miętusia - jedna  z  największych  w  Polsce  -  już  od najwcześniejszych etapów eksploracji  była  arena  rozwoju  nurkowania podziemnego w naszym kraju. W 1957 grupa płetwonurków związanych z Marynarką Wojenną...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./ciasnekominy1.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Miętusia</b> - Ciasne Kominy po raz drugi<br>
-		Podczas poprzedniego nurkowania uległem fascynacji syfonem na dnie Ciasnych Kominów w Jaskini Miętusiej. Ogromne przestrzenie, klarowna woda, korytarz wiodący w nieznane...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./ciasnekominy2.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Miętusia</b> - Pierwsze nurkowanie na mieszankach w polskich jaskiniach<br>
-		Już od bez mała trzech lat syfony na dnie Ciasnych Kominów w Jaskini Miętusiej stanowią dla nas wyzwanie. Na terenie Polski jest to unikalne miejsce. Nie mamy wielu dużych zalanych jaskiń w porównaniu z innymi krajami Europy..
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./ciasnekominy3.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Miętusia</b> - Retransport sprzętu<br>
-		W styczniu 98 przeprowadziliśmy akcję nurkową w Ciasnych Kominach w Jaskini Miętusiej. Podczas nurkowania trimixowego w południowym jeziorku osiągnąłem głębokość 63m. W północnym jeziorku nurkował Norbert Ziober...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./ciasnekominy4.php">więcej...</a>]<br>&nbsp;
-	</li>
-
 </ul>
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
