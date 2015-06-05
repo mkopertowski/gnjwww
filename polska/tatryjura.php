@@ -137,12 +137,12 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-	<li class="normal">
-		<b>Jaskinia Śnieżna Studnia</b> - Znów w Syfonie Drzemiącym<br>
-		Między świętami Bożego Narodzenia a Sylwestrem roku 1994 kontynuowaliśmy eksplorację w Syfonie Drzemiącym w Śnieżnej Studni. Akcja była przygotowywana niemal przez cały rok. W jaskini znajdowały się butle zaniesione jeszcze...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./snieznastudnia1994.php">więcej...</a>]<br>&nbsp;
-	</li>
+<?php 
+$sqlfiltr="section='polska' AND tags LIKE '%SnieznaStudnia%'";
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+?>
 </ul>
+
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
 		<td class="aktualnosci" align=left width=100%>
@@ -158,34 +158,7 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
   $sqlfiltr="section='polska' AND tags LIKE '%WielkaSniezna%'";
 
   ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
-
-  ExtendedListItem('Wielka Śnieżna - Jeziorko X. Najniżej położony problem nurkowy w Tatrach',
-                   'Od wielu lat kusi grotołazów swą niedostępnością i zagadką, która kryje się za nim. Pojawiało się wiele hipotez o możliwości pogłębienia systemu jaskiniowego...',
-                   '../polska/publication.php?id=2007JeziorkoX','WIĘCEJ',
-                   '8. Czerwiec 2007','Michał Plata');
-
 ?>
-<BR>
-	<li class="normal">
-		<b>Jaskinia Wielka Śnieżna</b> - Trzeci syfon w partiach za Syfonami Krakowskimi<br>
-		Na przełomie roku 2002 i 2003 zintensyfikowano eksploracje partii położonych za Syfonami Krakowskimi. Kilkakrotne akcje transportowe i nurkowe zaowocowały odkryciem kolejnego syfonu w tym ciągu...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfony_krakowskie_01_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Wielka Śnieżna</b> - Pogłębianie Syfonu Mysi - <i>styczeń 2003</i><br>
-		Nauczony wieloletnim doświadczeniem, starałem się zawsze organizować eksplorację za Syfonem Krakowskim jesienią. Wówczas nie ma problemów z torowaniem na podejściu, kopaniem igloo, zasypywaniem rury itd. Poziom wody jest umiarkowany w porównaniu z tym co się dzieje podczas wiosennych roztopów czy gwałtownych letnich opadów. Oprócz pogody eksploracja wymaga zaangażowania większej ilości osób przez kilka dni...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfon_mysi_01_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Wielka Śnieżna</b> - Pogłębianie Syfonu Mysi - <i>marzec 2003</i><br>
-		W marcu 2003 odbyła się kolejna akcja nurkowa w Syfonie Mysi. Poprzednia akcja obyła się w lutym. W jej trakcie Włodzimierz Szymanowski (Spryciula) zanurzył się w tym syfonie na głębokość -5m, stwierdzając możliwość dalszej eksploracji. Syfon rozpoczynał się studnią, która rozwijała się na pionowej szczelinie. Po tej akcji pomiędzy Syfonem Krakowskim a Syfonem Mysi pozostały 2 butle 4l...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfon_mysi_03_2003.php">więcej...</a>]<br>&nbsp;
-	</li>
-	<li class="normal">
-		<b>Jaskinia Wielka Śnieżna</b> - Działalność eksploracyjna w Syfonach Krakowskich 1999 - 2000<br>
-		Eksploracja partii związanych z Syfonem Krakowskim i Syfonem Magdy, pomimo opinii poprzedników (A. Stupak, W. Kozieł) o ciasnotach, przyniosła ok. 130 metrów nowych korytarzy i wielkie nadzieje na odkrycie dużych partii jaskini pomiędzy...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./syfony_krakowskie_99-00.php">więcej...</a>]<br>&nbsp;
-	</li>
 </ul>
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
@@ -196,6 +169,10 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
+<?php 
+$sqlfiltr="section='polska' AND tags LIKE '%Zimna%'";
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+?>
 
 <?php
   ExtendedListItem('Jaskinia Zimna',
