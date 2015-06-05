@@ -31,12 +31,7 @@ if($bSubdir == true)
                    'Nurkowanie w Tarnogórskich Sztolniach',
                    './gallery.php?id=2012SMRJ1','Więcej',
                    '24. Marca 2012','Anaconda');
-  
-  ExtendedListItem('Tatry',
-                   'Nurkowanie w Dudnicy i Wodnej pod Pisaną ',
-                   './gallery.php?id=2011tatry','Więcej',
-                   '03 Września 2011','Dominik Graczyk');
-  
+    
   ExtendedListItem('Obiekt W',
                    'Podobno jeden obraz zastępuje tysiące słów. Więc nie będę wiele pisał, tylko pokaże kilka zdjęć z polskiej "jaskini". Mam nadzieję, że zdjęcia rozpalą waszą wyobraźnię. W planie mam/mamy sesje zdjęciowe w innych zalanych obiektach. Ze względów bezpieczeństwa nie podaję ani nazwy ani lokalizacji -- i tak wszyscy zainteresowani wiedzą o czym mowa. Zdjęcia powstały na jednym nurkowaniu w listopadzie 2009. Więcej zdjęć na stronie http://www.nurkomania.pl/nurkowanie_jaskiniowe_obiekt_w.htm ',
                    './gallery.php?id=2009ObiektW','Więcej',
