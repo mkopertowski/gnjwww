@@ -102,12 +102,15 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-	<li class="normal">
-		<b>Jaskinie Niecki Nidziańskiej</b> - Notka o nurkowaniu<br>
-		W dniach 18-20.07.2003 odbył się wyjazd na tereny Niecki Nidziańskiej i okolic, mający na celu głównie eksplorację zalanych jaskiń Skorocic oraz Siesławic koło Buska...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./nieckanidzianska2003.php">więcej...</a>]<br>&nbsp;
-	</li>
+<?php 
+
+$sqlfiltr="section='polska' AND tags LIKE '%Niecka%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
 </ul>
+
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
 		<td class="aktualnosci" align=left width=100%>
@@ -117,11 +120,13 @@ ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
 </table>
 <br>
 <ul class="normal">
-	<li class="normal">
-		<b>Jaskinia Szmaragdowa-Szeptunow</b> - Nurkowanie w jaskini Szmaragdowej-Szeptunow<br>
-		Przy okazji corocznego wyjazdu na Jurę postanowiliśmy sprawdzić problemy nurkowe w jaskini Szmaragdowej-Szeptunow, które tak zachęcająco były opisane w 'Eksploranciku'. Jaskinię postanowiliśmy zaatakować...
-		&nbsp;&nbsp;&nbsp;[<a class="navismall" href="./szmaragdowaszeptunow1991.php">więcej...</a>]<br>&nbsp;
-	</li>
+<?php 
+
+$sqlfiltr="section='polska' AND tags LIKE '%Szmaragdowa%'";
+
+ArticleListFiltredMYSQL($mysqli,'..',$sqlfiltr);
+
+?>
 </ul>
 <table cellspacing=0 cellpadding=3 width=100%>
 	<tr>
