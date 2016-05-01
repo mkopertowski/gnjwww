@@ -43,15 +43,15 @@
 </div>
 
 <div class="form-group">
-	<label for="text">Treść (używaj składni wiki markup)</label>
+	<label for="text">Treść (używaj składni wiki trac markup https://trac.edgewall.org/wiki/WikiFormatting)</label>
 	<ul>
 		<li>''' Bold '''</li>
 		<li>'' Italic ''</li>
 		<li>''''' Bold-italic '''''</li>
-		<li>: Indentation</li>
-		<li>:: Subindentation</li>
+		<li>== heading level 2</li>
+		<li>=== heading level 3</li>
 		<li>* Nienumerowana lista</li>
-		<li># Numerowana lista</li>
+		<li>1. Numerowana lista</li>
 		<li>pusta linia - nowy akapit</li>
 	</ul>
 	<textarea name="text" id="text" class="form-control" rows="40"  maxlength="<?php echo $this->textMax; ?>"><?php echo $this->text; ?></textarea>
