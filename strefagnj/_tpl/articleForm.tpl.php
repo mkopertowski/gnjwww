@@ -48,8 +48,8 @@
 		<li>''' Bold '''</li>
 		<li>'' Italic ''</li>
 		<li>''''' Bold-italic '''''</li>
-		<li>== heading level 2</li>
-		<li>=== heading level 3</li>
+		<li>== heading level 2 ==</li>
+		<li>=== heading level 3 ===</li>
 		<li>* Nienumerowana lista</li>
 		<li>1. Numerowana lista</li>
 		<li>pusta linia - nowy akapit</li>
