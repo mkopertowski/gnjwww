@@ -7,7 +7,7 @@
 	<div class="col-md-8">
   		<div class="page-header">
   			<h1>Grupa Nurków Jaskiniowych - kontakt</h1>
-  			<h1><small>Grupa reprezentowa jest przez Podkomisją Nurkowania Jaskiniowego</small></h1>
+  			<h1><small>Grupa reprezentowa jest przez Podkomisję Nurkowania Jaskiniowego</small></h1>
 		</div>
   				
 		<div class="media">
