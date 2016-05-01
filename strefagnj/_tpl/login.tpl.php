@@ -11,10 +11,10 @@
     <title>Grupa Nurków Jaskiniowych PZA - Strefa GNJ</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../_css/signin.css" rel="stylesheet">
+    <link href="../css/signin.css" rel="stylesheet">
   </head>
 
   <body>

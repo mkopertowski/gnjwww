@@ -1,162 +1,53 @@
-<?php
-
-$bSubdir = true;
-$sInclude = './_php/page_utf8.php';
-if($bSubdir == true)
-	$sInclude = '.'.$sInclude;
-@include($sInclude);
+<?php 
 
 $GL_DIR = '..';
 
-@include('../_php/publication_supp.php');
-include('../_php/mysql.php');
-include('../_php/settings.php');
-include('../_php/misc.php');
+include($GL_DIR."/_php/Renderer.php");
+include($GL_DIR.'/_php/settings.php');
+include($GL_DIR.'/_php/mysql.php');
+include($GL_DIR.'/_php/misc.php');
+include($GL_DIR.'/_php/components.php');
 
-	renderHead($bSubdir);
-	renderMenu($bSubdir,4,false,'WARSZTATY');
-	renderGallery(true,false);
-	renderCentral(true);
-?>
-<!--============================= CONTENTS START ==========================================-->
-<h1>
-	WARSZTATY NURKOWANIA JASKINIOWEGO
-</h1>
+// include the pagination class
+require $GL_DIR.'/_php/Zebra_Pagination.php';
 
-<table>
-	<tr>
-		<td valign=top align=middle>
-			&nbsp;<br>
-			&nbsp;<br>
-<script language="JavaScript1.2" src="../_img/random/script1.js"></script>
-						
-					</td>
-				</tr>
-</table>
+// how many records should be displayed on a page?
+$records_per_page = $SWIAT_LIMIT_PER_PAGE;
 
-<div align=center>
-<font color=#d76a01>
-<font size="4">
-<b>Zapraszamy na Warsztaty Nurkowania Jaskiniowego</b><br><br>
-<br><br>
-</font>
-</font>
-</div>
+// instantiate the pagination object
+$pagination = new Zebra_Pagination();
 
+$sqlfiltr="section='warsztaty'";
+$sqllimit = "LIMIT " . (($pagination->get_page() - 1) * $records_per_page) . ', ' . $records_per_page;
 
-<!--
-<font color="red">
-<font size="4">
-<b>!! Uwaga !!</b><br><br>Aktualny termin to 17-20 czerwca 2010 r.<br><br> <b>!! Uwaga !! </b><br><br>
-</font>
-</font>
+$sql="SELECT SQL_CALC_FOUND_ROWS * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and ".$sqlfiltr." ORDER BY date DESC ".$sqllimit;
+$searchResult=$mysqli->query($sql);
 
+$sql= "SELECT FOUND_ROWS() AS `found_rows`";
+$rows=$mysqli->query($sql);
+$rows=$rows->fetch_assoc();
 
-<b>Pierwotny termin:</b><br><br>10-11 kwietnia oraz 17-18 kwietnia 2010<br><br>
+// pass the total number of records to the pagination class
+$pagination->records($rows['found_rows']);
 
-<b>Miejsce:</b><br><br>Dolny Śląsk - kamieniołomy Zimnik, Kostrza<br><br>
+// records per page
+$pagination->records_per_page($records_per_page);
 
--->
+$Content = new Renderer($GL_DIR."/_tpl/warsztaty.tpl.php");
+$Content->set("searchResult",$searchResult);
+$Content->set("dots","..");
+$Content->set("mysqli",$mysqli);
+$Content->set("pagination",$pagination);
+$Content->set("resultsNum",$rows['found_rows']);
+$Content->set("showbreadcrumb",true);
+$Content->set("section","DZIAŁALNOŚĆ");
+$Content->set("subsection","WARSZTATY");
 
+$Page = new Renderer($GL_DIR."/_tpl/gnj.tpl.php");
+$Page->set("Content",$Content->parse());
+$Page->set("dots","..");
+$Page->set("mysqli",$mysqli);
 
-<b>Informacje ogólne:</b>
+$Page->publish();
 
-<ul class="normal">
-	<li class="normal">
-Warsztaty są okazją do ogólnopolskiego spotkania nurków jaskiniowych, niezależnie od federacji i konfiguracji.
-	</li>
-	<li class="normal">
-GNJ PZA organizuje Warsztaty raz do roku.
-	</li>
-	<li class="normal">
-Podczas Warsztatów uczestnicy wymieniają się wiadomościami na temat nurkowania jaskiniowego.
-	</li>
-	<li class="normal">
-Uczestnicy mają możliwość poznania i przetestowania nowych technik i sprzętu.
-	</li>
-	<li class="normal">
-Omawiane są wyniki wypraw, a także planuje się nowe wyprawy eksploracyjne lub poznawcze do syfonów w Polsce, Europie i reszcie świata.
-	</li>
-</ul>
-
-<b>Program/tematyka:</b>
-<ul class="normal">
-	<li class="normal">Sprzęt, konfiguracja speleologiczna,</li>
-	<li class="normal">Konfiguracja boczna,</li>
-	<li class="normal">Poruszanie się wzdłuż poręczówki, poręczowanie, deporęczowanie,</li>
-	<li class="normal">Kartowanie,</li>
-	<li class="normal">Zarządzanie gazami,</li>
-	<li class="normal">Depozyty,</li>
-	<li class="normal">Planowanie akcji jaskiniowej,</li>
-	<li class="normal">Autoratownictwo-odnajdowanie poręczówki i wycinanie z poręczówki z zachowaniem jej ciągłości,</li>
-	<li class="normal">Stres i niebezpieczeństwa jaskiń,</li>
-	<li class="normal">Analiza wypadków i elementy ratownictwa,</li>
-	<li class="normal">Speleogeneza,</li>
-	<li class="normal">Rebreathery w jaskini.</li>
-</ul>
-
-<b>Zajęcia odbywają się w 3 blokach tematycznych: teoria, ćwiczenia powierzchniowe, nurkowanie.</b><br><br>
-
-<b>Informacje dodatkowe:</b><br><br>
-
-Wszystkie nurkowania mogą odbyć się jedynie w zgodzie z uprawnieniami posiadanymi przez uczestników. 
-Lista niezbędnego sprzętu jest do pobrania <a class="navi" href="./doc/lista_sprzetu.pdf">tutaj</a>.
-Warunkiem uczestnictwa w warsztatach jest posiadanie ubezpieczenia KL i NNW obejmującego nurkowanie.<br><br>
-
-<!--<b>Zakwaterowanie:</b><br><br>
-Ponieważ zamysłem warsztatów jest m.in. znalezienie i przygotowanie nowych uczestników wypraw eksploracyjnych GNJ (Grupy Nurków Jaskiniowych) w różnych zakątkach świata, śpimy w namiotach. Każdy z uczestników powinien być do tego odpowiednio przygotowany (namiot, śpiwór, karimata a także inny sprzęt biwakowy jak menażki, niezbędniki itp.). Tuż przy obozowisku znajduje się sklep spożywczy, w którym można się zaopatrzyć.<br><br>
-
-
-<b>Dojazd:</b><br><br>
-Z Wrocławia autostradą A4 w kierunku Legnicy. Po przejechaniu około 30 km zjazd z autostrady na Kostomłoty w kierunku Strzegomia trasą nr 5. W Strzegomiu należy kierować się na Jawor trasą nr 374. W Niedaszowie po przejechaniu 7 km ze Strzegomia należy skręcić w lewo koło stacji benzynowej na Zimnik. W Zimniku na pierwszym skrzyżowaniu „Y” należy skręcić w prawo. Po lewej stronie po przejechaniu około 200 m jest sklep, obok którego znajduje się wjazd na miejsce biwakowe. Link do mapy z trasą dojazdu z Wrocławia znajduje się [<a class="navi" href="http://maps.google.com/maps?daddr=Zimnik,+Polska&geocode=&dirflg=&saddr=Wroc%C582aw&f=d&sll=51.013809,16.258907&sspn=0.026027,0.076904&ie=UTF8&ll=51.080234,16.605835&spn=0.415843,1.230469&z=10">tutaj</a>].
-Z Legnicy trasą nr 3 do Jawora (około 12 km). Z Jawora trasą nr 374 w kierunku Strzegomia.  W Niedaszowie  po przejechaniu 5 km z Jawora należy skręcić w prawo koło stacji benzynowej na Zimnik. W Zimniku na pierwszym skrzyżowaniu „Y” należy skręcić w prawo. Po lewej stronie po przejechaniu około 200 m jest sklep, obok którego znajduje się wjazd na miejsce biwakowe. Link do mapy z trasą dojazdu z Legnicy znajduje się [<a class="navi" href="http://maps.google.com/maps?f=d&source=s_d&saddr=Legnica&daddr=Zimnik&hl=pl&geocode=&mra=ls&sll=51.184508,16.213074&sspn=0.414905,1.230469&ie=UTF8&z=11">tutaj</a>]. 
-<br><br>
--->
-
-<b>Zapisy:</b><br><br>
-
-Zgłoszenia należy wysyłać na adres mailowy: "wnj / at / gnj.org.pl" na 
-<a class="navi" href="./doc/zgloszenie_wnj.doc">formularzu zgłoszeniowym</a>.<br><br>
-
-O uczestnictwie w Warsztatach decyduje kolejność zgłoszeń.<br><br>
-
-<b>Szczegoly i zapytania:</b>
-
-<ul class="normal">
-	<li class="normal">e-mail: wnj / at / gnj.org.pl</li>
-</ul>
-
-Uczestników warsztatów posiadających Kartę Taternika Jaskiniowego zapraszamy na nurkowania w Tatrach.<br><br><br><br>
-
-
-<!--RELACJE----------------------------------------------------------------------------------->
-<table cellspacing=0 cellpadding=3 width=100%>
-	<tr>
-		<td class="aktualnosci" align=left width=100%>
-			<B>RELACJE</B>
-		</td>
-	</tr>
-</table>
-<br>
-<ul class="normal">
-
-<?php
-
-$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='warsztaty' ORDER BY date DESC";
-$result=$mysqli->query($sql);
-
-if($result) {
-	
-	while ($row = $result->fetch_assoc()) {
-		ExtendedListItemMYSQL($mysqli,$row,'..');
-	}
-
-}
-
-?>
-
-</ul>
-<!--============================= CONTENTS END   ==========================================-->
-<?php
-	renderBottom($bSubdir);
 ?>

@@ -1,121 +1,96 @@
-<?php
-
-$bSubdir = true;
-include('../_php/page_utf8.php');
-
-$description="";
-if($this->html_description != "")
-{
-	$description = $this->html_description;
-}
-else if(isset($this->subtitle))
-{
-	$description = $this->subtitle;
-}
-
-$keywords="";
-if($this->html_keywords != "")
-{
-	$keywords = $this->html_keywords;
-}
-
-renderHeadNew($bSubdir,$description,$keywords,"Nurkowanie Jaskiniowe GNJ - ".$this->title,$this->articleId,$this->imgId);
-renderMenu($bSubdir,2,false,ConvertSec2SectionName("polska"));
-renderGallery($bSubdir,false);
-
-renderCentral(true);
-
-?>
-
-<!-- ============================= CONTENT BEGIN   ========================================== -->
-<h1><?php echo $this->title; ?> </h1>
-<h2><?php echo $this->subtitle; ?></h2>
-<B>
-<P align="right"><?php echo $this->date; ?></P></B> 
+<div class="page-header">
+  <h1><?php echo $this->title; ?></h1>
+  <h5><?php if ($this->author != "-") echo $this->author; ?><?php if($this->date) echo ", ".$this->date; ?></h5>
+  <h1><small><?php echo $this->subtitle; ?></small></h1>
+</div>
 
 <?php 
 
 foreach ($this->text as $txt)
 {
-	echo '<p style="clear: both;" class="article">' . $txt . '</p>';
+	echo $txt . '</p>';
 	
 	if( $this->imageIds->num_rows > 0)
 	{
 		$row = $this->imageIds->fetch_assoc();
-		
-		echo '<span style="text-align: center; font-size: 10pt;">';
-		
+				
 		if($row)
 		{
-			$output  = '<p style="float: left; margin-bottom: 10px; margin-right: 58px; width: 300px;"><a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
-			$output .= '<img width="300" src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266" alt="" border="0"/>';
-			$output .= '</a><BR>';
-			$output .= $row['description'] . '<BR>';
-			echo $output;
-		}
-		
-		$row = $this->imageIds->fetch_assoc();
-		
-		if($row)
-		{
-			$output  = '<p style="float: left; margin-bottom: 10px; width: 300px;"><a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
-			$output .= '<img width="300" src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266" alt="" border="0"/>';
-			$output .= '</a><BR>';
-			$output .= $row['description'] . '<BR>';
-			echo $output;
-		}
-
-		echo '</span>';
+			echo '<div class="container">';
+            echo '<div class="row">';
+			
+            echo '<div class="col-md-4 text-center">';
+			echo '<a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
+			echo '<img src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266"/></a>';
+			echo '<h5>'.$row['description'].'</h5>';
+			echo '</div>';
+				
+			$row = $this->imageIds->fetch_assoc();
+			
+			if($row)
+			{
+                echo '<div class="col-md-1"></div>';
+				echo '<div class="col-md-4 text-center">';
+				echo '<a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
+			    echo '<img src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266"/></a>';
+			    echo '<h5>'.$row['description'].'</h5>';
+				echo '</div>';
+			}
+			
+			echo '</div></div>';
+		}		
 	}
 }
 
-/* wyswietla wszystkie zdjecia ktore pozostały */
-echo '<p style="clear: both;" class="article"></p>';
-
-echo '<span style="text-align: center; font-size: 10pt;">';
-
-/* wyswietla wszystkie zdjecia ktore pozostały */
+/* wyswietla wszystkie zdjecia ktore pozostały */ 
 while ($row = $this->imageIds->fetch_assoc())
 {
-	$output  = '<p style="float: left; margin-bottom: 10px; width: 300px;"><a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
-	$output .= '<img width="300" src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266" alt="" border="0"/>';
-	$output .= '</a><BR>';
-	$output .= $row['description'];
-	echo $output;
+	echo '<div class="container">';
+    echo '<div class="row">';
+			
+    echo '<div class="col-md-4 text-center">';
+	echo '<a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
+	echo '<img src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266"/></a>';
+	echo '<h5>'.$row['description'].'</h5>';
+	echo '</div>';
+				
+	$row = $this->imageIds->fetch_assoc();
+			
+	if($row)
+	{
+    	echo '<div class="col-md-1"></div>';
+		echo '<div class="col-md-4 text-center">';
+		echo '<a class="fancybox" href="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data" data-fancybox-group="gallery" title="' . $row['description'] . '">';
+		echo '<img src="../_php/mysql_getFile.php?id=' . $row['id'] . '&type=data400x266"/></a>';
+		echo '<h5>'.$row['description'].'</h5>';
+		echo '</div>';
+	}
+			
+	echo '</div></div>';
 }
-
-echo '</span>';
-
-echo '<p style="clear: both;" class="article"></p>';
 
 ?>
 
-<BR>
-<?php if( $this->author != "-" ): ?>
-<P align="right"><B><?php echo $this->author; ?></B></P>
+<?php if(($this->localfiles->num_rows > 0)): ?>	
+<ul>
+  <?php while ($row = $this->localfiles->fetch_assoc()): ?>
+	<LI><a class="fancybox-media" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data" target="_blank"><?php echo $row['description']; ?></a></LI>
+	<?php endwhile; ?>
 <?php endif; ?>
-<BR>
-
-<?php if( $this->links->num_rows > 0): ?>
-    <ul class="article" >
+<?php if(($this->links->num_rows > 0)): ?>	
 	<?php while ($row = $this->links->fetch_assoc()): ?>
 	<LI><a class="fancybox-media" href="<?php echo $row['link']; ?>" target="_blank"><?php echo $row['name']; ?></a></LI>
 	<?php endwhile; ?>
-	</ul>
+</ul>
 <?php endif; ?>
+
+
 
 <!-- ============================= CONTENT END   ============================================ -->
 
 <!-- facebook plugin start -->
-
-<?php if($this->showPlugin): ?>
 <BR>
+<?php if($this->showPlugin): ?>
 <div class="fb-like" data-href="http://www.gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 <?php endif; ?>
 <!-- facebook plugin end -->
-
-<?php 
-
-renderBottom($bSubdir);
-
-?>

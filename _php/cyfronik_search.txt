@@ -1,6 +1,0 @@
-<td class="bgs"><form name="quick_find" action="http://www.cyfronika.com.pl/t/advanced_search_result.php" method="get">
-<div id="box_search"><div class="headPosW">Wyszukiwanie</div>
-<div id="fsearch"><input type="text" name="keywords" size="10" maxlength="30" style="width: 195px">&nbsp;
-<br><table cellpadding="4" border="0"><tr><td><a href="http://www.cyfronika.com.pl/t/advanced_search.php" class="linkW"><b>Zaawansowane</b></a> 
-&nbsp; &nbsp;</td><td align="right"><input type="image" src="templates/standard/polish/images/buttons/button_search2.gif" style="border:0px;" alt="Wyszukiwanie" title=" Wyszukiwanie ">
-</td></tr></table></div></div></form>            </td>

@@ -11,14 +11,14 @@
     <title>Grupa Nurków Jaskiniowych PZA - Strefa GNJ</title>
         
     <!-- Bootstrap core CSS -->
-    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="../_css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 
-    <link href="../_css/datepicker.css" rel="stylesheet">
+    <link href="../css/datepicker.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="../_css/strefagnj.css" rel="stylesheet">    
+    <link href="../css/strefagnj.css" rel="stylesheet">    
   </head>
 
   <body role="document">
@@ -36,7 +36,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../_js/bootstrap.min.js"></script>
-    <script src="../_js/bootstrap-datepicker.js"></script>    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>    
   </body>
 </html>

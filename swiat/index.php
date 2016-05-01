@@ -1,75 +1,53 @@
-<?php
-
-$bSubdir = true;
-$sInclude = './_php/page_utf8.php';
-if($bSubdir == true)
-	$sInclude = '.'.$sInclude;
-@include($sInclude);
+<?php 
 
 $GL_DIR = '..';
 
-@include('../_php/publication_supp.php');
-include('../_php/mysql.php');
-include('../_php/settings.php');
-include('../_php/misc.php');
+include($GL_DIR."/_php/Renderer.php");
+include($GL_DIR.'/_php/settings.php');
+include($GL_DIR.'/_php/mysql.php');
+include($GL_DIR.'/_php/misc.php');
+include($GL_DIR.'/_php/components.php');
 
-	renderHead($bSubdir,'','');
-	renderMenu($bSubdir,6,false,'SWIAT');
-	renderGallery(true,false);
-	renderCentral(true);
-?>
-<!--============================= CONTENTS START ==========================================-->
-<h1>
-	WYPRAWY ZAGRANICZNE
-</h1>
-<?php
+// include the pagination class
+require $GL_DIR.'/_php/Zebra_Pagination.php';
 
-/*
-//-----------------------------------------------------
-NewSection('','section');
+// how many records should be displayed on a page?
+$records_per_page = $SWIAT_LIMIT_PER_PAGE;
 
-StartList();
+// instantiate the pagination object
+$pagination = new Zebra_Pagination();
 
-  ListItem('<b></b>');
-  ExtendedListItem('','','','','');
-  ExtendedListItem($title,$tekst,$link,$data,$autor);
-EndList();
-*/
-//-----------------------------------------------------
+$sqlfiltr="section='świat'";
+$sqllimit = "LIMIT " . (($pagination->get_page() - 1) * $records_per_page) . ', ' . $records_per_page;
 
+$sql="SELECT SQL_CALC_FOUND_ROWS * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and ".$sqlfiltr." ORDER BY date DESC ".$sqllimit;
+$searchResult=$mysqli->query($sql);
 
-$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='świat' ORDER BY date DESC";
-$result=$mysqli->query($sql);
+$sql= "SELECT FOUND_ROWS() AS `found_rows`";
+$rows=$mysqli->query($sql);
+$rows=$rows->fetch_assoc();
 
-if($result) {
+// pass the total number of records to the pagination class
+$pagination->records($rows['found_rows']);
 
-	$rok = '';
-	
-	while ($row = $result->fetch_assoc()) { // list start?
+// records per page
+$pagination->records_per_page($records_per_page);
 
-		if($rok == '') {
-			$rok = GetYearFromDate($row['date']);
-			
-			NewSection('ROK '.$rok,'section');
-			StartList();
-		} else if($rok != GetYearFromDate($row['date'])) { // new year?
-			$rok = GetYearFromDate($row['date']);
+$Content = new Renderer($GL_DIR."/_tpl/swiat.tpl.php");
+$Content->set("searchResult",$searchResult);
+$Content->set("dots","..");
+$Content->set("mysqli",$mysqli);
+$Content->set("pagination",$pagination);
+$Content->set("resultsNum",$rows['found_rows']);
+$Content->set("showbreadcrumb",true);
+$Content->set("section","DZIAŁALNOŚĆ");
+$Content->set("subsection","ŚWIAT");
 
-			EndList ();
-			NewSection('ROK '.$rok,'section');
-			StartList();
-		}
-		
-		ExtendedListItemMYSQL($mysqli,$row,'..');
-		
-	}
+$Page = new Renderer($GL_DIR."/_tpl/gnj.tpl.php");
+$Page->set("Content",$Content->parse());
+$Page->set("dots","..");
+$Page->set("mysqli",$mysqli);
 
-	EndList ();
-}
+$Page->publish();
 
-?>
-
-<!--============================= CONTENTS END   ==========================================-->
-<?php
-	renderBottom($bSubdir);
 ?>

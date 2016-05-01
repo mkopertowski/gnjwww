@@ -50,6 +50,31 @@ function getFirstImageIDFromArticle($mysqli,$articleID)
 	return $imgId;
 }
 
+function getImageAspectRatio($mysqli,$imgId)
+{
+	$query = "SELECT `data400x266` FROM `files` WHERE id='$imgId'";
+	$result = $mysqli->query($query);
+	
+	$aspectratio = 0;
+	
+	if($result) {
+		// Make sure the result is valid
+		if($result->num_rows == 1) {
+			// Get the row
+			$row = mysqli_fetch_assoc($result);
+				
+			$im = imagecreatefromstring($row['data400x266']);
+			$x = imagesx($im);
+			$y = imagesy($im);
+			$aspectratio = $x/$y;
+        }
+	}
+    // Free the mysqli resources
+	@mysqli_free_result($result);
+	
+	return $aspectratio;
+}
+
 function getLastUpdateMYSQL($mysqli)
 {
 	$sql="SELECT `date` FROM `articles` WHERE status='ready' ORDER BY date DESC LIMIT 1";
@@ -93,54 +118,13 @@ function createFileOnDisk($mysqli,$id)
 		}
 }
 
-
-function ExtendedListItemMYSQL($mysqli,$row,$dir)
+function ArticleListFiltredMYSQL($mysqli,$sqlfiltr,$limit)
 {
-	$author = $row['author'];
-	if($author == "")
-	{
-		$author = getAuthorFromAuthorID($mysqli,$row['authorid']);
-	}
-	else if($author == "-")
-	{
-		$author = "";
-	}
-
-	if(isOldArticle($row['date']))
-	{
-		$date = "";
-	}
-	else
-	{
-		$date = formatDate($row['date']);
-	}
-	
-	$title = $row['title'];
-	if(isRecentDate($row['date'])) {
-		$title = '<IMG src="'.$dir.'/_gfx/new.gif" border=0>'.$title;
-	}
-	
-	$link = '';
-	$link_text = '';
-	if($row['text'] != '') {
-		$link = $dir.'/_php/show.php?id='.$row['id'];
-		$link_text = 'Więcej';
-	}
-
-	ExtendedListItem($title,$row['subtitle'],$link,$link_text,$date,$author);
-}
-
-function ArticleListFiltredMYSQL($mysqli,$dir,$sqlfiltr)
-{
-	$sql= "SELECT * FROM `articles` WHERE status='ready' and ".$sqlfiltr." ORDER BY date DESC";
+	$sql= "SELECT * FROM `articles` WHERE status='ready' and ".$sqlfiltr." ORDER BY date DESC ".$limit;
 	
 	$result=$mysqli->query($sql);
 	
-	if($result) {
-		while ($row = $result->fetch_assoc()) {
-			ExtendedListItemMYSQL($mysqli,$row,$dir);
-		}
-	}	
+	return $result;
 }
 
 function ConvertStringMYSQL($mysqli,$str)
@@ -148,71 +132,6 @@ function ConvertStringMYSQL($mysqli,$str)
 	return $mysqli->real_escape_string(stripslashes($str));	
 }
 
-function ShowArticle($mysqli,$row,$id,$showplugin)
-{
-	$title = $row['title'];
-	$subtitle = $row['subtitle'];
-	
-	if(isOldArticle($row['date']))
-	{
-		$date = "";
-	}
-	else
-	{
-		$date = formatDate($row['date']);
-	}
-	
-	$text = $row['text'];
-	$wiki_txt = new wikiParser;
-	$text = $wiki_txt->parse($text);
-	
-	if($row['author'] == "")
-	{
-		$authorid = $row['authorid'];
-		$author = getAuthorFromAuthorID($mysqli,$authorid);
-	}
-	else
-	{
-		$author = $row['author'];
-	}
-	
-	/* get image ids */
-	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'image%'";
-	$result_ids=$mysqli->query($sql);
-	
-	/* get local pdf files for links */
-	$sql="SELECT `description`, `id`, `name` FROM files WHERE articleId='$id' and mime LIKE 'application/pdf'";
-	$result_localfiles=$mysqli->query($sql);
-	
-	/* get links */
-	$sql="SELECT `link`, `name` FROM links WHERE articleId='$id'";
-	$result_links=$mysqli->query($sql);
-	
-	/* prepare and publish article */
-	$Article = new Renderer("../_tpl/article.tpl.php");
-	
-	$Article->set("articleId",$id);
-	$Article->set("title",$title);
-	$Article->set("subtitle",$subtitle);
-	$Article->set("date",$date);
-	$Article->set("author",$author);
-	$Article->set("imageIds",$result_ids);
-	$Article->set("links",$result_links);
-	$Article->set("localfiles",$result_localfiles);
-	
-	$Article->set("html_keywords",$row['keywords']);
-	$Article->set("html_description",$row['description']);
-	
-	$Article->set("showPlugin",$showplugin);
-	$Article->set("imgId",getFirstImageIDFromArticle($mysqli,$id));
-	
-	list($text1, $text2) = explode('</p><p class="article">', $text,2);
-	$Article->set("text1",$text1.'</p>');
-	$Article->set("text2",'<p class="article">'.$text2);
-	
-	$Article->publish();
-	
-}
 
 
 
@@ -269,7 +188,7 @@ function ShowArticleEx($mysqli,$row,$id,$showplugin)
 	$Article->set("showPlugin",$showplugin);
 	$Article->set("imgId",getFirstImageIDFromArticle($mysqli,$id));
 
-	$text = explode('</p><p class="article">', $text);
+	$text = explode('</p>', $text);
 	$Article->set("text",$text);
 
 	$Article->publish();

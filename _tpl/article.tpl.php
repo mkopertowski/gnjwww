@@ -1,37 +1,8 @@
-<?php
-
-$bSubdir = true;
-include('../_php/page_utf8.php');
-
-$description="";
-if($this->html_description != "")
-{
-	$description = $this->html_description;
-}
-else if(isset($this->subtitle))
-{
-	$description = $this->subtitle;
-}
-
-$keywords="";
-if($this->html_keywords != "")
-{
-	$keywords = $this->html_keywords;
-}
-
-renderHeadNew($bSubdir,$description,$keywords,"Nurkowanie Jaskiniowe GNJ - ".$this->title,$this->articleId,$this->imgId);
-renderMenu($bSubdir,2,false,ConvertSec2SectionName("polska"));
-renderGallery($bSubdir,false);
-
-renderCentral(true);
-
-?>
-
-<!-- ============================= CONTENT BEGIN   ========================================== -->
-<h1><?php echo $this->title; ?></h1>
-<h2><?php echo $this->subtitle; ?></h2>
-<B>
-<P align="right"><?php echo $this->date; ?></P></B> 
+<div class="page-header">
+  <h1><?php echo $this->title; ?></h1>
+  <h5><?php if ($this->author != "-") echo $this->author; ?><?php if($this->date) echo ", ".$this->date; ?></h5>
+  <h1><small><?php echo $this->subtitle; ?></small></h1>
+</div>
 
 <?php echo $this->text1; ?>
 
@@ -43,7 +14,7 @@ renderCentral(true);
 			<a class="fancybox" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data" data-fancybox-group="gallery" title="<?php echo $row['description']; ?>">
 				<img src="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data400x266" alt="" border="0"/>
 			</a>
-			<p class="flex-caption"><?php echo $row['description']; ?></p>
+			<h5><?php echo $row['description']; ?></h5>
 		</li>
 	<?php endwhile; ?>
 	</ul>
@@ -52,11 +23,10 @@ renderCentral(true);
 
 <?php echo $this->text2; ?>
 
-<BR><P align="right"><B><?php echo $this->author; ?><BR></B></P>
 
-<ul>
 <?php if(($this->localfiles->num_rows > 0)): ?>	
-    <?php while ($row = $this->localfiles->fetch_assoc()): ?>
+<ul>
+  <?php while ($row = $this->localfiles->fetch_assoc()): ?>
 	<LI><a class="fancybox-media" href="../_php/mysql_getFile.php?id=<?php echo $row['id']; ?>&type=data" target="_blank"><?php echo $row['description']; ?></a></LI>
 	<?php endwhile; ?>
 <?php endif; ?>
@@ -64,22 +34,17 @@ renderCentral(true);
 	<?php while ($row = $this->links->fetch_assoc()): ?>
 	<LI><a class="fancybox-media" href="<?php echo $row['link']; ?>" target="_blank"><?php echo $row['name']; ?></a></LI>
 	<?php endwhile; ?>
-<?php endif; ?>
 </ul>
+<?php endif; ?>
+
 
 
 <!-- ============================= CONTENT END   ============================================ -->
 
 <!-- facebook plugin start -->
-
-<?php if($this->showPlugin): ?>
 <BR>
+<?php if($this->showPlugin): ?>
 <div class="fb-like" data-href="http://www.gnj.org.pl/_php/show.php?id=<?php echo $this->articleId; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 <?php endif; ?>
 <!-- facebook plugin end -->
 
-<?php 
-
-renderBottom($bSubdir);
-
-?>

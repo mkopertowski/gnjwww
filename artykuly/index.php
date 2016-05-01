@@ -1,57 +1,32 @@
-<?php
-
-$bSubdir = true;
-$sInclude = './_php/page_utf8.php';
-if($bSubdir == true)
-	$sInclude = '.'.$sInclude;
-@include($sInclude);
+<?php 
 
 $GL_DIR = '..';
 
-@include('../_php/publication_supp.php');
-include('../_php/mysql.php');
-include('../_php/settings.php');
-include('../_php/misc.php');
+include($GL_DIR."/_php/Renderer.php");
+include($GL_DIR."/_php/settings.php");
+include($GL_DIR."/_php/mysql.php");
+include($GL_DIR."/_php/misc.php");
+include($GL_DIR."/_php/components.php");
 
-	renderHead($bSubdir,'','');
-	renderMenu($bSubdir,7,false,'ARTYKUŁY');
-	renderGallery(true,false);
-	renderCentral(true);
-?>
-		<!--============================= CONTENTS START ==========================================-->
-<h1>
-	ARTYKUŁY
-</h1>
+$Content = new Renderer($GL_DIR."/_tpl/listaSalvattore.tpl.php");
 
-<!--
-  ExtendedListItem('',
-                   '...',
-                   '../article.php?id=&?sec=','WIĘCEJ',
-                   '.  2008','');
--->
+$sqlfiltr = "section='artykuły'";
+$result=ArticleListFiltredMYSQL($mysqli,$sqlfiltr,"");
 
-<?php
+$Content->set("articles",$result);
+$Content->set("showFooter",false);
+$Content->set("mysqli",$mysqli);
+$Content->set("dots",$GL_DIR);
 
-NewSection('WYDARZENIA','section');
+$Content->set("showbreadcrumb",true);
+$Content->set("section","ARTYKUŁY");
+$Content->set("subsection","");
 
-StartList();
+$Page = new Renderer($GL_DIR."/_tpl/gnj.tpl.php");
+$Page->set("Content",$Content->parse());
+$Page->set("dots",$GL_DIR);
+$Page->set("mysqli",$mysqli);
 
-	$sql="SELECT * FROM $ARTICLE_TABLE_NAME WHERE status='ready' and section='artykuły' ORDER BY date DESC";
-	$result=$mysqli->query($sql);
+$Page->publish();
 
-	if($result) {
-
-		while ($row = $result->fetch_assoc()) { // list start?
-
-			ExtendedListItemMYSQL($mysqli,$row,'..');
-		}
-	}
-                     
-?>
-
-</ul>
-
-<!--============================= CONTENTS END   ==========================================-->
-<?php
-	renderBottom($bSubdir);
 ?>
