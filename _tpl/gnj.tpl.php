@@ -281,9 +281,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
            <ul class="nav navbar-nav navbar-left">
-                <li><a href="<?php echo $this->dots; ?>/index.php"><img src="<?php echo $this->dots; ?>/img/flag_pl.png"></a>
+                <li><a href="<?php echo $this->dots; ?>/index.php"><img src="<?php echo $this->dots; ?>/img/flag_PL.png"></a>
                 </li>
-                <li><a href="<?php echo $this->dots; ?>/english/index.php"><img src="<?php echo $this->dots; ?>/img/flag_uk.png"></a>
+                <li><a href="<?php echo $this->dots; ?>/english/index.php"><img src="<?php echo $this->dots; ?>/img/flag_UK.png"></a>
                 </li>
             </ul>
            <form class="navbar-form navbar-right" role="search" method="post" action="<?php echo $this->dots; ?>/search/index.php" enctype="multipart/form-data">
