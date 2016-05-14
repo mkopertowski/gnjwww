@@ -15,10 +15,7 @@ function printItem($row,$mysqli,$dots,$tplfile,$footer)
 
 	$item->set("imgId",$imgId);
 	
-	$link = '';
-	if($row['text'] != '') {
-		$link = $dots.'/_php/show.php?id='.$row['id'];
-	}
+    $link = $dots.'/_php/show.php?id='.$row['id'];
 
 	$item->set("link",$link);
 	$item->set("row",$row);
